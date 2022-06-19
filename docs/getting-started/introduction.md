@@ -1,11 +1,12 @@
 # Got Started
 
 [[toc]]
-## H2
+
+## This is an H2
 
 Come content
 
-### H3
+### This is an H3
 
 More Content
 
@@ -13,7 +14,7 @@ More Content
 - list 
 - of stuff
 
-#### h4
+#### This is an H4
 
 ---
 

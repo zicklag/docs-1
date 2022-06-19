@@ -1,35 +1,52 @@
 export default {
-    base: '/',
-    lang: 'en-US',
-    title: 'Directus Docs',
-    description: 'Directus. An Instant App & API for your SQL Database.',
-    
-    markdown: {
-      theme: { light: 'dracula', dark:  'slack-dark' },
-      lineNumbers: true,
-      // TODO Limit to 1 level
-      // toc:
+  base: '/',
+  lang: 'en-US',
+  title: 'Directus Docs',
+  description: 'Directus. An Instant App & API for your SQL Database.',
+  markdown: {
+    theme: 'material-palenight',
+    toc: {
+			level: [2],
+		},
+  },
+  lastUpdated: true,
+  themeConfig: {
+    // TODO: add the logo svg
+    // logo: '/logo.svg'
+    nav: [
+      // https://vitepress.vuejs.org/config/theme-configs.html#nav
+      { text: 'Website', link: 'https://directus.io/' },
+      { text: 'Cloud', link: 'https://directus.cloud/' },
+      { text: 'GitHub', link: 'https://github.com/directus/directus' },
+    ],
+    algolia: {
+      // appId: '',
+      // apiKey: '',
+      indexName: 'directus'
     },
-    lastUpdated: true,
-    themeConfig: {
-      // logo: '/logo.svg', -> Need to add the logo svg 
-      // nav: [...],
-      // sidebar: { ... }
-      nav: [
-        // https://vitepress.vuejs.org/config/theme-configs.html#nav
-        { text: 'Website', link: 'https://directus.io/' },
-        { text: 'Cloud', link: 'https://directus.cloud/' },
-        { text: 'GitHub', link: 'https://github.com/directus/directus' },
-      ],
-      sidebar: [
-        // https://vitepress.vuejs.org/guide/theme-sidebar.html
+    sidebar: [
+      // NOTE: At this time, nested menus are not supported,
+      // but they plan to support in the future....
+        {
+          text: 'Getting Started',
+          items: [
+            { text: 'Introduction', link: '/getting-started/introduction' },
+          ]
+        },
         {
           text: 'Configuration',
+          collapsible: true,
+          collapsed: true,
           items: [
-            // TODO: Add 3-tiers of dropdowns
-            { text: 'Getting Started', link: '/getting-started' },
+            { text: 'Data Model', link: '/configuration/data-model' },
+            { text: 'Fields', link: '/configuration/data-model/fields' },
+            { text: 'Schema', link: '/configuration/data-model/fields/schema' },
           ]
-        }
-      ]
-    }
+        },
+      ],
+      // editLink: {
+      //   pattern: 'https://github.com/directus/directus/edit/main/docs/:path',
+      //   text: 'Edit this page on GitHub'
+      // },
+  }
 }
