@@ -43,6 +43,14 @@ export default {
             { text: 'Schema', link: '/configuration/data-model/fields/schema' },
           ]
         },
+        {
+          text: 'Reference',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Items', link: '/reference/items' },
+          ]
+        },
       ],
       // editLink: {
       //   pattern: 'https://github.com/directus/directus/edit/main/docs/:path',
