@@ -26,7 +26,8 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "**/*.md"
   ],
   "author": "Rijk van Zanten <rijkvanzanten@me.com>",
   "devDependencies": {
