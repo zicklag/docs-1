@@ -25,10 +25,6 @@
       "quiet": true
     }
   },
-  "files": [
-    "dist",
-    "**/*.md"
-  ],
   "author": "Rijk van Zanten <rijkvanzanten@me.com>",
   "devDependencies": {
     "@thumbsmith/cli": "^0.1.8",
