@@ -1,7 +1,6 @@
 dist/
 index.json
 package-lock.json
-node_modules
+.vscode
 .DS_Store
-# .vs
-# .vscode
+node_modules
