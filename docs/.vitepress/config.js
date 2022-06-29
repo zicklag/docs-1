@@ -12,9 +12,9 @@ export default {
   lastUpdated: true,
   themeConfig: {
     // TODO: add the logo svg
-    // logo: '/logo.svg'
+    // logo: './logo.svg',
+    // siteTitle: false,
     nav: [
-      // https://vitepress.vuejs.org/config/theme-configs.html#nav
       { text: 'Website', link: 'https://directus.io/' },
       { text: 'Cloud', link: 'https://directus.cloud/' },
       { text: 'GitHub', link: 'https://github.com/directus/directus' },
@@ -25,12 +25,19 @@ export default {
       indexName: 'directus'
     },
     sidebar: [
-      // NOTE: At this time, nested menus are not supported,
-      // but they plan to support in the future....
+      // NOTE: Nested menu pages will be supported "soon".....
         {
           text: 'Getting Started',
           items: [
             { text: 'Introduction', link: '/getting-started/introduction' },
+          ]
+        },
+        {
+          text: 'App Guide',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Overview', link: '/app/overview' },
           ]
         },
         {
@@ -39,8 +46,6 @@ export default {
           collapsed: true,
           items: [
             { text: 'Data Model', link: '/configuration/data-model' },
-            { text: 'Fields', link: '/configuration/data-model/fields' },
-            { text: 'Schema', link: '/configuration/data-model/fields/schema' },
           ]
         },
         {
@@ -48,13 +53,46 @@ export default {
           collapsible: true,
           collapsed: true,
           items: [
+            { text: 'Introduction', link: '/reference/introduction' },
             { text: 'Items', link: '/reference/items' },
           ]
         },
+        {
+          text: 'Extensions',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Displays', link: '/extensions/displays' },
+          ]
+        },
+        {
+          text: 'Contributing',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Introduction', link: '/contributing/introduction' },
+          ]
+        },
+        {
+          text: 'Directus Cloud',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Overview', link: '/cloud/overview' },
+          ]
+        },
+        {
+          text: 'Self Hosted',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Quickstart', link: '/self-hosted/quickstart' },
+          ]
+        },
       ],
-      // editLink: {
-      //   pattern: 'https://github.com/directus/directus/edit/main/docs/:path',
-      //   text: 'Edit this page on GitHub'
-      // },
-  }
+  },
+  editLink: {
+    pattern: 'https://github.com/directus/docs/edit/main/:path',
+    text: 'Edit this page on GitHub'
+  },
 }

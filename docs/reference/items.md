@@ -13,7 +13,7 @@ pageClass: page-reference
 </div>
 <div class="right">
 
-<!-- [[toc]] -->
+[[toc]]
 
 </div>
 </div>
