@@ -50,7 +50,7 @@ module.exports = {
 		["meta", { name: "msapplication-config", content: "/browserconfig.xml" }],
 	],
 	themeConfig: {
-		repo: "directus/dcos",
+		repo: "directus/docs",
 		docsBranch: "main",
 		logo: "/logo.svg",
 		editLinks: true,
