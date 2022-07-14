@@ -57,7 +57,7 @@ module.exports = {
 		docsDir: "docs",
 		lastUpdated: true,
 		serviceWorker: false,
-		patterns: ["docs/**/*.md"],
+		patterns: ["**/*.md"],
 		sidebarDepth: 0,
 		activeHeaderLinks: false,
 		smoothScroll: false,
