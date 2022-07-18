@@ -69,7 +69,7 @@ This will set-up the required tables for Directus and make sure all the migratio
 You can run all packages in development with the following command:
 
 ```bash
-pnpm dev
+pnpm -r dev
 ```
 
 ::: warning Race Conditions
