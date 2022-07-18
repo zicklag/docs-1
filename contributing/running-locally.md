@@ -39,7 +39,7 @@ git checkout -b YOUR-BRANCH-NAME
 
 ```bash
 pnpm install
-pnpm build
+pnpm -r build
 ```
 
 ## 5. Create a `.env` file
@@ -155,7 +155,7 @@ Install [Docker](https://docs.docker.com/get-docker/) and ensure that the servic
 
 ```bash
 # Ensure that you are testing on the lastest codebase
-pnpm build
+pnpm -r build
 
 # Clean up in case you ran the tests before
 docker compose -f tests/docker-compose.yml down -v
