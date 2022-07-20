@@ -6,6 +6,12 @@
 
 Come content
 
+:::tip
+
+a tip
+
+:::
+
 ### This is an H3
 
 More Content
