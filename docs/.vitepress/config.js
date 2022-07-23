@@ -35,12 +35,6 @@ export default {
 
 function sidebar() {
   return [
-    // NOTE: At this time, nested menus are not supported,
-    // but they plan to support in the future....
-    {
-      text: "DEMO PAGE",
-      items: [{ text: "DEMO", link: "/DEMO/introduction" }],
-    },
     {
       text: "Getting Started",
       items: [
@@ -181,7 +175,7 @@ function sidebar() {
           link: "/configuration/data-model",
           text: "Data Model",
           // type: "page",
-          children: [
+          items: [
             {
               link: "/configuration/relationships",
               text: "Relationships",
@@ -213,8 +207,8 @@ function sidebar() {
           link: "/configuration/flows",
           text: "Flows",
           // type: "page",
-          collapsable: false,
-          children: [
+          collapsible: false,
+          items: [
             {
               link: "/configuration/flows/triggers",
               text: "Triggers",
