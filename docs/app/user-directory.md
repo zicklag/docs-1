@@ -6,8 +6,6 @@
 
 ![User Directory Page](https://cdn.directus.io/docs/v9/app-guide/user-directory/user-directory-20220222A/user-directory-20220222A.webp)
 
-[[toc]]
-
 <!-- @TODO getting-started > learn-directus
 
 :::tip Before You Begin

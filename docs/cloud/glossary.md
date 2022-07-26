@@ -1,7 +1,5 @@
 # Glossary
 
-[[toc]]
-
 ## Asset Storage
 
 Directus Core allows asset storage for any type of file. This applies to all Cloud Projects. However, on Directus Cloud,

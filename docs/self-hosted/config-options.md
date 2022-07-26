@@ -3,8 +3,6 @@
 > Environment variables are used for all configuration within a Directus project. These variables can be defined in a
 > number of ways, which we cover below.
 
-[[toc]]
-
 ## Configuration Files
 
 By default, Directus will read the `.env` file located next to your project's `package.json` (typically in the root

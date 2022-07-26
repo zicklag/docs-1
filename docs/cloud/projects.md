@@ -4,8 +4,6 @@
 > Projects are available, with each offering different options for infrastructure, configuration and professional
 > services.
 
-[[toc]]
-
 A Cloud Project is a Directus Instance, the [Infrastructure](/cloud/glossary/#infrastructure) it runs on, and all of its
 [data and file assets](/cloud/glossary/#asset-storage). All Cloud Projects come [quota-free](/cloud/glossary/#quotas)
 and include all [Cloud Exclusives](/cloud/glossary/#cloud-exclusives). See

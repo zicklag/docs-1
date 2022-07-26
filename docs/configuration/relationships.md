@@ -3,8 +3,6 @@
 > As you might have guessed, relationships are a crucial part of any relational database. Directus supports all standard
 > relationship types, as well as a few more _compound_ types that offer greater flexibility.
 
-[[toc]]
-
 ### Introduction
 
 While it may seem complex at first, relational data is actually quite straightforward once you understand what's

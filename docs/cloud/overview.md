@@ -6,8 +6,6 @@
 
 ![Hero Image](https://cdn.directus.io/docs/v9/cloud/overview/overview-20220322A/hero-image-20220402A.webp)
 
-[[toc]]
-
 [Directus Cloud](https://directus.cloud/) is a hosting platform for [Directus Projects](/cloud/glossary/#projects) which
 handles data storage, hosting, updates and scalability so you can focus on building your digital apps and experiences.
 There are three [tiers of Cloud Projects](/cloud/glossary/#projects): Community, Standard and Enterprise. All three

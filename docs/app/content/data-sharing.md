@@ -8,8 +8,6 @@
 <p>Your browser is not displaying the video for some reason. Here's a <a href="https://cdn.directus.io/docs/v9/app-guide/content/data-sharing/data-sharing-20220217A/data-shares-20220217A.mp4">link to the video</a> instead.</p>
 </video>
 
-[[toc]]
-
 <!--
 @TODO
 Create a :::tip Before You Begin

@@ -4,8 +4,6 @@
 > activities, incoming webhooks, cron jobs, Operations in other Flows, or the manual click of a button in the Directus
 > App.
 
-[[toc]]
-
 :::tip Before You Begin
 
 Please be sure to read the documentation on [Flows](/configuration/flows).

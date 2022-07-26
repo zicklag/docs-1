@@ -15,8 +15,6 @@ pageClass: page-reference
 
 <div class="right">
 
-[[toc]]
-
 </div>
 </div>
 

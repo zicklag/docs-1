@@ -6,8 +6,6 @@
 
 ![File Library](https://cdn.directus.io/docs/v9/app-guide/file-library/file-library-20220305A/file-library-20220307A.webp)
 
-[[toc]]
-
 ::: warning More Documents on Folder and File Management
 
 This is a non-technical, no-code guide to the File Library Module. Please note there is documentation on programmatic

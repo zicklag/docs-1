@@ -3,8 +3,6 @@
 > The Collection Page displays all Items within a Collection and comes with highly configurable Layouts for browsing,
 > visualizing, and managing these Items.
 
-[[toc]]
-
 ::: tip Before You Begin
 
 To use the Collection Page, you will need to know about [Collections](/getting-started/glossary/#collections),

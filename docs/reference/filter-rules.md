@@ -3,8 +3,6 @@
 > Permissions, validation, and the API's `filter` parameter all rely on a specific JSON structure to define their rules.
 > This page describes the syntax for creating flat, relational, or complex filter rules.
 
-[[toc]]
-
 ## Syntax
 
 - **Field** — Any valid root field, [relational field](#relational), or [logical operator](#logical-operators)

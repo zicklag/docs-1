@@ -14,8 +14,6 @@ pageClass: page-reference
 </div>
 <div class="right">
 
-[[toc]]
-
 </div>
 </div>
 
@@ -140,8 +138,8 @@ For easier comparison, both of the examples below were requested at `200` width,
 `cover` thumbnail forces the dimensions, trimming the outside edges as needed. The `contain` thumbnail always maintains
 its aspect ratio, shrinking the image to fit _within_ the dimensions and adding "letterboxing" as needed.
 
-| Cover                                                          | Contain                                                            |
-| -------------------------------------------------------------- | ------------------------------------------------------------------ |
+| Cover                                                       | Contain                                                         |
+|-------------------------------------------------------------|-----------------------------------------------------------------|
 | ![Cover](../assets/200-200-cover-75.jpg)<br>_8KB • 200x200_ | ![Contain](../assets/200-200-contain-75.jpg)<br>_6KB • 200x133_ |
 
 ::: tip Aspect Ratio

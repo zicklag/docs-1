@@ -3,8 +3,6 @@
 > A Team is an organizational system that groups Accounts together as Team Members and provides consolidated billing on
 > its nested Projects.
 
-[[toc]]
-
 Teams within the Cloud Dashboard allow individuals to separate or consolidate Projects and payment methods, as well as
 manage Projects independently or with other Team Members.
 

@@ -3,8 +3,6 @@
 > The data model describes the structure of your database's schema using [Collections](/app/content-collections/)
 > (database tables) and [Fields](/reference/system/fields/) (database columns).
 
-[[toc]]
-
 ## Creating a Collection
 
 1. Click <span mi btn>add</span> in the <span mi icon dark>list_alt</span> Data Model header

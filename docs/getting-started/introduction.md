@@ -3,8 +3,6 @@
 > These Docs will help you get Directus up-and-running quickly, guide you through advanced features, and explain the
 > core concepts that make Directus so unique.
 
-[[toc]]
-
 ## What is Directus?
 
 ::: tip Directus

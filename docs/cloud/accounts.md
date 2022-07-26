@@ -3,8 +3,6 @@
 > Creating an Account is easy and free. Your Account gives you SuperAdmin access to your Teams and Projects on Directus
 > Cloud, enabling you to create and manage Teams, Team Members, Projects, and Project Billing.
 
-[[toc]]
-
 An Account is your portal to Directus Cloud. You can use it to manage your Teams, Team Members, Projects and
 [billing](/cloud/teams/#manage-billing). To avoid confusion, "User" is the term for user profiles in a Directus Project,
 while the terms "Account" and "Team Member" are used in the context of Directus Cloud. _Accounts on Directus Cloud_ and

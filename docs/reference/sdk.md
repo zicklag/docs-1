@@ -4,8 +4,6 @@
 > Node.js). The default implementation uses [Axios](https://npmjs.com/axios) for transport and `localStorage` for
 > storing state.
 
-[[toc]]
-
 ## Installation
 
 ```bash

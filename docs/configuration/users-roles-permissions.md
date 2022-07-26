@@ -4,8 +4,6 @@
 > user belongs to a [Role](/getting-started/glossary/#roles) which defines its access
 > [Permissions](/getting-started/glossary/#permissions).
 
-[[toc]]
-
 <!--
 
 :::tip Before You Begin

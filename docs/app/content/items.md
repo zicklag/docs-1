@@ -3,8 +3,6 @@
 > The Item Page is a tailored form for managing Items and their Field values. This page also includes options for
 > archiving, reverting, and commenting on the Item.
 
-[[toc]]
-
 :::tip Programmatically Manage Items
 
 This page shows you how to manage Items within the no-code app. However, Items can also be [managed](/reference/items/)

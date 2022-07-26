@@ -4,8 +4,6 @@
 > off to outside services, set conditional logic or even trigger other Flows, these simple but powerful Operations can
 > make it happen.
 
-[[toc]]
-
 :::tip Before You Begin
 
 Please be sure to read the documentation on [Flows](/configuration/flows) and [Triggers](/configuration/flows/triggers).

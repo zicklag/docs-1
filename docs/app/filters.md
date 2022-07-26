@@ -6,8 +6,6 @@
 
 ![Filters](https://cdn.directus.io/docs/v9/app-guide/filters/filters-20220303A/filters-20220303A.webp)
 
-[[toc]]
-
 ::: warning There Are Two Filters Documents
 
 This page is a non-technical guide to using Filters. For more technical info, see

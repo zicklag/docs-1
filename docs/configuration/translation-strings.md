@@ -7,8 +7,6 @@
 <source src="https://cdn.directus.io/docs/v9/configuration/translation-strings/translation-strings-20220615A/translation-strings-20220615A.mp4" type="video/mp4" />
 </video>
 
-[[toc]]
-
 ## Create a Translation String
 
 <video autoplay muted loop controls>

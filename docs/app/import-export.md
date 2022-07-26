@@ -4,8 +4,6 @@
 > This makes it quick and easy to handle tasks like uploading and downloading new customer information; pulling down
 > sales data for transformation, reports, analysis, and beyond.
 
-[[toc]]
-
 :::tip Before You Begin
 
 To use this utility, you will need to be familiar with [Collections](/getting-started/glossary/#collections),

@@ -3,8 +3,6 @@
 > Directus is offered completely free and open-source for anyone wishing to self-host the platform. If you have
 > questions along the way, there are many resources, both free and paid, to help you get up-and-running smoothly.
 
-[[toc]]
-
 ## Troubleshooting Steps
 
 If you're experiencing issues or think you have found a problem in Directus, be sure to follow these steps before

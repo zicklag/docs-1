@@ -3,8 +3,6 @@
 > This is list of platform-specific terminology, and their meanings. Most are simply more approachable names for
 > technical database terms.
 
-[[toc]]
-
 ## Admin / Administrator
 
 An "Administrators" Role (with Admin access enabled) is included when you first install the platform. All admin roles

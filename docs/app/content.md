@@ -4,8 +4,6 @@
 > model contains _(be it blog posts, event bookings, IoT fleets, geo-positions, CRM, or whatever!)_ the Content Module
 > enables Users to view and manage, sort and search, or import and export data.
 
-[[toc]]
-
 ::: tip Before You Begin
 
 To efficiently use this Module, you will need to know about [Collections](/getting-started/glossary/#collections),

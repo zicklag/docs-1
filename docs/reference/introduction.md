@@ -3,8 +3,6 @@
 > Directus offers both a RESTful and GraphQL API to manage the data in the database. The API has predictable
 > resource-oriented URLs, relies on standard HTTP status codes, and uses JSON for input and output.
 
-[[toc]]
-
 ## Dynamic API
 
 The platform's API uses [Database Mirroring](/getting-started/introduction/#database-mirroring) to dynamically generate

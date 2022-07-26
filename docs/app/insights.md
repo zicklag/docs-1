@@ -8,8 +8,6 @@
 <source src="https://cdn.directus.io/docs/v9/app-guide/insights/insights-20220216A/insights-dashboards-20220216A.mp4" type="video/mp4" />
 </video>
 
-[[toc]]
-
 ## How it Works
 
 <video autoplay muted loop controls>

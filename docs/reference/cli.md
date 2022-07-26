@@ -4,8 +4,6 @@
 > actions that relate to your on-prem instance, like migrating the database or resetting a user, while the other allows
 > you to interact with a Directus instance as you would with an SDK.
 
-[[toc]]
-
 ## Server
 
 For server-side CLI, all functionality can be accessed by running `npx directus <command>` in your project folder.
