@@ -110,7 +110,7 @@ its aspect ratio, shrinking the image to fit _within_ the dimensions and adding 
 
 | Cover                                                       | Contain                                                         |
 |-------------------------------------------------------------|-----------------------------------------------------------------|
-| ![Cover](../assets/200-200-cover-75.jpg)<br>_8KB • 200x200_ | ![Contain](../assets/200-200-contain-75.jpg)<br>_6KB • 200x133_ |
+| ![Cover](../public/200-200-cover-75.jpg)<br>_8KB • 200x200_ | ![Contain](../public/200-200-contain-75.jpg)<br>_6KB • 200x133_ |
 
 ::: tip Aspect Ratio
 

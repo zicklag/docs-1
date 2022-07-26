@@ -1,8 +1,15 @@
+
+/* 
+  * Imported Fonts
+  * @Modified
+  * -------------------------------------------------------------------------- */
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Icons+Outlined");
 
 /* 
   * Material Icons
+  * @Modified
   * -------------------------------------------------------------------------- */
 
 [mi] {
@@ -79,7 +86,8 @@
     }
 
 /* 
-  * Videos and Images
+  * Video and Image
+  * @Modified
   * -------------------------------------------------------------------------- */
 
 img, video {
@@ -95,6 +103,8 @@ img, video {
 /* 
   * Previous "Vuepress" Color Theme
   * -------------------------------------------------------------------------- */
+
+/*
 :root {
   --border-normal: #d3dae4;
   --border-subdued: #f0f4f9;
@@ -135,7 +145,7 @@ img, video {
   background: white !important;
 }
 
-/* @media (prefers-color-scheme: dark)
+@media (prefers-color-scheme: dark)
   :root {
     --border-normal: #30363d;
     --border-subdued: #21262d;
@@ -170,11 +180,14 @@ img, video {
     --danger-light: #381E27;
     --danger: #e35169;
     --danger-dark: #ea7d8f;
-  } */
+  } 
+  
+  #nprogress .bar {
+    background: var(--primary) !important;
+  }
 
-#nprogress .bar {
-  background: var(--primary) !important;
-}
+*/
+
 
 /**
  * Colors Base
@@ -185,6 +198,15 @@ img, video {
  * -------------------------------------------------------------------------- */
 
 :root {
+  /* @Modified */
+  --primary-light-1: #ddddff;
+  --primary-light-2: #8E6DFF;
+  --primary-1: #8866ff;
+  --primary-2: #6644ff;
+  --primary-dark-1: #4422dd;
+  --primary-dark-2: #262245;
+  /* -------- */
+
   --vp-c-white: #ffffff;
   --vp-c-white-soft: #f9f9f9;
   --vp-c-white-mute: #f1f1f1;
@@ -233,6 +255,7 @@ img, video {
   --vp-c-green-lighter: #35eb9a;
   --vp-c-green-dark: #33a06f;
   --vp-c-green-darker: #155f3e;
+
   --vp-c-green-dimm-1: rgba(66, 184, 131, 0.5);
   --vp-c-green-dimm-2: rgba(66, 184, 131, 0.25);
   --vp-c-green-dimm-3: rgba(66, 184, 131, 0.05);
@@ -242,6 +265,7 @@ img, video {
   --vp-c-yellow-lighter: #fcfc7c;
   --vp-c-yellow-dark: #e0ad15;
   --vp-c-yellow-darker: #ad850e;
+
   --vp-c-yellow-dimm-1: rgba(255, 197, 23, 0.5);
   --vp-c-yellow-dimm-2: rgba(255, 197, 23, 0.25);
   --vp-c-yellow-dimm-3: rgba(255, 197, 23, 0.05);
@@ -284,16 +308,13 @@ img, video {
 
   --vp-c-text-code: var(--vp-c-indigo-soft);
 
-
-  /* --primary-light: #ddddff;
-  --primary: #6644ff;
-  --primary-dark: #4422dd; */
-
+  /* @Modified */
   --vp-c-brand: var(--primary);
-  --vp-c-brand-light: var(--primary-light);
-  --vp-c-brand-lighter: var(--primary-light);
-  --vp-c-brand-dark: var(--primary-dark);
-  --vp-c-brand-darker: var(--primary-dark);
+  --vp-c-brand-lighter: var(--primary-light-2);
+  --vp-c-brand-light: var(--primary-light-1);
+  --vp-c-brand-dark: var(--primary-dark-1);
+  --vp-c-brand-darker: var( --primary-dark-2);
+  /* -------- */
 
   --vp-c-sponsor: #fd1d7c;
 }
@@ -322,11 +343,6 @@ img, video {
 
   --vp-c-text-code: var(--vp-c-indigo-lighter);
 }
-
-/* 
-  * Video and Image
-  * -------------------------------------------------------------------------- */
-
 
 /**
    * Typography
@@ -475,10 +491,12 @@ img, video {
   --vp-custom-block-info-bg: var(--vp-c-white-soft);
   --vp-custom-block-info-code-bg: var(--vp-c-gray-light-4);
 
-  --vp-custom-block-tip-border: var(--vp-c-green-dimm-1);
-  --vp-custom-block-tip-text: var(--vp-c-green-darker);
-  --vp-custom-block-tip-bg: var(--vp-c-green-dimm-3);
+  /* @Modified */
+  --vp-custom-block-tip-border: var(--primary-dark-1);
+  --vp-custom-block-tip-text: var(--vp-c-text-1);
+  --vp-custom-block-tip-bg: var(--vp-c-bg-mute);
   --vp-custom-block-tip-code-bg: var(--vp-custom-block-tip-bg);
+  /* -------- */
 
   --vp-custom-block-warning-border: var(--vp-c-yellow-dimm-1);
   --vp-custom-block-warning-text: var(--vp-c-yellow-darker);
@@ -501,8 +519,10 @@ img, video {
   --vp-custom-block-info-bg: var(--vp-c-black-mute);
   --vp-custom-block-info-code-bg: var(--vp-c-gray-dark-4);
 
-  --vp-custom-block-tip-border: var(--vp-c-green-dimm-2);
-  --vp-custom-block-tip-text: var(--vp-c-green-light);
+  /* @Modified */
+  --vp-custom-block-tip-border: var(--primary-2);
+  --vp-custom-block-tip-text: var(--vp-c-text-1);
+  /* -------- */
 
   --vp-custom-block-warning-border: var(--vp-c-yellow-dimm-2);
   --vp-custom-block-warning-text: var(--vp-c-yellow-light);
