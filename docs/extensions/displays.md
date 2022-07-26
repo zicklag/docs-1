@@ -12,16 +12,16 @@ imported by the Directus host.
 Example of an entrypoint:
 
 ```js
-import DisplayComponent from './display.vue';
+import DisplayComponent from "./display.vue";
 
 export default {
-	id: 'custom',
-	name: 'Custom',
-	icon: 'box',
-	description: 'This is my custom display!',
-	component: DisplayComponent,
-	options: null,
-	types: ['string'],
+  id: "custom",
+  name: "Custom",
+  icon: "box",
+  description: "This is my custom display!",
+  component: DisplayComponent,
+  options: null,
+  types: ["string"],
 };
 ```
 
@@ -50,17 +50,17 @@ Example of a display component using the Vue SFC syntax:
 
 ```vue
 <template>
-	<div>Value: {{ value }}</div>
+  <div>Value: {{ value }}</div>
 </template>
 
 <script>
 export default {
-	props: {
-		value: {
-			type: String,
-			default: null,
-		},
-	},
+  props: {
+    value: {
+      type: String,
+      default: null,
+    },
+  },
 };
 </script>
 ```
@@ -94,15 +94,15 @@ simple displays that don't need a full component rendered:
 
 ```js
 export default {
-	id: 'custom',
-	name: 'Custom',
-	icon: 'box',
-	description: 'This is my custom display!',
-	component: function ({ value }) {
-		return value.toLowerCase();
-	},
-	options: null,
-	types: ['string'],
+  id: "custom",
+  name: "Custom",
+  icon: "box",
+  description: "This is my custom display!",
+  component: function ({ value }) {
+    return value.toLowerCase();
+  },
+  options: null,
+  types: ["string"],
 };
 ```
 
@@ -112,17 +112,17 @@ To access internal systems like the API or the stores, you can use the `useApi()
 by the `@directus/extensions-sdk` package. They can be used inside a `setup()` function like this:
 
 ```js
-import { useApi, useStores } from '@directus/extensions-sdk';
+import { useApi, useStores } from "@directus/extensions-sdk";
 
 export default {
-	setup() {
-		const api = useApi();
+  setup() {
+    const api = useApi();
 
-		const { useCollectionsStore } = useStores();
-		const collectionsStore = useCollectionsStore();
+    const { useCollectionsStore } = useStores();
+    const collectionsStore = useCollectionsStore();
 
-		// ...
-	},
+    // ...
+  },
 };
 ```
 

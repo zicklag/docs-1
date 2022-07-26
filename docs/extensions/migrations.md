@@ -24,16 +24,16 @@ can be used to do virtually whatever.
 
 ```js
 module.exports = {
-	async up(knex) {
-		await knex.schema.createTable('test', (table) => {
-			table.increments();
-			table.string('rijk');
-		});
-	},
+  async up(knex) {
+    await knex.schema.createTable("test", (table) => {
+      table.increments();
+      table.string("rijk");
+    });
+  },
 
-	async down(knex) {
-		await knex.schema.dropTable('test');
-	},
+  async down(knex) {
+    await knex.schema.dropTable("test");
+  },
 };
 ```
 

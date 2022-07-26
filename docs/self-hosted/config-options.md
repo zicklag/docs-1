@@ -51,14 +51,14 @@ CONFIG_PATH="/path/to/config.json"
 
 ```json
 {
-	"HOST": "0.0.0.0",
-	"PORT": 8055,
+  "HOST": "0.0.0.0",
+  "PORT": 8055,
 
-	"DB_CLIENT": "pg",
-	"DB_HOST": "localhost",
-	"DB_PORT": 5432
+  "DB_CLIENT": "pg",
+  "DB_HOST": "localhost",
+  "DB_PORT": 5432
 
-	// etc
+  // etc
 }
 ```
 
@@ -91,14 +91,14 @@ the environment variable name:
 // Object Syntax
 
 module.exports = {
-	HOST: '0.0.0.0',
-	PORT: 8055,
+  HOST: "0.0.0.0",
+  PORT: 8055,
 
-	DB_CLIENT: 'pg',
-	DB_HOST: 'localhost',
-	DB_PORT: 5432,
+  DB_CLIENT: "pg",
+  DB_HOST: "localhost",
+  DB_PORT: 5432,
 
-	// etc
+  // etc
 };
 ```
 
@@ -109,16 +109,16 @@ parameter.
 // Function Syntax
 
 module.exports = function (env) {
-	return {
-		HOST: '0.0.0.0',
-		PORT: 8055,
+  return {
+    HOST: "0.0.0.0",
+    PORT: 8055,
 
-		DB_CLIENT: 'pg',
-		DB_HOST: 'localhost',
-		DB_PORT: 5432,
+    DB_CLIENT: "pg",
+    DB_HOST: "localhost",
+    DB_PORT: 5432,
 
-		// etc
-	};
+    // etc
+  };
 };
 ```
 
@@ -244,7 +244,7 @@ into unexpected behaviors.
 | `DB_PASSWORD`          | Database user's password. **Required** when using `pg`, `mysql`, `oracledb`, or `mssql`.                                                           | --                            |
 | `DB_FILENAME`          | Where to read/write the SQLite database. **Required** when using `sqlite3`.                                                                        | --                            |
 | `DB_CONNECTION_STRING` | When using `pg`, you can submit a connection string instead of individual properties. Using this will ignore any of the other connection settings. | --                            |
-| `DB_POOL__*`            | Pooling settings. Passed on to [the `tarn.js`](https://github.com/vincit/tarn.js#usage) library.                                                   | --                            |
+| `DB_POOL__*`           | Pooling settings. Passed on to [the `tarn.js`](https://github.com/vincit/tarn.js#usage) library.                                                   | --                            |
 | `DB_EXCLUDE_TABLES`    | CSV of tables you want Directus to ignore completely                                                                                               | `spatial_ref_sys,sysdiagrams` |
 | `DB_CHARSET`           | Charset/collation to use in the connection to MySQL/MariaDB                                                                                        | `UTF8_GENERAL_CI`             |
 | `DB_VERSION`           | Database version, in case you use the PostgreSQL adapter to connect a non-standard database. Not normally required.                                | --                            |

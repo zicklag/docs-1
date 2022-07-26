@@ -51,9 +51,9 @@ The generated `package.json` contains a script that calls the `directus-extensio
 
 ```json
 {
-	"scripts": {
-		"build": "directus-extension build"
-	}
+  "scripts": {
+    "build": "directus-extension build"
+  }
 }
 ```
 
@@ -76,7 +76,7 @@ with the following content:
 
 ```js
 module.exports = {
-	plugins: [],
+  plugins: [],
 };
 ```
 

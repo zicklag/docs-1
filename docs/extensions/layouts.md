@@ -12,24 +12,24 @@ imported by the Directus host.
 Example of an entrypoint:
 
 ```js
-import { ref } from 'vue';
-import LayoutComponent from './layout.vue';
+import { ref } from "vue";
+import LayoutComponent from "./layout.vue";
 
 export default {
-	id: 'custom',
-	name: 'Custom',
-	icon: 'box',
-	component: LayoutComponent,
-	slots: {
-		options: () => null,
-		sidebar: () => null,
-		actions: () => null,
-	},
-	setup() {
-		const name = ref('Custom Layout');
+  id: "custom",
+  name: "Custom",
+  icon: "box",
+  component: LayoutComponent,
+  slots: {
+    options: () => null,
+    sidebar: () => null,
+    actions: () => null,
+  },
+  setup() {
+    const name = ref("Custom Layout");
 
-		return { name };
-	},
+    return { name };
+  },
 };
 ```
 
@@ -58,25 +58,25 @@ Example of a layout component using the Vue SFC syntax:
 
 ```vue
 <template>
-	<div>
-		<p>Name: {{ name }}</p>
-		<p>Collection: {{ collection }}</p>
-	</div>
+  <div>
+    <p>Name: {{ name }}</p>
+    <p>Collection: {{ collection }}</p>
+  </div>
 </template>
 
 <script>
 export default {
-	inheritAttrs: false,
-	props: {
-		collection: {
-			type: String,
-			required: true,
-		},
-		name: {
-			type: String,
-			required: true,
-		},
-	},
+  inheritAttrs: false,
+  props: {
+    collection: {
+      type: String,
+      required: true,
+    },
+    name: {
+      type: String,
+      required: true,
+    },
+  },
 };
 </script>
 ```
@@ -128,17 +128,17 @@ To access internal systems like the API or the stores, you can use the `useApi()
 by the `@directus/extensions-sdk` package. They can be used inside a `setup()` function like this:
 
 ```js
-import { useApi, useStores } from '@directus/extensions-sdk';
+import { useApi, useStores } from "@directus/extensions-sdk";
 
 export default {
-	setup() {
-		const api = useApi();
+  setup() {
+    const api = useApi();
 
-		const { useCollectionsStore } = useStores();
-		const collectionsStore = useCollectionsStore();
+    const { useCollectionsStore } = useStores();
+    const collectionsStore = useCollectionsStore();
 
-		// ...
-	},
+    // ...
+  },
 };
 ```
 

@@ -56,20 +56,20 @@ What fields the user is allowed to alter.
 
 ```json
 {
-	"id": 34,
-	"role": "c86c2761-65d3-43c3-897f-6f74ad6a5bd7",
-	"collection": "pages",
-	"action": "create",
-	"permissions": null,
-	"validation": {
-		"title": {
-			"_contains": "Directus"
-		}
-	},
-	"presets": {
-		"published": false
-	},
-	"fields": ["title", "translations"]
+  "id": 34,
+  "role": "c86c2761-65d3-43c3-897f-6f74ad6a5bd7",
+  "collection": "pages",
+  "action": "create",
+  "permissions": null,
+  "validation": {
+    "title": {
+      "_contains": "Directus"
+    }
+  },
+  "presets": {
+    "published": false
+  },
+  "fields": ["title", "translations"]
 }
 ```
 
@@ -121,7 +121,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	permissions: directus_permissions
+  permissions: directus_permissions
 }
 ```
 
@@ -129,11 +129,11 @@ type Query {
 
 ```graphql
 query {
-	permissions {
-		action
-		role
-		collection
-	}
+  permissions {
+    action
+    role
+    collection
+  }
 }
 ```
 
@@ -172,22 +172,22 @@ GET /permissions/:id
 // GET /permissions/34
 
 {
-	"data": {
-		"id": 34,
-		"role": "c86c2761-65d3-43c3-897f-6f74ad6a5bd7",
-		"collection": "pages",
-		"action": "create",
-		"permissions": null,
-		"validation": {
-			"title": {
-				"_contains": "Directus"
-			}
-		},
-		"presets": {
-			"published": false
-		},
-		"fields": ["title", "translations"]
-	}
+  "data": {
+    "id": 34,
+    "role": "c86c2761-65d3-43c3-897f-6f74ad6a5bd7",
+    "collection": "pages",
+    "action": "create",
+    "permissions": null,
+    "validation": {
+      "title": {
+        "_contains": "Directus"
+      }
+    },
+    "presets": {
+      "published": false
+    },
+    "fields": ["title", "translations"]
+  }
 }
 ```
 
@@ -199,7 +199,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	permissions_by_id(id: ID!): directus_permissions
+  permissions_by_id(id: ID!): directus_permissions
 }
 ```
 
@@ -207,11 +207,11 @@ type Query {
 
 ```graphql
 query {
-	permissions_by_id(id: 34) {
-		role
-		collection
-		action
-	}
+  permissions_by_id(id: 34) {
+    role
+    collection
+    action
+  }
 }
 ```
 
@@ -254,10 +254,10 @@ POST /permissions
 // Request
 
 {
-	"collection": "pages",
-	"action": "read",
-	"role": "c86c2761-65d3-43c3-897f-6f74ad6a5bd7",
-	"fields": ["id", "title"]
+  "collection": "pages",
+  "action": "read",
+  "role": "c86c2761-65d3-43c3-897f-6f74ad6a5bd7",
+  "fields": ["id", "title"]
 }
 ```
 
@@ -269,7 +269,9 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	create_permissions_item(data: create_directus_permissions_input!): directus_permissions
+  create_permissions_item(
+    data: create_directus_permissions_input!
+  ): directus_permissions
 }
 ```
 
@@ -277,13 +279,18 @@ type Mutation {
 
 ```graphql
 mutation {
-	create_permissions_item(
-		data: { collection: "pages", action: "read", role: "c86c2761-65d3-43c3-897f-6f74ad6a5bd7", fields: ["id", "title"] }
-	) {
-		id
-		collection
-		action
-	}
+  create_permissions_item(
+    data: {
+      collection: "pages"
+      action: "read"
+      role: "c86c2761-65d3-43c3-897f-6f74ad6a5bd7"
+      fields: ["id", "title"]
+    }
+  ) {
+    id
+    collection
+    action
+  }
 }
 ```
 
@@ -326,18 +333,18 @@ POST /permissions
 // Request
 
 [
-	{
-		"collection": "pages",
-		"action": "read",
-		"role": "c86c2761-65d3-43c3-897f-6f74ad6a5bd7",
-		"fields": ["id", "title"]
-	},
-	{
-		"collection": "pages",
-		"action": "create",
-		"role": "c86c2761-65d3-43c3-897f-6f74ad6a5bd7",
-		"fields": ["id", "title"]
-	}
+  {
+    "collection": "pages",
+    "action": "read",
+    "role": "c86c2761-65d3-43c3-897f-6f74ad6a5bd7",
+    "fields": ["id", "title"]
+  },
+  {
+    "collection": "pages",
+    "action": "create",
+    "role": "c86c2761-65d3-43c3-897f-6f74ad6a5bd7",
+    "fields": ["id", "title"]
+  }
 ]
 ```
 
@@ -349,7 +356,9 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	create_permissions_items(data: [create_directus_permissions_input!]!): [directus_permissions]
+  create_permissions_items(
+    data: [create_directus_permissions_input!]!
+  ): [directus_permissions]
 }
 ```
 
@@ -357,16 +366,26 @@ type Mutation {
 
 ```graphql
 mutation {
-	create_permissions_items(
-		data: [
-			{ collection: "pages", action: "read", role: "c86c2761-65d3-43c3-897f-6f74ad6a5bd7", fields: ["id", "title"] }
-			{ collection: "pages", action: "create", role: "c86c2761-65d3-43c3-897f-6f74ad6a5bd7", fields: ["id", "title"] }
-		]
-	) {
-		id
-		collection
-		action
-	}
+  create_permissions_items(
+    data: [
+      {
+        collection: "pages"
+        action: "read"
+        role: "c86c2761-65d3-43c3-897f-6f74ad6a5bd7"
+        fields: ["id", "title"]
+      }
+      {
+        collection: "pages"
+        action: "create"
+        role: "c86c2761-65d3-43c3-897f-6f74ad6a5bd7"
+        fields: ["id", "title"]
+      }
+    ]
+  ) {
+    id
+    collection
+    action
+  }
 }
 ```
 
@@ -409,7 +428,7 @@ PATCH /permissions/:id
 // PATCH /permissions/34
 
 {
-	"fields": ["id", "title", "body"]
+  "fields": ["id", "title", "body"]
 }
 ```
 
@@ -421,7 +440,10 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_permissions_item(id: ID!, data: update_directus_permissions_input!): directus_permissions
+  update_permissions_item(
+    id: ID!
+    data: update_directus_permissions_input!
+  ): directus_permissions
 }
 ```
 
@@ -429,11 +451,11 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_permissions_item(id: 34, data: { fields: ["id", "title", "body"] }) {
-		id
-		action
-		collection
-	}
+  update_permissions_item(id: 34, data: { fields: ["id", "title", "body"] }) {
+    id
+    action
+    collection
+  }
 }
 ```
 
@@ -486,10 +508,10 @@ PATCH /permissions
 // PATCH /permissions
 
 {
-	"keys": [34, 65],
-	"data": {
-		"fields": ["id", "title", "body"]
-	}
+  "keys": [34, 65],
+  "data": {
+    "fields": ["id", "title", "body"]
+  }
 }
 ```
 
@@ -501,7 +523,10 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_permissions_items(id: [ID!]!, data: update_directus_permissions_input!): [directus_permissions]
+  update_permissions_items(
+    id: [ID!]!
+    data: update_directus_permissions_input!
+  ): [directus_permissions]
 }
 ```
 
@@ -509,11 +534,14 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_permissions_items(ids: [34, 64], data: { fields: ["id", "title", "body"] }) {
-		id
-		action
-		collection
-	}
+  update_permissions_items(
+    ids: [34, 64]
+    data: { fields: ["id", "title", "body"] }
+  ) {
+    id
+    action
+    collection
+  }
 }
 ```
 
@@ -556,7 +584,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_permissions_item(id: ID!): delete_one
+  delete_permissions_item(id: ID!): delete_one
 }
 ```
 
@@ -564,9 +592,9 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_permissions_item(id: 34) {
-		id
-	}
+  delete_permissions_item(id: 34) {
+    id
+  }
 }
 ```
 
@@ -615,7 +643,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_permissions_items(ids: [ID!]!): delete_many
+  delete_permissions_items(ids: [ID!]!): delete_many
 }
 ```
 
@@ -623,9 +651,9 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_permissions_items(ids: [34, 64]) {
-		ids
-	}
+  delete_permissions_items(ids: [34, 64]) {
+    ids
+  }
 }
 ```
 

@@ -59,15 +59,15 @@ The users in this role. One-to-many to [users](/reference/system/users/).
 
 ```json
 {
-	"id": "653925a9-970e-487a-bfc0-ab6c96affcdc",
-	"name": "Admin",
-	"icon": "supervised_user_circle",
-	"description": null,
-	"ip_access": null,
-	"enforce_tfa": false,
-	"admin_access": true,
-	"app_access": true,
-	"users": ["0bc7b36a-9ba9-4ce0-83f0-0a526f354e07"]
+  "id": "653925a9-970e-487a-bfc0-ab6c96affcdc",
+  "name": "Admin",
+  "icon": "supervised_user_circle",
+  "description": null,
+  "ip_access": null,
+  "enforce_tfa": false,
+  "admin_access": true,
+  "app_access": true,
+  "users": ["0bc7b36a-9ba9-4ce0-83f0-0a526f354e07"]
 }
 ```
 
@@ -112,7 +112,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	roles: [directus_roles]
+  roles: [directus_roles]
 }
 ```
 
@@ -120,13 +120,13 @@ type Query {
 
 ```graphql
 query {
-	roles {
-		id
-		name
-		users {
-			email
-		}
-	}
+  roles {
+    id
+    name
+    users {
+      email
+    }
+  }
 }
 ```
 
@@ -173,7 +173,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	roles_by_id(id: ID!): directus_roles
+  roles_by_id(id: ID!): directus_roles
 }
 ```
 
@@ -181,13 +181,13 @@ type Query {
 
 ```graphql
 query {
-	roles_by_id(id: 2) {
-		id
-		name
-		users {
-			email
-		}
-	}
+  roles_by_id(id: 2) {
+    id
+    name
+    users {
+      email
+    }
+  }
 }
 ```
 
@@ -230,11 +230,11 @@ POST /roles
 // POST /roles
 
 {
-	"name": "Interns",
-	"icon": "verified_user",
-	"description": null,
-	"admin_access": false,
-	"app_access": true
+  "name": "Interns",
+  "icon": "verified_user",
+  "description": null,
+  "admin_access": false,
+  "app_access": true
 }
 ```
 
@@ -246,7 +246,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	create_roles_item(data: create_directus_roles_input!): directus_roles
+  create_roles_item(data: create_directus_roles_input!): directus_roles
 }
 ```
 
@@ -254,15 +254,21 @@ type Mutation {
 
 ```graphql
 mutation {
-	create_roles_item(
-		data: { name: "Interns", icon: "verified_user", description: null, admin_access: false, app_access: true }
-	) {
-		id
-		name
-		users {
-			email
-		}
-	}
+  create_roles_item(
+    data: {
+      name: "Interns"
+      icon: "verified_user"
+      description: null
+      admin_access: false
+      app_access: true
+    }
+  ) {
+    id
+    name
+    users {
+      email
+    }
+  }
 }
 ```
 
@@ -305,20 +311,20 @@ POST /roles
 // POST /roles
 
 [
-	{
-		"name": "Interns",
-		"icon": "verified_user",
-		"description": null,
-		"admin_access": false,
-		"app_access": true
-	},
-	{
-		"name": "Customers",
-		"icon": "person",
-		"description": null,
-		"admin_access": false,
-		"app_access": false
-	}
+  {
+    "name": "Interns",
+    "icon": "verified_user",
+    "description": null,
+    "admin_access": false,
+    "app_access": true
+  },
+  {
+    "name": "Customers",
+    "icon": "person",
+    "description": null,
+    "admin_access": false,
+    "app_access": false
+  }
 ]
 ```
 
@@ -330,7 +336,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	create_roles_items(data: [create_directus_roles_input!]!): [directus_roles]
+  create_roles_items(data: [create_directus_roles_input!]!): [directus_roles]
 }
 ```
 
@@ -338,18 +344,30 @@ type Mutation {
 
 ```graphql
 mutation {
-	create_roles_items(
-		data: [
-			{ name: "Interns", icon: "verified_user", description: null, admin_access: false, app_access: true }
-			{ name: "Customers", icon: "person", description: null, admin_access: false, app_access: false }
-		]
-	) {
-		id
-		name
-		users {
-			email
-		}
-	}
+  create_roles_items(
+    data: [
+      {
+        name: "Interns"
+        icon: "verified_user"
+        description: null
+        admin_access: false
+        app_access: true
+      }
+      {
+        name: "Customers"
+        icon: "person"
+        description: null
+        admin_access: false
+        app_access: false
+      }
+    ]
+  ) {
+    id
+    name
+    users {
+      email
+    }
+  }
 }
 ```
 
@@ -392,7 +410,7 @@ PATCH /roles/:id
 // PATCH /roles/c86c2761-65d3-43c3-897f-6f74ad6a5bd7
 
 {
-	"icon": "attractions"
+  "icon": "attractions"
 }
 ```
 
@@ -404,7 +422,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_roles_item(id: ID!, data: update_directus_roles_input): directus_roles
+  update_roles_item(id: ID!, data: update_directus_roles_input): directus_roles
 }
 ```
 
@@ -412,13 +430,16 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_roles_item(id: "c86c2761-65d3-43c3-897f-6f74ad6a5bd7", data: { icon: "attractions" }) {
-		id
-		name
-		users {
-			email
-		}
-	}
+  update_roles_item(
+    id: "c86c2761-65d3-43c3-897f-6f74ad6a5bd7"
+    data: { icon: "attractions" }
+  ) {
+    id
+    name
+    users {
+      email
+    }
+  }
 }
 ```
 
@@ -469,10 +490,13 @@ PATCH /roles
 // PATCH /roles
 
 {
-	"keys": ["c86c2761-65d3-43c3-897f-6f74ad6a5bd7", "6fc3d5d3-a37b-4da8-a2f4-ed62ad5abe03"],
-	"data": {
-		"icon": "attractions"
-	}
+  "keys": [
+    "c86c2761-65d3-43c3-897f-6f74ad6a5bd7",
+    "6fc3d5d3-a37b-4da8-a2f4-ed62ad5abe03"
+  ],
+  "data": {
+    "icon": "attractions"
+  }
 }
 ```
 
@@ -484,7 +508,10 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_roles_items(ids: [ID!]!, data: update_directus_roles_input): [directus_roles]
+  update_roles_items(
+    ids: [ID!]!
+    data: update_directus_roles_input
+  ): [directus_roles]
 }
 ```
 
@@ -492,16 +519,19 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_roles_items(
-		ids: ["c86c2761-65d3-43c3-897f-6f74ad6a5bd7", "6fc3d5d3-a37b-4da8-a2f4-ed62ad5abe03"]
-		data: { icon: "attractions" }
-	) {
-		id
-		name
-		users {
-			email
-		}
-	}
+  update_roles_items(
+    ids: [
+      "c86c2761-65d3-43c3-897f-6f74ad6a5bd7"
+      "6fc3d5d3-a37b-4da8-a2f4-ed62ad5abe03"
+    ]
+    data: { icon: "attractions" }
+  ) {
+    id
+    name
+    users {
+      email
+    }
+  }
 }
 ```
 
@@ -544,7 +574,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_roles_item(id: ID!): delete_one
+  delete_roles_item(id: ID!): delete_one
 }
 ```
 
@@ -552,9 +582,9 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_roles_item(id: "c86c2761-65d3-43c3-897f-6f74ad6a5bd7") {
-		id
-	}
+  delete_roles_item(id: "c86c2761-65d3-43c3-897f-6f74ad6a5bd7") {
+    id
+  }
 }
 ```
 
@@ -602,7 +632,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_roles_items(ids: [ID!]!): delete_many
+  delete_roles_items(ids: [ID!]!): delete_many
 }
 ```
 
@@ -610,9 +640,14 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_roles_items(ids: ["653925a9-970e-487a-bfc0-ab6c96affcdc", "c86c2761-65d3-43c3-897f-6f74ad6a5bd7"]) {
-		ids
-	}
+  delete_roles_items(
+    ids: [
+      "653925a9-970e-487a-bfc0-ab6c96affcdc"
+      "c86c2761-65d3-43c3-897f-6f74ad6a5bd7"
+    ]
+  ) {
+    ids
+  }
 }
 ```
 

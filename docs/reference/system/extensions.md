@@ -59,7 +59,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	extensions: extensions
+  extensions: extensions
 }
 ```
 
@@ -67,9 +67,9 @@ type Query {
 
 ```graphql
 query {
-	extensions {
-		interfaces
-	}
+  extensions {
+    interfaces
+  }
 }
 ```
 

@@ -41,12 +41,12 @@ to learn more.
 
 ```json
 {
-	"id": 1,
-	"status": "published",
-	"title": "Hello, world!",
-	"body": "This is my first article",
-	"featured_image": "768eabec-3c54-4110-a6bb-64b548116661",
-	"author": "0bc7b36a-9ba9-4ce0-83f0-0a526f354e07"
+  "id": 1,
+  "status": "published",
+  "title": "Hello, world!",
+  "body": "This is my first article",
+  "featured_image": "768eabec-3c54-4110-a6bb-64b548116661",
+  "author": "0bc7b36a-9ba9-4ce0-83f0-0a526f354e07"
 }
 ```
 
@@ -116,13 +116,13 @@ type Query {
 
 ```graphql
 query {
-	articles {
-		id
-		title
-		author {
-			first_name
-		}
-	}
+  articles {
+    id
+    title
+    author {
+      first_name
+    }
+  }
 }
 ```
 
@@ -177,10 +177,10 @@ type Query {
 
 ```graphql
 query {
-	articles_by_id(id: 15) {
-		id
-		title
-	}
+  articles_by_id(id: 15) {
+    id
+    title
+  }
 }
 ```
 
@@ -232,8 +232,8 @@ POST /items/articles
 
 ```json
 {
-	"title": "Hello world!",
-	"body": "This is our first article"
+  "title": "Hello world!",
+  "body": "This is our first article"
 }
 ```
 
@@ -253,10 +253,12 @@ type Mutation {
 
 ```graphql
 mutation {
-	create_articles_item(data: { title: "Hello world!", body: "This is our first article" }) {
-		id
-		title
-	}
+  create_articles_item(
+    data: { title: "Hello world!", body: "This is our first article" }
+  ) {
+    id
+    title
+  }
 }
 ```
 
@@ -301,14 +303,14 @@ POST /items/articles
 
 ```json
 [
-	{
-		"title": "Hello world!",
-		"body": "This is our first article"
-	},
-	{
-		"title": "Hello again, world!",
-		"body": "This is our second article"
-	}
+  {
+    "title": "Hello world!",
+    "body": "This is our first article"
+  },
+  {
+    "title": "Hello again, world!",
+    "body": "This is our second article"
+  }
 ]
 ```
 
@@ -328,15 +330,15 @@ type Mutation {
 
 ```graphql
 mutation {
-	create_articles_items(
-		data: [
-			{ title: "Hello world!", body: "This is our first article" }
-			{ title: "Hello again, world!", body: "This is our second article" }
-		]
-	) {
-		id
-		title
-	}
+  create_articles_items(
+    data: [
+      { title: "Hello world!", body: "This is our first article" }
+      { title: "Hello again, world!", body: "This is our second article" }
+    ]
+  ) {
+    id
+    title
+  }
 }
 ```
 
@@ -381,7 +383,7 @@ PATCH /items/articles/15
 
 ```json
 {
-	"title": "An updated title"
+  "title": "An updated title"
 }
 ```
 
@@ -401,10 +403,10 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_articles_item(id: 15, data: { title: "An updated title" }) {
-		id
-		title
-	}
+  update_articles_item(id: 15, data: { title: "An updated title" }) {
+    id
+    title
+  }
 }
 ```
 
@@ -453,10 +455,10 @@ PATCH /items/articles
 
 ```json
 {
-	"keys": [1, 2],
-	"data": {
-		"status": "published"
-	}
+  "keys": [1, 2],
+  "data": {
+    "status": "published"
+  }
 }
 ```
 
@@ -476,10 +478,10 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_articles_items(ids: [1, 2], data: { status: "published" }) {
-		id
-		status
-	}
+  update_articles_items(ids: [1, 2], data: { status: "published" }) {
+    id
+    status
+  }
 }
 ```
 
@@ -530,9 +532,9 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_articles_item(id: 15) {
-		id
-	}
+  delete_articles_item(id: 15) {
+    id
+  }
 }
 ```
 
@@ -591,9 +593,9 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_articles_items(ids: [15, 16, 21]) {
-		ids
-	}
+  delete_articles_items(ids: [15, 16, 21]) {
+    ids
+  }
 }
 ```
 

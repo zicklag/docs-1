@@ -53,17 +53,17 @@ Parent revision that triggered this revision. Many-to-one to revisions (recursiv
 
 ```json
 {
-	"id": 368,
-	"activity": 438,
-	"collection": "articles",
-	"item": "1",
-	"data": {
-		"title": "Hello World"
-	},
-	"delta": {
-		"title": "Hello from the Docs!"
-	},
-	"parent": null
+  "id": 368,
+  "activity": 438,
+  "collection": "articles",
+  "item": "1",
+  "data": {
+    "title": "Hello World"
+  },
+  "delta": {
+    "title": "Hello from the Docs!"
+  },
+  "parent": null
 }
 ```
 
@@ -115,7 +115,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	revisions: [directus_revisions]
+  revisions: [directus_revisions]
 }
 ```
 
@@ -123,11 +123,11 @@ type Query {
 
 ```graphql
 query {
-	revisions {
-		id
-		data
-		delta
-	}
+  revisions {
+    id
+    data
+    delta
+  }
 }
 ```
 
@@ -174,7 +174,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	revisions_by_id(id: ID!): directus_revisions
+  revisions_by_id(id: ID!): directus_revisions
 }
 ```
 
@@ -182,11 +182,11 @@ type Query {
 
 ```graphql
 query {
-	revisions_by_id(id: 322) {
-		id
-		data
-		delta
-	}
+  revisions_by_id(id: 322) {
+    id
+    data
+    delta
+  }
 }
 ```
 

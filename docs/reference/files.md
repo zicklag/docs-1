@@ -82,7 +82,12 @@ download will work on the _same_ domain, however it will have the file's "id" as
 ### Example
 
 ```html
-<a href="https://your-directus.com/assets/<file-id>?download" target="_blank" download="Your File.pdf">Download</a>
+<a
+  href="https://your-directus.com/assets/<file-id>?download"
+  target="_blank"
+  download="Your File.pdf"
+  >Download</a
+>
 ```
 
 </div>
@@ -252,38 +257,38 @@ Any additional metadata Directus was able to scrape from the file. For images, t
 
 ```json
 {
-	"id": "4f4b14fa-a43a-46d0-b7ad-90af5919bebb",
-	"storage": "local",
-	"filename_disk": "4f4b14fa-a43a-46d0-b7ad-90af5919bebb.jpeg",
-	"filename_download": "paulo-silva-vSRgXtQuns8-unsplash.jpg",
-	"title": "Paulo Silva (via Unsplash)",
-	"type": "image/jpeg",
-	"folder": null,
-	"uploaded_by": "0bc7b36a-9ba9-4ce0-83f0-0a526f354e07",
-	"uploaded_on": "2021-02-04T11:37:41-05:00",
-	"modified_by": null,
-	"modified_on": "2021-02-04T11:37:42-05:00",
-	"filesize": 3442252,
-	"width": 3456,
-	"height": 5184,
-	"duration": null,
-	"description": null,
-	"location": null,
-	"tags": ["photo", "pretty"],
-	"metadata": {
-		"icc": {
-			"version": "2.1",
-			"intent": "Perceptual",
-			"cmm": "lcms",
-			"deviceClass": "Monitor",
-			"colorSpace": "RGB",
-			"connectionSpace": "XYZ",
-			"platform": "Apple",
-			"creator": "lcms",
-			"description": "c2",
-			"copyright": ""
-		}
-	}
+  "id": "4f4b14fa-a43a-46d0-b7ad-90af5919bebb",
+  "storage": "local",
+  "filename_disk": "4f4b14fa-a43a-46d0-b7ad-90af5919bebb.jpeg",
+  "filename_download": "paulo-silva-vSRgXtQuns8-unsplash.jpg",
+  "title": "Paulo Silva (via Unsplash)",
+  "type": "image/jpeg",
+  "folder": null,
+  "uploaded_by": "0bc7b36a-9ba9-4ce0-83f0-0a526f354e07",
+  "uploaded_on": "2021-02-04T11:37:41-05:00",
+  "modified_by": null,
+  "modified_on": "2021-02-04T11:37:42-05:00",
+  "filesize": 3442252,
+  "width": 3456,
+  "height": 5184,
+  "duration": null,
+  "description": null,
+  "location": null,
+  "tags": ["photo", "pretty"],
+  "metadata": {
+    "icc": {
+      "version": "2.1",
+      "intent": "Perceptual",
+      "cmm": "lcms",
+      "deviceClass": "Monitor",
+      "colorSpace": "RGB",
+      "connectionSpace": "XYZ",
+      "platform": "Apple",
+      "creator": "lcms",
+      "description": "c2",
+      "copyright": ""
+    }
+  }
 }
 ```
 
@@ -328,7 +333,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	files: [directus_files]
+  files: [directus_files]
 }
 ```
 
@@ -336,10 +341,10 @@ type Query {
 
 ```graphql
 query {
-	files {
-		id
-		filename_disk
-	}
+  files {
+    id
+    filename_disk
+  }
 }
 ```
 
@@ -386,7 +391,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	files_by_id(id: ID!): directus_files
+  files_by_id(id: ID!): directus_files
 }
 ```
 
@@ -394,10 +399,10 @@ type Query {
 
 ```graphql
 query {
-	files_by_id(id: "0fca80c4-d61c-4404-9fd7-6ba86b64154d") {
-		id
-		filename_disk
-	}
+  files_by_id(id: "0fca80c4-d61c-4404-9fd7-6ba86b64154d") {
+    id
+    filename_disk
+  }
 }
 ```
 
@@ -450,15 +455,15 @@ Content-Type: image/jpeg
 In JavaScript, this can be achieved using the native `FormData` class:
 
 ```js
-import axios from 'axios';
+import axios from "axios";
 
 const fileInput = document.querySelector('input[type="file"]');
 const formData = new FormData();
 
-formData.append('title', 'My First File');
-formData.append('file', fileInput.files[0]);
+formData.append("title", "My First File");
+formData.append("file", fileInput.files[0]);
 
-await axios.post('/files', formData);
+await axios.post("/files", formData);
 ```
 
 ### Query Parameters
@@ -538,10 +543,10 @@ POST /files/import
 // POST /files/import
 
 {
-	"url": "https://source.unsplash.com/random",
-	"data": {
-		"title": "Example"
-	}
+  "url": "https://source.unsplash.com/random",
+  "data": {
+    "title": "Example"
+  }
 }
 ```
 
@@ -553,7 +558,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	import_file(url: String!, data: create_directus_files_input!): directus_files
+  import_file(url: String!, data: create_directus_files_input!): directus_files
 }
 ```
 
@@ -561,9 +566,12 @@ type Mutation {
 
 ```graphql
 mutation {
-	import_file(url: "https://source.unsplash.com/random", data: { title: "Example" }) {
-		id
-	}
+  import_file(
+    url: "https://source.unsplash.com/random"
+    data: { title: "Example" }
+  ) {
+    id
+  }
 }
 ```
 
@@ -608,7 +616,7 @@ PATCH /files/:id
 // PATCH /files/0fca80c4-d61c-4404-9fd7-6ba86b64154d
 
 {
-	"title": "Example"
+  "title": "Example"
 }
 ```
 
@@ -620,7 +628,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_files_item(id: ID!, data: update_directus_files_input!): directus_files
+  update_files_item(id: ID!, data: update_directus_files_input!): directus_files
 }
 ```
 
@@ -628,10 +636,13 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_files_item(id: "0fca80c4-d61c-4404-9fd7-6ba86b64154d", data: { title: "Example" }) {
-		id
-		title
-	}
+  update_files_item(
+    id: "0fca80c4-d61c-4404-9fd7-6ba86b64154d"
+    data: { title: "Example" }
+  ) {
+    id
+    title
+  }
 }
 ```
 
@@ -682,10 +693,13 @@ PATCH /files
 // PATCH /files
 
 {
-	"keys": ["b6123925-2fc0-4a30-9d86-863eafc0a6e7", "d17c10aa-0bad-4864-9296-84f522c753e5"],
-	"data": {
-		"tags": ["cities"]
-	}
+  "keys": [
+    "b6123925-2fc0-4a30-9d86-863eafc0a6e7",
+    "d17c10aa-0bad-4864-9296-84f522c753e5"
+  ],
+  "data": {
+    "tags": ["cities"]
+  }
 }
 ```
 
@@ -697,7 +711,10 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_files_items(ids: [ID!]!, data: update_directus_files!): [directus_files]
+  update_files_items(
+    ids: [ID!]!
+    data: update_directus_files!
+  ): [directus_files]
 }
 ```
 
@@ -705,10 +722,13 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_files_items(
-		ids: ["b6123925-2fc0-4a30-9d86-863eafc0a6e7", "d17c10aa-0bad-4864-9296-84f522c753e5"]
-		data: { tags: ["cities"] }
-	)
+  update_files_items(
+    ids: [
+      "b6123925-2fc0-4a30-9d86-863eafc0a6e7"
+      "d17c10aa-0bad-4864-9296-84f522c753e5"
+    ]
+    data: { tags: ["cities"] }
+  )
 }
 ```
 
@@ -761,15 +781,15 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_files_item(id: ID!): delete_one
+  delete_files_item(id: ID!): delete_one
 }
 ```
 
 ```graphql
 mutation {
-	delete_files_item(id: "0fca80c4-d61c-4404-9fd7-6ba86b64154d") {
-		id
-	}
+  delete_files_item(id: "0fca80c4-d61c-4404-9fd7-6ba86b64154d") {
+    id
+  }
 }
 ```
 
@@ -824,7 +844,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_files_items(ids: [ID!]!): delete_many
+  delete_files_items(ids: [ID!]!): delete_many
 }
 ```
 
@@ -832,9 +852,14 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_files_items(ids: ["d17c10aa-0bad-4864-9296-84f522c753e5", "b6123925-2fc0-4a30-9d86-863eafc0a6e7"]) {
-		ids
-	}
+  delete_files_items(
+    ids: [
+      "d17c10aa-0bad-4864-9296-84f522c753e5"
+      "b6123925-2fc0-4a30-9d86-863eafc0a6e7"
+    ]
+  ) {
+    ids
+  }
 }
 ```
 

@@ -39,7 +39,6 @@ Once a Flow is triggered, Directus creates a [Flow Object](#the-flow-object), wh
 As each Operation in the flow executes, the data generated is added onto this Flow Object, and every Operation in a Flow
 has access to it.
 
-
 ## Create a Flow
 
 <video autoplay muted loop controls title="Create a Flow">

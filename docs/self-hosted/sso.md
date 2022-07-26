@@ -86,7 +86,10 @@ REFRESH_TOKEN_COOKIE_SAME_SITE="None"
 2. On your client, your login button should be something like
 
 ```html
-<a href="https://directus.myserver.com/auth/login/google?redirect=https://client.myserver.com/login">Login</a>
+<a
+  href="https://directus.myserver.com/auth/login/google?redirect=https://client.myserver.com/login"
+  >Login</a
+>
 ```
 
 - Where `https://directus.myserver.com` should be the address of your Directus instance
@@ -99,16 +102,16 @@ REFRESH_TOKEN_COOKIE_SAME_SITE="None"
    - via REST API / fetch
 
      ```js
-     await fetch('https://directus.myserver.com/auth/refresh', {
-     	method: 'POST',
-     	credentials: 'include', // this is required in order to send the refresh token cookie
+     await fetch("https://directus.myserver.com/auth/refresh", {
+       method: "POST",
+       credentials: "include", // this is required in order to send the refresh token cookie
      });
      ```
 
    - via SDK
 
      ```js
-     const sdk = new Directus('https://directus.myserver.com');
+     const sdk = new Directus("https://directus.myserver.com");
 
      await sdk.auth.refresh();
      ```

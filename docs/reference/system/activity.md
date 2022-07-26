@@ -62,16 +62,16 @@ Any changes that were made in this activity. One-to-many to [revisions](/referen
 
 ```json
 {
-	"action": "create",
-	"collection": "articles",
-	"comment": null,
-	"id": 5,
-	"ip": "139.178.128.0",
-	"item": "1",
-	"timestamp": "2021-02-02T12:50:26-05:00",
-	"user": "2d321940-69f5-445f-be6b-c773fa58a820",
-	"user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.2 Safari/605.1.15",
-	"revisions": [4]
+  "action": "create",
+  "collection": "articles",
+  "comment": null,
+  "id": 5,
+  "ip": "139.178.128.0",
+  "item": "1",
+  "timestamp": "2021-02-02T12:50:26-05:00",
+  "user": "2d321940-69f5-445f-be6b-c773fa58a820",
+  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.2 Safari/605.1.15",
+  "revisions": [4]
 }
 ```
 
@@ -116,7 +116,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	activity: [directus_activity]
+  activity: [directus_activity]
 }
 ```
 
@@ -167,7 +167,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	activity_by_id(id: ID!): directus_activity
+  activity_by_id(id: ID!): directus_activity
 }
 ```
 
@@ -227,9 +227,9 @@ POST /activity/comment
 // POST /activity/comment
 
 {
-	"collection": "pages",
-	"item": 3,
-	"comment": "Hello World"
+  "collection": "pages",
+  "item": 3,
+  "comment": "Hello World"
 }
 ```
 
@@ -241,7 +241,11 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	create_comment(collection: String!, item: ID!, comment: String!): directus_activity
+  create_comment(
+    collection: String!
+    item: ID!
+    comment: String!
+  ): directus_activity
 }
 ```
 
@@ -297,7 +301,7 @@ PATCH /activity/comment/:id
 // PATCH /activity/comment/15
 
 {
-	"comment": "Hello World!!"
+  "comment": "Hello World!!"
 }
 ```
 
@@ -309,7 +313,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_comment(id: ID!, comment: String!): directus_activity
+  update_comment(id: ID!, comment: String!): directus_activity
 }
 ```
 
@@ -357,7 +361,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_comment(id: ID): delete_one
+  delete_comment(id: ID): delete_one
 }
 ```
 
@@ -365,9 +369,9 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_comment(id: 3) {
-		id
-	}
+  delete_comment(id: 3) {
+    id
+  }
 }
 ```
 

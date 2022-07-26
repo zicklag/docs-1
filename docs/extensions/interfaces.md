@@ -12,16 +12,16 @@ is imported by the Directus host.
 Example of an entrypoint:
 
 ```js
-import InterfaceComponent from './interface.vue';
+import InterfaceComponent from "./interface.vue";
 
 export default {
-	id: 'custom',
-	name: 'Custom',
-	icon: 'box',
-	description: 'This is my custom interface!',
-	component: InterfaceComponent,
-	options: null,
-	types: ['string'],
+  id: "custom",
+  name: "Custom",
+  icon: "box",
+  description: "This is my custom interface!",
+  component: InterfaceComponent,
+  options: null,
+  types: ["string"],
 };
 ```
 
@@ -50,25 +50,25 @@ Example of an interface component using the Vue SFC syntax:
 
 ```vue
 <template>
-	<input :value="value" @input="handleChange($event.target.value)" />
+  <input :value="value" @input="handleChange($event.target.value)" />
 </template>
 
 <script>
 export default {
-	props: {
-		value: {
-			type: String,
-			default: null,
-		},
-	},
-	emits: ['input'],
-	setup(props, { emit }) {
-		return { handleChange };
+  props: {
+    value: {
+      type: String,
+      default: null,
+    },
+  },
+  emits: ["input"],
+  setup(props, { emit }) {
+    return { handleChange };
 
-		function handleChange(value) {
-			emit('input', value);
-		}
-	},
+    function handleChange(value) {
+      emit("input", value);
+    }
+  },
 };
 </script>
 ```
@@ -104,17 +104,17 @@ To access internal systems like the API or the stores, you can use the `useApi()
 by the `@directus/extensions-sdk` package. They can be used inside a `setup()` function like this:
 
 ```js
-import { useApi, useStores } from '@directus/extensions-sdk';
+import { useApi, useStores } from "@directus/extensions-sdk";
 
 export default {
-	setup() {
-		const api = useApi();
+  setup() {
+    const api = useApi();
 
-		const { useCollectionsStore } = useStores();
-		const collectionsStore = useCollectionsStore();
+    const { useCollectionsStore } = useStores();
+    const collectionsStore = useCollectionsStore();
 
-		// ...
-	},
+    // ...
+  },
 };
 ```
 

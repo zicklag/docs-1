@@ -55,8 +55,8 @@ preset priority is: User, then Role, then Global.
 
 ## Deleting a Preset
 
-1. Navigate to **Settings > Presets & Bookmarks
-   > [Preset]**
+1. Navigate to \*\*Settings > Presets & Bookmarks
+   > [Preset]\*\*
 2. Click <span mi btn dngr>delete</span> in the header
 3. Confirm this decision by clicking **Delete** in the dialog
 

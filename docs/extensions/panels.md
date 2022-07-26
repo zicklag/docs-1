@@ -13,27 +13,27 @@ imported by the Directus host.
 Example of an entrypoint:
 
 ```js
-import PanelComponent from './panel.vue';
+import PanelComponent from "./panel.vue";
 
 export default {
-	id: 'custom',
-	name: 'Custom',
-	icon: 'box',
-	description: 'This is my custom panel!',
-	component: PanelComponent,
-	options: [
-		{
-			field: 'text',
-			name: 'Text',
-			type: 'string',
-			meta: {
-				interface: 'input',
-				width: 'full',
-			},
-		},
-	],
-	minWidth: 12,
-	minHeight: 8,
+  id: "custom",
+  name: "Custom",
+  icon: "box",
+  description: "This is my custom panel!",
+  component: PanelComponent,
+  options: [
+    {
+      field: "text",
+      name: "Text",
+      type: "string",
+      meta: {
+        interface: "input",
+        width: "full",
+      },
+    },
+  ],
+  minWidth: 12,
+  minHeight: 8,
 };
 ```
 
@@ -59,33 +59,33 @@ Example of a panel component using the Vue SFC syntax:
 
 ```vue
 <template>
-	<div class="text" :class="{ 'has-header': showHeader }">
-		{{ text }}
-	</div>
+  <div class="text" :class="{ 'has-header': showHeader }">
+    {{ text }}
+  </div>
 </template>
 
 <script>
 export default {
-	props: {
-		showHeader: {
-			type: Boolean,
-			default: false,
-		},
-		text: {
-			type: String,
-			default: '',
-		},
-	},
+  props: {
+    showHeader: {
+      type: Boolean,
+      default: false,
+    },
+    text: {
+      type: String,
+      default: "",
+    },
+  },
 };
 </script>
 
 <style scoped>
 .text {
-	padding: 12px;
+  padding: 12px;
 }
 
 .text.has-header {
-	padding: 0 12px;
+  padding: 0 12px;
 }
 </style>
 ```
@@ -111,17 +111,17 @@ To access internal systems like the API or the stores, you can use the `useApi()
 by the `@directus/extensions-sdk` package. They can be used inside a `setup()` function like this:
 
 ```js
-import { useApi, useStores } from '@directus/extensions-sdk';
+import { useApi, useStores } from "@directus/extensions-sdk";
 
 export default {
-	setup() {
-		const api = useApi();
+  setup() {
+    const api = useApi();
 
-		const { useCollectionsStore } = useStores();
-		const collectionsStore = useCollectionsStore();
+    const { useCollectionsStore } = useStores();
+    const collectionsStore = useCollectionsStore();
 
-		// ...
-	},
+    // ...
+  },
 };
 ```
 

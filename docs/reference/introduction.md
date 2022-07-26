@@ -50,9 +50,9 @@ your page, you could submit:
 
 ```json
 {
-	"featured_article": {
-		"title": "This is my new article!"
-	}
+  "featured_article": {
+    "title": "This is my new article!"
+  }
 }
 ```
 
@@ -62,10 +62,10 @@ update instead of a creation:
 
 ```json
 {
-	"featured_article": {
-		"id": 15,
-		"title": "This is an updated title for my article!"
-	}
+  "featured_article": {
+    "id": 15,
+    "title": "This is an updated title for my article!"
+  }
 }
 ```
 
@@ -74,7 +74,7 @@ nullifying the field:
 
 ```json
 {
-	"featured_article": null
+  "featured_article": null
 }
 ```
 
@@ -89,7 +89,7 @@ use this same structure to select what the related items are:
 
 ```json
 {
-	"children": [2, 7, 149]
+  "children": [2, 7, 149]
 }
 ```
 
@@ -98,16 +98,16 @@ with a primary key included to update an existing item:
 
 ```json
 {
-	"children": [
-		2, // assign existing item 2 to be a child of the current item
-		{
-			"name": "A new nested item"
-		},
-		{
-			"id": 149,
-			"name": "Assign and update existing item 149"
-		}
-	]
+  "children": [
+    2, // assign existing item 2 to be a child of the current item
+    {
+      "name": "A new nested item"
+    },
+    {
+      "id": 149,
+      "name": "Assign and update existing item 149"
+    }
+  ]
 }
 ```
 
@@ -115,7 +115,7 @@ To remove items from this relationship, simply omit them from the array:
 
 ```json
 {
-	"children": [2, 149]
+  "children": [2, 149]
 }
 ```
 
@@ -127,11 +127,11 @@ Alternatively, you can provide an object detailing the changes as follows:
 
 ```json
 {
-	"children": {
-		"create": [{ "name": "A new nested item" }],
-		"update": [{ "id": 149, "name": "A new nested item" }],
-		"delete": [7]
-	}
+  "children": {
+    "create": [{ "name": "A new nested item" }],
+    "update": [{ "id": 149, "name": "A new nested item" }],
+    "delete": [7]
+  }
 }
 ```
 
@@ -145,20 +145,20 @@ the fields from any of the related collections, for example:
 
 ```json
 {
-	"sections": [
-		{
-			"collection": "headings",
-			"item": {
-				/* headings fields */
-			}
-		},
-		{
-			"collection": "paragraphs",
-			"item": {
-				/* paragraphs fields */
-			}
-		}
-	]
+  "sections": [
+    {
+      "collection": "headings",
+      "item": {
+        /* headings fields */
+      }
+    },
+    {
+      "collection": "paragraphs",
+      "item": {
+        /* paragraphs fields */
+      }
+    }
+  ]
 }
 ```
 
@@ -181,21 +181,21 @@ In GraphQL, you can use nested fragments on the Union Type to select the fields:
 
 ```graphql
 query {
-	pages {
-		sections {
-			item {
-				... on headings {
-					id
-					title
-				}
+  pages {
+    sections {
+      item {
+        ... on headings {
+          id
+          title
+        }
 
-				... on paragraphs {
-					body
-					background_color
-				}
-			}
-		}
-	}
+        ... on paragraphs {
+          body
+          background_color
+        }
+      }
+    }
+  }
 }
 ```
 

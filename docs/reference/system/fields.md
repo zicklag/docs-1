@@ -138,40 +138,40 @@ Comment as stored in the database.
 
 ```json
 {
-	"collection": "articles",
-	"field": "id",
-	"type": "integer",
-	"meta": {
-		"id": 16,
-		"collection": "articles",
-		"field": "id",
-		"special": null,
-		"interface": "numeric",
-		"options": null,
-		"display": null,
-		"display_options": null,
-		"readonly": true,
-		"hidden": true,
-		"sort": 1,
-		"width": "full",
-		"translations": null,
-		"note": "The unique identifier of the article"
-	},
-	"schema": {
-		"name": "id",
-		"table": "articles",
-		"data_type": "integer",
-		"default_value": null,
-		"max_length": null,
-		"numeric_precision": 32,
-		"numeric_scale": 0,
-		"is_nullable": false,
-		"is_primary_key": true,
-		"has_auto_increment": true,
-		"foreign_key_column": null,
-		"foreign_key_table": null,
-		"comment": null
-	}
+  "collection": "articles",
+  "field": "id",
+  "type": "integer",
+  "meta": {
+    "id": 16,
+    "collection": "articles",
+    "field": "id",
+    "special": null,
+    "interface": "numeric",
+    "options": null,
+    "display": null,
+    "display_options": null,
+    "readonly": true,
+    "hidden": true,
+    "sort": 1,
+    "width": "full",
+    "translations": null,
+    "note": "The unique identifier of the article"
+  },
+  "schema": {
+    "name": "id",
+    "table": "articles",
+    "data_type": "integer",
+    "default_value": null,
+    "max_length": null,
+    "numeric_precision": 32,
+    "numeric_scale": 0,
+    "is_nullable": false,
+    "is_primary_key": true,
+    "has_auto_increment": true,
+    "foreign_key_column": null,
+    "foreign_key_table": null,
+    "comment": null
+  }
 }
 ```
 
@@ -212,7 +212,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	fields: [directus_fields]
+  fields: [directus_fields]
 }
 ```
 
@@ -220,10 +220,10 @@ type Query {
 
 ```graphql
 query {
-	fields {
-		collection
-		field
-	}
+  fields {
+    collection
+    field
+  }
 }
 ```
 
@@ -270,7 +270,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	fields_in_collection(collection: String!): directus_fields
+  fields_in_collection(collection: String!): directus_fields
 }
 ```
 
@@ -278,10 +278,10 @@ type Query {
 
 ```graphql
 query {
-	fields_in_collection(collection: "articles") {
-		collection
-		field
-	}
+  fields_in_collection(collection: "articles") {
+    collection
+    field
+  }
 }
 ```
 
@@ -328,7 +328,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	fields_by_name(collection: String!, field: String!): directus_fields
+  fields_by_name(collection: String!, field: String!): directus_fields
 }
 ```
 
@@ -336,10 +336,10 @@ type Query {
 
 ```graphql
 query {
-	fields_by_name(collection: "articles", field: "title") {
-		collection
-		field
-	}
+  fields_by_name(collection: "articles", field: "title") {
+    collection
+    field
+  }
 }
 ```
 
@@ -397,14 +397,14 @@ POST /fields/:collection
 // POST /fields/articles
 
 {
-	"field": "title",
-	"type": "string",
-	"meta": {
-		"icon": "title"
-	},
-	"schema": {
-		"default_value": "Hello World"
-	}
+  "field": "title",
+  "type": "string",
+  "meta": {
+    "icon": "title"
+  },
+  "schema": {
+    "default_value": "Hello World"
+  }
 }
 ```
 
@@ -416,7 +416,10 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	create_fields_item(collection: String!, data: create_directus_fields_input!): directus_fields
+  create_fields_item(
+    collection: String!
+    data: create_directus_fields_input!
+  ): directus_fields
 }
 ```
 
@@ -424,13 +427,18 @@ type Mutation {
 
 ```graphql
 mutation {
-	create_fields_item(
-		collection: "articles"
-		data: { field: "title", type: "string", meta: { icon: "title" }, schema: { default_value: "Hello World" } }
-	) {
-		collection
-		field
-	}
+  create_fields_item(
+    collection: "articles"
+    data: {
+      field: "title"
+      type: "string"
+      meta: { icon: "title" }
+      schema: { default_value: "Hello World" }
+    }
+  ) {
+    collection
+    field
+  }
 }
 ```
 
@@ -493,12 +501,12 @@ PATCH /fields/:collection/:field
 // PATCH /fields/articles/title
 
 {
-	"meta": {
-		"note": "Put the title here"
-	},
-	"schema": {
-		"default_value": "Hello World!"
-	}
+  "meta": {
+    "note": "Put the title here"
+  },
+  "schema": {
+    "default_value": "Hello World!"
+  }
 }
 ```
 
@@ -510,7 +518,11 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_fields_item(collection: String!, field: String!, data: update_directus_fields_input!): directus_fields
+  update_fields_item(
+    collection: String!
+    field: String!
+    data: update_directus_fields_input!
+  ): directus_fields
 }
 ```
 
@@ -518,14 +530,17 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_fields_item(
-		collection: "articles"
-		field: "title"
-		data: { meta: { note: "Put the title here" }, schema: { default_value: "Hello World!" } }
-	) {
-		collection
-		field
-	}
+  update_fields_item(
+    collection: "articles"
+    field: "title"
+    data: {
+      meta: { note: "Put the title here" }
+      schema: { default_value: "Hello World!" }
+    }
+  ) {
+    collection
+    field
+  }
 }
 ```
 
@@ -570,7 +585,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_fields_item(collection: String!, field: String!): delete_field
+  delete_fields_item(collection: String!, field: String!): delete_field
 }
 ```
 
@@ -578,10 +593,10 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_fields_item(collection: "articles", field: "title") {
-		collection
-		field
-	}
+  delete_fields_item(collection: "articles", field: "title") {
+    collection
+    field
+  }
 }
 ```
 

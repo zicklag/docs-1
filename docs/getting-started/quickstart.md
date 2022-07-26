@@ -183,12 +183,12 @@ everywhere!_
 
 ```json
 {
-	"data": [
-		{
-			"id": 1,
-			"title": "Hello World!"
-		}
-	]
+  "data": [
+    {
+      "id": 1,
+      "title": "Hello World!"
+    }
+  ]
 }
 ```
 

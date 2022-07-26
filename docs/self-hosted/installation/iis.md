@@ -19,7 +19,7 @@ available. Since iisnode simply pipes requests to files, running the directus CL
 this, use an entrypoint script like the `index.js` below.
 
 ```js
-var { startServer } = require('directus/server');
+var { startServer } = require("directus/server");
 
 startServer();
 ```

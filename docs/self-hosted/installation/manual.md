@@ -35,7 +35,6 @@ We recommend aliasing the `start` script to Directus' start for easier deploymen
 npm install directus
 ```
 
-
 ## 3. Setup a Configuration File
 
 Finally, you'll need to setup your `.env` file, or configure the environment variables through other means, such as
@@ -44,7 +43,6 @@ Docker, etc.
 **Don't forget to fill your database information before continuing to next step**
 
 See [Environment Variables](/self-hosted/config-options/#general) for all available variables.
-
 
 ## 4. Bootstrap It
 

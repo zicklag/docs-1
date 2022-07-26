@@ -141,9 +141,9 @@ Retrieve all items where `first_name` equals "Rijk"
 
 ```json
 {
-	"first_name": {
-		"_eq": "Rijk"
-	}
+  "first_name": {
+    "_eq": "Rijk"
+  }
 }
 ```
 
@@ -151,9 +151,9 @@ Retrieve all items in one of the following categories: "vegetables", "fruit"
 
 ```json
 {
-	"categories": {
-		"_in": ["vegetables", "fruit"]
-	}
+  "categories": {
+    "_in": ["vegetables", "fruit"]
+  }
 }
 ```
 
@@ -161,9 +161,9 @@ Retrieve all items that are published between two dates
 
 ```json
 {
-	"date_published": {
-		"_between": ["2021-01-24", "2021-02-23"]
-	}
+  "date_published": {
+    "_between": ["2021-01-24", "2021-02-23"]
+  }
 }
 ```
 
@@ -171,11 +171,11 @@ Retrieve all items where the author's "vip" flag is true
 
 ```json
 {
-	"author": {
-		"vip": {
-			"_eq": true
-		}
-	}
+  "author": {
+    "vip": {
+      "_eq": true
+    }
+  }
 }
 ```
 
@@ -203,9 +203,9 @@ filter the related items themselves, take a look at [the `deep` parameter](#deep
 
 ```graphql
 query {
-	users(filter: { first_name: { _eq: "Rijk" } }) {
-		id
-	}
+  users(filter: { first_name: { _eq: "Rijk" } }) {
+    id
+  }
 }
 ```
 
@@ -247,9 +247,9 @@ Find all items that mention Directus\
 
 ```graphql
 query {
-	articles(search: "Directus") {
-		id
-	}
+  articles(search: "Directus") {
+    id
+  }
 }
 ```
 
@@ -298,9 +298,9 @@ Sort by a "sort" field, followed by publish date descending\
 
 ```graphql
 query {
-	articles(sort: ["sort", "-date_created"]) {
-		id
-	}
+  articles(sort: ["sort", "-date_created"]) {
+    id
+  }
 }
 ```
 
@@ -350,9 +350,9 @@ with caution.
 
 ```graphql
 query {
-	articles(limit: 200) {
-		id
-	}
+  articles(limit: 200) {
+    id
+  }
 }
 ```
 
@@ -392,9 +392,9 @@ Get items 101—200\
 
 ```graphql
 query {
-	articles(offset: 100) {
-		id
-	}
+  articles(offset: 100) {
+    id
+  }
 }
 ```
 
@@ -438,9 +438,9 @@ Get items 101-200\
 
 ```graphql
 query {
-	articles(page: 2) {
-		id
-	}
+  articles(page: 2) {
+    id
+  }
 }
 ```
 
@@ -500,12 +500,12 @@ this allows for aggregate reporting per year-month-date.
 
 ```graphql
 query {
-	articles_aggregated(groupBy: ["author", "year(publish_date)"]) {
-		group
-		sum {
-			revenue
-		}
-	}
+  articles_aggregated(groupBy: ["author", "year(publish_date)"]) {
+    group
+    sum {
+      revenue
+    }
+  }
 }
 ```
 
@@ -533,9 +533,9 @@ Limit the nested related articles to 3
 
 ```json
 {
-	"related_articles": {
-		"_limit": 3
-	}
+  "related_articles": {
+    "_limit": 3
+  }
 }
 ```
 
@@ -543,13 +543,13 @@ Only get 3 related articles, with only the top rated comment nested
 
 ```json
 {
-	"related_articles": {
-		"_limit": 3,
-		"comments": {
-			"_sort": "rating",
-			"_limit": 1
-		}
-	}
+  "related_articles": {
+    "_limit": 3,
+    "comments": {
+      "_sort": "rating",
+      "_limit": 1
+    }
+  }
 }
 ```
 
@@ -572,14 +572,14 @@ _Natively supported in GraphQL:_
 
 ```graphql
 query {
-	members {
-		favorite_games(filter: { name: { _eq: "Mariokart 8" } }) {
-			id
-			featured_image {
-				filename_disk
-			}
-		}
-	}
+  members {
+    favorite_games(filter: { name: { _eq: "Mariokart 8" } }) {
+      id
+      featured_image {
+        filename_disk
+      }
+    }
+  }
 }
 ```
 
@@ -625,15 +625,15 @@ _Natively supported in GraphQL:_
 
 ```graphql
 query {
-	articles {
-		dutch_translations: translations(filter: { code: { _eq: "nl-NL" } }) {
-			id
-		}
+  articles {
+    dutch_translations: translations(filter: { code: { _eq: "nl-NL" } }) {
+      id
+    }
 
-		all_translations: translations {
-			id
-		}
-	}
+    all_translations: translations {
+      id
+    }
+  }
 }
 ```
 
@@ -731,13 +731,13 @@ function name as the nested field (see the example that follows).
 
 ```graphql
 query {
-	articles(filter: { date_published_func: { year: { _eq: 2021 } } }) {
-		id
-		title
-		date_published_func {
-			weekday
-		}
-	}
+  articles(filter: { date_published_func: { year: { _eq: 2021 } } }) {
+    id
+    title
+    date_published_func {
+      weekday
+    }
+  }
 }
 ```
 

@@ -12,13 +12,13 @@ Example of an entrypoint:
 
 ```js
 export default ({ filter, action }) => {
-	filter('items.create', () => {
-		console.log('Creating Item!');
-	});
+  filter("items.create", () => {
+    console.log("Creating Item!");
+  });
 
-	action('items.create', () => {
-		console.log('Item created!');
-	});
+  action("items.create", () => {
+    console.log("Item created!");
+  });
 };
 ```
 
@@ -44,15 +44,15 @@ Below is an example of canceling a `create` event by throwing a standard Directu
 
 ```js
 export default ({ filter }, { exceptions }) => {
-	const { InvalidPayloadException } = exceptions;
+  const { InvalidPayloadException } = exceptions;
 
-	filter('items.create', async (input) => {
-		if (LOGIC_TO_CANCEL_EVENT) {
-			throw new InvalidPayloadException(WHAT_IS_WRONG);
-		}
+  filter("items.create", async (input) => {
+    if (LOGIC_TO_CANCEL_EVENT) {
+      throw new InvalidPayloadException(WHAT_IS_WRONG);
+    }
 
-		return input;
-	});
+    return input;
+  });
 };
 ```
 
@@ -126,12 +126,14 @@ To set up a scheduled event, provide a cron statement as the first parameter to 
 Below is an example of registering a schedule hook.
 
 ```js
-import axios from 'axios';
+import axios from "axios";
 
 export default ({ schedule }) => {
-	schedule('*/15 * * * *', async () => {
-		await axios.post('http://example.com/webhook', { message: 'Another 15 minutes passed...' });
-	});
+  schedule("*/15 * * * *", async () => {
+    await axios.post("http://example.com/webhook", {
+      message: "Another 15 minutes passed...",
+    });
+  });
 };
 ```
 
@@ -234,36 +236,36 @@ hook is currently handling as that would result in an infinite loop!
 ## Example: Sync with External
 
 ```js
-import axios from 'axios';
+import axios from "axios";
 
 export default ({ filter }, { services, exceptions }) => {
-	const { MailService } = services;
-	const { ServiceUnavailableException, ForbiddenException } = exceptions;
+  const { MailService } = services;
+  const { ServiceUnavailableException, ForbiddenException } = exceptions;
 
-	// Sync with external recipes service, cancel creation on failure
-	filter('items.create', async (input, { collection }, { schema }) => {
-		if (collection !== 'recipes') return input;
+  // Sync with external recipes service, cancel creation on failure
+  filter("items.create", async (input, { collection }, { schema }) => {
+    if (collection !== "recipes") return input;
 
-		const mailService = new MailService({ schema });
+    const mailService = new MailService({ schema });
 
-		try {
-			await axios.post('https://example.com/recipes', input);
-			await mailService.send({
-				to: 'person@example.com',
-				template: {
-					name: 'item-created',
-					data: {
-						collection: collection,
-					},
-				},
-			});
-		} catch (error) {
-			throw new ServiceUnavailableException(error);
-		}
+    try {
+      await axios.post("https://example.com/recipes", input);
+      await mailService.send({
+        to: "person@example.com",
+        template: {
+          name: "item-created",
+          data: {
+            collection: collection,
+          },
+        },
+      });
+    } catch (error) {
+      throw new ServiceUnavailableException(error);
+    }
 
-		input.syncedWithExample = true;
+    input.syncedWithExample = true;
 
-		return input;
-	});
+    return input;
+  });
 };
 ```

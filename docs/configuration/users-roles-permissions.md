@@ -68,8 +68,8 @@ case-by-case basis by administrators.
 
 ## Delete a Role
 
-1. Navigate to **Settings > Roles & Permissions
-   > [Role Name]**
+1. Navigate to \*\*Settings > Roles & Permissions
+   > [Role Name]\*\*
 2. Click <span mi btn dngr>delete</span> in the header
 3. Confirm this decision by clicking **Delete** in the dialog
 
@@ -113,8 +113,8 @@ disabled.
 
 :::
 
-1. Navigate to **Settings > Roles & Permissions
-   > [Role Name]**
+1. Navigate to \*\*Settings > Roles & Permissions
+   > [Role Name]\*\*
 2. Scroll to the **Permissions** section
 3. **Click the icon** for the collection (row) and action (column) you want to set
 4. Choose the desired permission level: <span mi icon>check</span> **All Access**, <span mi icon>block</span> **No

@@ -41,11 +41,11 @@ Parent folder. Many-to-one to folders (recursive).
 
 ```json
 {
-	"data": {
-		"id": "fc02d733-95b8-4e27-bd4b-08a32cbe4e66",
-		"name": "Test",
-		"parent": null
-	}
+  "data": {
+    "id": "fc02d733-95b8-4e27-bd4b-08a32cbe4e66",
+    "name": "Test",
+    "parent": null
+  }
 }
 ```
 
@@ -90,7 +90,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	folders: directus_folders
+  folders: directus_folders
 }
 ```
 
@@ -98,9 +98,9 @@ type Query {
 
 ```graphql
 query {
-	folders {
-		name
-	}
+  folders {
+    name
+  }
 }
 ```
 
@@ -147,7 +147,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	folders_by_id(id: ID!): directus_folders
+  folders_by_id(id: ID!): directus_folders
 }
 ```
 
@@ -155,9 +155,9 @@ type Query {
 
 ```graphql
 query {
-	folders_by_id(id: "fc02d733-95b8-4e27-bd4b-08a32cbe4e66") {
-		name
-	}
+  folders_by_id(id: "fc02d733-95b8-4e27-bd4b-08a32cbe4e66") {
+    name
+  }
 }
 ```
 
@@ -200,7 +200,7 @@ POST /folders
 // POST /folders
 
 {
-	"name": "Nature"
+  "name": "Nature"
 }
 ```
 
@@ -212,7 +212,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	create_folders_item(data: create_directus_folders_input): directus_folders
+  create_folders_item(data: create_directus_folders_input): directus_folders
 }
 ```
 
@@ -220,10 +220,10 @@ type Mutation {
 
 ```graphql
 mutation {
-	create_folders_item(data: { name: "Nature" }) {
-		id
-		name
-	}
+  create_folders_item(data: { name: "Nature" }) {
+    id
+    name
+  }
 }
 ```
 
@@ -266,12 +266,12 @@ POST /folders
 // POST /folders
 
 [
-	{
-		"name": "Nature"
-	},
-	{
-		"name": "Cities"
-	}
+  {
+    "name": "Nature"
+  },
+  {
+    "name": "Cities"
+  }
 ]
 ```
 
@@ -283,7 +283,9 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	create_folders_items(data: [create_directus_folders_input]): [directus_folders]
+  create_folders_items(
+    data: [create_directus_folders_input]
+  ): [directus_folders]
 }
 ```
 
@@ -291,10 +293,10 @@ type Mutation {
 
 ```graphql
 mutation {
-	create_folders_items(data: [{ name: "Nature" }, { name: "Cities" }]) {
-		id
-		name
-	}
+  create_folders_items(data: [{ name: "Nature" }, { name: "Cities" }]) {
+    id
+    name
+  }
 }
 ```
 
@@ -337,7 +339,7 @@ PATCH /folders/:id
 // PATCH /folders/fac21847-d5ce-4e4b-a288-9abafbdfbc87
 
 {
-	"parent": "d97c2e0e-293d-4eb5-9e1c-27d3460ad29d"
+  "parent": "d97c2e0e-293d-4eb5-9e1c-27d3460ad29d"
 }
 ```
 
@@ -349,7 +351,10 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_folders_item(id: ID!, data: update_directus_folders_input): directus_folders
+  update_folders_item(
+    id: ID!
+    data: update_directus_folders_input
+  ): directus_folders
 }
 ```
 
@@ -357,13 +362,13 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_folders_item(
-		id: "fac21847-d5ce-4e4b-a288-9abafbdfbc87"
-		data: { parent: "d97c2e0e-293d-4eb5-9e1c-27d3460ad29d" }
-	) {
-		id
-		name
-	}
+  update_folders_item(
+    id: "fac21847-d5ce-4e4b-a288-9abafbdfbc87"
+    data: { parent: "d97c2e0e-293d-4eb5-9e1c-27d3460ad29d" }
+  ) {
+    id
+    name
+  }
 }
 ```
 
@@ -414,10 +419,13 @@ PATCH /folders
 // PATCH /folders
 
 {
-	"keys": ["fac21847-d5ce-4e4b-a288-9abafbdfbc87", "a5bdb793-dd85-4ac9-882a-b42862092983"],
-	"data": {
-		"parent": "d97c2e0e-293d-4eb5-9e1c-27d3460ad29d"
-	}
+  "keys": [
+    "fac21847-d5ce-4e4b-a288-9abafbdfbc87",
+    "a5bdb793-dd85-4ac9-882a-b42862092983"
+  ],
+  "data": {
+    "parent": "d97c2e0e-293d-4eb5-9e1c-27d3460ad29d"
+  }
 }
 ```
 
@@ -429,7 +437,10 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_folders_items(ids: [ID!]!, data: update_directus_folders_input): [directus_folders]
+  update_folders_items(
+    ids: [ID!]!
+    data: update_directus_folders_input
+  ): [directus_folders]
 }
 ```
 
@@ -437,13 +448,16 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_folders_items(
-		ids: ["fac21847-d5ce-4e4b-a288-9abafbdfbc87", "a5bdb793-dd85-4ac9-882a-b42862092983"]
-		data: { parent: "d97c2e0e-293d-4eb5-9e1c-27d3460ad29d" }
-	) {
-		id
-		name
-	}
+  update_folders_items(
+    ids: [
+      "fac21847-d5ce-4e4b-a288-9abafbdfbc87"
+      "a5bdb793-dd85-4ac9-882a-b42862092983"
+    ]
+    data: { parent: "d97c2e0e-293d-4eb5-9e1c-27d3460ad29d" }
+  ) {
+    id
+    name
+  }
 }
 ```
 
@@ -492,7 +506,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_folders_item(id: ID!): delete_one
+  delete_folders_item(id: ID!): delete_one
 }
 ```
 
@@ -500,9 +514,9 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_folders_item(id: "fac21847-d5ce-4e4b-a288-9abafbdfbc87") {
-		id
-	}
+  delete_folders_item(id: "fac21847-d5ce-4e4b-a288-9abafbdfbc87") {
+    id
+  }
 }
 ```
 
@@ -557,7 +571,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_folders_items(ids: [ID!]!): delete_many
+  delete_folders_items(ids: [ID!]!): delete_many
 }
 ```
 
@@ -565,9 +579,14 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_folders_items(ids: ["fac21847-d5ce-4e4b-a288-9abafbdfbc87", "a5bdb793-dd85-4ac9-882a-b42862092983"]) {
-		ids
-	}
+  delete_folders_items(
+    ids: [
+      "fac21847-d5ce-4e4b-a288-9abafbdfbc87"
+      "a5bdb793-dd85-4ac9-882a-b42862092983"
+    ]
+  ) {
+    ids
+  }
 }
 ```
 

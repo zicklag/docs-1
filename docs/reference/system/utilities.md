@@ -54,7 +54,7 @@ POST /utils/hash/generate
 // POST /utils/hash/generate
 
 {
-	"string": "Hello World!"
+  "string": "Hello World!"
 }
 ```
 
@@ -66,7 +66,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	utils_hash_generate(string: String!): String
+  utils_hash_generate(string: String!): String
 }
 ```
 
@@ -74,7 +74,7 @@ type Mutation {
 
 ```graphql
 mutation {
-	utils_hash_generate(string: "Hello World!")
+  utils_hash_generate(string: "Hello World!")
 }
 ```
 
@@ -121,8 +121,8 @@ POST /utils/hash/verify
 // POST /utils/hash/verify
 
 {
-	"string": "Hello World!",
-	"hash": "$arg...fEfM"
+  "string": "Hello World!",
+  "hash": "$arg...fEfM"
 }
 ```
 
@@ -134,7 +134,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	utils_hash_verify(hash: String!, string: String!): Boolean
+  utils_hash_verify(hash: String!, string: String!): Boolean
 }
 ```
 
@@ -181,8 +181,8 @@ POST /utils/sort/:collection
 // POST /utils/sort/articles
 
 {
-	"item": 16,
-	"to": 51
+  "item": 16,
+  "to": 51
 }
 ```
 
@@ -194,7 +194,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	utils_sort(collection: String!, item: ID!, to: ID!): Boolean
+  utils_sort(collection: String!, item: ID!, to: ID!): Boolean
 }
 ```
 
@@ -202,7 +202,7 @@ type Mutation {
 
 ```graphql
 mutation {
-	utils_sort(collection: "articles", item: 16, to: 51)
+  utils_sort(collection: "articles", item: 16, to: 51)
 }
 ```
 
@@ -317,16 +317,16 @@ POST /utils/export/articles
 
 ```json
 {
-	"query": {
-		"filter": {
-			"status": {
-				"_eq": "published"
-			}
-		}
-	},
-	"file": {
-		"folder": "34e95c19-cc50-42f2-83c8-b97616ac2390"
-	}
+  "query": {
+    "filter": {
+      "status": {
+        "_eq": "published"
+      }
+    }
+  },
+  "file": {
+    "folder": "34e95c19-cc50-42f2-83c8-b97616ac2390"
+  }
 }
 ```
 
@@ -367,7 +367,7 @@ POST /utils/cache/clear
 
 ```graphql
 mutation {
-	utils_cache_clear
+  utils_cache_clear
 }
 ```
 

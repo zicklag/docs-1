@@ -87,28 +87,35 @@ What modules are enabled/added globally.
 
 ```json
 {
-	"data": {
-		"id": 1,
-		"project_name": "Directus",
-		"project_descriptor": "Application",
-		"project_url": null,
-		"project_color": null,
-		"project_logo": null,
-		"public_foreground": null,
-		"public_background": null,
-		"public_note": null,
-		"auth_login_attempts": 25,
-		"auth_password_policy": null,
-		"storage_asset_transform": "all",
-		"storage_asset_presets": [
-			{ "key": "small", "fit": "cover", "width": 200, "height": 161, "quality": 80, "withoutEnlargement": false }
-		],
-		"custom_css": null,
-		"storage_default_folder": null,
-		"basemaps": null,
-		"mapbox_key": null,
-		"module_bar": null
-	}
+  "data": {
+    "id": 1,
+    "project_name": "Directus",
+    "project_descriptor": "Application",
+    "project_url": null,
+    "project_color": null,
+    "project_logo": null,
+    "public_foreground": null,
+    "public_background": null,
+    "public_note": null,
+    "auth_login_attempts": 25,
+    "auth_password_policy": null,
+    "storage_asset_transform": "all",
+    "storage_asset_presets": [
+      {
+        "key": "small",
+        "fit": "cover",
+        "width": 200,
+        "height": 161,
+        "quality": 80,
+        "withoutEnlargement": false
+      }
+    ],
+    "custom_css": null,
+    "storage_default_folder": null,
+    "basemaps": null,
+    "mapbox_key": null,
+    "module_bar": null
+  }
 }
 ```
 
@@ -147,7 +154,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	settings: directus_settings
+  settings: directus_settings
 }
 ```
 
@@ -155,9 +162,9 @@ type Query {
 
 ```graphql
 query {
-	settings {
-		project_name
-	}
+  settings {
+    project_name
+  }
 }
 ```
 
@@ -198,7 +205,7 @@ PATCH /settings
 // PATCH /settings
 
 {
-	"project_url": "https://example.com/"
+  "project_url": "https://example.com/"
 }
 ```
 
@@ -210,7 +217,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_settings(data: update_directus_settings_input!): directus_settings
+  update_settings(data: update_directus_settings_input!): directus_settings
 }
 ```
 
@@ -218,10 +225,10 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_settings(data: { project_url: "https://example.com" }) {
-		project_name
-		project_url
-	}
+  update_settings(data: { project_url: "https://example.com" }) {
+    project_name
+    project_url
+  }
 }
 ```
 

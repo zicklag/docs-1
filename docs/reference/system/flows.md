@@ -67,17 +67,17 @@ UUID of the operation connected to the trigger in the flow.
 
 ```json
 {
-	"id": "2fab3b9d-0543-4b87-8a30-3c5ee66fedf1",
-	"name": "My Flow",
-	"icon": "bolt",
-	"color": "#112233",
-	"note": "Note for my flow",
-	"status": "active",
-	"trigger": "manual",
-	"accountability": "$trigger",
-	"date_created": "2022-05-11T13:14:52Z",
-	"user_created": "12e62fd0-29c7-4fd3-b3d3-c7a39933e8af",
-	"operation": "92e82998-e421-412f-a513-13701e83e4ce"
+  "id": "2fab3b9d-0543-4b87-8a30-3c5ee66fedf1",
+  "name": "My Flow",
+  "icon": "bolt",
+  "color": "#112233",
+  "note": "Note for my flow",
+  "status": "active",
+  "trigger": "manual",
+  "accountability": "$trigger",
+  "date_created": "2022-05-11T13:14:52Z",
+  "user_created": "12e62fd0-29c7-4fd3-b3d3-c7a39933e8af",
+  "operation": "92e82998-e421-412f-a513-13701e83e4ce"
 }
 ```
 
@@ -122,7 +122,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	flows: [directus_flows]
+  flows: [directus_flows]
 }
 ```
 
@@ -130,11 +130,11 @@ type Query {
 
 ```graphql
 query {
-	flows {
-		id
-		name
-		status
-	}
+  flows {
+    id
+    name
+    status
+  }
 }
 ```
 
@@ -181,7 +181,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	flows_by_id(id: ID!): directus_flows
+  flows_by_id(id: ID!): directus_flows
 }
 ```
 
@@ -189,11 +189,11 @@ type Query {
 
 ```graphql
 query {
-	flows_by_id(id: "2fc325fb-299b-4d20-a9e7-a34349dee8b2") {
-		id
-		name
-		status
-	}
+  flows_by_id(id: "2fc325fb-299b-4d20-a9e7-a34349dee8b2") {
+    id
+    name
+    status
+  }
 }
 ```
 
@@ -236,9 +236,9 @@ POST /flows
 // POST /flows
 
 {
-	"name": "My Flow",
-	"status": "active",
-	"trigger": "manual"
+  "name": "My Flow",
+  "status": "active",
+  "trigger": "manual"
 }
 ```
 
@@ -250,7 +250,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	create_flows_item(data: create_directus_flows_input!): directus_flows
+  create_flows_item(data: create_directus_flows_input!): directus_flows
 }
 ```
 
@@ -258,11 +258,13 @@ type Mutation {
 
 ```graphql
 mutation {
-	create_flows_item(data: { name: "My Flow", status: "active", trigger: "manual" }) {
-		id
-		name
-		status
-	}
+  create_flows_item(
+    data: { name: "My Flow", status: "active", trigger: "manual" }
+  ) {
+    id
+    name
+    status
+  }
 }
 ```
 
@@ -305,16 +307,16 @@ POST /flows
 // POST /flows
 
 [
-	{
-		"name": "My Flow",
-		"status": "active",
-		"trigger": "manual"
-	},
-	{
-		"name": "Another Flow",
-		"status": "active",
-		"trigger": "webhook"
-	}
+  {
+    "name": "My Flow",
+    "status": "active",
+    "trigger": "manual"
+  },
+  {
+    "name": "Another Flow",
+    "status": "active",
+    "trigger": "webhook"
+  }
 ]
 ```
 
@@ -326,7 +328,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	create_flows_items(data: [create_directus_flows_input!]!): [directus_flows]
+  create_flows_items(data: [create_directus_flows_input!]!): [directus_flows]
 }
 ```
 
@@ -394,7 +396,7 @@ PATCH /flows/:id
 // PATCH /flows/2fc325fb-299b-4d20-a9e7-a34349dee8b2
 
 {
-	"name": "My Updated Flow"
+  "name": "My Updated Flow"
 }
 ```
 
@@ -406,7 +408,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_flows_item(id: ID!, data: update_directus_flows_input): directus_flows
+  update_flows_item(id: ID!, data: update_directus_flows_input): directus_flows
 }
 ```
 
@@ -414,10 +416,13 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_flows_item(id: "2fc325fb-299b-4d20-a9e7-a34349dee8b2", data: { name: "My Updated Flow" }) {
-		id
-		name
-	}
+  update_flows_item(
+    id: "2fc325fb-299b-4d20-a9e7-a34349dee8b2"
+    data: { name: "My Updated Flow" }
+  ) {
+    id
+    name
+  }
 }
 ```
 
@@ -468,10 +473,13 @@ PATCH /flows
 // PATCH /flows
 
 {
-	"keys": ["3f2facab-7f05-4ee8-a7a3-d8b9c634a1fc", "7259bfa8-3786-45c6-8c08-cc688e7ba229"],
-	"data": {
-		"status": "inactive"
-	}
+  "keys": [
+    "3f2facab-7f05-4ee8-a7a3-d8b9c634a1fc",
+    "7259bfa8-3786-45c6-8c08-cc688e7ba229"
+  ],
+  "data": {
+    "status": "inactive"
+  }
 }
 ```
 
@@ -483,7 +491,10 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_flows_items(ids: [ID!]!, data: update_directus_flows_input): [directus_flows]
+  update_flows_items(
+    ids: [ID!]!
+    data: update_directus_flows_input
+  ): [directus_flows]
 }
 ```
 
@@ -491,14 +502,17 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_flows_items(
-		ids: ["3f2facab-7f05-4ee8-a7a3-d8b9c634a1fc", "7259bfa8-3786-45c6-8c08-cc688e7ba229"]
-		data: { status: "inactive" }
-	) {
-		id
-		name
-		status
-	}
+  update_flows_items(
+    ids: [
+      "3f2facab-7f05-4ee8-a7a3-d8b9c634a1fc"
+      "7259bfa8-3786-45c6-8c08-cc688e7ba229"
+    ]
+    data: { status: "inactive" }
+  ) {
+    id
+    name
+    status
+  }
 }
 ```
 
@@ -541,7 +555,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_flows_item(id: ID!): delete_one
+  delete_flows_item(id: ID!): delete_one
 }
 ```
 
@@ -549,9 +563,9 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_flows_item(id: "12204ee2-2c82-4d9a-b044-2f4842a11dba") {
-		id
-	}
+  delete_flows_item(id: "12204ee2-2c82-4d9a-b044-2f4842a11dba") {
+    id
+  }
 }
 ```
 
@@ -588,7 +602,11 @@ DELETE /flows
 
 ```json
 // DELETE /flows
-["25821236-8c2a-4f89-8fdc-c7d01f35877d", "02b9486e-4273-4fd5-b94b-e18fd923d1ed", "7d62f1e9-a83f-407b-84f8-1c184f014501"]
+[
+  "25821236-8c2a-4f89-8fdc-c7d01f35877d",
+  "02b9486e-4273-4fd5-b94b-e18fd923d1ed",
+  "7d62f1e9-a83f-407b-84f8-1c184f014501"
+]
 ```
 
 ### GraphQL
@@ -599,7 +617,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_flows_items(ids: [ID!]!): delete_many
+  delete_flows_items(ids: [ID!]!): delete_many
 }
 ```
 
@@ -607,15 +625,15 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_flows_items(
-		ids: [
-			"25821236-8c2a-4f89-8fdc-c7d01f35877d"
-			"02b9486e-4273-4fd5-b94b-e18fd923d1ed"
-			"7d62f1e9-a83f-407b-84f8-1c184f014501"
-		]
-	) {
-		ids
-	}
+  delete_flows_items(
+    ids: [
+      "25821236-8c2a-4f89-8fdc-c7d01f35877d"
+      "02b9486e-4273-4fd5-b94b-e18fd923d1ed"
+      "7d62f1e9-a83f-407b-84f8-1c184f014501"
+    ]
+  ) {
+    ids
+  }
 }
 ```
 

@@ -99,24 +99,24 @@ When this is enabled, the user will receive emails for notifications.
 
 ```json
 {
-	"id": "0bc7b36a-9ba9-4ce0-83f0-0a526f354e07",
-	"first_name": "Admin",
-	"last_name": "User",
-	"email": "admin@example.com",
-	"password": "**********",
-	"location": "New York City",
-	"title": "CTO",
-	"description": null,
-	"tags": null,
-	"avatar": null,
-	"language": "en-US",
-	"theme": "auto",
-	"tfa_secret": null,
-	"status": "active",
-	"role": "653925a9-970e-487a-bfc0-ab6c96affcdc",
-	"token": null,
-	"last_access": "2021-02-05T10:18:13-05:00",
-	"last_page": "/settings/roles/653925a9-970e-487a-bfc0-ab6c96affcdc"
+  "id": "0bc7b36a-9ba9-4ce0-83f0-0a526f354e07",
+  "first_name": "Admin",
+  "last_name": "User",
+  "email": "admin@example.com",
+  "password": "**********",
+  "location": "New York City",
+  "title": "CTO",
+  "description": null,
+  "tags": null,
+  "avatar": null,
+  "language": "en-US",
+  "theme": "auto",
+  "tfa_secret": null,
+  "status": "active",
+  "role": "653925a9-970e-487a-bfc0-ab6c96affcdc",
+  "token": null,
+  "last_access": "2021-02-05T10:18:13-05:00",
+  "last_page": "/settings/roles/653925a9-970e-487a-bfc0-ab6c96affcdc"
 }
 ```
 
@@ -161,7 +161,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	users: [directus_users]
+  users: [directus_users]
 }
 ```
 
@@ -169,11 +169,11 @@ type Query {
 
 ```graphql
 query {
-	users {
-		first_name
-		last_name
-		email
-	}
+  users {
+    first_name
+    last_name
+    email
+  }
 }
 ```
 
@@ -220,7 +220,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	users_by_id(id: ID!): directus_users
+  users_by_id(id: ID!): directus_users
 }
 ```
 
@@ -228,11 +228,11 @@ type Query {
 
 ```graphql
 query {
-	users_by_id(id: "72a1ce24-4748-47de-a05f-ce9af3033727") {
-		first_name
-		last_name
-		email
-	}
+  users_by_id(id: "72a1ce24-4748-47de-a05f-ce9af3033727") {
+    first_name
+    last_name
+    email
+  }
 }
 ```
 
@@ -273,7 +273,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	users_me: directus_users
+  users_me: directus_users
 }
 ```
 
@@ -281,9 +281,9 @@ type Query {
 
 ```graphql
 query {
-	users_me {
-		email
-	}
+  users_me {
+    email
+  }
 }
 ```
 
@@ -320,7 +320,7 @@ PATCH /users/me
 // PATCH /users/me
 
 {
-	"email": "new.email@example.com"
+  "email": "new.email@example.com"
 }
 ```
 
@@ -332,7 +332,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_users_me(data: update_directus_users_input!): directus_users
+  update_users_me(data: update_directus_users_input!): directus_users
 }
 ```
 
@@ -340,9 +340,9 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_users_me(data: { email: "new.email@example.com" }) {
-		email
-	}
+  update_users_me(data: { email: "new.email@example.com" }) {
+    email
+  }
 }
 ```
 
@@ -387,9 +387,9 @@ POST /users
 // POST /users
 
 {
-	"email": "another@example.com",
-	"password": "d1r3ctu5",
-	"role": "c86c2761-65d3-43c3-897f-6f74ad6a5bd7"
+  "email": "another@example.com",
+  "password": "d1r3ctu5",
+  "role": "c86c2761-65d3-43c3-897f-6f74ad6a5bd7"
 }
 ```
 
@@ -401,7 +401,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	create_users_item(data: create_directus_users_input!): directus_users
+  create_users_item(data: create_directus_users_input!): directus_users
 }
 ```
 
@@ -409,12 +409,16 @@ type Mutation {
 
 ```graphql
 mutation {
-	create_users_item(
-		data: { email: "another@example.com", password: "d1r3ctu5", role: "c86c2761-65d3-43c3-897f-6f74ad6a5bd7" }
-	) {
-		email
-		role
-	}
+  create_users_item(
+    data: {
+      email: "another@example.com"
+      password: "d1r3ctu5"
+      role: "c86c2761-65d3-43c3-897f-6f74ad6a5bd7"
+    }
+  ) {
+    email
+    role
+  }
 }
 ```
 
@@ -459,16 +463,16 @@ POST /users
 // POST /users
 
 [
-	{
-		"email": "admin@example.com",
-		"password": "p455w0rd",
-		"role": "c86c2761-65d3-43c3-897f-6f74ad6a5bd7"
-	},
-	{
-		"email": "another@example.com",
-		"password": "d1r3ctu5",
-		"role": "c86c2761-65d3-43c3-897f-6f74ad6a5bd7"
-	}
+  {
+    "email": "admin@example.com",
+    "password": "p455w0rd",
+    "role": "c86c2761-65d3-43c3-897f-6f74ad6a5bd7"
+  },
+  {
+    "email": "another@example.com",
+    "password": "d1r3ctu5",
+    "role": "c86c2761-65d3-43c3-897f-6f74ad6a5bd7"
+  }
 ]
 ```
 
@@ -480,7 +484,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	create_users_items(data: [create_directus_users_input!]!): [directus_users]
+  create_users_items(data: [create_directus_users_input!]!): [directus_users]
 }
 ```
 
@@ -488,15 +492,23 @@ type Mutation {
 
 ```graphql
 mutation {
-	create_users_items(
-		data: [
-			{ email: "admin@example.com", password: "p455w0rd", role: "c86c2761-65d3-43c3-897f-6f74ad6a5bd7" }
-			{ email: "another@example.com", password: "d1r3ctu5", role: "c86c2761-65d3-43c3-897f-6f74ad6a5bd7" }
-		]
-	) {
-		email
-		role
-	}
+  create_users_items(
+    data: [
+      {
+        email: "admin@example.com"
+        password: "p455w0rd"
+        role: "c86c2761-65d3-43c3-897f-6f74ad6a5bd7"
+      }
+      {
+        email: "another@example.com"
+        password: "d1r3ctu5"
+        role: "c86c2761-65d3-43c3-897f-6f74ad6a5bd7"
+      }
+    ]
+  ) {
+    email
+    role
+  }
 }
 ```
 
@@ -539,7 +551,7 @@ PATCH /users/:id
 // PATCH /users/72a1ce24-4748-47de-a05f-ce9af3033727
 
 {
-	"title": "CTO"
+  "title": "CTO"
 }
 ```
 
@@ -551,7 +563,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_users_item(id: ID!, data: update_directus_users_input!): directus_users
+  update_users_item(id: ID!, data: update_directus_users_input!): directus_users
 }
 ```
 
@@ -559,10 +571,13 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_users_item(id: "72a1ce24-4748-47de-a05f-ce9af3033727", data: { title: "CTO" }) {
-		first_name
-		last_name
-	}
+  update_users_item(
+    id: "72a1ce24-4748-47de-a05f-ce9af3033727"
+    data: { title: "CTO" }
+  ) {
+    first_name
+    last_name
+  }
 }
 ```
 
@@ -613,10 +628,13 @@ PATCH /users
 // PATCH /users
 
 {
-	"keys": ["72a1ce24-4748-47de-a05f-ce9af3033727", "9c3d75a8-7a5f-41a4-be0a-1488fd974511"],
-	"data": {
-		"title": "CTO"
-	}
+  "keys": [
+    "72a1ce24-4748-47de-a05f-ce9af3033727",
+    "9c3d75a8-7a5f-41a4-be0a-1488fd974511"
+  ],
+  "data": {
+    "title": "CTO"
+  }
 }
 ```
 
@@ -628,7 +646,10 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_users_items(ids: [ID!]!, data: update_directus_users_input!): [directus_users]
+  update_users_items(
+    ids: [ID!]!
+    data: update_directus_users_input!
+  ): [directus_users]
 }
 ```
 
@@ -636,13 +657,16 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_users_items(
-		ids: ["72a1ce24-4748-47de-a05f-ce9af3033727", "9c3d75a8-7a5f-41a4-be0a-1488fd974511"]
-		data: { title: "CTO" }
-	) {
-		first_name
-		last_name
-	}
+  update_users_items(
+    ids: [
+      "72a1ce24-4748-47de-a05f-ce9af3033727"
+      "9c3d75a8-7a5f-41a4-be0a-1488fd974511"
+    ]
+    data: { title: "CTO" }
+  ) {
+    first_name
+    last_name
+  }
 }
 ```
 
@@ -685,7 +709,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_users_item(id: ID!): delete_one
+  delete_users_item(id: ID!): delete_one
 }
 ```
 
@@ -693,9 +717,9 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_users_item(id: "72a1ce24-4748-47de-a05f-ce9af3033727") {
-		id
-	}
+  delete_users_item(id: "72a1ce24-4748-47de-a05f-ce9af3033727") {
+    id
+  }
 }
 ```
 
@@ -743,7 +767,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_users_items(ids: [ID!]!): delete_many
+  delete_users_items(ids: [ID!]!): delete_many
 }
 ```
 
@@ -751,9 +775,14 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_users_items(ids: ["72a1ce24-4748-47de-a05f-ce9af3033727", "9c3d75a8-7a5f-41a4-be0a-1488fd974511"]) {
-		ids
-	}
+  delete_users_items(
+    ids: [
+      "72a1ce24-4748-47de-a05f-ce9af3033727"
+      "9c3d75a8-7a5f-41a4-be0a-1488fd974511"
+    ]
+  ) {
+    ids
+  }
 }
 ```
 
@@ -805,8 +834,8 @@ POST /users/invite
 // POST /users/invite
 
 {
-	"email": "another@example.com",
-	"role": "c86c2761-65d3-43c3-897f-6f74ad6a5bd7"
+  "email": "another@example.com",
+  "role": "c86c2761-65d3-43c3-897f-6f74ad6a5bd7"
 }
 ```
 
@@ -818,7 +847,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	users_invite(email: String!, role: String!, invite_url: String): Boolean
+  users_invite(email: String!, role: String!, invite_url: String): Boolean
 }
 ```
 
@@ -826,7 +855,10 @@ type Mutation {
 
 ```graphql
 mutation {
-	users_invite(email: "another@example.com", role: "c86c2761-65d3-43c3-897f-6f74ad6a5bd7")
+  users_invite(
+    email: "another@example.com"
+    role: "c86c2761-65d3-43c3-897f-6f74ad6a5bd7"
+  )
 }
 ```
 
@@ -875,8 +907,8 @@ POST /users/invite/accept
 // POST /users/invite/accept
 
 {
-	"token": "eyJh...KmUk",
-	"password": "d1r3ctu5"
+  "token": "eyJh...KmUk",
+  "password": "d1r3ctu5"
 }
 ```
 
@@ -888,7 +920,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	users_invite_accept(token: String!, password: String!): Boolean
+  users_invite_accept(token: String!, password: String!): Boolean
 }
 ```
 
@@ -896,7 +928,7 @@ type Mutation {
 
 ```graphql
 mutation {
-	users_invite_accept(token: "eyJh...KmUk", password: "d1r3ctu5")
+  users_invite_accept(token: "eyJh...KmUk", password: "d1r3ctu5")
 }
 ```
 
@@ -947,7 +979,7 @@ POST /users/me/tfa/generate
 ```json
 // POST /users/me/tfa/generate
 {
-	"password": "d1r3ctu5"
+  "password": "d1r3ctu5"
 }
 ```
 
@@ -959,7 +991,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	users_me_tfa_generate(password: String!): users_me_tfa_generate_data
+  users_me_tfa_generate(password: String!): users_me_tfa_generate_data
 }
 ```
 
@@ -967,10 +999,10 @@ type Mutation {
 
 ```graphql
 mutation {
-	users_me_tfa_generate(password: "d1r3ctu5") {
-		secret
-		otpauth_url
-	}
+  users_me_tfa_generate(password: "d1r3ctu5") {
+    secret
+    otpauth_url
+  }
 }
 ```
 
@@ -1020,8 +1052,8 @@ POST /users/me/tfa/enable
 ```json
 // POST /users/me/tfa/enable
 {
-	"otp": "123456",
-	"secret": "3CtiutsNBmY3szHE"
+  "otp": "123456",
+  "secret": "3CtiutsNBmY3szHE"
 }
 ```
 
@@ -1033,7 +1065,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	users_me_tfa_enable(otp: String!, secret: String!): Boolean
+  users_me_tfa_enable(otp: String!, secret: String!): Boolean
 }
 ```
 
@@ -1041,7 +1073,7 @@ type Mutation {
 
 ```graphql
 mutation {
-	users_me_tfa_enable(otp: "123456", secret: "3CtiutsNBmY3szHE")
+  users_me_tfa_enable(otp: "123456", secret: "3CtiutsNBmY3szHE")
 }
 ```
 
@@ -1085,7 +1117,7 @@ POST /users/me/tfa/disable
 // POST /users/me/tfa/disable
 
 {
-	"otp": "859014"
+  "otp": "859014"
 }
 ```
 
@@ -1097,7 +1129,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	users_me_tfa_disable(otp: String!): Boolean
+  users_me_tfa_disable(otp: String!): Boolean
 }
 ```
 
@@ -1105,7 +1137,7 @@ type Mutation {
 
 ```graphql
 mutation {
-	users_me_tfa_disable(otp: "591763")
+  users_me_tfa_disable(otp: "591763")
 }
 ```
 

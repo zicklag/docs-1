@@ -54,7 +54,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	server_specs_oas: String
+  server_specs_oas: String
 }
 ```
 
@@ -62,7 +62,7 @@ type Query {
 
 ```graphql
 query {
-	server_specs_oas
+  server_specs_oas
 }
 ```
 
@@ -126,7 +126,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	server_specs_graphql(scope: graphql_sdl_scope): String
+  server_specs_graphql(scope: graphql_sdl_scope): String
 }
 ```
 
@@ -134,7 +134,7 @@ type Query {
 
 ```graphql
 query {
-	server_specs_graphql(scope: "system")
+  server_specs_graphql(scope: "system")
 }
 ```
 
@@ -171,7 +171,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	server_ping: String
+  server_ping: String
 }
 ```
 
@@ -179,7 +179,7 @@ type Query {
 
 ```graphql
 query {
-	server_ping
+  server_ping
 }
 ```
 
@@ -272,7 +272,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	server_info: server_info
+  server_info: server_info
 }
 ```
 
@@ -280,11 +280,11 @@ type Query {
 
 ```graphql
 query {
-	server_info {
-		directus {
-			version
-		}
-	}
+  server_info {
+    directus {
+      version
+    }
+  }
 }
 ```
 
@@ -407,7 +407,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	server_health: JSON
+  server_health: JSON
 }
 ```
 
@@ -415,7 +415,7 @@ type Query {
 
 ```graphql
 query {
-	server_health
+  server_health
 }
 ```
 

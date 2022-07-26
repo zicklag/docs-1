@@ -12,18 +12,18 @@ imported by the Directus host.
 Example of an entrypoint:
 
 ```js
-import ModuleComponent from './module.vue';
+import ModuleComponent from "./module.vue";
 
 export default {
-	id: 'custom',
-	name: 'Custom',
-	icon: 'box',
-	routes: [
-		{
-			path: '',
-			component: ModuleComponent,
-		},
-	],
+  id: "custom",
+  name: "Custom",
+  icon: "box",
+  routes: [
+    {
+      path: "",
+      component: ModuleComponent,
+    },
+  ],
 };
 ```
 
@@ -66,7 +66,7 @@ Example of a route component using the Vue SFC syntax:
 
 ```vue
 <template>
-	<private-view title="My Custom Module">Content goes here...</private-view>
+  <private-view title="My Custom Module">Content goes here...</private-view>
 </template>
 
 <script>
@@ -96,17 +96,17 @@ To access internal systems like the API or the stores, you can use the `useApi()
 by the `@directus/extensions-sdk` package. They can be used inside a `setup()` function like this:
 
 ```js
-import { useApi, useStores } from '@directus/extensions-sdk';
+import { useApi, useStores } from "@directus/extensions-sdk";
 
 export default {
-	setup() {
-		const api = useApi();
+  setup() {
+    const api = useApi();
 
-		const { useCollectionsStore } = useStores();
-		const collectionsStore = useCollectionsStore();
+    const { useCollectionsStore } = useStores();
+    const collectionsStore = useCollectionsStore();
 
-		// ...
-	},
+    // ...
+  },
 };
 ```
 
@@ -124,39 +124,39 @@ called `api`, which is an authenticated Axios instance. Here's an example of how
 
 ```vue
 <template>
-	<private-view title="Example Collection List">
-		<v-list>
-			<v-list-item v-for="col in collections" v-bind:key="col.collection">
-				{{ col.collection }}
-			</v-list-item>
-		</v-list>
-		<v-button v-on:click="logToConsole">Log collections to console</v-button>
-	</private-view>
+  <private-view title="Example Collection List">
+    <v-list>
+      <v-list-item v-for="col in collections" v-bind:key="col.collection">
+        {{ col.collection }}
+      </v-list-item>
+    </v-list>
+    <v-button v-on:click="logToConsole">Log collections to console</v-button>
+  </private-view>
 </template>
 
 <script>
 export default {
-	data() {
-		return {
-			collections: null,
-		};
-	},
-	methods: {
-		logToConsole: function () {
-			console.log(this.collections);
-		},
-	},
-	inject: ['api'],
-	mounted() {
-		// log the system field so you can see what attributes are available under it
-		// remove this line when you're done.
-		console.log(this.api);
+  data() {
+    return {
+      collections: null,
+    };
+  },
+  methods: {
+    logToConsole: function () {
+      console.log(this.collections);
+    },
+  },
+  inject: ["api"],
+  mounted() {
+    // log the system field so you can see what attributes are available under it
+    // remove this line when you're done.
+    console.log(this.api);
 
-		// Get a list of all available collections to use with this module
-		this.api.get('/collections?limit=-1').then((res) => {
-			this.collections = res.data.data;
-		});
-	},
+    // Get a list of all available collections to use with this module
+    this.api.get("/collections?limit=-1").then((res) => {
+      this.collections = res.data.data;
+    });
+  },
 };
 </script>
 ```

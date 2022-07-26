@@ -120,36 +120,36 @@ The table comment.
 
 ```json
 {
-	"collection": "articles",
-	"meta": {
-		"collection": "articles",
-		"icon": "article",
-		"note": "Blog posts",
-		"display_template": "{{ title }}",
-		"hidden": false,
-		"singleton": false,
-		"translations": [
-			{
-				"language": "en-US",
-				"translation": "Articles"
-			},
-			{
-				"language": "nl-NL",
-				"translation": "Artikelen"
-			}
-		],
-		"archive_field": "status",
-		"archive_value": "archived",
-		"unarchive_value": "draft",
-		"archive_app_filter": true,
-		"sort_field": "sort",
-		"item_duplication_fields": null,
-		"sort": 1
-	},
-	"schema": {
-		"name": "pages",
-		"comment": null
-	}
+  "collection": "articles",
+  "meta": {
+    "collection": "articles",
+    "icon": "article",
+    "note": "Blog posts",
+    "display_template": "{{ title }}",
+    "hidden": false,
+    "singleton": false,
+    "translations": [
+      {
+        "language": "en-US",
+        "translation": "Articles"
+      },
+      {
+        "language": "nl-NL",
+        "translation": "Artikelen"
+      }
+    ],
+    "archive_field": "status",
+    "archive_value": "archived",
+    "unarchive_value": "draft",
+    "archive_app_filter": true,
+    "sort_field": "sort",
+    "item_duplication_fields": null,
+    "sort": 1
+  },
+  "schema": {
+    "name": "pages",
+    "comment": null
+  }
 }
 ```
 
@@ -193,7 +193,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	collections: [directus_collections]
+  collections: [directus_collections]
 }
 ```
 
@@ -250,7 +250,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	collections_by_name(name: String!): directus_collections
+  collections_by_name(name: String!): directus_collections
 }
 ```
 
@@ -315,10 +315,10 @@ POST /collections
 // POST /collections
 
 {
-	"collection": "testimonials",
-	"meta": {
-		"icon": "format_quote"
-	}
+  "collection": "testimonials",
+  "meta": {
+    "icon": "format_quote"
+  }
 }
 ```
 
@@ -330,7 +330,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	create_collections_item(data: directus_collections): directus_collections
+  create_collections_item(data: directus_collections): directus_collections
 }
 ```
 
@@ -389,9 +389,9 @@ PATCH /collections/:collection
 // PATCH /collections/testimonials
 
 {
-	"meta": {
-		"note": "Short quotes from happy customers."
-	}
+  "meta": {
+    "note": "Short quotes from happy customers."
+  }
 }
 ```
 
@@ -403,7 +403,10 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_collections_item(collection: String!, data: update_directus_collections_input!): directus_collections
+  update_collections_item(
+    collection: String!
+    data: update_directus_collections_input!
+  ): directus_collections
 }
 ```
 
@@ -411,9 +414,12 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_collections_item(collection: "testimonials", data: { meta: { note: "Short quotes from happy customers." } }) {
-		collection
-	}
+  update_collections_item(
+    collection: "testimonials"
+    data: { meta: { note: "Short quotes from happy customers." } }
+  ) {
+    collection
+  }
 }
 ```
 
@@ -458,7 +464,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_collections_item(collection: String!): delete_collection
+  delete_collections_item(collection: String!): delete_collection
 }
 ```
 
@@ -466,9 +472,9 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_collections_item(collection: "articles") {
-		collection
-	}
+  delete_collections_item(collection: "articles") {
+    collection
+  }
 }
 ```
 

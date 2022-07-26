@@ -62,31 +62,31 @@ The options used by the layout. This structure is based on the used layout.
 
 ```json
 {
-	"id": 39,
-	"bookmark": null,
-	"user": "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca",
-	"role": null,
-	"collection": "directus_activity",
-	"search": null,
-	"filters": [],
-	"layout": "tabular",
-	"layout_query": {
-		"tabular": {
-			"sort": "-timestamp",
-			"fields": ["action", "collection", "timestamp", "user"],
-			"page": 1
-		}
-	},
-	"layout_options": {
-		"tabular": {
-			"widths": {
-				"action": 100,
-				"collection": 210,
-				"timestamp": 240,
-				"user": 240
-			}
-		}
-	}
+  "id": 39,
+  "bookmark": null,
+  "user": "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca",
+  "role": null,
+  "collection": "directus_activity",
+  "search": null,
+  "filters": [],
+  "layout": "tabular",
+  "layout_query": {
+    "tabular": {
+      "sort": "-timestamp",
+      "fields": ["action", "collection", "timestamp", "user"],
+      "page": 1
+    }
+  },
+  "layout_options": {
+    "tabular": {
+      "widths": {
+        "action": 100,
+        "collection": 210,
+        "timestamp": 240,
+        "user": 240
+      }
+    }
+  }
 }
 ```
 
@@ -138,7 +138,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	presets: [directus_presets]
+  presets: [directus_presets]
 }
 ```
 
@@ -146,10 +146,10 @@ type Query {
 
 ```graphql
 query {
-	presets {
-		id
-		user
-	}
+  presets {
+    id
+    user
+  }
 }
 ```
 
@@ -196,7 +196,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	presets_by_id(id: ID!): directus_presets
+  presets_by_id(id: ID!): directus_presets
 }
 ```
 
@@ -204,10 +204,10 @@ type Query {
 
 ```graphql
 query {
-	presets_by_id(id: 42) {
-		id
-		user
-	}
+  presets_by_id(id: 42) {
+    id
+    user
+  }
 }
 ```
 
@@ -250,9 +250,9 @@ POST /presets
 // POST /presets
 
 {
-	"user": "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca",
-	"layout": "cards",
-	"search": "Directus"
+  "user": "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca",
+  "layout": "cards",
+  "search": "Directus"
 }
 ```
 
@@ -264,7 +264,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	create_presets_item(data: create_directus_presets_input!): directus_presets
+  create_presets_item(data: create_directus_presets_input!): directus_presets
 }
 ```
 
@@ -272,10 +272,16 @@ type Mutation {
 
 ```graphql
 mutation {
-	create_presets_item(data: { user: "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca", layout: "cards", search: "Directus" }) {
-		id
-		user
-	}
+  create_presets_item(
+    data: {
+      user: "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca"
+      layout: "cards"
+      search: "Directus"
+    }
+  ) {
+    id
+    user
+  }
 }
 ```
 
@@ -318,17 +324,17 @@ POST /presets
 // POST /presets
 
 [
-	{
-		"collection": "directus_files",
-		"user": "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca",
-		"layout": "cards",
-		"search": "Directus"
-	},
-	{
-		"collection": "articles",
-		"user": "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca",
-		"layout": "tabular"
-	}
+  {
+    "collection": "directus_files",
+    "user": "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca",
+    "layout": "cards",
+    "search": "Directus"
+  },
+  {
+    "collection": "articles",
+    "user": "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca",
+    "layout": "tabular"
+  }
 ]
 ```
 
@@ -340,7 +346,9 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	create_presets_items(data: [create_directus_presets_input!]!): [directus_presets]
+  create_presets_items(
+    data: [create_directus_presets_input!]!
+  ): [directus_presets]
 }
 ```
 
@@ -348,20 +356,24 @@ type Mutation {
 
 ```graphql
 mutation {
-	create_presets_items(
-		data: [
-			{
-				collection: "directus_files"
-				user: "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca"
-				layout: "cards"
-				search: "Directus"
-			}
-			{ collection: "articles", user: "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca", layout: "tabular" }
-		]
-	) {
-		id
-		user
-	}
+  create_presets_items(
+    data: [
+      {
+        collection: "directus_files"
+        user: "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca"
+        layout: "cards"
+        search: "Directus"
+      }
+      {
+        collection: "articles"
+        user: "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca"
+        layout: "tabular"
+      }
+    ]
+  ) {
+    id
+    user
+  }
 }
 ```
 
@@ -404,7 +416,7 @@ PATCH /presets/:id
 // PATCH /presets/34
 
 {
-	"layout": "tabular"
+  "layout": "tabular"
 }
 ```
 
@@ -416,7 +428,10 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_presets_item(id: ID!, data: update_directus_presets_input): directus_presets
+  update_presets_item(
+    id: ID!
+    data: update_directus_presets_input
+  ): directus_presets
 }
 ```
 
@@ -424,10 +439,10 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_presets_item(id: 32, data: { layout: "tabular" }) {
-		id
-		user
-	}
+  update_presets_item(id: 32, data: { layout: "tabular" }) {
+    id
+    user
+  }
 }
 ```
 
@@ -478,10 +493,10 @@ PATCH /presets
 // PATCH /presets
 
 {
-	"keys": [15, 64],
-	"data": {
-		"layout": "tabular"
-	}
+  "keys": [15, 64],
+  "data": {
+    "layout": "tabular"
+  }
 }
 ```
 
@@ -493,7 +508,10 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_presets_items(ids: [ID!]!, data: update_directus_presets_input): [directus_presets]
+  update_presets_items(
+    ids: [ID!]!
+    data: update_directus_presets_input
+  ): [directus_presets]
 }
 ```
 
@@ -501,10 +519,10 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_presets_items(ids: [15, 64], data: { layout: "tabular" }) {
-		id
-		user
-	}
+  update_presets_items(ids: [15, 64], data: { layout: "tabular" }) {
+    id
+    user
+  }
 }
 ```
 
@@ -547,7 +565,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_presets_item(id: ID!): delete_one
+  delete_presets_item(id: ID!): delete_one
 }
 ```
 
@@ -555,9 +573,9 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_presets_item(id: 32) {
-		id
-	}
+  delete_presets_item(id: 32) {
+    id
+  }
 }
 ```
 
@@ -605,7 +623,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_presets_items(ids: [ID!]!): delete_many
+  delete_presets_items(ids: [ID!]!): delete_many
 }
 ```
 
@@ -613,9 +631,9 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_presets_items(ids: [15, 251, 810]) {
-		ids
-	}
+  delete_presets_items(ids: [15, 251, 810]) {
+    ids
+  }
 }
 ```
 

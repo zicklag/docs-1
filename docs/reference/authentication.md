@@ -124,8 +124,8 @@ POST /auth/login/:provider
 
 ```json
 {
-	"email": "admin@example.com",
-	"password": "d1r3ct5us"
+  "email": "admin@example.com",
+  "password": "d1r3ct5us"
 }
 ```
 
@@ -137,10 +137,10 @@ POST /graphql/system
 
 ```graphql
 mutation {
-	auth_login(email: "admin@example.com", password: "d1r3ctu5") {
-		access_token
-		refresh_token
-	}
+  auth_login(email: "admin@example.com", password: "d1r3ctu5") {
+    access_token
+    refresh_token
+  }
 }
 ```
 
@@ -197,7 +197,7 @@ POST /auth/refresh
 
 ```json
 {
-	"refresh_token": "gmPd...8wuB"
+  "refresh_token": "gmPd...8wuB"
 }
 ```
 
@@ -209,10 +209,10 @@ POST /graphql/system
 
 ```graphql
 mutation {
-	auth_refresh(refresh_token: "abc...def", mode: "json") {
-		access_token
-		refresh_token
-	}
+  auth_refresh(refresh_token: "abc...def", mode: "json") {
+    access_token
+    refresh_token
+  }
 }
 ```
 
@@ -249,7 +249,7 @@ POST /auth/logout
 
 ```json
 {
-	"refresh_token": "gmPd...8wuB"
+  "refresh_token": "gmPd...8wuB"
 }
 ```
 
@@ -261,7 +261,7 @@ POST /graphql/system
 
 ```graphql
 mutation {
-	auth_logout(refresh_token: "gmPd...8wuB")
+  auth_logout(refresh_token: "gmPd...8wuB")
 }
 ```
 
@@ -302,7 +302,7 @@ POST /auth/password/request
 
 ```json
 {
-	"email": "admin@example.com"
+  "email": "admin@example.com"
 }
 ```
 
@@ -314,7 +314,7 @@ POST /graphql/system
 
 ```graphql
 mutation {
-	auth_password_request(email: "admin@example.com")
+  auth_password_request(email: "admin@example.com")
 }
 ```
 
@@ -354,8 +354,8 @@ POST /auth/password/reset
 
 ```json
 {
-	"token": "eyJh...KmUk",
-	"password": "d1r3ctu5"
+  "token": "eyJh...KmUk",
+  "password": "d1r3ctu5"
 }
 ```
 
@@ -367,7 +367,7 @@ POST /graphql/system
 
 ```graphql
 mutation {
-	auth_password_reset(token: "eyJh...KmUk", password: "d1r3ctu5")
+  auth_password_reset(token: "eyJh...KmUk", password: "d1r3ctu5")
 }
 ```
 
@@ -411,23 +411,23 @@ GET /auth
 
 ```json
 {
-	"data": [
-		{
-			"name": "GitHub",
-			"driver": "oauth2",
-			"icon": "github"
-		},
-		{
-			"name": "Google",
-			"driver": "openid",
-			"icon": "google"
-		},
-		{
-			"name": "Okta",
-			"driver": "openid"
-		}
-	],
-	"disableDefault": false
+  "data": [
+    {
+      "name": "GitHub",
+      "driver": "oauth2",
+      "icon": "github"
+    },
+    {
+      "name": "Google",
+      "driver": "openid",
+      "icon": "google"
+    },
+    {
+      "name": "Okta",
+      "driver": "openid"
+    }
+  ],
+  "disableDefault": false
 }
 ```
 

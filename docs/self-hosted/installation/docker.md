@@ -61,7 +61,7 @@ When using Docker Compose, you can use the following setup to get you started - 
 (`SECRET`, `DB_PASSWORD`, ...) in production:
 
 ```yaml
-version: '3'
+version: "3"
 services:
   database:
     container_name: database
@@ -71,9 +71,9 @@ services:
     networks:
       - directus
     environment:
-      POSTGRES_USER: 'directus'
-      POSTGRES_PASSWORD: 'directus'
-      POSTGRES_DB: 'directus'
+      POSTGRES_USER: "directus"
+      POSTGRES_PASSWORD: "directus"
+      POSTGRES_DB: "directus"
 
   cache:
     container_name: cache
@@ -101,22 +101,22 @@ services:
       - cache
       - database
     environment:
-      KEY: '255d861b-5ea1-5996-9aa3-922530ec40b1'
-      SECRET: '6116487b-cda1-52c2-b5b5-c8022c45e263'
+      KEY: "255d861b-5ea1-5996-9aa3-922530ec40b1"
+      SECRET: "6116487b-cda1-52c2-b5b5-c8022c45e263"
 
-      DB_CLIENT: 'pg'
-      DB_HOST: 'database'
-      DB_PORT: '5432'
-      DB_DATABASE: 'directus'
-      DB_USER: 'directus'
-      DB_PASSWORD: 'directus'
+      DB_CLIENT: "pg"
+      DB_HOST: "database"
+      DB_PORT: "5432"
+      DB_DATABASE: "directus"
+      DB_USER: "directus"
+      DB_PASSWORD: "directus"
 
-      CACHE_ENABLED: 'true'
-      CACHE_STORE: 'redis'
-      CACHE_REDIS: 'redis://cache:6379'
+      CACHE_ENABLED: "true"
+      CACHE_STORE: "redis"
+      CACHE_REDIS: "redis://cache:6379"
 
-      ADMIN_EMAIL: 'admin@example.com'
-      ADMIN_PASSWORD: 'd1r3ctu5'
+      ADMIN_EMAIL: "admin@example.com"
+      ADMIN_PASSWORD: "d1r3ctu5"
 
       # Make sure to set this in production
       # (see https://docs.directus.io/self-hosted/config-options/#general)

@@ -109,30 +109,30 @@ Delete trigger for the foreign key constraint.
 
 ```json
 {
-	"collection": "about_us",
-	"field": "logo",
-	"related_collection": "directus_files",
-	"schema": {
-		"table": "about_us",
-		"column": "logo",
-		"foreign_key_table": "directus_files",
-		"foreign_key_column": "id",
-		"constraint_name": "about_us_logo_foreign",
-		"on_update": "NO ACTION",
-		"on_delete": "SET NULL"
-	},
-	"meta": {
-		"id": 1,
-		"junction_field": null,
-		"many_collection": "about_us",
-		"many_field": "logo",
-		"one_allowed_collections": null,
-		"one_collection": "directus_files",
-		"one_collection_field": null,
-		"one_deselect_action": "nullify",
-		"one_field": null,
-		"sort_field": null
-	}
+  "collection": "about_us",
+  "field": "logo",
+  "related_collection": "directus_files",
+  "schema": {
+    "table": "about_us",
+    "column": "logo",
+    "foreign_key_table": "directus_files",
+    "foreign_key_column": "id",
+    "constraint_name": "about_us_logo_foreign",
+    "on_update": "NO ACTION",
+    "on_delete": "SET NULL"
+  },
+  "meta": {
+    "id": 1,
+    "junction_field": null,
+    "many_collection": "about_us",
+    "many_field": "logo",
+    "one_allowed_collections": null,
+    "one_collection": "directus_files",
+    "one_collection_field": null,
+    "one_deselect_action": "nullify",
+    "one_field": null,
+    "sort_field": null
+  }
 }
 ```
 
@@ -180,7 +180,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	relations: [directus_relations]
+  relations: [directus_relations]
 }
 ```
 
@@ -188,10 +188,10 @@ type Query {
 
 ```graphql
 query {
-	relations {
-		collection
-		field
-	}
+  relations {
+    collection
+    field
+  }
 }
 ```
 
@@ -245,7 +245,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	relations_in_collection(collection: String!): [directus_relations]
+  relations_in_collection(collection: String!): [directus_relations]
 }
 ```
 
@@ -253,10 +253,10 @@ type Query {
 
 ```graphql
 query {
-	relations_in_collection(collection: "articles") {
-		collection
-		field
-	}
+  relations_in_collection(collection: "articles") {
+    collection
+    field
+  }
 }
 ```
 
@@ -303,7 +303,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	relations_by_name(collection: String!, field: String!): directus_relations
+  relations_by_name(collection: String!, field: String!): directus_relations
 }
 ```
 
@@ -311,11 +311,11 @@ type Query {
 
 ```graphql
 query {
-	relations_by_name(collection: "articles", field: "featured_image") {
-		collection
-		field
-		related_collection
-	}
+  relations_by_name(collection: "articles", field: "featured_image") {
+    collection
+    field
+    related_collection
+  }
 }
 ```
 
@@ -358,9 +358,9 @@ POST /relations
 // POST /relations
 
 {
-	"collection": "articles",
-	"field": "featured_image",
-	"related_collection": "directus_files"
+  "collection": "articles",
+  "field": "featured_image",
+  "related_collection": "directus_files"
 }
 ```
 
@@ -372,7 +372,9 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	create_relations_item(data: create_directus_relations_input!): directus_relations
+  create_relations_item(
+    data: create_directus_relations_input!
+  ): directus_relations
 }
 ```
 
@@ -380,13 +382,17 @@ type Mutation {
 
 ```graphql
 mutation {
-	create_relations_item(
-		data: { collection: "articles", field: "featured_image", related_collection: "directus_files" }
-	) {
-		collection
-		field
-		related_collection
-	}
+  create_relations_item(
+    data: {
+      collection: "articles"
+      field: "featured_image"
+      related_collection: "directus_files"
+    }
+  ) {
+    collection
+    field
+    related_collection
+  }
 }
 ```
 
@@ -429,9 +435,9 @@ PATCH /relations/:collection/:field
 // PATCH /relations/articles/author
 
 {
-	"meta": {
-		"one_field": "articles"
-	}
+  "meta": {
+    "one_field": "articles"
+  }
 }
 ```
 
@@ -443,7 +449,11 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_relations_item(collection: String!, field: String!, data: update_directus_relations_input!): directus_relations
+  update_relations_item(
+    collection: String!
+    field: String!
+    data: update_directus_relations_input!
+  ): directus_relations
 }
 ```
 
@@ -451,11 +461,15 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_relations_item(collection: "articles", field: "author", data: { meta: { one_field: "articles" } }) {
-		collection
-		field
-		related_collection
-	}
+  update_relations_item(
+    collection: "articles"
+    field: "author"
+    data: { meta: { one_field: "articles" } }
+  ) {
+    collection
+    field
+    related_collection
+  }
 }
 ```
 
@@ -498,7 +512,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_relations_item(collection: String!, field: String!): delete_one
+  delete_relations_item(collection: String!, field: String!): delete_one
 }
 ```
 
@@ -506,10 +520,10 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_relations_item(collection: "articles", field: "author") {
-		collection
-		field
-	}
+  delete_relations_item(collection: "articles", field: "author") {
+    collection
+    field
+  }
 }
 ```
 

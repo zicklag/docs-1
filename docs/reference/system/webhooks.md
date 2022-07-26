@@ -56,16 +56,16 @@ What collections to fire this webhook on.
 
 ```json
 {
-	"data": {
-		"id": 1,
-		"name": "Build Website",
-		"method": "POST",
-		"url": "https://example.com/",
-		"status": "active",
-		"data": true,
-		"actions": ["create", "update"],
-		"collections": ["articles"]
-	}
+  "data": {
+    "id": 1,
+    "name": "Build Website",
+    "method": "POST",
+    "url": "https://example.com/",
+    "status": "active",
+    "data": true,
+    "actions": ["create", "update"],
+    "collections": ["articles"]
+  }
 }
 ```
 
@@ -110,7 +110,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	webhooks: [directus_webhooks]
+  webhooks: [directus_webhooks]
 }
 ```
 
@@ -118,10 +118,10 @@ type Query {
 
 ```graphql
 query {
-	webhooks {
-		url
-		method
-	}
+  webhooks {
+    url
+    method
+  }
 }
 ```
 
@@ -162,7 +162,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	webhooks_by_id(id: ID!): directus_webhooks
+  webhooks_by_id(id: ID!): directus_webhooks
 }
 ```
 
@@ -170,11 +170,11 @@ type Query {
 
 ```graphql
 query {
-	webhooks_by_id(id: 15) {
-		url
-		actions
-		method
-	}
+  webhooks_by_id(id: 15) {
+    url
+    actions
+    method
+  }
 }
 ```
 
@@ -219,10 +219,10 @@ POST /webhooks
 // POST /webhooks
 
 {
-	"name": "Example",
-	"actions": ["create", "update"],
-	"collections": ["articles"],
-	"url": "https://example.com"
+  "name": "Example",
+  "actions": ["create", "update"],
+  "collections": ["articles"],
+  "url": "https://example.com"
 }
 ```
 
@@ -234,7 +234,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	create_webhooks_item(data: create_directus_webhooks_input!): directus_webhooks
+  create_webhooks_item(data: create_directus_webhooks_input!): directus_webhooks
 }
 ```
 
@@ -242,12 +242,17 @@ type Mutation {
 
 ```graphql
 mutation {
-	create_webhooks_item(
-		data: { name: "Example", actions: ["create", "update"], collections: ["articles"], url: "https://example.com" }
-	) {
-		id
-		name
-	}
+  create_webhooks_item(
+    data: {
+      name: "Example"
+      actions: ["create", "update"]
+      collections: ["articles"]
+      url: "https://example.com"
+    }
+  ) {
+    id
+    name
+  }
 }
 ```
 
@@ -292,18 +297,18 @@ POST /webhooks
 // POST /webhooks
 
 [
-	{
-		"name": "Example",
-		"actions": ["create", "update"],
-		"collections": ["articles"],
-		"url": "https://example.com"
-	},
-	{
-		"name": "Second Example",
-		"actions": ["delete"],
-		"collections": ["articles"],
-		"url": "https://example.com/on-delete"
-	}
+  {
+    "name": "Example",
+    "actions": ["create", "update"],
+    "collections": ["articles"],
+    "url": "https://example.com"
+  },
+  {
+    "name": "Second Example",
+    "actions": ["delete"],
+    "collections": ["articles"],
+    "url": "https://example.com/on-delete"
+  }
 ]
 ```
 
@@ -315,7 +320,9 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	create_webhooks_items(data: [create_directus_webhooks_input!]!): [directus_webhooks]
+  create_webhooks_items(
+    data: [create_directus_webhooks_input!]!
+  ): [directus_webhooks]
 }
 ```
 
@@ -323,15 +330,25 @@ type Mutation {
 
 ```graphql
 mutation {
-	create_webhooks_items(
-		data: [
-			{ name: "Example", actions: ["create", "update"], collections: ["articles"], url: "https://example.com" }
-			{ name: "Second Example", actions: ["delete"], collections: ["articles"], url: "https://example.com/on-delete" }
-		]
-	) {
-		id
-		name
-	}
+  create_webhooks_items(
+    data: [
+      {
+        name: "Example"
+        actions: ["create", "update"]
+        collections: ["articles"]
+        url: "https://example.com"
+      }
+      {
+        name: "Second Example"
+        actions: ["delete"]
+        collections: ["articles"]
+        url: "https://example.com/on-delete"
+      }
+    ]
+  ) {
+    id
+    name
+  }
 }
 ```
 
@@ -374,7 +391,7 @@ PATCH /webhooks/:id
 // PATCH /webhooks/15
 
 {
-	"name": "Build Website"
+  "name": "Build Website"
 }
 ```
 
@@ -386,7 +403,10 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_webhooks_item(id: ID!, data: update_directus_webhooks_input!): directus_webhooks
+  update_webhooks_item(
+    id: ID!
+    data: update_directus_webhooks_input!
+  ): directus_webhooks
 }
 ```
 
@@ -394,9 +414,9 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_webhooks_item(id: 15, data: { name: "Build Website" }) {
-		name
-	}
+  update_webhooks_item(id: 15, data: { name: "Build Website" }) {
+    name
+  }
 }
 ```
 
@@ -447,10 +467,10 @@ PATCH /webhooks
 // PATCH /webhooks
 
 {
-	"keys": [15, 41],
-	"data": {
-		"name": "Build Website"
-	}
+  "keys": [15, 41],
+  "data": {
+    "name": "Build Website"
+  }
 }
 ```
 
@@ -462,7 +482,10 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_webhooks_items(ids: [ID!]!, data: update_directus_webhooks_input!): [directus_webhooks]
+  update_webhooks_items(
+    ids: [ID!]!
+    data: update_directus_webhooks_input!
+  ): [directus_webhooks]
 }
 ```
 
@@ -470,9 +493,9 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_webhooks_items(ids: [15, 41], data: { name: "Build Website" }) {
-		name
-	}
+  update_webhooks_items(ids: [15, 41], data: { name: "Build Website" }) {
+    name
+  }
 }
 ```
 
@@ -515,7 +538,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_webhooks_item(id: ID!): delete_one
+  delete_webhooks_item(id: ID!): delete_one
 }
 ```
 
@@ -523,9 +546,9 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_webhooks_item(id: 15) {
-		id
-	}
+  delete_webhooks_item(id: 15) {
+    id
+  }
 }
 ```
 
@@ -574,7 +597,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_webhooks_items(ids: [ID!]!): delete_many
+  delete_webhooks_items(ids: [ID!]!): delete_many
 }
 ```
 
@@ -582,9 +605,9 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_webhooks_items(ids: [2, 15, 41]) {
-		ids
-	}
+  delete_webhooks_items(ids: [2, 15, 41]) {
+    ids
+  }
 }
 ```
 

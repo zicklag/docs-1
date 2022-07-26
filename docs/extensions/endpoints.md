@@ -19,7 +19,7 @@ Example of an entrypoint:
 
 ```js
 export default (router) => {
-	router.get('/', (req, res) => res.send('Hello, World!'));
+  router.get("/", (req, res) => res.send("Hello, World!"));
 };
 ```
 
@@ -27,12 +27,12 @@ Alternatively, you can export a configuration object to be able to customize the
 
 ```js
 export default {
-	id: 'greet',
-	handler: (router) => {
-		router.get('/', (req, res) => res.send('Hello, World!'));
-		router.get('/intro', (req, res) => res.send('Nice to meet you.'));
-		router.get('/goodbye', (req, res) => res.send('Goodbye!'));
-	},
+  id: "greet",
+  handler: (router) => {
+    router.get("/", (req, res) => res.send("Hello, World!"));
+    router.get("/intro", (req, res) => res.send("Nice to meet you."));
+    router.get("/goodbye", (req, res) => res.send("Goodbye!"));
+  },
 };
 ```
 
@@ -68,18 +68,21 @@ hook is currently handling as that would result in an infinite loop!
 
 ```js
 export default (router, { services, exceptions }) => {
-	const { ItemsService } = services;
-	const { ServiceUnavailableException } = exceptions;
+  const { ItemsService } = services;
+  const { ServiceUnavailableException } = exceptions;
 
-	router.get('/', (req, res, next) => {
-		const recipeService = new ItemsService('recipes', { schema: req.schema, accountability: req.accountability });
+  router.get("/", (req, res, next) => {
+    const recipeService = new ItemsService("recipes", {
+      schema: req.schema,
+      accountability: req.accountability,
+    });
 
-		recipeService
-			.readByQuery({ sort: ['name'], fields: ['*'] })
-			.then((results) => res.json(results))
-			.catch((error) => {
-				return next(new ServiceUnavailableException(error.message));
-			});
-	});
+    recipeService
+      .readByQuery({ sort: ["name"], fields: ["*"] })
+      .then((results) => res.json(results))
+      .catch((error) => {
+        return next(new ServiceUnavailableException(error.message));
+      });
+  });
 };
 ```

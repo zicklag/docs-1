@@ -58,15 +58,15 @@ Primary key of the item this notification references.
 
 ```json
 {
-	"id": 2,
-	"timestamp": "2021-11-24T13:57:35Z",
-	"status": "inbox",
-	"recipient": "3EE34828-B43C-4FB2-A721-5151579B08EA",
-	"sender": "497a495e-5529-4e46-8feb-2f35e9b85601",
-	"subject": "You were mentioned in articles",
-	"message": "\nHello admin@example.com,\n\rijk@directus.io has mentioned you in a comment:\n\n> Hello <em>admin@example.com</em>!\n\n<a href=\"http://localhost:8080/admin/content/articles/1\">Click here to view.</a>\n",
-	"collection": "articles",
-	"item": "1"
+  "id": 2,
+  "timestamp": "2021-11-24T13:57:35Z",
+  "status": "inbox",
+  "recipient": "3EE34828-B43C-4FB2-A721-5151579B08EA",
+  "sender": "497a495e-5529-4e46-8feb-2f35e9b85601",
+  "subject": "You were mentioned in articles",
+  "message": "\nHello admin@example.com,\n\rijk@directus.io has mentioned you in a comment:\n\n> Hello <em>admin@example.com</em>!\n\n<a href=\"http://localhost:8080/admin/content/articles/1\">Click here to view.</a>\n",
+  "collection": "articles",
+  "item": "1"
 }
 ```
 
@@ -111,7 +111,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	notifications: [directus_notifications]
+  notifications: [directus_notifications]
 }
 ```
 
@@ -119,11 +119,11 @@ type Query {
 
 ```graphql
 query {
-	notifications {
-		id
-		recipient
-		subject
-	}
+  notifications {
+    id
+    recipient
+    subject
+  }
 }
 ```
 
@@ -170,7 +170,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	notifications_by_id(id: ID!): directus_notifications
+  notifications_by_id(id: ID!): directus_notifications
 }
 ```
 
@@ -178,13 +178,13 @@ type Query {
 
 ```graphql
 query {
-	notifications_by_id(id: 42) {
-		id
-		sender
-		recipient
-		message
-		subject
-	}
+  notifications_by_id(id: 42) {
+    id
+    sender
+    recipient
+    message
+    subject
+  }
 }
 ```
 
@@ -227,8 +227,8 @@ POST /notifications
 // POST /notifications
 
 {
-	"recipient": "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca",
-	"subject": "Hi there!"
+  "recipient": "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca",
+  "subject": "Hi there!"
 }
 ```
 
@@ -240,7 +240,9 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	create_notifications_item(data: create_directus_notifications_input!): directus_notifications
+  create_notifications_item(
+    data: create_directus_notifications_input!
+  ): directus_notifications
 }
 ```
 
@@ -248,10 +250,15 @@ type Mutation {
 
 ```graphql
 mutation {
-	create_notifications_item(data: { recipient: "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca", subject: "Hi there!" }) {
-		id
-		recipient
-	}
+  create_notifications_item(
+    data: {
+      recipient: "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca"
+      subject: "Hi there!"
+    }
+  ) {
+    id
+    recipient
+  }
 }
 ```
 
@@ -294,16 +301,16 @@ POST /notifications
 // POST /notifications
 
 [
-	{
-		"collection": "directus_files",
-		"recipient": "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca",
-		"message": "Hi there! You should check out these files"
-	},
-	{
-		"collection": "articles",
-		"recipient": "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca",
-		"message": "Hi there! You should check out these articles"
-	}
+  {
+    "collection": "directus_files",
+    "recipient": "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca",
+    "message": "Hi there! You should check out these files"
+  },
+  {
+    "collection": "articles",
+    "recipient": "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca",
+    "message": "Hi there! You should check out these articles"
+  }
 ]
 ```
 
@@ -315,7 +322,9 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	create_notifications_items(data: [create_directus_notifications_input!]!): [directus_notifications]
+  create_notifications_items(
+    data: [create_directus_notifications_input!]!
+  ): [directus_notifications]
 }
 ```
 
@@ -323,23 +332,23 @@ type Mutation {
 
 ```graphql
 mutation {
-	create_notifications_items(
-		data: [
-			{
-				collection: "directus_files"
-				recipient: "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca"
-				message: "Hi there! You should check out these files"
-			}
-			{
-				collection: "articles"
-				recipient: "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca"
-				message: "Hi there! You should check out these articles"
-			}
-		]
-	) {
-		id
-		recipient
-	}
+  create_notifications_items(
+    data: [
+      {
+        collection: "directus_files"
+        recipient: "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca"
+        message: "Hi there! You should check out these files"
+      }
+      {
+        collection: "articles"
+        recipient: "410b5772-e63f-4ae6-9ea2-39c3a31bd6ca"
+        message: "Hi there! You should check out these articles"
+      }
+    ]
+  ) {
+    id
+    recipient
+  }
 }
 ```
 
@@ -389,7 +398,7 @@ PATCH /notifications/:id
 // PATCH /notifications/34
 
 {
-	"message": "This is my updated notification"
+  "message": "This is my updated notification"
 }
 ```
 
@@ -401,7 +410,10 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_notifications_item(id: ID!, data: update_directus_notifications_input): directus_notifications
+  update_notifications_item(
+    id: ID!
+    data: update_directus_notifications_input
+  ): directus_notifications
 }
 ```
 
@@ -409,10 +421,13 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_notifications_item(id: 32, data: { message: "This is my updated notification" }) {
-		id
-		message
-	}
+  update_notifications_item(
+    id: 32
+    data: { message: "This is my updated notification" }
+  ) {
+    id
+    message
+  }
 }
 ```
 
@@ -463,10 +478,10 @@ PATCH /notifications
 // PATCH /notifications
 
 {
-	"keys": [15, 64],
-	"data": {
-		"message": "Updated message!"
-	}
+  "keys": [15, 64],
+  "data": {
+    "message": "Updated message!"
+  }
 }
 ```
 
@@ -478,7 +493,10 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_notifications_items(ids: [ID!]!, data: update_directus_notifications_input): [directus_notifications]
+  update_notifications_items(
+    ids: [ID!]!
+    data: update_directus_notifications_input
+  ): [directus_notifications]
 }
 ```
 
@@ -486,10 +504,13 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_notifications_items(ids: [15, 64], data: { message: "Updated message!" }) {
-		id
-		recipient
-	}
+  update_notifications_items(
+    ids: [15, 64]
+    data: { message: "Updated message!" }
+  ) {
+    id
+    recipient
+  }
 }
 ```
 
@@ -532,7 +553,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_notifications_item(id: ID!): delete_one
+  delete_notifications_item(id: ID!): delete_one
 }
 ```
 
@@ -540,9 +561,9 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_notifications_item(id: 32) {
-		id
-	}
+  delete_notifications_item(id: 32) {
+    id
+  }
 }
 ```
 
@@ -590,7 +611,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_notifications_items(ids: [ID!]!): delete_many
+  delete_notifications_items(ids: [ID!]!): delete_many
 }
 ```
 
@@ -598,9 +619,9 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_notifications_items(ids: [15, 251, 810]) {
-		ids
-	}
+  delete_notifications_items(ids: [15, 251, 810]) {
+    ids
+  }
 }
 ```
 

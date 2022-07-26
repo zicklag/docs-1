@@ -40,8 +40,8 @@ Since App styles are inserted/removed whenever a component is rendered, you'll n
 
 ```css
 body {
-	--family-sans-serif: 'Comic Sans MS';
-	--primary: MediumSlateBlue !important;
+  --family-sans-serif: "Comic Sans MS";
+  --primary: MediumSlateBlue !important;
 }
 ```
 

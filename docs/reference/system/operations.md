@@ -70,17 +70,17 @@ The flow containing this operation. Many-to-one to [flows](/reference/system/flo
 
 ```json
 {
-	"id": "585b04cd-2821-4dcc-a563-ae5d29ecace2",
-	"name": "Log a Message",
-	"key": "log_message",
-	"type": "log",
-	"position_x": 12,
-	"position_y": 24,
-	"date_created": "2022-05-11T13:14:52Z",
-	"user_created": "12e62fd0-29c7-4fd3-b3d3-c7a39933e8af",
-	"resolve": "bf4099c0-c54c-4736-ab4e-95e2487595e4",
-	"reject": null,
-	"flow": "22544db5-93f7-48e2-a028-7ae02c8fe49a"
+  "id": "585b04cd-2821-4dcc-a563-ae5d29ecace2",
+  "name": "Log a Message",
+  "key": "log_message",
+  "type": "log",
+  "position_x": 12,
+  "position_y": 24,
+  "date_created": "2022-05-11T13:14:52Z",
+  "user_created": "12e62fd0-29c7-4fd3-b3d3-c7a39933e8af",
+  "resolve": "bf4099c0-c54c-4736-ab4e-95e2487595e4",
+  "reject": null,
+  "flow": "22544db5-93f7-48e2-a028-7ae02c8fe49a"
 }
 ```
 
@@ -125,7 +125,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	operations: [directus_operations]
+  operations: [directus_operations]
 }
 ```
 
@@ -133,11 +133,11 @@ type Query {
 
 ```graphql
 query {
-	operations {
-		id
-		name
-		key
-	}
+  operations {
+    id
+    name
+    key
+  }
 }
 ```
 
@@ -184,7 +184,7 @@ POST /graphql/system
 
 ```graphql
 type Query {
-	operations_by_id(id: ID!): directus_operations
+  operations_by_id(id: ID!): directus_operations
 }
 ```
 
@@ -192,11 +192,11 @@ type Query {
 
 ```graphql
 query {
-	operations_by_id(id: 42) {
-		id
-		name
-		key
-	}
+  operations_by_id(id: 42) {
+    id
+    name
+    key
+  }
 }
 ```
 
@@ -239,9 +239,9 @@ POST /operations
 // POST /operations
 
 {
-	"name": "My Log",
-	"key": "my_log",
-	"type": "log"
+  "name": "My Log",
+  "key": "my_log",
+  "type": "log"
 }
 ```
 
@@ -253,7 +253,9 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	create_operations_item(data: create_directus_operations_input!): directus_operations
+  create_operations_item(
+    data: create_directus_operations_input!
+  ): directus_operations
 }
 ```
 
@@ -261,11 +263,11 @@ type Mutation {
 
 ```graphql
 mutation {
-	create_operations_item(data: { name: "My Log", key: "my_log", type: "log" }) {
-		id
-		name
-		key
-	}
+  create_operations_item(data: { name: "My Log", key: "my_log", type: "log" }) {
+    id
+    name
+    key
+  }
 }
 ```
 
@@ -308,16 +310,16 @@ POST /operations
 // POST /operations
 
 [
-	{
-		"name": "My Log",
-		"key": "my_log",
-		"type": "log"
-	},
-	{
-		"name": "Send Notification",
-		"key": "send_notification",
-		"type": "notification"
-	}
+  {
+    "name": "My Log",
+    "key": "my_log",
+    "type": "log"
+  },
+  {
+    "name": "Send Notification",
+    "key": "send_notification",
+    "type": "notification"
+  }
 ]
 ```
 
@@ -329,7 +331,9 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	create_operations_items(data: [create_directus_operations_input!]!): [directus_operations]
+  create_operations_items(
+    data: [create_directus_operations_input!]!
+  ): [directus_operations]
 }
 ```
 
@@ -397,7 +401,7 @@ PATCH /operation/:id
 // PATCH /operation/7d62f1e9-a83f-407b-84f8-1c184f014501
 
 {
-	"name": "My Updated Operation"
+  "name": "My Updated Operation"
 }
 ```
 
@@ -409,7 +413,10 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_operations_item(id: ID!, data: update_directus_operations_input): directus_operations
+  update_operations_item(
+    id: ID!
+    data: update_directus_operations_input
+  ): directus_operations
 }
 ```
 
@@ -417,10 +424,13 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_operations_item(id: "7d62f1e9-a83f-407b-84f8-1c184f014501", data: { name: "My Updated Operation" }) {
-		id
-		name
-	}
+  update_operations_item(
+    id: "7d62f1e9-a83f-407b-84f8-1c184f014501"
+    data: { name: "My Updated Operation" }
+  ) {
+    id
+    name
+  }
 }
 ```
 
@@ -471,10 +481,13 @@ PATCH /operations
 // PATCH /operations
 
 {
-	"keys": ["6a25fb7c-26a4-4dcb-a474-d47b6a203a38", "07ac467e-1900-4c62-9637-8dac2ab97f71"],
-	"data": {
-		"name": "Updated Operations"
-	}
+  "keys": [
+    "6a25fb7c-26a4-4dcb-a474-d47b6a203a38",
+    "07ac467e-1900-4c62-9637-8dac2ab97f71"
+  ],
+  "data": {
+    "name": "Updated Operations"
+  }
 }
 ```
 
@@ -486,7 +499,10 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	update_operations_items(ids: [ID!]!, data: update_directus_operations_input): [directus_operations]
+  update_operations_items(
+    ids: [ID!]!
+    data: update_directus_operations_input
+  ): [directus_operations]
 }
 ```
 
@@ -494,14 +510,17 @@ type Mutation {
 
 ```graphql
 mutation {
-	update_operations_items(
-		ids: ["6a25fb7c-26a4-4dcb-a474-d47b6a203a38", "07ac467e-1900-4c62-9637-8dac2ab97f71"]
-		data: { name: "Updated Operations" }
-	) {
-		id
-		name
-		key
-	}
+  update_operations_items(
+    ids: [
+      "6a25fb7c-26a4-4dcb-a474-d47b6a203a38"
+      "07ac467e-1900-4c62-9637-8dac2ab97f71"
+    ]
+    data: { name: "Updated Operations" }
+  ) {
+    id
+    name
+    key
+  }
 }
 ```
 
@@ -544,7 +563,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_operations_item(id: ID!): delete_one
+  delete_operations_item(id: ID!): delete_one
 }
 ```
 
@@ -552,9 +571,9 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_operations_item(id: "07ac467e-1900-4c62-9637-8dac2ab97f71") {
-		id
-	}
+  delete_operations_item(id: "07ac467e-1900-4c62-9637-8dac2ab97f71") {
+    id
+  }
 }
 ```
 
@@ -591,7 +610,11 @@ DELETE /operations
 
 ```json
 // DELETE /operations
-["a791ce73-41a2-4fb7-8f67-c7ba176cc719", "4e57ab0e-f4ec-47b5-9dad-e36f08a25642", "5fe0a6f6-18ad-4bb3-94c6-2e033246c784"]
+[
+  "a791ce73-41a2-4fb7-8f67-c7ba176cc719",
+  "4e57ab0e-f4ec-47b5-9dad-e36f08a25642",
+  "5fe0a6f6-18ad-4bb3-94c6-2e033246c784"
+]
 ```
 
 ### GraphQL
@@ -602,7 +625,7 @@ POST /graphql/system
 
 ```graphql
 type Mutation {
-	delete_operations_items(ids: [ID!]!): delete_many
+  delete_operations_items(ids: [ID!]!): delete_many
 }
 ```
 
@@ -610,15 +633,15 @@ type Mutation {
 
 ```graphql
 mutation {
-	delete_operations_items(
-		ids: [
-			"a791ce73-41a2-4fb7-8f67-c7ba176cc719"
-			"4e57ab0e-f4ec-47b5-9dad-e36f08a25642"
-			"5fe0a6f6-18ad-4bb3-94c6-2e033246c784"
-		]
-	) {
-		ids
-	}
+  delete_operations_items(
+    ids: [
+      "a791ce73-41a2-4fb7-8f67-c7ba176cc719"
+      "4e57ab0e-f4ec-47b5-9dad-e36f08a25642"
+      "5fe0a6f6-18ad-4bb3-94c6-2e033246c784"
+    ]
+  ) {
+    ids
+  }
 }
 ```
 

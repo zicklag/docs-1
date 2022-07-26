@@ -23,25 +23,25 @@
 
 ```json
 {
-	"title": {
-		"_contains": "Directus"
-	}
+  "title": {
+    "_contains": "Directus"
+  }
 }
 ```
 
 ```json
 {
-	"owner": {
-		"_eq": "$CURRENT_USER"
-	}
+  "owner": {
+    "_eq": "$CURRENT_USER"
+  }
 }
 ```
 
 ```json
 {
-	"datetime": {
-		"_lte": "$NOW"
-	}
+  "datetime": {
+    "_lte": "$NOW"
+  }
 }
 ```
 
@@ -90,11 +90,11 @@ you can set a rule for the `author.name` field using the following syntax.
 
 ```json
 {
-	"author": {
-		"name": {
-			"_eq": "Rijk van Zanten"
-		}
-	}
+  "author": {
+    "name": {
+      "_eq": "Rijk van Zanten"
+    }
+  }
 }
 ```
 
@@ -106,36 +106,36 @@ into Logical Operators. However, they cannot be sub-nested into Filter Rules.
 
 ```json
 {
-	"_or": [
-		{
-			"_and": [
-				{
-					"user_created": {
-						"_eq": "$CURRENT_USER"
-					}
-				},
-				{
-					"status": {
-						"_in": ["published", "draft"]
-					}
-				}
-			]
-		},
-		{
-			"_and": [
-				{
-					"user_created": {
-						"_neq": "$CURRENT_USER"
-					}
-				},
-				{
-					"status": {
-						"_in": ["published"]
-					}
-				}
-			]
-		}
-	]
+  "_or": [
+    {
+      "_and": [
+        {
+          "user_created": {
+            "_eq": "$CURRENT_USER"
+          }
+        },
+        {
+          "status": {
+            "_in": ["published", "draft"]
+          }
+        }
+      ]
+    },
+    {
+      "_and": [
+        {
+          "user_created": {
+            "_neq": "$CURRENT_USER"
+          }
+        },
+        {
+          "status": {
+            "_in": ["published"]
+          }
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -145,11 +145,11 @@ When applying filters to a one-to-many field, Directus will default to a "some" 
 
 ```json
 {
-	"categories": {
-		"name": {
-			"_eq": "Recipe"
-		}
-	}
+  "categories": {
+    "name": {
+      "_eq": "Recipe"
+    }
+  }
 }
 ```
 
@@ -158,13 +158,13 @@ by using the explicit `_some` and `_none` operators, for example:
 
 ```json
 {
-	"categories": {
-		"_none": {
-			"name": {
-				"_eq": "Recipe"
-			}
-		}
-	}
+  "categories": {
+    "_none": {
+      "name": {
+        "_eq": "Recipe"
+      }
+    }
+  }
 }
 ```
 
