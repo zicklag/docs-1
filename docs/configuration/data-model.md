@@ -6,6 +6,7 @@
 [[toc]]
 
 ## Creating a Collection
+
 1. Click <span mi btn>add</span> in the <span mi icon dark>list_alt</span> Data Model header
 2. Enter a unique **Collection Name** to be used as the database table name, API collection key, and App collection name
    default.
