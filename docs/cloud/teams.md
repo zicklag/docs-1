@@ -19,7 +19,7 @@ See the [Overview](/cloud/overview) to learn how Accounts, Teams and Projects in
 
 To create a Team:
 
-1. Open the Team Menu in the Dashboard Header and click **"Create a Team <span mi icon prmry>add</span>"**.\
+1. Open the Team Menu in the Dashboard Header and click **"Create a Team <span mi icon="prmry">add</span>"**.\
    The Create Team page will open.
 2. Enter a Team Name and Team Slug, then click **"Save"**.
 
@@ -40,7 +40,7 @@ To update Team Settings:
 
 1. Open the Team Menu in the Dashboard Header and select the desired Team.
 2. Click **"Settings"** to enter the Team Settings page.
-3. Toggle <span mi icon prmry>edit</span> to allow edits.
+3. Toggle <span mi icon="prmry">edit</span> to allow edits.
 4. Edit Team Name and Team Slug as desired.
 5. Click the **"Save"** button.
 
@@ -238,7 +238,7 @@ To destroy a Team:
 1. Open the Team Menu in the Dashboard Header and select the desired Team.
 2. Click **"Settings"** to enter the Team Settings Page.
 3. Scroll down to the "Destroy this Team" section.
-4. Toggle <span mi icon dngr>local_fire_department</span> and an input box will appear.
+4. Toggle <span mi icon="dngr">local_fire_department</span> and an input box will appear.
 5. Type the Team Name into the input box.
 6. Click **"Destroy Team"**.
 

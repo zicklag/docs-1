@@ -161,18 +161,18 @@ the same edit across multiple Items. Follow the steps below to batch delete, arc
    - **Table Layout:** Click <span mi icon>check_box_outline_blank</span> in the left-most column.
    - **Card Layout:** Click <span mi icon>radio_button_unchecked</span> in the upper left-hand corner of each Card.
 
-Once Items are selected, the following buttons will appear in the Page Header: <span mi btn muted>delete</span>
-<span mi btn muted>archive</span> <span mi btn muted>edit</span>
+Once Items are selected, the following buttons will appear in the Page Header: <span mi btn="muted">delete</span>
+<span mi btn="muted">archive</span> <span mi btn="muted">edit</span>
 
 **Delete**\
-4. Click <span mi btn dngr>delete</span> in the header and a popup will appear.\
+4. Click <span mi btn="dngr">delete</span> in the header and a popup will appear.\
 5. Click **"Delete"** to confirm the action.
 
 **Archive**\
-4. Click <span mi btn muted>archive</span> in the header and a popup will appear.\
+4. Click <span mi btn="muted">archive</span> in the header and a popup will appear.\
 5. Click **"Delete"** to confirm the action.
 
 **Edit**\
-4. Click <span mi btn muted>edit</span> in the header and the Item Page will open.\
+4. Click <span mi btn="muted">edit</span> in the header and the Item Page will open.\
 5. Update Item details as desired.\
 6. Click <span mi btn>check</span> to confirm batch edits on all Items.

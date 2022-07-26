@@ -48,9 +48,9 @@ app. There are two ways to change the app language. First, administrators can se
 [language preference](/app/user-directory/#user-preferences). Also note that if a language is chosen for which there is
 no Translation String, the translation key _(from step three)_ will be displayed instead.
 
-:::tip <span mi icon prmry>add</span> New Translation String
+:::tip <span mi icon="prmry">add</span> New Translation String
 
-You can also click <span mi icon prmry>add</span> **New Translation String** in the <span mi icon>translate</span>
+You can also click <span mi icon="prmry">add</span> **New Translation String** in the <span mi icon>translate</span>
 dropdown menu to create a new Translation String on the fly.
 
 :::

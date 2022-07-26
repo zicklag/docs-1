@@ -38,7 +38,7 @@ the API. Any type of file can be uploaded, _not just images_. When a Folder is s
 
 1. Select a Folder. There are two options:
    - Choose desired Folder from the Navigation Bar.
-   - Click <span mi btn sec>create_new_folder</span> in the Page Header, name your folder, and click **"Save"**.
+   - Click <span mi btn="sec">create_new_folder</span> in the Page Header, name your folder, and click **"Save"**.
 2. Click <span mi btn>add</span> in the Page Header. A popover will appear.
 3. Upload your file. You have 3 options:
    - Drag a file from your desktop to the popup.
@@ -60,10 +60,10 @@ custom Fields. This page has the same features and functionality as the
 Notice the following Buttons in the Header:
 
 - <span mi btn >check</span> – Saves any edits made to the file.
-- <span mi btn sec>tune</span> – Please see [Edit an Image](#edit-an-image) to learn more.
-- <span mi btn sec>save_alt</span> – Downloads the file to your current device.
-- <span mi btn sec>drive_file_move</span> – Moves selected File(s) to another Folder.
-- <span mi btn dngr>delete</span> – Permanently removes the File and its metadata. This action is permanent and cannot
+- <span mi btn="sec">tune</span> – Please see [Edit an Image](#edit-an-image) to learn more.
+- <span mi btn="sec">save_alt</span> – Downloads the file to your current device.
+- <span mi btn="sec">drive_file_move</span> – Moves selected File(s) to another Folder.
+- <span mi btn="dngr">delete</span> – Permanently removes the File and its metadata. This action is permanent and cannot
   be undone.
 
 ::: tip Deleting Files Linked to Items
@@ -115,7 +115,7 @@ Rotate, crop, flip, or adjust aspect ratios of an image.
 </video>
 
 1. From the **File Library**, click a file to open its detail page.
-2. Click the <span mi btn sec>tune</span> button in the top right to open the image editor.
+2. Click the <span mi btn="sec">tune</span> button in the top right to open the image editor.
 3. Make your changes and click <span mi btn>check</span> in the top right to save the updates.
 
 ::: danger Irreversible Change
@@ -163,7 +163,7 @@ batch deleting, sorting, filtering, searching, etc. Folders can also be managed
   <source src="https://cdn.directus.io/docs/v9/app-guide/file-library/file-library-20220305A/create-a-folder-20220305A.mp4" type="video/mp4">
 </video>
 
-1. From the **File Library**, click on the <span mi btn sec>create_new_folder</span> button located in the Header.
+1. From the **File Library**, click on the <span mi btn="sec">create_new_folder</span> button located in the Header.
 2. Fill in a Folder name as desired.
 3. Click **"Save"**.
 

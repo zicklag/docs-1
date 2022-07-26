@@ -46,14 +46,14 @@ page has the same functionality as the [Collection Page](/app/content/collection
 - **Sort Direction** — Toggles ascending & descending sort order.
 - **Search** — Enables classic type-based searching.
 - **Filter** — Enables advanced query-based search.
-- <span mi btn sec>person_add</span> — [Invite people](/configuration/users-roles-permissions/#inviting-a-user) to
+- <span mi btn="sec">person_add</span> — [Invite people](/configuration/users-roles-permissions/#inviting-a-user) to
   become Users via email.
 - <span mi btn>add</span> — [Create User](/configuration/users-roles-permissions/#creating-a-user) manually.
 
 _The following are only visible once Users are selected._
 
-- <span mi btn warn>edit</span> — Opens a User Details page to apply a single edit across multiple Users.
-- **<span mi btn dngr>delete</span>** — Deletes one or more Users.
+- <span mi btn="warn">edit</span> — Opens a User Details page to apply a single edit across multiple Users.
+- **<span mi btn="dngr">delete</span>** — Deletes one or more Users.
 
 ### Layout Options
 
@@ -106,7 +106,7 @@ A User's profile page can be accessed from the User Directory or by clicking the
 
 ![User Profile Sidebar Information](https://cdn.directus.io/docs/v9/app-guide/user-directory/user-directory-20220222A/user-profile-sidebar-information-20220309A.webp)
 
-Information in the Sidebar _(denoted by <span mi icon dark>info</span> when Sidebar is minimized)_ also includes the
+Information in the Sidebar _(denoted by <span mi icon="dark">info</span> when Sidebar is minimized)_ also includes the
 following read-only details:
 
 - **User Key** — The Primary Key of the User.
@@ -140,7 +140,7 @@ To create a User, follow these steps:
 To invite User(s) via email, follow these steps:
 
 1. Navigate to the **User Library**.
-2. Click <span mi btn sec>person_add</span> in the page header.
+2. Click <span mi btn="sec">person_add</span> in the page header.
 3. Enter one or more email addresses, separated by a comma and a space.\
    _Tip: You can also add emails on a new line._
 4. Select the **Role** you want to assign to the User(s).
@@ -176,7 +176,7 @@ To archive a User, follow these steps:
 
 1. Navigate to the **User Library**.
 2. Click the User you with to archive to go to their User Detail page.
-3. Click on <span mi btn warn>archive</span> in the header.
+3. Click on <span mi btn="warn">archive</span> in the header.
 4. Confirm this decision by clicking **Archive** in the dialog.
 
 ::: warning Disables Access
@@ -191,7 +191,7 @@ To delete a User, follow these steps:
 
 1. Navigate to the **User Library**.
 2. Select one or more Users you wish to delete.
-3. Click on <span mi btn dngr>delete</span> in the header.
+3. Click on <span mi btn="dngr">delete</span> in the header.
 4. Confirm this decision by clicking **Delete** in the dialog.
 
 ::: danger Irreversible Change

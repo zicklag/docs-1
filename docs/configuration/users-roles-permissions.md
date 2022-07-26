@@ -68,7 +68,7 @@ case-by-case basis by administrators.
 
 1. Navigate to \*\*Settings > Roles & Permissions
    > [Role Name]\*\*
-2. Click <span mi btn dngr>delete</span> in the header
+2. Click <span mi btn="dngr">delete</span> in the header
 3. Confirm this decision by clicking **Delete** in the dialog
 
 ::: warning Users in a Deleted Role

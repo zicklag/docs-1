@@ -85,7 +85,7 @@ To archive an Item, follow the steps below. [Learn More](/configuration/data-mod
 
 1. Navigate to the Content Module and select the desired Collection.
 2. Select the desired Item. The Item Page will open.
-3. Click <span mi btn warn>archive</span> located in the header and a popup will appear.
+3. Click <span mi btn="warn">archive</span> located in the header and a popup will appear.
 4. Click **"Archive"** to confirm the action.
 
 ::: warning Requires Configuration
@@ -113,7 +113,7 @@ can be compared side-by-side to the current state. To revert an Item, follow the
 3. Click **"Revisions"** in the page sidebar.
 4. Click on the revision you wish to preview and a side menu will appear.
 5. Go to **"Revisions Made"** in the side menu and view the revision differences.
-6. Click <span mi btn muted>restore</span> to revert the Item's values and return to the Item Page.
+6. Click <span mi btn="muted">restore</span> to revert the Item's values and return to the Item Page.
 7. Click <span mi btn>check</span> to confirm and exit to the Collection Page.
 
 :::tip Revision Preview
@@ -169,7 +169,7 @@ To delete an Item, follow the steps below.
 
 1. Navigate to the Content Module and select the desired Collection.
 2. Select the desired Item. The Item Page will open.
-3. Click <span mi btn dngr>delete</span> located in the header and a popup will appear.
+3. Click <span mi btn="dngr">delete</span> located in the header and a popup will appear.
 4. Click **"Delete"** to confirm the action.
 
 :::tip Soft-Delete

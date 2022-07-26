@@ -5,7 +5,7 @@
 
 ## Creating a Collection
 
-1. Click <span mi btn>add</span> in the <span mi icon dark>list_alt</span> Data Model header
+1. Click <span mi btn>add</span> in the <span mi icon="dark">list_alt</span> Data Model header
 2. Enter a unique **Collection Name** to be used as the database table name, API collection key, and App collection name
    default.
 3. Configure the name and type of the **Primary Key**.
@@ -124,7 +124,7 @@ allows for configuring which parent/relational field values will be copied.
 ## Deleting a Collection
 
 1. Navigate to **Settings > Data Model > [Collection Name]**
-2. Click <span mi btn dngr>delete</span> in the header
+2. Click <span mi btn="dngr">delete</span> in the header
 3. Confirm this decision by clicking **Delete** in the dialog
 
 ::: danger Irreversible Change
@@ -147,7 +147,7 @@ collections in an order that makes the most sense for your project. By dragging 
 collection, you can turn any collection into a group-parent. Groups can even be nested within other groups.
 
 Additionally, you can add special "folder" collections that are exclusively used for organizational purposes, and don't
-hold any data themselves. This can be done by clicking <span mi btn sec>create_new_folder</span> in the top right of the
+hold any data themselves. This can be done by clicking <span mi btn="sec">create_new_folder</span> in the top right of the
 page.
 
 ### Renaming Collections

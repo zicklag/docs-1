@@ -1,16 +1,7 @@
-/* 
-.logo {
-    background-color:#000000;
-  }  
-*/
-
-/*  */
-
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons+Outlined");
 
 /* Material Icons */
-
-@import url("https://fonts.googleapis.com/css2?family=Material+Icons+Outlined");
 
 [mi] {
   font-family: "Material Icons Outlined";
@@ -41,47 +32,54 @@
   margin-bottom: 4px;
 }
 
+[btn~=sec] {
+  background-color: var(--primary-light);
+  color: var(--primary);
+}
+
+[btn~=muted] {
+  background-color: var(--background-normal);
+  color: var(--foreground-normal);
+}
+
+
+[btn~=warn] {
+  background-color: var(--warning-light);
+  color: var(--warning);
+}
+
+[btn~=dngr] {
+  background-color: var(--danger-light);
+  color: var(--danger);
+}
+
+[btn~=action] {
+  background-color: var(--success-light);
+  color: var(--success);
+}
+
+/* ----------icon--------- */
+
 [icon] {
   vertical-align: middle;
   margin-bottom: 4px;
   color: var(--foreground-subdued);
 }
 
-[prmry] {
+[icon~=prmry] {
   color: var(--primary);
 }
 
-[sec] {
-  background-color: var(--primary-light);
-  color: var(--primary);
-}
-
-[dark] {
+[icon~=dark] {
   color: var(--foreground-normal-alt);
 }
 
-[warn] {
-  background-color: var(--warning-light);
-  color: var(--warning);
-}
-
-[dngr] {
-  background-color: var(--danger-light);
+[icon~=dngr] {
   color: var(--danger);
 }
-
-[action] {
-  background-color: var(--success-light);
-  color: var(--success);
-}
-
-[muted] {
-  background-color: var(--background-normal);
-  color: var(--foreground-normal);
-}
+/* --------------------------------------------------- */
 
 /* The Previous "Vuepress" Color Theme */
-
 :root {
   --border-normal: #d3dae4;
   --border-subdued: #f0f4f9;

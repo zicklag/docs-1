@@ -26,7 +26,7 @@ case, simply go to the [Login Page](https://directus.cloud/login) and follow the
 To update your name or email:
 
 1. Click <span mi icon>account_circle</span> in the Dashboard Header to enter your Account page.
-2. Toggle <span mi icon prmry>edit</span> to allow edits.
+2. Toggle <span mi icon="prmry">edit</span> to allow edits.
 3. Change your name and email as desired.
 4. Click the **"Save"** button.
 
@@ -49,7 +49,7 @@ To reset your password:
 To destroy your Directus Cloud Account:
 
 1. Click <span mi icon>account_circle</span> in the Dashboard Header to enter your Account page.
-2. Toggle <span mi icon dngr>local_fire_department</span> and an input box will appear.
+2. Toggle <span mi icon="dngr">local_fire_department</span> and an input box will appear.
 3. Type in your password, then click the **"Destroy Account"** button.
 
 ::: danger
