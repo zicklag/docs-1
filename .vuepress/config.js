@@ -506,6 +506,29 @@ module.exports = {
 					},
 					{
 						type: "page",
+						path: "/contributing/tests",
+						title: "Running Tests",
+						collapsable: false,
+						children: [
+							{
+								type: "page",
+								path: "/contributing/tests/app-unit-tests",
+								title: "App Unit Tests",
+							},
+							{
+								type: "page",
+								path: "/contributing/tests/api-unit-tests",
+								title: "API Unit Tests",
+							},
+							{
+								type: "page",
+								path: "/contributing/tests/blackbox-tests",
+								title: "Blackbox Tests",
+							},
+						],
+					},
+					{
+						type: "page",
 						path: "/contributing/github-ci",
 						title: "GitHub CI",
 					},

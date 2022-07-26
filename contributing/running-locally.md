@@ -151,18 +151,4 @@ Check our Wiki for a [guide](https://github.com/directus/directus/wiki/debugging
 Tests run automatically through GitHub Actions. However you may wish to run the tests locally especially when you write
 tests.
 
-Install [Docker](https://docs.docker.com/get-docker/) and ensure that the service is running.
-
-```bash
-# Ensure that you are testing on the lastest codebase
-pnpm -r build
-
-# Clean up in case you ran the tests before
-docker compose -f tests/docker-compose.yml down -v
-
-# Start the necessary containers
-docker compose -f tests/docker-compose.yml up -d --wait
-
-# Run the tests
-pnpm test:e2e
-```
+Refer to [Running Tests](/contributing/running-tests) for instructions to run the tests.
