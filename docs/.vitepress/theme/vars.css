@@ -309,7 +309,7 @@ img, video {
   --vp-c-text-code: var(--vp-c-indigo-soft);
 
   /* @Modified */
-  --vp-c-brand: var(--primary);
+  --vp-c-brand: var(--primary-2);
   --vp-c-brand-lighter: var(--primary-light-2);
   --vp-c-brand-light: var(--primary-light-1);
   --vp-c-brand-dark: var(--primary-dark-1);
