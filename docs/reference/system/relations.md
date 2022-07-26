@@ -4,25 +4,12 @@ pageClass: page-reference
 
 # Relations
 
-<div class="two-up">
-<div class="left">
-
 > What data is linked to what other data. Allows you to assign authors to articles, products to sales, and whatever
 > other structures you can think of. [Learn more about Relationships](/getting-started/glossary/#relationships).
-
-</div>
-<div class="right">
-
-</div>
-</div>
 
 ---
 
 ## The Relation Object
-
-<div class="two-up">
-<div class="left">
-<div class="definitions">
 
 `collection` **string**\
 Name of the collection. This matches the table name in the database.
@@ -33,13 +20,9 @@ Name of the field that holds the related primary key. This matches the column na
 `related_collection` **string**\
 Name of the related collection. This matches the table name in the database.
 
-</div>
-
 #### Meta
 
 Directus metadata. Used to enable non-database relationship types
-
-<div class="definitions">
 
 `id` **integer**\
 Primary key of the metadata row in `directus_relations`.
@@ -71,14 +54,10 @@ What field is used to hold the sort field.
 `junction_field` **string**\
 What field connects two relations in a many-to-many (o2m-m2o) context.
 
-</div>
-
 #### Schema
 
 "Raw" database information. Based on the database vendor used, different information might be returned. The following
 are available for all drivers.
-
-<div class="definitions">
 
 `table` **string**\
 The table name.
@@ -100,10 +79,6 @@ Update trigger for the foreign key constraint.
 
 `on_delete` **string**\
 Delete trigger for the foreign key constraint.
-
-</div>
-</div>
-<div class="right">
 
 ```json
 {
@@ -134,17 +109,11 @@ Delete trigger for the foreign key constraint.
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## List relations
 
 List all relations that exist in Directus.
-
-<div class="two-up">
-<div class="left">
 
 ::: tip Permissions
 
@@ -160,9 +129,6 @@ Doesn't support any query parameters.
 ### Returns
 
 Array of [relation objects](#the-relation-object). If no items are available, data will be an empty array.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -193,17 +159,11 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## List relations in collection
 
 List all relations that exist in a given collection.
-
-<div class="two-up">
-<div class="left">
 
 ::: tip Permissions
 
@@ -219,9 +179,6 @@ Doesn't support any query parameters.
 ### Returns
 
 Array of [relation objects](#the-relation-object). If no items are available, data will be an empty array.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -258,17 +215,11 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Retrieve a relation
 
 List an existing relation by collection/field name.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -277,9 +228,6 @@ Doesn't support any query parameters.
 ### Returns
 
 Returns the requested [relation object](#the-relation-object).
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -317,17 +265,11 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Create a Relation
 
 Create a new relation.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -340,9 +282,6 @@ A partial [relation object](#the-relation-object).
 ### Returns
 
 Returns the [relation object](#the-relation-object) for the created relation.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -394,17 +333,11 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Update a Relation
 
 Update an existing relation.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -417,9 +350,6 @@ A partial [relation object](#the-relation-object).
 ### Returns
 
 Returns the [relation object](#the-relation-object) for the created relation.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -471,24 +401,15 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Delete a Relation
 
 Delete an existing relation.
 
-<div class="two-up">
-<div class="left">
-
 ### Returns
 
 Empty body.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -524,6 +445,3 @@ mutation {
   }
 }
 ```
-
-</div>
-</div>

@@ -4,25 +4,12 @@ pageClass: page-reference
 
 # Permissions
 
-<div class="two-up">
-<div class="left">
-
 > Permissions are assigned to Roles, and control data access throughout the platform.
 > [Learn more about Permissions](/getting-started/glossary/#permissions).
-
-</div>
-<div class="right">
-
-</div>
-</div>
 
 ---
 
 ## The Permission Object
-
-<div class="two-up">
-<div class="left">
-<div class="definitions">
 
 `id` **uuid**\
 Primary key of the permission rule.
@@ -48,10 +35,6 @@ Additional default values for the role.
 `fields` **array**\
 What fields the user is allowed to alter.
 
-</div>
-</div>
-<div class="right">
-
 ```json
 {
   "id": 34,
@@ -71,17 +54,11 @@ What fields the user is allowed to alter.
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## List Permissions
 
 List all permissions that exist in Directus.
-
-<div class="two-up">
-<div class="left">
 
 ::: tip Permissions
 
@@ -98,9 +75,6 @@ Supports all [global query parameters](/reference/query).
 
 An array of up to [limit](/reference/query/#limit) [permission objects](#the-permission-object). If no items are
 available, data will be an empty array.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -135,17 +109,11 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Retrieve a Permission
 
 List an existing permission by primary key.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -154,9 +122,6 @@ Supports all [global query parameters](/reference/query).
 ### Returns
 
 Returns the requested [permission object](#the-permission-object).
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -213,17 +178,11 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Create a Permission Rule
 
 Create a new permission rule
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -236,9 +195,6 @@ A partial [permissions object](#the-permission-object). `action` and `collection
 ### Returns
 
 Returns the [permission object](#the-permission-object) for the created permission.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -292,17 +248,11 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Create Multiple Permission Rules
 
 Create multiple new permission rules
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -315,9 +265,6 @@ An array of partial [permissions objects](#the-permission-object). `action` and 
 ### Returns
 
 Returns the [permission objects](#the-permission-object) for the created permissions.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -387,17 +334,11 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Update Permissions
 
 Update an existing permissions rule.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -410,9 +351,6 @@ A partial [permissions object](#the-permission-object).
 ### Returns
 
 Returns the [permission object](#the-permission-object) for the updated permission.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -457,17 +395,11 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Update Multiple Permissions
 
 Update multiple existing permissions rules.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -477,22 +409,15 @@ Supports all [global query parameters](/reference/query).
 
 ### Request Body
 
-<div class="definitions">
-
 `keys` **Required**\
 Array of primary keys of the permissions you'd like to update.
 
 `data` **Required**\
 Any of [the permission object](#the-permission-object)'s properties.
 
-</div>
-
 ### Returns
 
 Returns the [permission object](#the-permission-object) for the updated permissions.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -543,24 +468,15 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Delete Permissions
 
 Delete an existing permissions rule
 
-<div class="two-up">
-<div class="left">
-
 ### Returns
 
 Empty body.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -596,17 +512,11 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Delete Multiple Permissions
 
 Delete multiple existing permissions rules
-
-<div class="two-up">
-<div class="left">
 
 ### Request Body
 
@@ -615,9 +525,6 @@ An array of permission primary keys
 ### Returns
 
 Empty body.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -654,8 +561,5 @@ mutation {
   }
 }
 ```
-
-</div>
-</div>
 
 ---

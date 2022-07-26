@@ -4,24 +4,11 @@ pageClass: page-reference
 
 # Operations
 
-<div class="two-up">
-<div class="left">
-
 > Operations are the building blocks of Data Flows within Directus.
-
-</div>
-<div class="right">
-
-</div>
-</div>
 
 ---
 
 ## The Operation Object
-
-<div class="two-up">
-<div class="left">
-<div class="definitions">
 
 `id` **uuid**\
 Primary key of the operation.
@@ -62,10 +49,6 @@ an [operation](#the-operation-object).
 `flow` **many-to-one**\
 The flow containing this operation. Many-to-one to [flows](/reference/system/flows/#the-flow-object).
 
-</div>
-</div>
-<div class="right">
-
 ```json
 {
   "id": "585b04cd-2821-4dcc-a563-ae5d29ecace2",
@@ -82,17 +65,11 @@ The flow containing this operation. Many-to-one to [flows](/reference/system/flo
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## List Operations
 
 List all operations that exist in Directus.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -102,9 +79,6 @@ Supports all [global query parameters](/reference/query).
 
 An array of up to [limit](/reference/query/#limit) [operation objects](#the-operation-object). If no items are
 available, data will be an empty array.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -139,17 +113,11 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Retrieve an operation
 
 List an existing operation by primary key.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -158,9 +126,6 @@ Supports all [global query parameters](/reference/query).
 ### Returns
 
 Returns the requested [operation object](#the-operation-object).
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -198,17 +163,11 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Create an Operation
 
 Create a new operation.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -221,9 +180,6 @@ A partial [operation object](#the-operation-object).
 ### Returns
 
 Returns the [operation object](#the-operation-object) for the created operation.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -269,17 +225,11 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Create Multiple Operations
 
 Create multiple new operations.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -292,9 +242,6 @@ An array of partial [operation objects](#the-operation-object).
 ### Returns
 
 Returns the [operation object](#the-operation-object) for the created operation.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -360,17 +307,11 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Update an Operation
 
 Update an existing operation.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -383,9 +324,6 @@ A partial [operation object](#the-operation-object).
 ### Returns
 
 Returns the [operation object](#the-operation-object) for the updated operation.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -432,17 +370,11 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Update Multiple Operations
 
 Update multiple existing operations.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -450,22 +382,15 @@ Supports all [global query parameters](/reference/query).
 
 ### Request Body
 
-<div class="definitions">
-
 `keys` **Required**\
 Array of primary keys of the operations you'd like to update.
 
 `data` **Required**\
 Any of [the operation object](#the-operation-object)'s properties.
 
-</div>
-
 ### Returns
 
 Returns the [operation objects](#the-operation-object) for the updated operations.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -522,24 +447,15 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Delete an Operation
 
 Delete an existing operation.
 
-<div class="two-up">
-<div class="left">
-
 ### Returns
 
 Empty body.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -575,17 +491,11 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Delete Multiple Operations
 
 Delete multiple existing operations.
-
-<div class="two-up">
-<div class="left">
 
 ### Request Body
 
@@ -594,9 +504,6 @@ An array of operations primary keys
 ### Returns
 
 Empty body.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -643,15 +550,9 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ## Triggering an operation
 
 Trigger an operation based on primary key.
-
-<div class="two-up">
-<div class="left">
 
 ### Request Body
 
@@ -660,9 +561,6 @@ Payload for the operation, if needed.
 ### Returns
 
 Result of the operation, if any.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -676,6 +574,3 @@ POST /operations/trigger/:operation_uuid
 // POST /flows/trigger/202a940b-a00b-47df-b832-369c53f13122
 // Payload here
 ```
-
-</div>
-</div>

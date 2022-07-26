@@ -4,25 +4,12 @@ pageClass: page-reference
 
 # Fields
 
-<div class="two-up">
-<div class="left">
-
 > Fields are individual pieces of content within an item. They are mapped to columns in the database.
 > [Learn more about Fields](/getting-started/glossary/#fields).
-
-</div>
-<div class="right">
-
-</div>
-</div>
 
 ---
 
 ## The Field Object
-
-<div class="two-up">
-<div class="left">
-<div class="definitions">
 
 `collection` **string**\
 Name of the collection the field resides in.
@@ -33,13 +20,9 @@ The identifier of the field. This matches the table column name.
 `type` **string**\
 The Directus data type of the field. See [Types](/getting-started/glossary/#app) for possible options.
 
-</div>
-
 #### Meta
 
 Directus metadata, primarily used in the Admin App. Meta is optional.
-
-<div class="definitions">
 
 `id` **integer**\
 Primary key of the metadata row in `directus_fields`.
@@ -84,15 +67,11 @@ How this field's name is displayed in the different languages in the Admin App.
 `note` **string**\
 Short description displayed in the Admin App.
 
-</div>
-
 #### Schema
 
 "Raw" database information. Based on the database vendor used, different information might be returned. The following
 are available for all drivers. Note: schema is optional. If a field exist in directus_fields, but not in the database,
 it's an alias commonly used for relational (o2m) or presentation purposes in the Admin App.
-
-<div class="definitions">
 
 `name` **string**\
 Identifier of the field. Matches the column name in the database.
@@ -129,10 +108,6 @@ If the current column has a foreign key constraint, this points to the related t
 
 `comment` **string**\
 Comment as stored in the database.
-
-</div>
-</div>
-<div class="right">
 
 ```json
 {
@@ -173,17 +148,11 @@ Comment as stored in the database.
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## List All Fields
 
 List the available fields.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -192,9 +161,6 @@ This endpoint doesn't currently support any query parameters.
 ### Returns
 
 An array of [field objects](#the-field-object).
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -225,17 +191,11 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## List Fields in Collection
 
 List the available fields in a given collection.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -244,9 +204,6 @@ This endpoint doesn't currently support any query parameters.
 ### Returns
 
 An array of [field objects](#the-field-object).
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -283,17 +240,11 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Retrieve a Field
 
 Get a single field in a given collection.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -302,9 +253,6 @@ This endpoint doesn't currently support any query parameters.
 ### Returns
 
 A [field object](#the-field-object).
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -341,25 +289,17 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Create a Field
 
 Create a new field in the given collection.
 
-<div class="two-up">
-<div class="left">
-
 ### Query Parameters
 
 This endpoint doesn't currently support any query parameters.
 
 ### Request Body
-
-<div class="definitions">
 
 `field` **Required**\
 Field key, also used as the column name.
@@ -374,14 +314,9 @@ Any of the optional meta values in the [field object](#the-field-object).
 `schema`\
 Any of the optional schema values in the [field object](#the-field-object).
 
-</div>
-
 ### Returns
 
 The [field object](#the-field-object) for the created field.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -440,25 +375,17 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Update a Field
 
 Updates the given field in the given collection.
 
-<div class="two-up">
-<div class="left">
-
 ### Query Parameters
 
 This endpoint doesn't currently support any query parameters.
 
 ### Request Body
-
-<div class="definitions">
 
 `type`\
 The new type for the field.
@@ -476,16 +403,11 @@ Any of the optional meta values in the [field object](#the-field-object).
 `schema`\
 Any of the optional schema values in the [field object](#the-field-object).
 
-</div>
-
 Updating the field name is not supported at this time.
 
 ### Returns
 
 The [field object](#the-field-object) for the updated field.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -542,26 +464,17 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Delete a Field
 
 Deletes the given field in the given collection.
 
-<div class="two-up">
-<div class="left">
-
 ::: danger Destructive
 
 Be aware, this will delete the column from the database, including all data in it. This action can't be undone.
 
 :::
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -597,6 +510,3 @@ mutation {
   }
 }
 ```
-
-</div>
-</div>

@@ -4,25 +4,12 @@ pageClass: page-reference
 
 # Users
 
-<div class="two-up">
-<div class="left">
-
 > Directus Users are the individual accounts that let you authenticate into the API and App. Each user belongs to a Role
 > which defines its granular Permissions. [Learn more about Users](/getting-started/glossary/#users/).
-
-</div>
-<div class="right">
-
-</div>
-</div>
 
 ---
 
 ## The User Object
-
-<div class="two-up">
-<div class="left">
-<div class="definitions">
 
 `id` **uuid**\
 Primary key of the user.
@@ -91,10 +78,6 @@ Required data about the user as provided by the third party auth provider, if us
 `email_notifications` **boolean**\
 When this is enabled, the user will receive emails for notifications.
 
-</div>
-</div>
-<div class="right">
-
 ```json
 {
   "id": "0bc7b36a-9ba9-4ce0-83f0-0a526f354e07",
@@ -118,17 +101,11 @@ When this is enabled, the user will receive emails for notifications.
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## List Users
 
 List all users that exist in Directus.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -138,9 +115,6 @@ Supports all [global query parameters](/reference/query).
 
 An array of up to [limit](/reference/query/#limit) [user objects](#the-user-object). If no items are available, data
 will be an empty array.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -175,17 +149,11 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Retrieve a User
 
 List an existing user by primary key.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -194,9 +162,6 @@ Supports all [global query parameters](/reference/query).
 ### Returns
 
 Returns the requested [user object](#the-user-object).
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -234,17 +199,11 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Retrieve the Current User
 
 Retrieve the currently authenticated user.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -253,9 +212,6 @@ Supports all [global query parameters](/reference/query).
 ### Returns
 
 Returns the [user object](#the-user-object) for the currently authenticated user.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -285,17 +241,11 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Update the Current User
 
 Update the authenticated user.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -304,9 +254,6 @@ Supports all [global query parameters](/reference/query).
 ### Returns
 
 Returns the updated [user object](#the-user-object) for the authenticated user.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -344,17 +291,11 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Create a User
 
 Create a new user
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -369,9 +310,6 @@ A partial [user object](#the-user-object).
 ### Returns
 
 Returns the [user object](#the-user-object) for the created user.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -420,17 +358,11 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Create Multiple Users
 
 Create multiple new users
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -445,9 +377,6 @@ An array of partial [user objects](#the-user-object).
 ### Returns
 
 Returns the [user objects](#the-user-object) for the created users.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -510,17 +439,11 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Update a User
 
 Update an existing user.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -533,9 +456,6 @@ A partial [user object](#the-user-object).
 ### Returns
 
 Returns the [user object](#the-user-object) for the updated user.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -579,17 +499,11 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Update Multiple Users
 
 Update multiple existing users.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -597,22 +511,15 @@ Supports all [global query parameters](/reference/query).
 
 ### Request Body
 
-<div class="definitions">
-
 `keys` **Required**\
 Array of primary keys of the users you'd like to update.
 
 `data` **Required**\
 Any of [the user object](#the-user-object)'s properties.
 
-</div>
-
 ### Returns
 
 Returns the [user objects](#the-user-object) for the updated users.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -668,24 +575,15 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Delete a User
 
 Delete an existing user.
 
-<div class="two-up">
-<div class="left">
-
 ### Returns
 
 Empty body.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -721,17 +619,11 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Delete Multiple Users
 
 Delete multiple existing users.
-
-<div class="two-up">
-<div class="left">
 
 ### Request Body
 
@@ -740,9 +632,6 @@ An array of user primary keys
 ### Returns
 
 Empty body.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -784,21 +673,13 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Invite a new User
 
 Invite a new user by email.
 
-<div class="two-up">
-<div class="left">
-
 ### Request Body
-
-<div class="definitions">
 
 `email` **Required**\
 User email to invite.
@@ -811,14 +692,9 @@ Provide a custom invite url which the link in the email will lead to. The invite
 **Note**: You need to configure the
 [`USER_INVITE_URL_ALLOW_LIST` environment variable](/self-hosted/config-options/#security) to enable this feature.
 
-</div>
-
 ### Returns
 
 Empty body.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -860,9 +736,6 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Accept User Invite
@@ -871,12 +744,7 @@ Accept your invite. The [invite user endpoint](#invite-a-new-user) sends the ema
 
 This link includes a token, which is then used to activate the invited user.
 
-<div class="two-up">
-<div class="left">
-
 ### Request Body
-
-<div class="definitions">
 
 `token` **Required**\
 Accept invite token.
@@ -884,14 +752,9 @@ Accept invite token.
 `password` **Required**\
 Password for the user.
 
-</div>
-
 ### Returns
 
 Empty body.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -930,41 +793,24 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Generate Two-Factor Authentication Secret
 
 Generates a secret and returns the URL to be used in an authenticator app.
 
-<div class="two-up">
-<div class="left">
-
 ### Request Body
-
-<div class="definitions">
 
 `password` **Required**\
 The user's password.
 
-</div>
-
 ### Returns
-
-<div class="definitions">
 
 `secret` **string**\
 OTP secret to be saved in the authenticator app.
 
 `otpauth_url` **string**\
 `otpauth://` formatted URL. Can be rendered as QR code and used in most authenticator apps.
-
-</div>
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -1004,21 +850,13 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Enable Two-Factor Authentication
 
 Adds a TFA secret to the user account.
 
-<div class="two-up">
-<div class="left">
-
 ### Request Body
-
-<div class="definitions">
 
 `secret` **Required**\
 The TFA secret from tfa/generate.
@@ -1026,18 +864,9 @@ The TFA secret from tfa/generate.
 `otp` **Required**\
 OTP generated with the secret, to recheck if the user has a correct TFA setup
 
-</div>
-
 ### Returns
 
-<div class="definitions">
-
 Empty response.
-
-</div>
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -1075,33 +904,20 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Disable Two-Factor Authentication
 
 Disables two-factor authentication by removing the OTP secret from the user.
 
-<div class="two-up">
-<div class="left">
-
 ### Request Body
-
-<div class="definitions">
 
 `otp` **Required**\
 One-time password generated by the authenticator app.
 
-</div>
-
 ### Returns
 
 Empty response.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -1138,6 +954,3 @@ mutation {
   users_me_tfa_disable(otp: "591763")
 }
 ```
-
-</div>
-</div>

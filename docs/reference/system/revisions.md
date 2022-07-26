@@ -4,25 +4,12 @@ pageClass: page-reference
 
 # Revisions
 
-<div class="two-up">
-<div class="left">
-
 > Revisions are individual changes to items made. Directus keeps track of changes made, so you're able to revert to a
 > previous state at will. [Learn more about Revisions](/getting-started/glossary/#revisions).
-
-</div>
-<div class="right">
-
-</div>
-</div>
 
 ---
 
 ## The Revision Object
-
-<div class="two-up">
-<div class="left">
-<div class="definitions">
 
 `id` **integer**\
 Primary key of the revision.
@@ -45,10 +32,6 @@ Snapshot of the changes made in this revision.
 `parent` **many-to-one**\
 Parent revision that triggered this revision. Many-to-one to revisions (recursive).
 
-</div>
-</div>
-<div class="right">
-
 ```json
 {
   "id": 368,
@@ -65,17 +48,11 @@ Parent revision that triggered this revision. Many-to-one to revisions (recursiv
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## List revisions
 
 List all revisions that exist in Directus.
-
-<div class="two-up">
-<div class="left">
 
 ::: tip Permissions
 
@@ -92,9 +69,6 @@ Supports all [global query parameters](/reference/query).
 
 An array of up to [limit](/reference/query/#limit) [revision objects](#the-revision-object). If no items are available,
 data will be an empty array.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -129,17 +103,11 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Retrieve a revision
 
 List an existing revision by primary key.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -148,9 +116,6 @@ Supports all [global query parameters](/reference/query).
 ### Returns
 
 Returns the requested [revision object](#the-revision-object).
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -187,6 +152,3 @@ query {
   }
 }
 ```
-
-</div>
-</div>

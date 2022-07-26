@@ -4,15 +4,8 @@ pageClass: page-reference
 
 # Global Query Parameters
 
-<div class="two-up">
-<div class="left">
-
 > Most Directus API Endpoint operations can be manipulated with the following parameters. It is important to understand
 > them to get the most out of the platform.
-
-</div>
-<div class="right"><p></p>
-<div class="table-of-contents">
 
 - [Fields](#fields)
 - [Filter](#filter)
@@ -31,25 +24,12 @@ pageClass: page-reference
   - [Total Count](#total-count)
   - [Filter Count](#filter-count)
 
-</div>
-</div>
-</div>
-
 ---
 
 ## Fields
 
-<div class="two-up">
-<div class="left">
-
 Choose the fields that are returned in the current dataset. This parameter supports dot notation to request nested
 relational fields. You can also use a wildcard (\*) to include all fields at a specific depth.
-
-</div>
-</div>
-
-<div class="two-up">
-<div class="left">
 
 ### Examples
 
@@ -96,9 +76,6 @@ sections.item:videos.source
 
 In GraphQL, this can be achieved using Union Types.
 
-</div>
-<div class="right">
-
 ### REST API
 
 ```
@@ -115,25 +92,13 @@ In GraphQL, this can be achieved using Union Types.
 
 _Natively supported in GraphQL_
 
-</div>
-</div>
-
 ---
 
 ## Filter
 
-<div class="two-up">
-<div class="left">
-
 Used to search items in a collection that matches the filter's conditions. The filter param follows
 [the Filter Rules spec](/reference/filter-rules), which includes additional information on logical operators (AND/OR),
 nested relational filtering, and dynamic variables.
-
-</div>
-</div>
-
-<div class="two-up">
-<div class="left">
 
 ### Examples
 
@@ -186,9 +151,6 @@ filter the related items themselves, take a look at [the `deep` parameter](#deep
 
 :::
 
-</div>
-<div class="right">
-
 ### REST API
 
 ```
@@ -209,33 +171,18 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Search
-
-<div class="two-up">
-<div class="left">
 
 The search parameter allows you to perform a search on all string and text type fields within a collection. It's an easy
 way to search for an item without creating complex field filters – though it is far less optimized. It only searches the
 root item's fields, related item fields are not included.
 
-</div>
-</div>
-
-<div class="two-up">
-<div class="left">
-
 ### Example
 
 Find all items that mention Directus\
 `Directus`
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -253,24 +200,12 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Sort
 
-<div class="two-up">
-<div class="left">
-
 What field(s) to sort by. Sorting defaults to ascending, but a minus sign (`-`) can be used to reverse this to
 descending order. Fields are prioritized by the order in the parameter.
-
-</div>
-</div>
-
-<div class="two-up">
-<div class="left">
 
 ### Examples
 
@@ -279,9 +214,6 @@ Sort by creation date descending\
 
 Sort by a "sort" field, followed by publish date descending\
 `sort, -publish_date`
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -304,23 +236,11 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Limit
 
-<div class="two-up">
-<div class="left">
-
 Set the maximum number of items that will be returned. The default limit is set to `100`.
-
-</div>
-</div>
-
-<div class="two-up">
-<div class="left">
 
 ### Examples
 
@@ -336,9 +256,6 @@ Depending on the size of your collection, fetching unlimited data may result in 
 with caution.
 
 :::
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -356,31 +273,16 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Offset
 
-<div class="two-up">
-<div class="left">
-
 Skip the first `n` items in the response. Can be used for pagination.
-
-</div>
-</div>
-
-<div class="two-up">
-<div class="left">
 
 ### Examples
 
 Get items 101—200\
 `100`
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -398,24 +300,12 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Page
 
-<div class="two-up">
-<div class="left">
-
 An alternative to `offset`. Page is a way to set `offset` under the hood by calculating `limit * page`. Page is
 1-indexed.
-
-</div>
-</div>
-
-<div class="two-up">
-<div class="left">
 
 ### Examples
 
@@ -424,9 +314,6 @@ Get items 1-100\
 
 Get items 101-200\
 `2`
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -444,23 +331,11 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Aggregation & Grouping
 
-<div class="two-up">
-<div class="left">
-
 Aggregate functions allow you to perform calculations on a set of values, returning a single result.
-
-</div>
-</div>
-
-<div class="two-up">
-<div class="left">
 
 The following aggregation functions are available in Directus:
 
@@ -485,9 +360,6 @@ value. This allows for things like _"Average rating per month"_ or _"Total sales
 The `groupBy` query allows for grouping on multiple fields simultaneously. Combined with the [Functions](#functions),
 this allows for aggregate reporting per year-month-date.
 
-</div>
-<div class="right">
-
 ### REST API
 
 ```
@@ -509,23 +381,11 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Deep
 
-<div class="two-up">
-<div class="left">
-
 Deep allows you to set any of the other query parameters on a nested relational dataset.
-
-</div>
-</div>
-
-<div class="two-up">
-<div class="left">
 
 ### Examples
 
@@ -552,9 +412,6 @@ Only get 3 related articles, with only the top rated comment nested
   }
 }
 ```
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -583,22 +440,11 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Aliases
 
-<div class="two-up">
-<div class="left">
-
 Aliases allow you rename fields on the fly, and request the same nested data set multiple times using different filters.
-
-</div>
-</div>
-<div class="two-up">
-<div class="left">
 
 ::: warning Nested fields
 
@@ -606,10 +452,6 @@ It is only possible to alias same level fields.\
 Alias for nested fields, f.e. `field.nested`, will not work.
 
 :::
-
-</div>
-
-<div class="right">
 
 ### REST API
 
@@ -637,22 +479,13 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Export
 
 Save the current API response to a file.
 
-<div class="two-up">
-<div class="left">
-
 Saves the API response to a file. Accepts one of `json`, `csv`, `xml`.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -666,24 +499,12 @@ Saves the API response to a file. Accepts one of `json`, `csv`, `xml`.
 
 n/a
 
-</div>
-</div>
-
 ---
 
 ## Functions
 
-<div class="two-up">
-<div class="left">
-
 Functions allow for "live" modification of values stored in a field. Functions can be used in any query parameter you'd
 normally supply a field key, including fields, aggregation, and filter.
-
-</div>
-</div>
-
-<div class="two-up">
-<div class="left">
 
 Functions can be used by wrapping the field key in a JavaScript like syntax, for example:
 
@@ -717,9 +538,6 @@ function name as the nested field (see the example that follows).
 
 :::
 
-</div>
-<div class="right">
-
 ### REST API
 
 ```
@@ -741,24 +559,12 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Metadata
 
-<div class="two-up">
-<div class="left">
-
 Metadata allows you to retrieve some additional information about the items in the collection you're fetching. `*` can
 be used as a wildcard to retrieve all metadata.
-
-</div>
-</div>
-
-<div class="two-up">
-<div class="left">
 
 ### Total Count
 
@@ -767,9 +573,6 @@ Returns the total item count of the collection you're querying.
 ### Filter Count
 
 Returns the item count of the collection you're querying, taking the current filter/search parameters into account.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -784,6 +587,3 @@ Returns the item count of the collection you're querying, taking the current fil
 ### GraphQL
 
 n/a
-
-</div>
-</div>

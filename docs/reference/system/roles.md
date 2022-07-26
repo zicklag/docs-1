@@ -4,25 +4,12 @@ pageClass: page-reference
 
 # Roles
 
-<div class="two-up">
-<div class="left">
-
 > Roles define a specific set of access permissions, and are the primary organizational structure for Users within the
 > platform. [Learn more about Roles](/getting-started/glossary/#roles).
-
-</div>
-<div class="right">
-
-</div>
-</div>
 
 ---
 
 ## The Role Object
-
-<div class="two-up">
-<div class="left">
-<div class="definitions">
 
 `id` **uuid**\
 Primary key of the role.
@@ -51,10 +38,6 @@ Whether or not users in this role have access to use the Admin App.
 `users` **one-to-many**\
 The users in this role. One-to-many to [users](/reference/system/users/).
 
-</div>
-</div>
-<div class="right">
-
 ```json
 {
   "id": "653925a9-970e-487a-bfc0-ab6c96affcdc",
@@ -69,17 +52,11 @@ The users in this role. One-to-many to [users](/reference/system/users/).
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## List Roles
 
 List all roles that exist in Directus.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -89,9 +66,6 @@ Supports all [global query parameters](/reference/query).
 
 An array of up to [limit](/reference/query/#limit) [role objects](#the-role-object). If no items are available, data
 will be an empty array.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -128,17 +102,11 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Retrieve a Role
 
 List an existing role by primary key.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -147,9 +115,6 @@ Supports all [global query parameters](/reference/query).
 ### Returns
 
 Returns the requested [role object](#the-role-object).
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -189,17 +154,11 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Create a Role
 
 Create a new role.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -212,9 +171,6 @@ A partial [role object](#the-role-object).
 ### Returns
 
 Returns the [role object](#the-role-object) for the created role.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -270,17 +226,11 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Create Multiple Roles
 
 Create multiple new roles.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -293,9 +243,6 @@ An array of partial [role objects](#the-role-object).
 ### Returns
 
 Returns the [role objects](#the-role-object) for the created roles.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -369,17 +316,11 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Update a Role
 
 Update an existing role.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -392,9 +333,6 @@ A partial [role object](#the-role-object).
 ### Returns
 
 Returns the [role object](#the-role-object) for the updated role.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -441,17 +379,11 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Update Multiple Roles
 
 Update multiple existing roles.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -459,22 +391,15 @@ Supports all [global query parameters](/reference/query).
 
 ### Request Body
 
-<div class="definitions">
-
 `keys` **Required**\
 Array of primary keys of the roles you'd like to update.
 
 `data` **Required**\
 Any of [the role object](#the-role-object)'s properties.
 
-</div>
-
 ### Returns
 
 Returns the [role objects](#the-role-object) for the updated roles.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -533,24 +458,15 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Delete a Role
 
 Delete an existing role.
 
-<div class="two-up">
-<div class="left">
-
 ### Returns
 
 Empty body.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -586,17 +502,11 @@ mutation {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Delete Multiple Roles
 
 Delete multiple existing roles.
-
-<div class="two-up">
-<div class="left">
 
 ### Request Body
 
@@ -605,9 +515,6 @@ An array of role primary keys
 ### Returns
 
 Empty body.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -648,8 +555,5 @@ mutation {
   }
 }
 ```
-
-</div>
-</div>
 
 ---

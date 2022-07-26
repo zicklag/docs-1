@@ -4,25 +4,12 @@ pageClass: page-reference
 
 # Settings
 
-<div class="two-up">
-<div class="left">
-
 > Settings are key-value pairs that are stored in the database, and control different aspects of the project. Only
 > administrators have access to manage Settings.
-
-</div>
-<div class="right">
-
-</div>
-</div>
 
 ---
 
 ## The Settings Object
-
-<div class="two-up">
-<div class="left">
-<div class="definitions">
 
 `id` **uuid**\
 Primary key of the setting.
@@ -79,10 +66,6 @@ Custom tiles to overriding the Mapbox defaults.
 `module_bar` **array**\
 What modules are enabled/added globally.
 
-</div>
-</div>
-<div class="right">
-
 ```json
 {
   "data": {
@@ -117,15 +100,9 @@ What modules are enabled/added globally.
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Retrieve Settings
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -134,9 +111,6 @@ Supports all [global query parameters](/reference/query).
 ### Returns
 
 Returns the [settings object](#the-settings-object).
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -166,15 +140,9 @@ query {
 }
 ```
 
-</div>
-</div>
-
 ---
 
 ## Update Settings
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -187,9 +155,6 @@ A partial [settings object](#the-settings-object).
 ### Returns
 
 Returns the [settings object](#the-setting-object).
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -229,6 +194,3 @@ mutation {
   }
 }
 ```
-
-</div>
-</div>
