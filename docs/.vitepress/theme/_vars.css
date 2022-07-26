@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Icons+Outlined");
 
-/* 
-  * Material Icons
-  * -------------------------------------------------------------------------- */
+/* Material Icons */
 
 [mi] {
   font-family: "Material Icons Outlined";
@@ -34,31 +32,33 @@
   margin-bottom: 4px;
 }
 
-    [btn~=sec] {
-      background-color: var(--primary-light);
-      color: var(--primary);
-    }
+[btn~=sec] {
+  background-color: var(--primary-light);
+  color: var(--primary);
+}
 
-    [btn~=muted] {
-      background-color: var(--background-normal);
-      color: var(--foreground-normal);
-    }
+[btn~=muted] {
+  background-color: var(--background-normal);
+  color: var(--foreground-normal);
+}
 
 
-    [btn~=warn] {
-      background-color: var(--warning-light);
-      color: var(--warning);
-    }
+[btn~=warn] {
+  background-color: var(--warning-light);
+  color: var(--warning);
+}
 
-    [btn~=dngr] {
-      background-color: var(--danger-light);
-      color: var(--danger);
-    }
+[btn~=dngr] {
+  background-color: var(--danger-light);
+  color: var(--danger);
+}
 
-    [btn~=action] {
-      background-color: var(--success-light);
-      color: var(--success);
-    }
+[btn~=action] {
+  background-color: var(--success-light);
+  color: var(--success);
+}
+
+/* ----------icon--------- */
 
 [icon] {
   vertical-align: middle;
@@ -66,35 +66,20 @@
   color: var(--foreground-subdued);
 }
 
-    [icon~=prmry] {
-      color: var(--primary);
-    }
-
-    [icon~=dark] {
-      color: var(--foreground-normal-alt);
-    }
-
-    [icon~=dngr] {
-      color: var(--danger);
-    }
-
-/* 
-  * Videos and Images
-  * -------------------------------------------------------------------------- */
-
-img, video {
-  max-width: 100%;
-  border-radius: 6px;
-  box-shadow: 0px 10px 20px 0px rgba(23, 41, 64, 0.2), 0px 4px 8px 0px rgba(23, 41, 64, 0.2);
+[icon~=prmry] {
+  color: var(--primary);
 }
 
-.logo, .no-shadow {
-  box-shadow: none;
+[icon~=dark] {
+  color: var(--foreground-normal-alt);
 }
 
-/* 
-  * Previous "Vuepress" Color Theme
-  * -------------------------------------------------------------------------- */
+[icon~=dngr] {
+  color: var(--danger);
+}
+/* --------------------------------------------------- */
+
+/* The Previous "Vuepress" Color Theme */
 :root {
   --border-normal: #d3dae4;
   --border-subdued: #f0f4f9;
@@ -284,16 +269,11 @@ img, video {
 
   --vp-c-text-code: var(--vp-c-indigo-soft);
 
-
-  /* --primary-light: #ddddff;
-  --primary: #6644ff;
-  --primary-dark: #4422dd; */
-
-  --vp-c-brand: var(--primary);
-  --vp-c-brand-light: var(--primary-light);
-  --vp-c-brand-lighter: var(--primary-light);
-  --vp-c-brand-dark: var(--primary-dark);
-  --vp-c-brand-darker: var(--primary-dark);
+  --vp-c-brand: var(--vp-c-green);
+  --vp-c-brand-light: var(--vp-c-green-light);
+  --vp-c-brand-lighter: var(--vp-c-green-lighter);
+  --vp-c-brand-dark: var(--vp-c-green-dark);
+  --vp-c-brand-darker: var(--vp-c-green-darker);
 
   --vp-c-sponsor: #fd1d7c;
 }
@@ -322,11 +302,6 @@ img, video {
 
   --vp-c-text-code: var(--vp-c-indigo-lighter);
 }
-
-/* 
-  * Video and Image
-  * -------------------------------------------------------------------------- */
-
 
 /**
    * Typography
