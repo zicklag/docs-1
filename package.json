@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vitepress build docs && node build.js",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "lint-staged": "^13.0.3",
     "prettier": "2.7.1",
+    "fs-extra": "^10.1.0",
     "simple-git-hooks": "^2.8.0"
   },
   "simple-git-hooks": {
