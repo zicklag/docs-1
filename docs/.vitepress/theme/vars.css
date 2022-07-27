@@ -85,6 +85,9 @@
       color: var(--danger);
     }
 
+
+
+
 /* 
   * Video and Image
   * @Modified
@@ -99,6 +102,41 @@ img, video {
 .logo, .no-shadow {
   box-shadow: none;
 }
+
+
+/* 
+  * Badges
+  * @Modified
+  * -------------------------------------------------------------------------- */
+
+small {
+  position: absolute;
+  margin-top: 7px;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 8px;
+  display: inline-block;
+  background-color: var(--vp-c-brand);
+  color: white;
+  border-radius: 3px;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 4px 8px;
+  position: absolute;
+  top: -60%;
+  left: 0;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+small[mod]::before {
+  content: 'Modular Extension'; 
+}
+
+small[cld]::before {
+  content: 'Cloud Exclusive';
+} 
+
 
 /* 
   * Previous "Vuepress" Color Theme

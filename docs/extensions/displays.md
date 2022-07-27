@@ -1,4 +1,4 @@
-# Custom Displays <small></small>
+# Custom Displays <small mod></small>
 
 > Displays are small inline components that allow you to create new ways of viewing field values throughout the App.
 > [Learn more about Displays](/getting-started/glossary#displays).
