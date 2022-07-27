@@ -69,7 +69,7 @@ npx directus start
 ## 4. View your Project
 
 The default port used by Directus is 8055. To view your project locally, go to
-[http://localhost:8055](http://localhost:8055/) in your browser.
+[http://localhost:8055](http://127.0.0.1:8055/) in your browser.
 
 ::: tip Changing Port
 
