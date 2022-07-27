@@ -100,7 +100,7 @@ In Plesk, choose your website and click "Node.js". You should then see a button 
 Now, change the "Document root" and "Application root" to the location of your project folder. "Application startup
 file" must point to the `index.js` file from the former step. The screen should now look like this:
 
-![Plesk Screenshot](../../plesk-screenshot.png)
+![Plesk Screenshot](../../public/plesk-screenshot.png)
 
 You can now install the dependencies by clicking on the button "NPM install".
 
