@@ -5,7 +5,7 @@ pageClass: page-reference
 # Permissions
 
 > Permissions are assigned to Roles, and control data access throughout the platform.
-> [Learn more about Permissions](/getting-started/glossary/#permissions).
+> [Learn more about Permissions](/getting-started/glossary#permissions).
 
 ---
 
@@ -15,7 +15,7 @@ pageClass: page-reference
 Primary key of the permission rule.
 
 `role` **many-to-one**\
-Role this permission applies to. Many-to-one to [roles](/reference/system/roles/). `null` is used for public permissions.
+Role this permission applies to. Many-to-one to [roles](/reference/system/roles). `null` is used for public permissions.
 
 `collection` **string**\
 Collection this permission rule applies to.
@@ -73,7 +73,7 @@ Supports all [global query parameters](/reference/query).
 
 ### Returns
 
-An array of up to [limit](/reference/query/#limit) [permission objects](#the-permission-object). If no items are
+An array of up to [limit](/reference/query#limit) [permission objects](#the-permission-object). If no items are
 available, data will be an empty array.
 
 ### REST API
@@ -83,7 +83,7 @@ GET /permissions
 SEARCH /permissions
 ```
 
-[Learn more about SEARCH ->](/reference/introduction/#search-http-method)
+[Learn more about SEARCH ->](/reference/introduction#search-http-method)
 
 ### GraphQL
 

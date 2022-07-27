@@ -16,9 +16,9 @@ Only Administrators have access to the Settings Module.
 Settings are split into five distinct sections, each described below.
 
 - [Project Settings](/configuration/project-settings) — Setup branding and other global style options.
-- [Data Model](/configuration/data-model) — Create and modify [Collections](/getting-started/glossary/#collections),
-  [Relationships](/getting-started/glossary/#relationships), form layout, and
-  [Fields](/getting-started/glossary/#fields).
+- [Data Model](/configuration/data-model) — Create and modify [Collections](/getting-started/glossary#collections),
+  [Relationships](/getting-started/glossary#relationships), form layout, and
+  [Fields](/getting-started/glossary#fields).
 - [Roles & Permissions](/configuration/users-roles-permissions) — Create and manage access via Roles and Permissions.
 - [Presets & Bookmarks](/configuration/presets-bookmarks) — Set default views of data and configure bookmarks.
 - [Webhooks](/configuration/webhooks) — Use platform events to trigger external services.
@@ -32,7 +32,7 @@ Aside from the above pages, there are three shorthand links:
 - **Request Feature**\
   A direct link to [submit a new feature request](https://github.com/directus/directus/discussions/new) on GitHub. Feature
   requests are a great way to let our team know what should be prioritized next. Learn more about making feature requests
-  in the [Contributing > Introduction](/contributing/introduction/#feature-requests).
+  in the [Contributing > Introduction](/contributing/introduction#feature-requests).
 
 - **Platform Version**\
   Displays the exact version of your platform. Click this button to go to the GitHub releases page, which includes the full

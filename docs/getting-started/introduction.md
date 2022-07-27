@@ -56,7 +56,7 @@ _and much more._
 
 :::tip Ready to dive in?
 
-Get a free project running in minutes. Learn Directus hands-on in the [Quickstart Guide](/getting-started/quickstart/).
+Get a free project running in minutes. Learn Directus hands-on in the [Quickstart Guide](/getting-started/quickstart).
 
 :::
 
@@ -81,7 +81,7 @@ effectively removes all bottlenecks, latency overhead, and proprietary access li
 <!--
 :::tip Ready to try the API?
 
-Get a Project running in minutes. Test the API hands-on in the [Quickstart Guide](/getting-started/quickstart/).
+Get a Project running in minutes. Test the API hands-on in the [Quickstart Guide](/getting-started/quickstart).
 
 :::
 -->
@@ -106,9 +106,9 @@ can create fully granular permissions for roles as well as individual users.
 :::tip Directus Vocabulary
 
 In order keep things simpler, _especially for the no-code users_, Directus uses friendlier names for many database terms
-and technical concepts, including [Project](/getting-started/glossary/#projects) (database),
-[Collection](/getting-started/glossary/#collections) (table), [Field](/getting-started/glossary/#fields) (column),
-[Item](/getting-started/glossary/#items) (record), and [Type](/getting-started/glossary/#types) (datatype).
+and technical concepts, including [Project](/getting-started/glossary#projects) (database),
+[Collection](/getting-started/glossary#collections) (table), [Field](/getting-started/glossary#fields) (column),
+[Item](/getting-started/glossary#items) (record), and [Type](/getting-started/glossary#types) (datatype).
 
 <!--
 @TODO getting-started > learn-directus
@@ -120,7 +120,7 @@ For more information on Directus-specific terms, see the guide on [how to learn 
 <!--
 :::tip Ready to see what Directus can do?
 
-Checkout the core features and learn Directus hands-on in the [Quickstart Guide](/getting-started/quickstart/).
+Checkout the core features and learn Directus hands-on in the [Quickstart Guide](/getting-started/quickstart).
 
 @TODO getting-started > crashcourse
 Change this CTA to the 20-30 min crashcourse
@@ -156,7 +156,7 @@ and other metrics. Coalesce previously siloed department data.
 <!--
 :::tip Ready to dive-in?
 
-Get a Project running in minutes. Learn Directus hands-on in the [Quickstart Guide](/getting-started/quickstart/).
+Get a Project running in minutes. Learn Directus hands-on in the [Quickstart Guide](/getting-started/quickstart).
 
 :::
 -->
@@ -183,7 +183,7 @@ The following core principles guide this platform:
 - **Open** — Directus Core is public and open source, with no obfuscated or cloud-only code.
 - **Portable** — The database can be exported or migrated anytime, so there's no vendor lock-in.
 - **Limitless** — No artificial limits or paywalls on users, roles, languages,
-  [Collections](/getting-started/glossary/#collections), or [Items](/getting-started/glossary/#items).
+  [Collections](/getting-started/glossary#collections), or [Items](/getting-started/glossary#items).
 - **Extensible** — Every aspect of this platform is modular to avoid any hard feature ceiling.
 - **Unopinionated** — Choose the stack, database, and architecture as you wish.
 
@@ -193,7 +193,7 @@ The following core principles guide this platform:
 
 Cloud architecture can be complicated and resource-intensive. Directus Cloud provides scalable, optimized storage and
 infrastructure, and automatic updates so developers can focus on the app's core business logic. Directus Cloud also
-offers [Cloud Exclusive Extensions](/cloud/glossary/#cloud-exclusives), enhancing Directus Core with even more features.
+offers [Cloud Exclusive Extensions](/cloud/glossary#cloud-exclusives), enhancing Directus Core with even more features.
 
 With free Dirctus Cloud account, you can set up Teams to organize Projects, Project billing, and other Team Members
 however you need. You'll be able to get a Project running in about 90 seconds. Then as Project growth changes over time,
@@ -202,7 +202,7 @@ analytics to help understand traffic and inform scaling decisions.
 
 :::tip Ready to try Directus Cloud?
 
-Setup your free Cloud account and learn Directus hands-on in the [Quickstart Guide](/getting-started/quickstart/).
+Setup your free Cloud account and learn Directus hands-on in the [Quickstart Guide](/getting-started/quickstart).
 
 :::
 

@@ -1,7 +1,7 @@
 # Data Model
 
-> The data model describes the structure of your database's schema using [Collections](/app/content-collections/)
-> (database tables) and [Fields](/reference/system/fields/) (database columns).
+> The data model describes the structure of your database's schema using [Collections](/app/content/collections)
+> (database tables) and [Fields](/reference/system/fields) (database columns).
 
 ## Creating a Collection
 
@@ -57,11 +57,11 @@ You can configure a collection by clicking on it within **Settings > Data Model*
 - **Hidden** — Toggles if the collection should be globally hidden. Keep in mind that Admin roles can always see all
   collections.
 - **Singleton** — For collections that will only contain a single item (eg: an "About Us" form), the
-  [Collection Page](/app/content-collections/) will be bypassed, taking users directly to the
-  [Item Page](/app/content-items/).
+  [Collection Page](/app/content/collections) will be bypassed, taking users directly to the
+  [Item Page](/app/content/items).
 - **Collection Naming Translations** — While the collection key can not be changed (as of now), this option allows
   translating the collection name into different languages. By default, the platform uses the
-  [Title Formatter](/getting-started/glossary/#title-formatter) to display collection keys as human readable names, but
+  [Title Formatter](/getting-started/glossary#title-formatter) to display collection keys as human readable names, but
   you can also use translations to explicitly rename more technical table keys.
 
 ### Archive
@@ -84,8 +84,8 @@ this field, the collection's archive settings will automatically be configured f
 ### Sort
 
 The sort feature enables manual drag-and-drop item reordering within the Directus App. This is typically shown on the
-[Collection Page](/app/content-collections/), but can also be used for sorting items within
-[Junction Tables](/getting-started/glossary/#junction-collections). Configuration is as easy as selecting the
+[Collection Page](/app/content/collections), but can also be used for sorting items within
+[Junction Tables](/getting-started/glossary#junction-collections). Configuration is as easy as selecting the
 appropriate sort field:
 
 - **Sort Field** — Choose a field with the `integer` type. You may want to set this field to be "hidden" so it doesn't
@@ -107,7 +107,7 @@ Field** on the field's Relationship pane.
 
 ### Accountability
 
-By default, the platform tracks all [activity](/reference/system/activity) and [revisions](/reference/system/revisions/)
+By default, the platform tracks all [activity](/reference/system/activity) and [revisions](/reference/system/revisions)
 for collections. This option allows you to override this, choosing what data is tracked.
 
 - **Activity & Revision Tracking** — supports the follow options:
@@ -176,7 +176,7 @@ navigation either.
 
 ## Adjusting the Collection Form
 
-The [Item Page](/app/content-items/) displays a custom form for viewing and editing each collection's fields. This form
+The [Item Page](/app/content/items) displays a custom form for viewing and editing each collection's fields. This form
 is highly configurable, with the following field options:
 
 - **Visibility** — Fields can be set to "visible" or "hidden" on the form. This is adjusted via the
@@ -218,10 +218,10 @@ This pane controls the technical details of the field's database column.
 
 - **Key** — (Required) The database column name and field's API key. The key must be unique within its parent
   Collection. As of now, all keys are sanitized: lowercased, alphanumeric, and with spaces removed. Keys can not be
-  changed once created, however you can use [Field Name Translations](/configuration/data-model/#field) to override how
+  changed once created, however you can use [Field Name Translations](/configuration/data-model#field) to override how
   it's displayed in the App.
 - **Type** — (Required) How the data is saved to the database; See
-  [Directus Data Type Superset](/getting-started/glossary/#data-type-superset). This dropdown may be limited or even
+  [Directus Data Type Superset](/getting-started/glossary#data-type-superset). This dropdown may be limited or even
   disabled based on your chosen Field category.
 - **Length** — (Only for certain types) For String types this determines the number of characters that can be stored in
   the database. For Float and Decimal types, this control becomes **Precision & Scale**.
@@ -254,15 +254,15 @@ At this time, Directus does not support composite keys.
 This pane is only shown when configuring relational fields (including images and translations). Depending on the type of
 relationship, you'll be presented with one of the following set of options:
 
-- [Many-to-One](/configuration/relationships/#many-to-one-m2o)
-- [One-to-Many](/configuration/relationships/#one-to-many-o2m)
-- [Many-to-Many](/configuration/relationships/#many-to-many-m2m)
-- [Many-to-Any](/configuration/relationships/#many-to-many-m2m)
-- [Translations](/configuration/relationships/#translations-o2m)
+- [Many-to-One](/configuration/relationships#many-to-one-m2o)
+- [One-to-Many](/configuration/relationships#one-to-many-o2m)
+- [Many-to-Many](/configuration/relationships#many-to-many-m2m)
+- [Many-to-Any](/configuration/relationships#many-to-many-m2m)
+- [Translations](/configuration/relationships#translations-o2m)
 
 ::: tip Corresponding Field
 
-[Relationships go both ways](/configuration/relationships/#perspective-matters), so when creating a new relation Field,
+[Relationships go both ways](/configuration/relationships#perspective-matters), so when creating a new relation Field,
 Directus offers to automatically create the corresponding Field on the related Collection.
 
 :::
@@ -281,7 +281,7 @@ Directus offers to automatically create the corresponding Field on the related C
   supports markdown.
 - **Field Name Translations** — (App Only) While the field key can not be changed (as of now), this option allows
   translating the field name into different languages. By default, the platform uses the
-  [Title Formatter](/getting-started/glossary/#title-formatter) to display field keys as human readable names, but you
+  [Title Formatter](/getting-started/glossary#title-formatter) to display field keys as human readable names, but you
   can also use translations to explicitly rename more technical column keys.
 
 ### Interface
@@ -320,7 +320,7 @@ The conditions are matched in order. The **last** condition that matches is the 
 
 While you could create individual fields for each translation, such as `title_english`, `title_german`, `title_french`,
 and so on, this is not easily extensible, and creates a less than ideal form layout. Instead, you can use the Directus
-_relational_ [Translations O2M](/configuration/relationships/#translations-o2m) interface. This uses a separate
+_relational_ [Translations O2M](/configuration/relationships#translations-o2m) interface. This uses a separate
 collection to store an endless number of translations, and a separate collection of languages that can easily be added
 to without having to change the schema.
 
@@ -358,7 +358,7 @@ field values in the process.
 
 1. Navigate to **Settings > Data Model > [Collection Name]**
 2. Click the field you want to update
-3. Make any desired updates referencing the [Creating a Field](/configuration/data-model/#creating-a-field) docs above
+3. Make any desired updates referencing the [Creating a Field](/configuration/data-model#creating-a-field) docs above
 
 ::: tip System Fields
 

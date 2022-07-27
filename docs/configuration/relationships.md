@@ -11,10 +11,10 @@ few basics that will help you better visualize them in your mind's eye.
 
 ### Primary and Foreign Keys
 
-Every [Item](/getting-started/glossary/#items) in a relational database has a unique
-[Primary Key](/getting-started/glossary/#primary-key-pk) (or "PK") that identifies it within its
-[Collection](/getting-started/glossary/#collections). Because it's required, the key is the first
-[field](/getting-started/glossary/#fields) created within a collection, typically storing an "auto-increment" number, an
+Every [Item](/getting-started/glossary#items) in a relational database has a unique
+[Primary Key](/getting-started/glossary#primary-key-pk) (or "PK") that identifies it within its
+[Collection](/getting-started/glossary#collections). Because it's required, the key is the first
+[field](/getting-started/glossary#fields) created within a collection, typically storing an "auto-increment" number, an
 automatically generated unique hash, or a manually entered value. They are often abbreviated to "PK" (Primary Key), "ID"
 (Identifier), "UID" (Unique Identifier), or "UUID" (Universally Unique Identifier), depending on the type of value they
 store. After it's created, the value of an item's PK should _never_ change.
@@ -81,7 +81,7 @@ the O2M alias (see below) that pairs with this M2O.
 ## One-to-Many (O2M)
 
 The One-to-Many relationship is the **exact same relationship** as a Many-to-One (above), just seen from the opposite
-collection's perspective. The O2M is stored as an [Alias](/getting-started/glossary/#alias) field on its parent
+collection's perspective. The O2M is stored as an [Alias](/getting-started/glossary#alias) field on its parent
 Collection that dynamically lists all items connected via the opposite Many-to-One. So, while the M2O will show a single
 country for the parent city, the O2M shows all cities for the parent country.
 
@@ -134,7 +134,7 @@ new field to be created.
 ## Translations (O2M)
 
 The Translations relationship is just a special version of the standard O2M. Just like the O2M, it creates an
-[Alias](/getting-started/glossary/#alias) field that is used to list all related items (the translations). Translations
+[Alias](/getting-started/glossary#alias) field that is used to list all related items (the translations). Translations
 themselves are stored in a separate collection, which is then further related to a _third_ collection that stores all
 languages.
 
@@ -163,8 +163,8 @@ which combines the ISO 639-1 and ISO 3166‑1 standards, but anything can be use
 ## Many-to-Many (M2M)
 
 The Many-to-Many relationship is actually just **two relationships combined** (O2M+M2O) that join together three
-different collections. The M2M is stored as an [Alias](/getting-started/glossary/#alias) field on its parent Collection
-that dynamically lists all items connected via a [junction collection](/getting-started/glossary/#junction-collections).
+different collections. The M2M is stored as an [Alias](/getting-started/glossary#alias) field on its parent Collection
+that dynamically lists all items connected via a [junction collection](/getting-started/glossary#junction-collections).
 For example, a _recipe_ can have many _ingredients_, and _ingredients_ can be in many _recipes_.
 
 Below is an example of a M2M relationship:
@@ -210,7 +210,7 @@ green) then the primary key field is known and automatically selected. If you en
 Collection (doesn't already exist), you will also be prompted to enter the name of its primary key field, which will
 default to an auto-increment integer type.
 
-Lastly, we configure the [Junction Collection](/getting-started/glossary/#junction-collections), which sits between the
+Lastly, we configure the [Junction Collection](/getting-started/glossary#junction-collections), which sits between the
 two related collections, storing all links between the two. You can leave this set to "Auto-Fill", which sets
 intelligent naming defaults, or disable it to select existing options or enter custom names.
 
@@ -240,8 +240,8 @@ new field to be created.
 ## Many-to-Any (M2A)
 
 Sometimes called a "matrix field" or "replicator". Like the M2M, the M2A is stored as an
-[Alias](/getting-started/glossary/#alias) field on its parent Collection that dynamically lists all items connected via
-a [junction collection](/getting-started/glossary/#junction-collections). However, there is one key difference: one side
+[Alias](/getting-started/glossary#alias) field on its parent Collection that dynamically lists all items connected via
+a [junction collection](/getting-started/glossary#junction-collections). However, there is one key difference: one side
 of the junction also stores a **collection key**. This combination of collection name and primary key means that you can
 effectively store a reference to _any_ item in the database. You can then artificially limit which collections are valid
 through a related collections "allow list".
@@ -284,7 +284,7 @@ images (Collection)
 The parent collection and field are already known (it's the field you're currently creating), so configuring those are
 disabled.
 
-Next, we configure the [Junction Collection](/getting-started/glossary/#junction-collections), which sits between the
+Next, we configure the [Junction Collection](/getting-started/glossary#junction-collections), which sits between the
 related collections, storing all links between them. You can leave this set to "Auto-Fill", which sets intelligent
 naming defaults, or disable it to select existing options or enter custom names.
 
@@ -318,8 +318,8 @@ new field to be created.
 Directus does not include a dedicated One-to-One (O2O) relationship type or interface. However, O2O is essentially the
 same as a M2O (storing a foreign key). The only difference is that a O2O enforces the cardinality. In other words,
 selecting a relational item in a O2O means that item can not be selected elsewhere (it can only be used once). This
-functionality can be added by checking and constraining uniqueness via a [custom event hook](/extensions/hooks/) or
-[custom interface](/extensions/interfaces/).
+functionality can be added by checking and constraining uniqueness via a [custom event hook](/extensions/hooks) or
+[custom interface](/extensions/interfaces).
 
 An example of this is a _person_ only has one unique set of _fingerprints_, and those _fingerprints_ only belong to one
 _person_.

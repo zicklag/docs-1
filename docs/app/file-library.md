@@ -9,7 +9,7 @@
 ::: warning More Documents on Folder and File Management
 
 This is a non-technical, no-code guide to the File Library Module. Please note there is documentation on programmatic
-[Folder](/reference/system/folders/) and [File](/reference/files/) management via the API.
+[Folder](/reference/system/folders) and [File](/reference/files) management via the API.
 
 :::
 
@@ -17,7 +17,7 @@ This is a non-technical, no-code guide to the File Library Module. Please note t
 
 ::: tip Required Knowledge
 
-Familiarity with the [Collections Page](/app/content-collections/) will be helpful but not necessary.
+Familiarity with the [Collections Page](/app/content/collections) will be helpful but not necessary.
 
 :::
 
@@ -27,7 +27,7 @@ which means [User and Role access permissions](/configuration/users-roles-permis
 granular on both Folders and Files. Multiple files can be uploaded at once through the app and also programmatically via
 the API. Any type of file can be uploaded, _not just images_. When a Folder is selected from the Navigation Bar, the
 [File Listing Page](#folders) is presented. This page has all the same features and functionalities as the
-[Collections Page](/app/content-collections/).
+[Collections Page](/app/content/collections).
 
 <video title="How the File Library Works" autoplay muted loop controls>
 	<source src="https://cdn.directus.io/docs/v9/app-guide/file-library/file-library-20220305A/how-it-works-20220305A.mp4" type="video/mp4"/>
@@ -51,7 +51,7 @@ the API. Any type of file can be uploaded, _not just images_. When a Folder is s
 When a file is clicked in the File Listing Page, the File Details Page appears. This is a custom form for viewing assets
 and embeds, with core Fields included out-of-the-box (see below), and the ability for Administrators to add additional
 custom Fields. This page has the same features and functionality as the
-[Item Details Page](/getting-started/glossary/#items).
+[Item Details Page](/getting-started/glossary#items).
 
 ![Files](https://cdn.directus.io/docs/v9/app-guide/file-library/file-library-20220305A/files-20220305A.webp)
 
@@ -129,7 +129,7 @@ Edits overwrite the original file on disk. This can't be reversed.
 We covered the File Library's three upload methods in [How it Works](#how-it-works). Keep in mind that files can also be
 added through different Interfaces as well. For example, Users can upload an Avatar image when they fill in their User
 Details. Similarly, Items with an Image Field will have a file upload Interface on the Item Detail page. Files can also
-be [uploaded programmatically via the API](/reference/files/).
+be [uploaded programmatically via the API](/reference/files).
 
 ## Replace a File
 
@@ -153,9 +153,9 @@ Folders provide the organization system for Files.
 
 They can be named, renamed, and nested as sub-folders anywhere in the Folder hierarchy. Once a Folder is selected from
 the Navigation Bar, File Listing Page opens. The File Listing Page displays all Files within a Folder. It also enables
-all other features and functionalities from the [Collections Page](/app/content-collections/) such as batch editing,
+all other features and functionalities from the [Collections Page](/app/content/collections) such as batch editing,
 batch deleting, sorting, filtering, searching, etc. Folders can also be managed
-[programmatically via the API](/docs/reference/system/folders.md).
+[programmatically via the API](/reference/system/folders).
 
 ## Create a Folder
 

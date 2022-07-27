@@ -42,7 +42,7 @@ Supports all [global query parameters](/reference/query).
 
 ### Returns
 
-An array of up to [limit](/reference/query/#limit) [folder objects](#the-folder-object). If no items are available, data
+An array of up to [limit](/reference/query#limit) [folder objects](#the-folder-object). If no items are available, data
 will be an empty array.
 
 ### REST API
@@ -52,7 +52,7 @@ GET /folders
 SEARCH /folders
 ```
 
-[Learn more about SEARCH ->](/reference/introduction/#search-http-method)
+[Learn more about SEARCH ->](/reference/introduction#search-http-method)
 
 ### GraphQL
 

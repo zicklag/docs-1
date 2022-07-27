@@ -244,7 +244,7 @@ Each Node Type provides a different level of processing power.
 
 - **Community**\
   Community Projects come equipped with one Node, which can handle basic web traffic required for hobby projects, learning
-  and demoing Directus Cloud, and other non-production use cases. Community Nodes will pause after 3 days of [inactivity](/cloud/projects/#resume-a-community-project).
+  and demoing Directus Cloud, and other non-production use cases. Community Nodes will pause after 3 days of [inactivity](/cloud/projects#resume-a-community-project).
 
 - **General Purpose**\
    General Purpose Nodes are the basic Node Type offered on Standard Projects. These Nodes are the right choice for most
@@ -260,7 +260,7 @@ Each Node Type provides a different level of processing power.
 
 :::tip
 
-In Standard Projects, the Node Type configured [and associated cost per hour](/cloud/teams/#manage-billing) will apply
+In Standard Projects, the Node Type configured [and associated cost per hour](/cloud/teams#manage-billing) will apply
 to both Active and Standby Nodes.
 
 :::
@@ -271,7 +271,7 @@ Active Nodes stay on constantly. Projects must have at least one Active Node in 
 
 :::warning
 
-Community Nodes paused due to [inactivity](/cloud/projects/#resume-a-community-project) can't receive requests until
+Community Nodes paused due to [inactivity](/cloud/projects#resume-a-community-project) can't receive requests until
 unpaused.
 
 :::
@@ -287,7 +287,7 @@ Standby Nodes stay turned-off until traffic starts to take up significant system
 activate one-by-one, as needed, to safely handle the increase in traffic. Activation occurs within just a few moments.
 
 Standby Nodes are not required, however you don't pay for usage when Standby Nodes are disabled. For more pricing
-information, see [billing](/cloud/teams/#manage-billing).
+information, see [billing](/cloud/teams#manage-billing).
 
 ### Auto-scaling
 
@@ -296,8 +296,8 @@ at safe levels.
 
 :::tip Optimal Node Configuration
 
-As noted under [Billing](/cloud/teams/#manage-billing), Projects can be reconfigured as needed. Check out the
-[Project Monitor page](/cloud/projects/#monitor-a-project) for performance analytics that can help inform Node
+As noted under [Billing](/cloud/teams#manage-billing), Projects can be reconfigured as needed. Check out the
+[Project Monitor page](/cloud/projects#monitor-a-project) for performance analytics that can help inform Node
 configuration decisions.
 
 :::

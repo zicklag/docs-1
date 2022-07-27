@@ -29,7 +29,7 @@ within the app, an incoming webhook, a cron job, or a manual click of a button. 
 Operations are the actions performed after the Trigger. An operation can be creating new Items in a Collection, sending
 off emails, pushing _in-app_ notifications, or sending webhooks, just to name a few. You can even set up divergent
 chains of Flow Operations, which execute conditionally, based on whether one Operation passed or failed. A
-[console log](configuration/flows/operations/#log-to-console) is also included to help design and troubleshoot your
+[console log](/configuration/flows/operations#log-to-console) is also included to help design and troubleshoot your
 Flows and ensure data is passed on as intended. Check out the documentation on
 [Operations](/configuration/flows/operations) for more details.
 
@@ -49,13 +49,13 @@ To create a Flow, follow these steps:
 2. Under **Flow Setup**, fill in a name for the Flow.\
    Optional: Set a status, material icon, description or color to help remember the Flow.
 3. Select your **Activity and Logs Tracking** preference as desired.\
-   To learn more, please see [Activity](/reference/system/activity/) and [Logs](/#logs).
+   To learn more, please see [Activity](/reference/system/activity) and [Logs](/#logs).
 4. Click <span mi btn>arrow_forward</span> to navigate to **Trigger Setup**, select a
-   [Trigger](configuration/flows/triggers) type and configure as desired.
+   [Trigger](/configuration/flows/triggers) type and configure as desired.
 5. Click <span mi btn>done</span> in the Menu Header to be taken to the Flow Grid Area.\
    You'll see the Trigger Panel on the Flow Grid.
 6. On the Trigger Panel, click <span mi>add</span> and the **Create Operation** side menu will open.
-7. Choose a name and the [Operation](configuration/flows/operations) type, and configure as desired.\
+7. Choose a name and the [Operation](/configuration/flows/operations) type, and configure as desired.\
    Directus will convert the unique name into an Operation Key, used on the [Flow Object](#the-flow-object).\
    If you don't choose a name, the system will auto-generate a name and key.
 8. Next, click <span mi btn>done</span> in the Page Header to confirm your choices and return to the Flow Grid Area.

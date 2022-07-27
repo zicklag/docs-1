@@ -180,7 +180,7 @@ In addition to static values, you can also filter against _dynamic_ values using
 
 :::tip Functions
 
-You can also use [Function Parameters](/reference/query/#functions) when building Filters.
+You can also use [Function Parameters](/reference/query#functions) when building Filters.
 
 :::
 

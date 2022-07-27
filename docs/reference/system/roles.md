@@ -5,7 +5,7 @@ pageClass: page-reference
 # Roles
 
 > Roles define a specific set of access permissions, and are the primary organizational structure for Users within the
-> platform. [Learn more about Roles](/getting-started/glossary/#roles).
+> platform. [Learn more about Roles](/getting-started/glossary#roles).
 
 ---
 
@@ -36,7 +36,7 @@ If this role is considered an admin role. This means that users in this role hav
 Whether or not users in this role have access to use the Admin App.
 
 `users` **one-to-many**\
-The users in this role. One-to-many to [users](/reference/system/users/).
+The users in this role. One-to-many to [users](/reference/system/users).
 
 ```json
 {
@@ -64,7 +64,7 @@ Supports all [global query parameters](/reference/query).
 
 ### Returns
 
-An array of up to [limit](/reference/query/#limit) [role objects](#the-role-object). If no items are available, data
+An array of up to [limit](/reference/query#limit) [role objects](#the-role-object). If no items are available, data
 will be an empty array.
 
 ### REST API
@@ -74,7 +74,7 @@ GET /roles
 SEARCH /roles
 ```
 
-[Learn more about SEARCH ->](/reference/introduction/#search-http-method)
+[Learn more about SEARCH ->](/reference/introduction#search-http-method)
 
 ### GraphQL
 

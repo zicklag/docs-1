@@ -5,15 +5,15 @@
 
 :::tip Programmatically Manage Items
 
-This page shows you how to manage Items within the no-code app. However, Items can also be [managed](/reference/items/)
+This page shows you how to manage Items within the no-code app. However, Items can also be [managed](/reference/items)
 programmatically via the API.
 
 <!--
 @TODO Reference > Items
 Add links once "archive item" is created
 [archived]()
-[reverted](/reference/system/revisions/#revisions)
-[commented on](/reference/system/activity/#create-a-comment)
+[reverted](/reference/system/revisions#revisions)
+[commented on](/reference/system/activity#create-a-comment)
 -->
 
 :::
@@ -81,7 +81,7 @@ automatically open the Item Page.
 	<source src="https://cdn.directus.io/docs/v9/app-guide/content/content-items/content-items-20220415A/archive-an-item-20220415A.mp4" type="video/mp4" />
 </video>
 
-To archive an Item, follow the steps below. [Learn More](/configuration/data-model/#archive)
+To archive an Item, follow the steps below. [Learn More](/configuration/data-model#archive)
 
 1. Navigate to the Content Module and select the desired Collection.
 2. Select the desired Item. The Item Page will open.
@@ -105,7 +105,7 @@ Add relevant link here
 	<source src="https://cdn.directus.io/docs/v9/app-guide/content/content-items/content-items-20220415A/revert-an-item-20220415A.mp4" type="video/mp4" />
 </video>
 
-As you update Field Values on Items, Directus saves these [Revisions](/getting-started/glossary/#revisions), and they
+As you update Field Values on Items, Directus saves these [Revisions](/getting-started/glossary#revisions), and they
 can be compared side-by-side to the current state. To revert an Item, follow the steps below.
 
 1. Navigate to the Content Module and select the desired Collection.
@@ -125,7 +125,7 @@ values for that revision.
 
 :::tip
 
-Items can also be reverted [programmatically via the API](/reference/system/revisions/).
+Items can also be reverted [programmatically via the API](/reference/system/revisions).
 
 :::
 

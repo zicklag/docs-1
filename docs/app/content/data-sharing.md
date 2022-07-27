@@ -26,8 +26,8 @@ leads to a page with nothing but the read-only content of that shared Item.
 ::: tip Read-only
 
 At this time, Shares are read-only. However, Data Sharing is an extensible feature that could support full CRUD
-permissions. We welcome any [pull-requests](/contributing/introduction/) to address this or interest in
-[sponsoring the feature](/getting-started/support/#sponsored-work).
+permissions. We welcome any [pull-requests](/contributing/introduction) to address this or interest in
+[sponsoring the feature](/getting-started/support#sponsored-work).
 
 :::
 
@@ -106,7 +106,7 @@ Share permissions.
 Any given Share will inherit the same read permissions as the Role it was associated with in the Share Options Menu.
 
 This system allows for absolutely granular configuration options on Shares... _but it also means you'll need to
-understand [Users, Roles, and Permissions](/configuration/users-roles-permissions/) thoroughly to use Shares properly_.
+understand [Users, Roles, and Permissions](/configuration/users-roles-permissions) thoroughly to use Shares properly_.
 Here are some highlights of what you can do:
 
 - Set the Collections a Role can view or share.

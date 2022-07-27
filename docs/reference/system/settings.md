@@ -27,13 +27,13 @@ Link to the (public) website that goes with this project.
 Brand color for the current project.
 
 `project_logo` **many-to-one**\
-Primary logo for the current project. Many-to-one to [files](/reference/files/).
+Primary logo for the current project. Many-to-one to [files](/reference/files).
 
 `public_foreground` **many-to-one**\
-Foreground image for the Admin App's public pages. Many-to-one to [files](/reference/files/).
+Foreground image for the Admin App's public pages. Many-to-one to [files](/reference/files).
 
 `public_background` **many-to-one**\
-Background image for the Admin App's public pages. Many-to-one to [files](/reference/files/).
+Background image for the Admin App's public pages. Many-to-one to [files](/reference/files).
 
 `public_note` **string**\
 Note shown on the Admin App's public pages. Supports Markdown.
@@ -45,11 +45,11 @@ How often a user is allowed to try to login. After which times the user will be 
 What regex passwords must pass in order to be valid.
 
 `storage_asset_transform` **string**\
-If the transform endpoints are allowed to be used on [the assets endpoint](/reference/files/#requesting-a-thumbnail). One
+If the transform endpoints are allowed to be used on [the assets endpoint](/reference/files#requesting-a-thumbnail). One
 of `all`, `none` or `presets`.
 
 `storage_asset_presets` **array**\
-What preset keys exist in [the assets endpoint](/reference/files/#requesting-a-thumbnail).
+What preset keys exist in [the assets endpoint](/reference/files#requesting-a-thumbnail).
 
 `custom_css` **string**\
 CSS rules to override the App's default styling.

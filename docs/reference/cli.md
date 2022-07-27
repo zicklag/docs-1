@@ -27,13 +27,13 @@ migrate it to the latest version (if it already exists and has missing migration
 
 This is very useful to use in environments where you're doing standalone automatic deployments, like a multi-container
 Kubernetes configuration, or a similar approach on
-[DigitalOcean App Platform](/self-hosted/installation/digitalocean-app-platform/),
+[DigitalOcean App Platform](/self-hosted/installation/digitalocean-app-platform),
 [Google Cloud Platform](/self-hosted/installation/gcp) or [AWS Elastic Beanstalk](/self-hosted/installation/aws)
 
 ::: tip First User
 
 You can use the `ADMIN_EMAIL` and `ADMIN_PASSWORD` environment variables to automatically provision the first user on
-first creation using the `bootstrap` command. See [Environment Variables](/self-hosted/config-options/#general) for more
+first creation using the `bootstrap` command. See [Environment Variables](/self-hosted/config-options#general) for more
 information.
 
 :::
@@ -157,7 +157,7 @@ npx directus roles create --role <role-name>
 ```
 
 These roles are created with the
-[minimum permissions required](/configuration/users-roles-permissions/#configure-system-permissions) to properly access
+[minimum permissions required](/configuration/users-roles-permissions#configure-system-permissions) to properly access
 the App by default.
 
 To create a new role with admin access, set the `--admin` flag to `true`, such as
@@ -246,4 +246,4 @@ Useful when you need to parse data using tools like `jq` for example.
 <!-- ### Extending
 
 To find how you can extend the CLI and write custom commands, check how we make Directus highly extensible on our
-[extensions overview page](/concepts/extensions/). -->
+[extensions overview page](/concepts/extensions). -->

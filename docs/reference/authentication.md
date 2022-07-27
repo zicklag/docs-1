@@ -5,7 +5,7 @@ pageClass: page-reference
 # Authentication
 
 > All data within the platform is private by default. The
-> [public role](/configuration/users-roles-permissions/#configure-permissions) can be configured to expose data without
+> [public role](/configuration/users-roles-permissions#configure-permissions) can be configured to expose data without
 > authentication, or you can pass an access token to the API to access private data.
 
 ---
@@ -72,7 +72,7 @@ as the mode in the request, the refresh token won't be returned in the JSON.
 ::: tip Expiry time
 
 The token's expiration time can be configured through
-[the `ACCESS_TOKEN_TTL` environment variable](/self-hosted/config-options/#general).
+[the `ACCESS_TOKEN_TTL` environment variable](/self-hosted/config-options#general).
 
 :::
 
@@ -213,7 +213,7 @@ Email address of the user you're requesting a password reset for.
 `reset_url`\
 Provide a custom reset url which the link in the email will lead to. The reset token will be passed as a parameter.\
 **Note**: You need to configure the
-[`PASSWORD_RESET_URL_ALLOW_LIST` environment variable](/self-hosted/config-options/#security) to enable this feature.
+[`PASSWORD_RESET_URL_ALLOW_LIST` environment variable](/self-hosted/config-options#security) to enable this feature.
 
 ### REST API
 
@@ -288,7 +288,7 @@ List all the configured auth providers.
 ::: tip Configuring auth providers
 
 To learn more about setting up auth providers, see
-[Configuring auth providers](/self-hosted/config-options/#authentication).
+[Configuring auth providers](/self-hosted/config-options#authentication).
 
 :::
 

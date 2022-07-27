@@ -123,7 +123,7 @@ per-Project; so if a Team has 4 Standard Projects, it will be charged 4 times ea
 ### How Bills Are Calculated
 
 Project billing is calculated based on the total number of hours that Active and Standby Nodes are used during the
-billing period. Once the [Node Type](/cloud/glossary/#nodes) is selected, the associated hourly rate will apply to both
+billing period. Once the [Node Type](/cloud/glossary#nodes) is selected, the associated hourly rate will apply to both
 Active and Standby Nodes.
 
 :::tip Node Pricing
@@ -179,7 +179,7 @@ The monthly bill will be `$79.45` plus VAT/Tax.
 Remember: _you are never locked-in to a specific Node configuration_. As your needs change for a Project, you can
 reconfigure the Node Type as well as the number of Active and Standby Nodes at any time. To that end, you may want to
 monitor overall system traffic to make informed decisions on Node reconfiguration. The
-[Project Monitor Page](/cloud/projects/#monitor-a-project) provides performance analytics, which can be used to help
+[Project Monitor Page](/cloud/projects#monitor-a-project) provides performance analytics, which can be used to help
 identify optimal Node configurations for your Project.
 
 :::warning Standby Nodes
@@ -206,7 +206,7 @@ the Team. To invite Team Members:
 :::tip
 
 Clicking the emailed invitation link does not automatically create an Account for you. Invitees will need to
-[create an Account](/cloud/accounts/#create-account-and-login) before accepting an invitation to join a Team.
+[create an Account](/cloud/accounts#create-account-and-login) before accepting an invitation to join a Team.
 
 :::
 

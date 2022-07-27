@@ -41,7 +41,7 @@ The permission used during the flow. One of `$public`, `$trigger`, `$full`, or U
 Timestamp in ISO8601 when the flow was created.
 
 `user_created` **many-to-one**\
-The user who created the flow. Many-to-one to [users](/reference/system/users/#the-users-object).
+The user who created the flow. Many-to-one to [users](/reference/system/users#the-users-object).
 
 `operation` **string**\
 UUID of the operation connected to the trigger in the flow.
@@ -74,7 +74,7 @@ Supports all [global query parameters](/reference/query).
 
 ### Returns
 
-An array of up to [limit](/reference/query/#limit) [flow objects](#the-flow-object). If no items are available, data
+An array of up to [limit](/reference/query#limit) [flow objects](#the-flow-object). If no items are available, data
 will be an empty array.
 
 ### REST API
@@ -84,7 +84,7 @@ GET /flows
 SEARCH /flows
 ```
 
-[Learn more about SEARCH ->](/reference/introduction/#search-http-method)
+[Learn more about SEARCH ->](/reference/introduction#search-http-method)
 
 ### GraphQL
 

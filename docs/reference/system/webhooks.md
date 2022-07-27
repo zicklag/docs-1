@@ -58,11 +58,11 @@ List all webhooks that exist in Directus.
 
 ### Query Parameters
 
-Supports all [global query parameters](/reference/query/).
+Supports all [global query parameters](/reference/query).
 
 ### Returns
 
-An array of up to [limit](/reference/query/#limit) [webhook objects](#the-webhook-object). If no items are available,
+An array of up to [limit](/reference/query#limit) [webhook objects](#the-webhook-object). If no items are available,
 data will be an empty array.
 
 ### REST API
@@ -72,7 +72,7 @@ GET /webhooks
 SEARCH /webhooks
 ```
 
-[Learn more about SEARCH ->](/reference/introduction/#search-http-method)
+[Learn more about SEARCH ->](/reference/introduction#search-http-method)
 
 ### GraphQL
 

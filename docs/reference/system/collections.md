@@ -5,7 +5,7 @@ pageClass: page-reference
 # Collections
 
 > Collections are the individual collections of items, similar to tables in a database. Changes to collections will
-> alter the schema of the database. [Learn more about Collections](/getting-started/glossary/#collections).
+> alter the schema of the database. [Learn more about Collections](/getting-started/glossary#collections).
 
 ---
 
@@ -55,18 +55,18 @@ Whether or not the Admin App should allow the user to view archived items.
 What field holds the sort value on the collection. The Admin App uses this to allow drag-and-drop manual sorting.
 
 `accountability` **string**\
-What data is tracked. One of `all`, `activity`. See [Accountability](/configuration/data-model/#accountability) for more
+What data is tracked. One of `all`, `activity`. See [Accountability](/configuration/data-model#accountability) for more
 information.
 
 `item_duplication_fields` **array**\
-What fields are duplicated during "Save as copy" action of an item in this collection. See [Duplication](/configuration/data-model/#duplication)
+What fields are duplicated during "Save as copy" action of an item in this collection. See [Duplication](/configuration/data-model#duplication)
 for more information.
 
 `group` **string**\
-The name of the parent collection. This is used in [grouping/nesting of collections](/configuration/data-model/#sorting-grouping).
+The name of the parent collection. This is used in [grouping/nesting of collections](/configuration/data-model#sorting-grouping).
 
 `sort` **number**\
-What sort order of the collection relative to other collections of the same level. This is used in [sorting of collections](/configuration/data-model/#sorting-grouping).
+What sort order of the collection relative to other collections of the same level. This is used in [sorting of collections](/configuration/data-model#sorting-grouping).
 
 `collapse` **string**\
 What is the default behavior of this collection or "folder" collection when it has nested collections. One of `open`, `closed`,
@@ -85,7 +85,7 @@ The table comment.
 
 ::: tip
 
-["folder" collections do not hold any data](/configuration/data-model/#sorting-grouping), hence their schema would be
+["folder" collections do not hold any data](/configuration/data-model#sorting-grouping), hence their schema would be
 `null`.
 
 :::
@@ -146,7 +146,7 @@ GET /collections
 SEARCH /collections
 ```
 
-[Learn more about SEARCH ->](/reference/introduction/#search-http-method)
+[Learn more about SEARCH ->](/reference/introduction#search-http-method)
 
 ### GraphQL
 
@@ -234,7 +234,7 @@ The `collection` property is required, all other properties of the [collection o
 optional.
 
 You are able to provide an array of `fields` to be created during the creation of the collection. See the
-[fields object](/reference/system/fields/#the-fields-object) for more information on what properties are available in a
+[fields object](/reference/system/fields#the-fields-object) for more information on what properties are available in a
 field.
 
 ### Returns
@@ -244,7 +244,7 @@ The [collection object](#the-collection-object) for the collection created in th
 ::: tip
 
 Make sure to pass an empty object for schema (`schema: {}`) when creating collections. Alternatively, you can omit it
-entirely or use `schema: null` to create ["folder" collections](/configuration/data-model/#sorting-grouping).
+entirely or use `schema: null` to create ["folder" collections](/configuration/data-model#sorting-grouping).
 
 :::
 

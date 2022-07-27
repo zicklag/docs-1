@@ -29,7 +29,7 @@ This Operation creates Item(s) in a Collection.
 - **Collection** — Use the dropdown menu to select the Collection you'd like to create Items in.
 - **Permissions** — Select the scope of permissions used for this Operation.
 - **Emit Events** — Toggle whether the event is emitted.
-- **Payload** — Create Item(s) in a Collection. To learn more, see [API > Items](/reference/items/).
+- **Payload** — Create Item(s) in a Collection. To learn more, see [API > Items](/reference/items).
 
 :::tip
 
@@ -78,17 +78,17 @@ select the Items you wish to update.
 - **Permissions** — Set the Role that this Operation will inherit permissions from.
 - **Collections** — Select the Collection from which you'd like to read Items.
 - **IDs** — Input the ID for Item(s) you wish to read and press enter. Click the ID to remove.
-- **Payload** — Update Items in a Collection. To learn more, see [API > Items](reference/items/).
+- **Payload** — Update Items in a Collection. To learn more, see [API > Items](/reference/items).
 - **Query** — Select Items to update with a query. To learn more, see [Filter Rules](/reference/filter-rules).
 
 ## Log to Console
 
 ![Log to Console](https://cdn.directus.io/docs/v9/configuration/flows/operations/operations-20220603A/log-to-console-20220603A.webp)
 
-This Operation outputs something to the server-side console as well as the [Log Panel](/configuration/flows/#logs). This
+This Operation outputs something to the server-side console as well as the [Log Panel](/configuration/flows#logs). This
 is a key tool for troubleshooting Flow configuration.
 
-- **Message** — Sets a [log message](/configuration/flows/#logs).
+- **Message** — Sets a [log message](/configuration/flows#logs).
 
 ## Send Email
 
@@ -114,7 +114,7 @@ provider may send it there automatically.
 
 This Operation sends a notification to an app user.
 
-- **Users** — Define a User by their primary key UUID. Use [Flow keys](/configuration/flows/flows/#the-flow-object) to
+- **Users** — Define a User by their primary key UUID. Use [Flow keys](/configuration/flows#the-flow-object) to
   set this dynamically.
 - **Permissions** — Define the Role that this Operation will inherit permissions from.
 - **Title** — Set the notification title.
@@ -156,7 +156,7 @@ Transform Payload once, then access its Operation key repeatedly.
 ![Trigger Flow](https://cdn.directus.io/docs/v9/configuration/flows/operations/operations-20220603A/trigger-flow-20220603A.webp)
 
 This Operation starts another Flow and passes data to it. It should be used in combination with the
-[Another Flow](/configuration/triggers/#another-flow) Trigger.
+[Another Flow](/configuration/flows/triggers#another-flow) Trigger.
 
 - **Flow** — Define a Flow by its primary key UUID.
 - **Payload** — Define JSON to insert into the Flow Object.

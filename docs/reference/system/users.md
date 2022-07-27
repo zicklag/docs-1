@@ -5,7 +5,7 @@ pageClass: page-reference
 # Users
 
 > Directus Users are the individual accounts that let you authenticate into the API and App. Each user belongs to a Role
-> which defines its granular Permissions. [Learn more about Users](/getting-started/glossary/#users/).
+> which defines its granular Permissions. [Learn more about Users](/getting-started/glossary#users).
 
 ---
 
@@ -39,7 +39,7 @@ Description of the user.
 Tags for the user.
 
 `avatar` **many-to-one**\
-Avatar file. Many-to-one to [files](/reference/files/).
+Avatar file. Many-to-one to [files](/reference/files).
 
 `language` **string**\
 Language the Admin App is rendered in. See [our Crowdin page](https://locales.directus.io) for all available languages and
@@ -55,7 +55,7 @@ When TFA is enabled, this holds the secret key for it.
 Status of the user. One of `draft`, `invited`, `active`, `suspended`, `archived`.
 
 `role` **uuid**\
-Role of the user. Many-to-one to [roles](/reference/roles).
+Role of the user. Many-to-one to [roles](/reference/system/roles).
 
 `token` **string**\
 Static access token for the user.
@@ -113,7 +113,7 @@ Supports all [global query parameters](/reference/query).
 
 ### Returns
 
-An array of up to [limit](/reference/query/#limit) [user objects](#the-user-object). If no items are available, data
+An array of up to [limit](/reference/query#limit) [user objects](#the-user-object). If no items are available, data
 will be an empty array.
 
 ### REST API
@@ -123,7 +123,7 @@ GET /users
 SEARCH /users
 ```
 
-[Learn more about SEARCH ->](/reference/introduction/#search-http-method)
+[Learn more about SEARCH ->](/reference/introduction#search-http-method)
 
 ### GraphQL
 
@@ -690,7 +690,7 @@ Role of the new user.
 `invite_url`\
 Provide a custom invite url which the link in the email will lead to. The invite token will be passed as a parameter.\
 **Note**: You need to configure the
-[`USER_INVITE_URL_ALLOW_LIST` environment variable](/self-hosted/config-options/#security) to enable this feature.
+[`USER_INVITE_URL_ALLOW_LIST` environment variable](/self-hosted/config-options#security) to enable this feature.
 
 ### Returns
 

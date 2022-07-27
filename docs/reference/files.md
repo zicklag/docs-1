@@ -74,7 +74,7 @@ exist, it is dynamically generated and immediately returned.
 
 ### Preset Transformations
 
-- **`key`** — This **key** of the [Storage Asset Preset](/configuration/project-settings/#files-thumbnails), a shortcut
+- **`key`** — This **key** of the [Storage Asset Preset](/configuration/project-settings#files-thumbnails), a shortcut
   for the below parameters
 
 ### Custom Transformations
@@ -174,16 +174,16 @@ Title for the file.
 Mimetype of the file.
 
 `folder` **many-to-one**\
-What (virtual) folder the file is in. Many-to-one to [folders](/reference/system/folders/).
+What (virtual) folder the file is in. Many-to-one to [folders](/reference/system/folders).
 
 `uploaded_by` **many-to-one**\
-Who uploaded the file. Many-to-one to [users](/reference/system/users/).
+Who uploaded the file. Many-to-one to [users](/reference/system/users).
 
 `uploaded_on` **datetime**\
 When the file was uploaded.
 
 `modified_by` **many-to-one**\
-Who updated the file last. Many-to-one to [users](/reference/system/users/).
+Who updated the file last. Many-to-one to [users](/reference/system/users).
 
 `filesize` **number**\
 Size of the file in bytes.
@@ -258,7 +258,7 @@ Supports all [global query parameters](/reference/query).
 
 ### Returns
 
-An array of up to [limit](/reference/query/#limit) [file objects](#the-file-object). If no items are available, data
+An array of up to [limit](/reference/query#limit) [file objects](#the-file-object). If no items are available, data
 will be an empty array.
 
 ### REST API
@@ -268,7 +268,7 @@ GET /files
 SEARCH /files
 ```
 
-[Learn more about SEARCH ->](/reference/introduction/#search-http-method)
+[Learn more about SEARCH ->](/reference/introduction#search-http-method)
 
 ### GraphQL
 

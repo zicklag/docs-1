@@ -10,7 +10,7 @@
 <source src="https://cdn.directus.io/docs/v9/getting-started/quickstart/quickstart-20220427A/create-account-and-login-20220427.mp4" type="video/mp4" />
 </video>
 
-First, you'll need to [create an Account and log in](/cloud/accounts/#create-account-and-login) on
+First, you'll need to [create an Account and log in](/cloud/accounts#create-account-and-login) on
 [Directus Cloud](https://directus.cloud/login)
 
 Your Directus Cloud Account allows you to create and manage any number of Community and Standard Projects. We've made
@@ -25,9 +25,9 @@ Once your Team is created, it's time to create your free Community Cloud Project
 
 :::tip Learn More About Cloud
 
-- [Overview](/cloud/overview/)
-- [Cloud Accounts](/cloud/accounts/)
-- [Cloud Teams](/cloud/teams/)
+- [Overview](/cloud/overview)
+- [Cloud Accounts](/cloud/accounts)
+- [Cloud Teams](/cloud/teams)
 
 :::
 
@@ -39,7 +39,7 @@ Once your Team is created, it's time to create your free Community Cloud Project
 
 To create a Community Project, follow the steps below:
 
-1. Open the Team Menu in the Dashboard Header and select or [create](/cloud/teams/#create-a-team) the desired Team.
+1. Open the Team Menu in the Dashboard Header and select or [create](/cloud/teams#create-a-team) the desired Team.
 2. Navigate to **"Projects"** and click **"Create Project"**.
 3. Set the Project Name.
 4. Select the Community tier.
@@ -52,7 +52,7 @@ associated with your Cloud Account. The email will contain your Project URL as w
 If you used GitHub to create your account, this will be your GitHub email. Once the build is complete, it's time log
 in!_
 
-7. You can [access a Project](/cloud/projects/#access-a-project) from within the Cloud Dashboard or type the URL into
+7. You can [access a Project](/cloud/projects#access-a-project) from within the Cloud Dashboard or type the URL into
    your browser.
 8. Log in with your username and password from the email.
 
@@ -65,8 +65,8 @@ will end up in another folder like "Social" or "Promotions".
 
 :::tip Learn More About Cloud Projects
 
-- [Overview](/cloud/overview/)
-- [Cloud Projects](/cloud/projects/)
+- [Overview](/cloud/overview)
+- [Cloud Projects](/cloud/projects)
 
 :::
 
@@ -77,7 +77,7 @@ will end up in another folder like "Social" or "Promotions".
 </video>
 
 Once logged in, you're greeted with the option to create your first
-[Collection](/getting-started/glossary/#collections).
+[Collection](/getting-started/glossary#collections).
 
 1. Navigate into the Content Module.
 2. Click **"Create Collection"** and a side menu will appear.
@@ -91,8 +91,8 @@ Once logged in, you're greeted with the option to create your first
 :::tip Learn More About Collections
 
 - [The Content Module](/app/content)
-- [Create and Manage a Collection](/configuration/data-model/)
-- [Build Relationships Between Collections](/configuration/relationships/)
+- [Create and Manage a Collection](/configuration/data-model)
+- [Build Relationships Between Collections](/configuration/relationships)
 
 :::
 
@@ -107,7 +107,7 @@ Change the link to the "Create a Collection" format
 <source src="https://cdn.directus.io/docs/v9/getting-started/quickstart/quickstart-20220427A/create-a-field-20220427A.mp4" type="video/mp4" />
 </video>
 
-With your first Collection created, it's time to start adding some [Fields](/getting-started/glossary/#fields).
+With your first Collection created, it's time to start adding some [Fields](/getting-started/glossary#fields).
 
 1. Navigate to **Settings Module > Data Model > `Collection-Name`**.
 2. Click the **"Create Field"** button and select the **"Input"** Field type.
@@ -117,7 +117,7 @@ With your first Collection created, it's time to start adding some [Fields](/get
 
 ::: tip Learn More About Fields
 
-- [Create and Manage Fields in the App](/configuration/data-model/)
+- [Create and Manage Fields in the App](/configuration/data-model)
 
 :::
 
@@ -127,7 +127,7 @@ With your first Collection created, it's time to start adding some [Fields](/get
 <source src="https://cdn.directus.io/docs/v9/getting-started/quickstart/quickstart-20220427A/create-an-item-20220427B.mp4" type="video/mp4" />
 </video>
 
-Now that we have a Collection with a Field configured, it's time to add an [Item](/getting-started/glossary/#).
+Now that we have a Collection with a Field configured, it's time to add an [Item](/getting-started/glossary#).
 
 1. Navigate to the Content Module.
 2. Click <span mi btn>add</span> in the page header to open the Item Page.
@@ -136,7 +136,7 @@ Now that we have a Collection with a Field configured, it's time to add an [Item
 
 :::tip Learn More About Items
 
-- [The Content Module](/app/content/)
+- [The Content Module](/app/content)
 - [The Item Page](/app/content/items)
 
 :::
@@ -165,7 +165,7 @@ of creating a new Role.
 
 ::: tip Learn More About Roles & Permissions
 
-- [Users, Roles and Permissions](/configuration/users-roles-permissions/).
+- [Users, Roles and Permissions](/configuration/users-roles-permissions).
 
 :::
 
@@ -198,7 +198,7 @@ fact, the App is just a GUI powered by the API._
 
 :::tip Learn More About The API
 
-- [Intro to the API](/reference/introduction/)
-- [JS SDK](/reference/sdk/)
+- [Intro to the API](/reference/introduction)
+- [JS SDK](/reference/sdk)
 
 :::

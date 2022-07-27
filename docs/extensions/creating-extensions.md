@@ -97,16 +97,16 @@ To learn more about developing extensions of a specific type, you can refer to o
 
 #### App Extensions
 
-- [Interfaces](/extensions/interfaces/)
-- [Displays](/extensions/displays/)
-- [Layouts](/extensions/layouts/)
-- [Modules](/extensions/modules/)
-- [Panels](/extensions/panels/)
+- [Interfaces](/extensions/interfaces)
+- [Displays](/extensions/displays)
+- [Layouts](/extensions/layouts)
+- [Modules](/extensions/modules)
+- [Panels](/extensions/panels)
 
 #### API Extensions
 
-- [Hooks](/extensions/hooks/)
-- [Endpoints](/extensions/endpoints/)
+- [Hooks](/extensions/hooks)
+- [Endpoints](/extensions/endpoints)
 
 ::: tip Live Reloading
 

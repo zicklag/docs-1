@@ -6,8 +6,8 @@
 
 :::tip Before You Begin
 
-To use this utility, you will need to be familiar with [Collections](/getting-started/glossary/#collections),
-[Items](/getting-started/glossary/#items), and [Fields](/getting-started/glossary/#fields).
+To use this utility, you will need to be familiar with [Collections](/getting-started/glossary#collections),
+[Items](/getting-started/glossary#items), and [Fields](/getting-started/glossary#fields).
 
 <!--
 @TODO Getting Started > Introduction
@@ -19,8 +19,8 @@ Link when ready
 :::tip Import / Export via the API
 
 This page details Importing and Exporting of Items as files via the no-code app. However, you can also
-[Import](/reference/system/utilities/#import-data-from-file) and
-[Export](/reference/system/utilities/#export-data-to-a-file) Items as files programmatically via the API.
+[Import](/reference/system/utilities#import-data-from-file) and
+[Export](/reference/system/utilities#export-data-to-a-file) Items as files programmatically via the API.
 
 :::
 
@@ -117,7 +117,7 @@ they are exported.
 Some Collections may directly or relationally include Fields referencing images, videos or other file types. It is not
 possible to import or export files with this utility.
 
-To import and export files, please see the [File Library Module](/app/file-library/).
+To import and export files, please see the [File Library Module](/app/file-library).
 
 :::tip What does Import/Export do in the File Library?!
 

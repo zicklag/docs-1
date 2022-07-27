@@ -115,7 +115,7 @@ sticking to the defaults for now. These defaults use the "String" datatype.
 
 ::: tip More Info on Fields
 
-To learn more, see our documentation on [Fields](/getting-started/glossary/#fields).
+To learn more, see our documentation on [Fields](/getting-started/glossary#fields).
 
 :::
 

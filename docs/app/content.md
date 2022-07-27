@@ -6,8 +6,8 @@
 
 ::: tip Before You Begin
 
-To efficiently use this Module, you will need to know about [Collections](/getting-started/glossary/#collections),
-[Items](/getting-started/glossary/#items) and [Fields](/getting-started/glossary/#fields).
+To efficiently use this Module, you will need to know about [Collections](/getting-started/glossary#collections),
+[Items](/getting-started/glossary#items) and [Fields](/getting-started/glossary#fields).
 
 <!--
 @TODO getting-started > 30-90 min tutorial
@@ -22,7 +22,7 @@ Link to tutorial
 
 The Content Module is composed of Collection Pages and Item Pages. Use the Navigation Bar on the left to move between
 Collections. Each Collection Page displays all Items in its Collection and comes with highly configurable
-[Layouts](/getting-started/glossary/#layouts) for browsing, visualizing, and managing Items. The Page Header includes
+[Layouts](/getting-started/glossary#layouts) for browsing, visualizing, and managing Items. The Page Header includes
 key action buttons for sorting, searching, filtering, creating, editing, archiving, and deleting multiple Items. To
 learn more, see our guide on the [Collection Page](/app/content/collections).
 
@@ -46,7 +46,7 @@ well. To learn more, see our guide on the [Item Page](/app/content/items).
 
 This section explains how to create, view, update, and delete Items within the Directus App. However, all actions
 performed in the app can also be done programmatically.\
-Learn how to [manage Items via the API](/reference/items/).
+Learn how to [manage Items via the API](/reference/items).
 
 :::
 

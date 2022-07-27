@@ -36,7 +36,7 @@ Position of the operation on the Y axis within the flow workspace.
 Timestamp in ISO8601 when the operation was created.
 
 `user_created` **many-to-one**\
-The user who created the operation. Many-to-one to [users](/reference/system/users/#the-users-object).
+The user who created the operation. Many-to-one to [users](/reference/system/users#the-users-object).
 
 `resolve` **uuid**\
 The operation triggered when the current operation succeeds (or `then` logic of a condition operation). Primary key of an
@@ -47,7 +47,7 @@ The operation triggered when the current operation fails (or `otherwise` logic o
 an [operation](#the-operation-object).
 
 `flow` **many-to-one**\
-The flow containing this operation. Many-to-one to [flows](/reference/system/flows/#the-flow-object).
+The flow containing this operation. Many-to-one to [flows](/reference/system/flows#the-flow-object).
 
 ```json
 {
@@ -77,7 +77,7 @@ Supports all [global query parameters](/reference/query).
 
 ### Returns
 
-An array of up to [limit](/reference/query/#limit) [operation objects](#the-operation-object). If no items are
+An array of up to [limit](/reference/query#limit) [operation objects](#the-operation-object). If no items are
 available, data will be an empty array.
 
 ### REST API
@@ -87,7 +87,7 @@ GET /operations
 SEARCH /operations
 ```
 
-[Learn more about SEARCH ->](/reference/introduction/#search-http-method)
+[Learn more about SEARCH ->](/reference/introduction#search-http-method)
 
 ### GraphQL
 

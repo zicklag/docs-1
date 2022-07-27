@@ -5,7 +5,7 @@ pageClass: page-reference
 # Preset
 
 > Presets hold the preferences of individual users of the platform. This allows Directus to show and maintain custom
-> item listings and bookmarks for users of the app. [Learn more about Presets](/getting-started/glossary/#presets).
+> item listings and bookmarks for users of the app. [Learn more about Presets](/getting-started/glossary#presets).
 
 ---
 
@@ -18,10 +18,10 @@ Primary key of the preset.
 The title of the bookmark. If this value is `null`, it's considered a preset instead of a bookmark.
 
 `user` **many-to-one**\
-User this preset applies to. Many-to-one to [users](/reference/system/users/).
+User this preset applies to. Many-to-one to [users](/reference/system/users).
 
 `role` **many-to-one**\
-Role this preset applies to. Many-to-one to [users](/reference/system/users/).
+Role this preset applies to. Many-to-one to [users](/reference/system/users).
 
 `collection` **string**\
 Collection this preset applies to.
@@ -90,7 +90,7 @@ Supports all [global query parameters](/reference/query).
 
 ### Returns
 
-An array of up to [limit](/reference/query/#limit) [preset objects](#the-preset-object). If no items are available, data
+An array of up to [limit](/reference/query#limit) [preset objects](#the-preset-object). If no items are available, data
 will be an empty array.
 
 ### REST API
@@ -100,7 +100,7 @@ GET /presets
 SEARCH /presets
 ```
 
-[Learn more about SEARCH ->](/reference/introduction/#search-http-method)
+[Learn more about SEARCH ->](/reference/introduction#search-http-method)
 
 ### GraphQL
 

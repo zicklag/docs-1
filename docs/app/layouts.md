@@ -17,7 +17,7 @@ to view and interact with Items in a Collection.
 The following sections detail the Layouts managed and supported by the Directus Team. Keep in mind that Directus is
 open-source, modular and extensible. You are free to create any Layout you need on self-hosted and Enterprise Cloud
 Projects. Additionally, Directus Cloud is always adding more Layouts to its
-[Cloud Exclusive Extensions](/cloud/glossary/#extensions), so check back often to stay up-to-date with the latest and
+[Cloud Exclusive Extensions](/cloud/glossary#extensions), so check back often to stay up-to-date with the latest and
 greatest. Additionally, you can join the community on [Discord](https://discord.com/invite/directus) and
 [GitHub](https://github.com/directus/directus/discussions) to find thousands of engineers guiding development of the
 Directus platform.
@@ -120,7 +120,7 @@ Link
 ![Card Layout](https://cdn.directus.io/docs/v9/app-guide/layouts/layouts-20220415A/card-layout-20220416A.webp)
 
 This tiled Layout is ideal for Collections that prioritize an image _(e.g. a user or blog post)_. This is the default
-for both the [User Directory](/app/user-directory/) and [File Library](/app/file-library/). It includes the following
+for both the [User Directory](/app/user-directory) and [File Library](/app/file-library). It includes the following
 controls.
 
 **Layout Options**

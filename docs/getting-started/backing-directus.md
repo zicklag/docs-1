@@ -63,7 +63,7 @@ If you find an issue in Directus, no matter how small, we'd love to hear about i
 platform stability. [Report a bug on GitHub](https://github.com/directus/directus/issues/new)
 
 **App Translations**\
-Every button, element, or other line of text in the app is [fully translatable](/contributing/translations/). These translations
+Every button, element, or other line of text in the app is [fully translatable](/contributing/translations). These translations
 make our app an international platform. Our [Crowdin integration](https://locales.directus.io) makes polishing existing translations
 or creating new ones a breeze.
 
@@ -78,7 +78,7 @@ agreement so your devs can focus on your app's core business logic. [Contact the
 more info.
 
 **Sponsored Work**\
-[Commissioned Features](/getting-started/support/#commissioned-features) and [Expedited Fixes](/getting-started/support/#expedited-fixes)
+[Commissioned Features](/getting-started/support#commissioned-features) and [Expedited Fixes](/getting-started/support#expedited-fixes)
 are great ways to financially support the development of Directus and improve the codebase for the community _and for your
 project!_
 
@@ -86,13 +86,13 @@ project!_
 Cloud architecture, software updates, and configuration optimizations require fully dedicated effort. Cut through all that
 digital red-tape and run your projects on [Directus Cloud](/cloud/overview). You get production-ready projects with zero
 vendor lock-in, 90 second average build times, incredibly fair pricing, scaling at the click of a button, automatic updates
-with no downtime and a constant stream of new [Cloud Exclusive Extensions](/cloud/glossary/#extensions).
+with no downtime and a constant stream of new [Cloud Exclusive Extensions](/cloud/glossary#extensions).
 
 We do everything we can to make hosting on [Directus Cloud](/cloud/overview) a no-brainer.
 
 :::tip Ready to try out Cloud?
 
-Test out Directus Cloud now for free with the [Quickstart Guide](/getting-started/quickstart/).
+Test out Directus Cloud now for free with the [Quickstart Guide](/getting-started/quickstart).
 
 :::
 

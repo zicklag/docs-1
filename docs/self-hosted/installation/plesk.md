@@ -25,7 +25,7 @@ Next you will need to create a project folder, we will be adding 4 files to this
 
 This file is used to configure Directus. Normally, the `init` script would create it for us. So now we have to do it
 manually. You can just copy it from another Directus installation or add the relevant variables using this help page:
-[Environment Variables](/self-hosted/config-options/)).
+[Environment Variables](/self-hosted/config-options)).
 
 If you have not already a user in the database make sure to add a first user by adding the following two lines so that
 you can later login to Directus.

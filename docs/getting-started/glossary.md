@@ -13,8 +13,8 @@ with the admin option enabled can manage Settings within the app.
 
 [Fields](#fields) that do not map directly to an actual database column are called "alias" fields. For example,
 presentation fields (such as dividers and groups) and certain relational types that display data stored elsewhere (such
-as [One-to-Many (O2M)](/configuration/relationships/#one-to-many-o2m) and
-[Many-to-Many (M2M)](/configuration/relationships/#many-to-many-m2m)).
+as [One-to-Many (O2M)](/configuration/relationships#one-to-many-o2m) and
+[Many-to-Many (M2M)](/configuration/relationships#many-to-many-m2m)).
 
 ## API
 
@@ -36,7 +36,7 @@ tracks the event type, user, timestamp, IP address, user-agent, and any associat
 Collections are containers for specific types of Items and contain any number of fields. Each collection represents a
 **table** in your database. By default, the [title formatter](#title-formatter) is used to display any existing database
 table names as human-readable collection titles. There are also "folder" collections that are
-[exclusively used for organizational purposes](/configuration/data-model/#sorting-grouping), and don't hold any data
+[exclusively used for organizational purposes](/configuration/data-model#sorting-grouping), and don't hold any data
 themselves.
 
 Collections can be organized in any way that is appropriate for your project. You can architect them platform-specific
@@ -50,10 +50,10 @@ unique value that is used to reference the Collection's items throughout the dat
 
 ### Relevant Guides
 
-- [Creating a Collection](/configuration/data-model/#creating-a-collection)
-- [Configuring a Collection](/configuration/data-model/#configuring-a-collection)
-- [Deleting a Collection](/configuration/data-model/#deleting-a-collection)
-- [Adjusting a Collection Layout](/configuration/data-model/#adjusting-a-collection-layout)
+- [Creating a Collection](/configuration/data-model#creating-a-collection)
+- [Configuring a Collection](/configuration/data-model#configuring-a-collection)
+- [Deleting a Collection](/configuration/data-model#deleting-a-collection)
+- [Adjusting a Collection Layout](/configuration/data-model#adjusting-a-collection-layout)
 
 ## Dashboards
 
@@ -96,7 +96,7 @@ formatting styles, or anything else.
 
 ### Relevant Guides
 
-- [Creating a Custom Display](/extensions/displays/)
+- [Creating a Custom Display](/extensions/displays)
 
 ## Environments
 
@@ -106,9 +106,9 @@ migrations to promote data between them.
 ## Extensions
 
 The platform has been built to be modular and extensible. This helps keep the core codebase simple and clean (see the
-[80/20 Rule](/contributing/introduction/#feature-requests)), while allowing the flexibility needed to satisfy all
+[80/20 Rule](/contributing/introduction#feature-requests)), while allowing the flexibility needed to satisfy all
 use-cases... no matter how complex. There are many different types of supported extensions, each offering a way to
-deeply customize, override, or extend the core platform. [Learn more about Extensions](/extensions/introduction/).
+deeply customize, override, or extend the core platform. [Learn more about Extensions](/extensions/introduction).
 
 ## Fields
 
@@ -119,10 +119,10 @@ a **column** in your database. For example, an `articles` [Collection](#collecti
 
 ### Relevant Guides
 
-- [Creating a Field](/reference/system/fields/#creating-a-field)
-- [Duplicating Fields](/reference/system/fields/#duplicating-a-field)
-- [Adjusting Field Layout](/reference/system/fields/#adjusting-field-layout)
-- [Deleting Fields](/reference/system/fields/#deleting-a-field)
+- [Creating a Field](/reference/system/fields#creating-a-field)
+- [Duplicating Fields](/reference/system/fields#duplicating-a-field)
+- [Adjusting Field Layout](/reference/system/fields#adjusting-field-layout)
+- [Deleting Fields](/reference/system/fields#deleting-a-field)
 
 ## Files & Assets
 
@@ -156,7 +156,7 @@ proprietary options, such as seating charts, QR codes, or Stripe customer info.
 
 ### Relevant Guides
 
-- [Creating a Custom Interface](/extensions/interfaces/)
+- [Creating a Custom Interface](/extensions/interfaces)
 
 ## Items
 
@@ -171,10 +171,10 @@ Items are referenced (both individually and relationally) by their unique [prima
 
 #### Relevant Guides
 
-- [Creating an Item](/app/content/items/#create-an-item)
-- [Archiving an Item](/app/content/items/#archive-an-item)
-- [Manually Sorting Items](/app/content/collections/#manually-sort-items)
-- [Deleting an Item](/app/content/items/#delete-an-item)
+- [Creating an Item](/app/content/items#create-an-item)
+- [Archiving an Item](/app/content/items#archive-an-item)
+- [Manually Sorting Items](/app/content/collections#manually-sort-items)
+- [Deleting an Item](/app/content/items#delete-an-item)
 
 ## Junction Collections
 
@@ -200,18 +200,18 @@ data within the App, such as Gantt charts, seating maps, or spreadsheets.
 
 ### Relevant Guides
 
-- [Creating a Custom Layout](/extensions/layouts/)
+- [Creating a Custom Layout](/extensions/layouts)
 
 ## Modules
 
 Modules are the highest and broadest level of organization within the App. There are several modules included
 out-of-the-box, however you can also add your own.
 
-The [Module Bar](/app/overview/#_1-module-bar) lists all available Modules and allows you to switch between them. Each
+The [Module Bar](/app/overview#_1-module-bar) lists all available Modules and allows you to switch between them. Each
 module also controls its own navigation bar to provide tailored access to sub-pages. All core functionality within the
 App can be bucketed into one of the following modules:
 
-- [Content](/app/content/collections/) — The primary way to view and interact with database content
+- [Content](/app/content/collections) — The primary way to view and interact with database content
 - [User Directory](/app/user-directory) — A dedicated section for the platform's system Users
 - [File Library](/app/file-library) — An aggregate of all files uploaded and managed within the platform
 - [Insights](/app/insights) — Access to infinitely customizable data dashboards
@@ -224,7 +224,7 @@ Payments Console).
 
 ### Relevant Guides
 
-- [Creating a Custom Module](/extensions/modules/)
+- [Creating a Custom Module](/extensions/modules)
 
 ## Multitenancy
 
@@ -245,7 +245,7 @@ within a [Dashboard](#dashboards) and can be positioned and resized as needed.
 
 ### Relevant Guides
 
-- [Creating a Custom Panel](/extensions/panels/)
+- [Creating a Custom Panel](/extensions/panels)
 
 ## Permissions
 
@@ -259,8 +259,8 @@ to define bookmarks that can be used to quickly recall specific datasets.
 
 #### Relevant Guides
 
-- [Creating a Preset](/reference/system/presets/#create-a-preset)
-- [Deleting a Preset](/reference/system/presets/#delete-a-preset)
+- [Creating a Preset](/reference/system/presets#create-a-preset)
+- [Deleting a Preset](/reference/system/presets#delete-a-preset)
 
 ## Primary Key (PK)
 
@@ -275,20 +275,20 @@ often called `id`.
 A Project is a complete instance of the platform. Each project represents a **Database**, but also encapsulates a config
 file, asset storage, and any custom extensions. Projects are the highest level of organization in Directus.
 
-- [Creating a Project](/self-hosted/installation/)
-- [Configuring a Project](/self-hosted/config-options/)
-- [Adjusting Project Settings](/configuration/project-settings/)
-- [Upgrading a Project](/self-hosted/upgrades-migrations/)
-- [Backing-up a Project](/self-hosted/upgrades-migrations/#backing-up-a-project)
-- [Migrating a Project](/self-hosted/upgrades-migrations/#migrating-a-project)
-- [Deleting a Project](/self-hosted/upgrades-migrations/#deleting-a-project)
+- [Creating a Project](/self-hosted/installation)
+- [Configuring a Project](/self-hosted/config-options)
+- [Adjusting Project Settings](/configuration/project-settings)
+- [Upgrading a Project](/self-hosted/upgrades-migrations)
+- [Backing-up a Project](/self-hosted/upgrades-migrations#backing-up-a-project)
+- [Migrating a Project](/self-hosted/upgrades-migrations#migrating-a-project)
+- [Deleting a Project](/self-hosted/upgrades-migrations#deleting-a-project)
 
 ## Relationships
 
 The platform allows you to group Items within different Collections. But often times it is important to "link" items
 across different collections (such as relating `recipes` and `ingredients`) — this is called a relationship, a crucial
 concept within any _relational_ database. There are several different types of relationships, each serving a specific
-purpose. [Learn more about Relationships](/configuration/relationships/).
+purpose. [Learn more about Relationships](/configuration/relationships).
 
 ## Revisions
 
@@ -310,11 +310,11 @@ There is also a "Public" role that determines access for unauthenticated access.
 
 ### Relevant Guides
 
-- [Creating a Role](/configuration/users-roles-permissions/#creating-a-role)
-- [Configuring a Role](/configuration/users-roles-permissions/#configure-a-role)
-- [Configuring Role Permissions](/configuration/users-roles-permissions/#configure-permissions)
-- [Configuring System Permissions](/configuration/users-roles-permissions/#configure-system-permissions)
-- [Deleting a Role](/configuration/users-roles-permissions/#deleting-a-role)
+- [Creating a Role](/configuration/users-roles-permissions#creating-a-role)
+- [Configuring a Role](/configuration/users-roles-permissions#configure-a-role)
+- [Configuring Role Permissions](/configuration/users-roles-permissions#configure-permissions)
+- [Configuring System Permissions](/configuration/users-roles-permissions#configure-system-permissions)
+- [Deleting a Role](/configuration/users-roles-permissions#deleting-a-role)
 
 ## Storage Adapters
 
