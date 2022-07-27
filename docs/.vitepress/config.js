@@ -11,22 +11,94 @@ export default {
   },
   head: [
     // attempt at some meta tags
-    ["meta", { "property": "og:title", "content": "Directus Docs" }],
-    ["meta", { "property": "og:description", "content": "Directus. An Instant App & API for your SQL Database." }],
-    ["meta", { "property": "twitter:title", "content": "Directus Docs" }],
-    ["meta", { "property": "twitter:description", "content": "Directus. An Instant App & API for your SQL Database." }],
-    ["meta", { "property": "twitter:image", "content": "https://cdn.thumbsmith.com/v1/u/directus/docs.png?title=Directus+Docs&lastUpdated=June+29%2C+2022" }],
-    ["meta", { "property": "twitter:image:width", "content": "1200" }],
-    ["meta", { "property": "twitter:image:height", "content": "630" }],
-    ["link", { "rel": "shortcut icon", "type": "image/svg+xml", "href": "/favicon.svg" }],
-    ["link", { "rel": "apple-touch-icon", "type": "image/svg+xml", "sizes": "180x180", "href": "/favicon.svg" }],
-    ["link", { "rel": "icon", "type": "image/svg+xml", "sizes": "32x32", "href": "/favicon.svg" }],
-    ["link", { "rel": "icon", "type": "image/svg+xml", "sizes": "16x16", "href": "/favicon.svg" }],
+    ["meta", { property: "og:title", content: "Directus Docs" }],
+    [
+      "meta",
+      {
+        property: "og:description",
+        content: "Directus. An Instant App & API for your SQL Database.",
+      },
+    ],
+    ["meta", { property: "twitter:title", content: "Directus Docs" }],
+    [
+      "meta",
+      {
+        property: "twitter:description",
+        content: "Directus. An Instant App & API for your SQL Database.",
+      },
+    ],
+    [
+      "meta",
+      {
+        property: "twitter:image",
+        content:
+          "https://cdn.thumbsmith.com/v1/u/directus/docs.png?title=Directus+Docs&lastUpdated=June+29%2C+2022",
+      },
+    ],
+    ["meta", { property: "twitter:image:width", content: "1200" }],
+    ["meta", { property: "twitter:image:height", content: "630" }],
+    [
+      "link",
+      { rel: "shortcut icon", type: "image/svg+xml", href: "/favicon.svg" },
+    ],
+    [
+      "link",
+      {
+        rel: "apple-touch-icon",
+        type: "image/svg+xml",
+        sizes: "180x180",
+        href: "/favicon.svg",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "icon",
+        type: "image/svg+xml",
+        sizes: "32x32",
+        href: "/favicon.svg",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "icon",
+        type: "image/svg+xml",
+        sizes: "16x16",
+        href: "/favicon.svg",
+      },
+    ],
     // google fonts
-    ["link", { "rel": "preconnect", "href": "https://fonts.googleapis.com", "crossorigin": "crossorigin" }],
-    ["link", { "rel": "preconnect", "href": "https://fonts.gstatic.com", "crossorigin": "crossorigin" }],
-    ["link", { "rel": "stylesheet", "href": "https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" }],
-    ["link", { "rel": "stylesheet", "href": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" }],
+    [
+      "link",
+      {
+        rel: "preconnect",
+        href: "https://fonts.googleapis.com",
+        crossorigin: "crossorigin",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossorigin: "crossorigin",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Material+Icons+Outlined",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap",
+      },
+    ],
   ],
   lastUpdated: true,
   themeConfig: {

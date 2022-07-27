@@ -11,6 +11,15 @@ Please be sure to read [Learn Directus](/getting-started/learn-directus).
 :::
 -->
 
+:::tip Additional Documentation
+
+Read through this page to get an overview of Flows, or jump to full documentation on one of the following topics:
+
+- [Triggers](/configuration/flows/triggers.md)
+- [Operations](/configuration/flows/operations.md)
+
+:::
+
 :::tip Learn More
 
 There is also dedicated API documentation on [Flows](/reference/system/flows) and

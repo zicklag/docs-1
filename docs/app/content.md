@@ -16,6 +16,16 @@ Link to tutorial
 
 :::
 
+:::tip Additional Documentation
+
+Read through this page to get an overview of the Content module, or jump to full documentation on one of the following topics:
+
+- [Collection Page](/app/content/collections.md)
+- [Item Page](/app/content/items.md)
+- [Data Sharing](/app/content-data-sharing.md)
+
+:::
+
 ## Collection Page
 
 ![Collection Overview](https://cdn.directus.io/docs/v9/app-guide/content/content/content-20220415A/collection-page-20220415A.webp)

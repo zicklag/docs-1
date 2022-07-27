@@ -3,6 +3,14 @@
 > The data model describes the structure of your database's schema using [Collections](/app/content/collections)
 > (database tables) and [Fields](/reference/system/fields) (database columns).
 
+:::tip Additional Documentation
+
+Read through this page to get an overview of data model configuration in Directus, or jump to full documentation on one of the following topics:
+
+- [Relationships](/configuration/relationships.md)
+
+:::
+
 ## Creating a Collection
 
 1. Click <span mi btn>add</span> in the <span mi icon="dark">list_alt</span> Data Model header

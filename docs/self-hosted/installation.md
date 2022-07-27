@@ -16,6 +16,23 @@ To work on the Directus Core source code, please follow our [Contributing Guide]
 
 :::
 
+:::tip Additional Documentation
+
+Read through this page to get an overview of self-hosted installation options, or jump to full documentation on one of the following methods:
+
+- [AWS](/self-hosted/installation/aws)
+- [Cloudron](/self-hosted/installation/cloudron)
+- [CLI](/self-hosted/installation/cli)
+- [Digital Ocean](/self-hosted/installation/digitalocean-app-platform)
+- [Docker](/self-hosted/installation/docker)
+- [Google Cloud Platform](/self-hosted/installation/gcp)
+- [IIS](/self-hosted/installation/iis)
+- [Manual](/self-hosted/installation/manual)
+- [Plesk](/self-hosted/installation/plesk)
+- [Ubuntu](/self-hosted/installation/ubuntu)
+
+:::
+
 ## Deployment Guides
 
 The following guides will walk you through the self-hosted installation process for specific third-party platforms.
