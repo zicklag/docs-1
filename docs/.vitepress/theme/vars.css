@@ -455,7 +455,9 @@ img, video {
 }
 
 .dark {
-  --vp-button-brand-border: var(--vp-c-brand-light);
+  /* @Modified */
+  --vp-button-brand-border: var(--vp-c-brand-dark);
+  /* --------- */
   --vp-button-brand-text: var(--vp-c-text-dark-1);
   --vp-button-brand-bg: var(--vp-c-brand-dark);
   --vp-button-brand-hover-border: var(--vp-c-brand-lighter);
