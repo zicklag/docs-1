@@ -1,4 +1,4 @@
-# Custom Panels <small></small>
+# Custom Panels <small mod></small>
 
 > Panels are modular units of data visualization that exist within the [Insights module](/app/insights). Each panel
 > exists within a Dashboard and can be positioned and resized as needed.
