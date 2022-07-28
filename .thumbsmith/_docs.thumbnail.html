@@ -25,24 +25,28 @@ height: 630
 
       <img class="logo" src="https://docs.directus.io/logo-dark.svg" />
 
+      <p class="breadcrumb">
+        {{#breadcrumb}}
+          <span>{{.}}</span>
+        {{/breadcrumb}}
+      </p>
+
+      <h1 class="title">
+        {{title}}
+      </h1>
+
+      <p class="bottom-text">
+        <span>{{readTime}}</span>
+        <br />
+        <em>Last updated: {{lastUpdated}}</span>
+      </p>
+
       <img class="right-image" src="https://docs.directus.io/dashboard-image.svg" />
 
     </div>
 
     <!-- Styling -->
     <style>
-      img.right-image {
-        width: 50%;
-        position: absolute;
-        top: 35%;
-      }
-
-      img.logo {
-        width: 60%;
-        position: absolute;
-        top: 43%;
-      }
-
       *, *::before, *::after {
         box-sizing: border-box;
       }
