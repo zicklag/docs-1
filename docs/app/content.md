@@ -22,7 +22,7 @@ Read through this page to get an overview of the Content module, or jump to full
 
 - [Collection Page](/app/content/collections.md)
 - [Item Page](/app/content/items.md)
-- [Data Sharing](/app/content-data-sharing.md)
+- [Data Sharing](/app/content/data-sharing.md)
 
 :::
 

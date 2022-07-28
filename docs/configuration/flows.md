@@ -63,7 +63,7 @@ To create a Flow, follow these steps:
    [Trigger](/configuration/flows/triggers) type and configure as desired.
 5. Click <span mi btn>done</span> in the Menu Header to be taken to the Flow Grid Area.\
    You'll see the Trigger Panel on the Flow Grid.
-6. On the Trigger Panel, click <span mi>add</span> and the **Create Operation** side menu will open.
+6. On the Trigger Panel, click <span mi btn>add</span> and the **Create Operation** side menu will open.
 7. Choose a name and the [Operation](/configuration/flows/operations) type, and configure as desired.\
    Directus will convert the unique name into an Operation Key, used on the [Flow Object](#the-flow-object).\
    If you don't choose a name, the system will auto-generate a name and key.
