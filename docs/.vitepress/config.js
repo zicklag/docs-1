@@ -102,25 +102,23 @@ export default {
   ],
   lastUpdated: true,
   themeConfig: {
-    // TODO: Fix logo to look good in dark mode
-    logo: "/logo.svg",
     siteTitle: false,
+    logo: "/logo.svg",
     nav: [
       { text: "Website", link: "https://directus.io/" },
       { text: "Cloud", link: "https://directus.cloud/" },
       { text: "GitHub", link: "https://github.com/directus/directus" },
     ],
-    algolia: {
-      // appId: '',
-      // apiKey: '',
-      indexName: "directus",
-    },
-    sidebar: sidebar(),
-    //
-    // editLink: {
-    //   pattern: 'https://github.com/directus/directus/edit/main/docs/:link',
-    //   text: 'Edit this page on GitHub'
+    // algolia: {
+    //   appId: "",
+    //   apiKey: "84890d566c1f9ad79ca62a1358e05c60",
+    //   indexName: "directus",
     // },
+    sidebar: sidebar(),
+    editLink: {
+      pattern: "https://github.com/directus/directus/edit/main/docs/:link",
+      text: "Edit this page on GitHub",
+    },
   },
 };
 
