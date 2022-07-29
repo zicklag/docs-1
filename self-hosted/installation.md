@@ -43,6 +43,7 @@ services.
 - [Zeet](https://deploy.zeet.co/?url=https://github.com/directus-community/heroku-template)
 - [Koyeb](https://app.koyeb.com/deploy?type=docker&name=directus&ports=8055;http;/&env[PORT]=8055&env[KEY]=A%20random%20string&env[SECRET]=A%20random%20string&env[PUBLIC_URL]=https://myURL.com/&env[DB_CLIENT]=DB%20client&env[DB_HOST]=DB%20host&env[DB_PORT]=DB%20Port&env[DB_DATABASE]=Database%20name&env[DB_USER]=DB%20user&env[DB_PASSWORD]=DB%20Password&image=directus/directus)
 - [alwaysdata](https://www.alwaysdata.com/en/marketplace/directus/)
+- [Elestio](https://elest.io/open-source/directus)
 
 ## Directus Cloud
 
