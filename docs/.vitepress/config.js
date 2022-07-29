@@ -11,6 +11,15 @@ export default {
   },
   head: [
     [
+      "script",
+      {
+        type: "text/javascript",
+        async: true,
+        defer: true,
+        src: "//js-na1.hs-scripts.com/20534155.js",
+      },
+    ],
+    [
       "link",
       { rel: "shortcut icon", type: "image/svg+xml", href: "/favicon.svg" },
     ],
