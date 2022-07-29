@@ -1,3 +1,8 @@
+---
+description: A guide on how to scaffhold your Directus Extension.
+readTime: 12 minutes
+---
+
 # Creating Extensions
 
 ## Scaffolding your Directus Extension

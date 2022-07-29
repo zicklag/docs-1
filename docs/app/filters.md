@@ -1,3 +1,8 @@
+---
+description: Filters allow you to conditionally select Items from a Collection. Use-cases include customizing Item search results restricting Item access permissions for specific Users or Roles, building dashboard analytics with the Insights module, and more.
+readTime: 12 minutes
+---
+
 # Filters
 
 > Filters allow you to conditionally select Items from a Collection. Use-cases include customizing Item search results,

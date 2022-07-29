@@ -1,3 +1,8 @@
+---
+description: A glossary of terms specific to Directus Cloud.
+readTime: 12 minutes
+---
+
 # Glossary
 
 ## Asset Storage

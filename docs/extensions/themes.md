@@ -1,3 +1,8 @@
+---
+description: A guide on how to build custom Themes in Directus.
+readTime: 12 minutes
+---
+
 # Themes & Styling
 
 > **Form Follows Function** is the guiding design principle of Directus. The minimal UI allows the platform to be easily

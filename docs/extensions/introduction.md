@@ -1,3 +1,8 @@
+---
+description: An introduction to custom Extensions in Directus.
+readTime: 12 minutes
+---
+
 # Extensions
 
 > In addition to being highly customizable, Directus has been architected to be completely modular and extensible. This

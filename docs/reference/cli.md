@@ -1,3 +1,8 @@
+---
+description: Directus has two command line interfaces (CLI) that you can use for various actions. One is used for server-side actions that relate to your on-prem instance, like migrating the database or resetting a user, while the other allows you to interact with a Directus instance as you would with an SDK.
+readTime: 12 minutes
+---
+
 # Command Line Interface
 
 > Directus has two command line interfaces (CLI) that you can use for various actions. One is used for server-side

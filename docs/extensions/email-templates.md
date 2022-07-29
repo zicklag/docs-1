@@ -1,3 +1,8 @@
+---
+description: A guide on how to build custom Email Templates in Directus.
+readTime: 12 minutes
+---
+
 # Email Templates <small mod></small>
 
 > Templates can be used to add custom templates for your emails, or to override the system emails used for things like

@@ -1,3 +1,8 @@
+---
+description: How to host Directus on Plesk.
+readTime: 12 minutes
+---
+
 # Shared Hosting with Plesk
 
 On many shared hosts you are not allowed to directly invoke node commands but you have to use the Plesk configuration

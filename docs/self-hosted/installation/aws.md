@@ -1,3 +1,8 @@
+---
+description: How to host Directus on AWS.
+readTime: 12 minutes
+---
+
 # AWS
 
 While there are many different ways to run Directus on AWS, from single EC2 instances to a full ELB load-balanced

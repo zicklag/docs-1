@@ -1,3 +1,8 @@
+---
+description: When a Flow is triggered, it performs an Operation. Whether you need to manage data within Directus, send information off to outside services, set conditional logic or even trigger other Flows, these simple but powerful Operations can make it happen.
+readTime: 12 minutes
+---
+
 # Operations
 
 > When a Flow is triggered, it performs an Operation. Whether you need to manage data within Directus, send information

@@ -1,3 +1,8 @@
+---
+description: A guide on how to build custom hooks in Directus.
+readTime: 12 minutes
+---
+
 # Custom API Hooks <small mod></small>
 
 > Custom API Hooks allow running custom logic when a specified event occurs within your project. There are different

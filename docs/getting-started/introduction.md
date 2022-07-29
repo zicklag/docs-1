@@ -1,3 +1,8 @@
+---
+description: An introduction to what Directus is, how it works, who it is for, and when to use it.
+readTime: 12 minutes
+---
+
 # Introduction
 
 > These Docs will help you get Directus up-and-running quickly, guide you through advanced features, and explain the

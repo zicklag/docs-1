@@ -1,3 +1,8 @@
+---
+description: A guide on how to build custom Panels in Directus.
+readTime: 12 minutes
+---
+
 # Custom Panels <small mod></small>
 
 > Panels are modular units of data visualization that exist within the [Insights module](/app/insights). Each panel

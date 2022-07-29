@@ -1,3 +1,8 @@
+---
+description: The Settings Module is where your entire Project is configured, making it the first place to go after installation.
+readTime: 12 minutes
+---
+
 # Settings
 
 > The Settings Module is where your entire Project is configured, making it the first place to go after installation. To

@@ -1,3 +1,8 @@
+---
+description: How to get support for your Directus project.
+readTime: 12 minutes
+---
+
 # Help & Support
 
 > Directus is offered completely free and open-source for anyone wishing to self-host the platform. If you have

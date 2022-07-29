@@ -1,3 +1,8 @@
+---
+description: A guide on how to build custom Layouts in Directus.
+readTime: 12 minutes
+---
+
 # Custom Layouts <small mod></small>
 
 > Custom Layouts allow for building new ways to view or interact with Items via the Collection Detail pages.

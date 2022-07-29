@@ -1,3 +1,8 @@
+---
+description: A guide on how to build custom API endpoints in Directus.
+readTime: 12 minutes
+---
+
 # Custom API Endpoints <small mod></small>
 
 > Custom API Endpoints register new API routes which can be used to infinitely extend the core functionality of the

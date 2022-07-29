@@ -1,3 +1,8 @@
+---
+description: The platform supports internationalization across the entire App. Many languages are currently supported, with more being added all the time. Anyone can add or refine any languages through the integration with CrowdIn.
+readTime: 12 minutes
+---
+
 # App Translations
 
 > The platform supports internationalization across the entire App. Many languages are currently supported, with more

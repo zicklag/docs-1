@@ -1,3 +1,8 @@
+---
+description: The App is a no-code presentation layer for your data, content, and assets.
+readTime: 12 minutes
+---
+
 # The Application
 
 > The App is a no-code presentation layer for your data, content, and assets. It uses an intuitive left-to-right visual

@@ -1,3 +1,8 @@
+---
+description: How to host Directus on Cloudron.
+readTime: 12 minutes
+---
+
 # Cloudron One-Click Install
 
 Directus is available as a 1-click install on the Cloudron Store.

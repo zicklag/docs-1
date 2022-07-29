@@ -1,3 +1,8 @@
+---
+description: The core concepts behind Directus are simple, however the problems that must be solved to honor them can be remarkably complex. We strive to design and engineer the most elegant solutions possible, so that our codebase remains accessible.
+readTime: 12 minutes
+---
+
 # Codebase Overview
 
 > **The core concepts behind Directus are simple, however the problems that must be solved to honor them can be

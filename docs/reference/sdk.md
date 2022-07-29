@@ -1,3 +1,8 @@
+---
+description: The JS SDK provides an intuitive interface for the Directus API from within a JavaScript-powered project (browsers and Node.js). The default implementation uses [Axios](https://npmjs.com/axios) for transport and `localStorage` for storing state.
+readTime: 12 minutes
+---
+
 # JavaScript SDK
 
 > The JS SDK provides an intuitive interface for the Directus API from within a JavaScript-powered project (browsers and

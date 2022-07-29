@@ -1,3 +1,8 @@
+---
+description: Translation Strings are multilingual key-value pairs that you can use throughout the app. They enable you to translate things like dropdown options, placeholder text, field notes, and more.
+readTime: 12 minutes
+---
+
 # Translation Strings
 
 > Translation Strings are multilingual key-value pairs that you can use throughout the app. They enable you to translate

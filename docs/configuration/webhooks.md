@@ -1,3 +1,8 @@
+---
+description: Webhooks are configured within the App (no code required) and send HTTP requests when a specific event is triggered. Learn more about Webhooks.
+readTime: 12 minutes
+---
+
 # Webhooks
 
 > Webhooks are configured within the App (no code required) and send HTTP requests when a specific event is triggered.

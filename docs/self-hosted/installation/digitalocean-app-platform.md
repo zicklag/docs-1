@@ -1,3 +1,8 @@
+---
+description: How to host Directus on Digital Ocean.
+readTime: 12 minutes
+---
+
 # DigitalOcean App Platform
 
 ## 1. Setup a repo on GitHub

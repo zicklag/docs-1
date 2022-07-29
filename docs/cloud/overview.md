@@ -1,3 +1,8 @@
+---
+description: Whether you're a hobbyist, startup or Fortune 500 enterprise, our flexible Cloud service lets you get up and running with Directus quickly.
+readTime: 12 minutes
+---
+
 # Overview
 
 > Whether you're a hobbyist, startup or Fortune 500 enterprise, our flexible Cloud service lets you get up and running

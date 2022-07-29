@@ -1,3 +1,9 @@
+---
+description: An introduction to the REST and GraphQL APIs in Directus.
+readTime: 12 minutes
+pageClass: page-reference
+---
+
 # API Reference
 
 > Directus offers both a RESTful and GraphQL API to manage the data in the database. The API has predictable

@@ -1,3 +1,8 @@
+---
+description: The data model describes the structure of your database's schema using Collections, database tables, and Fields.
+readTime: 12 minutes
+---
+
 # Data Model
 
 > The data model describes the structure of your database's schema using [Collections](/app/content/collections)

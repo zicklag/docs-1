@@ -1,3 +1,8 @@
+---
+description: This guide explains how to publish a forked version of Directus on NPM, Dockerhub and GHCR. You need to first create a fork.
+readTime: 12 minutes
+---
+
 # GitHub CI
 
 > This guide explains how to publish a forked version of Directus on NPM, Dockerhub and GHCR. You need to first

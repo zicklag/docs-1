@@ -1,3 +1,8 @@
+---
+description: A guide on how to build custom Display Extensions in Directus.
+readTime: 12 minutes
+---
+
 # Custom Displays <small mod></small>
 
 > Displays are small inline components that allow you to create new ways of viewing field values throughout the App.

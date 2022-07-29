@@ -1,3 +1,8 @@
+---
+description: REST and GraphQL API documentation for filter rules in Directus.
+readTime: 12 minutes
+---
+
 # Filter Rules
 
 > Permissions, validation, and the API's `filter` parameter all rely on a specific JSON structure to define their rules.

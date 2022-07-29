@@ -1,3 +1,8 @@
+---
+description: What you can do to support Directus.
+readTime: 12 minutes
+---
+
 # Backing Directus
 
 > Directus is both _premium_ and _free_ — two things that don't often go together. It takes significant resources to

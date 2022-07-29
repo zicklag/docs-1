@@ -1,3 +1,8 @@
+---
+description: The User Directory is the management system for all Users within a Project.
+readTime: 12 minutes
+---
+
 # User Directory
 
 > The User Directory is the management system for all Users within a Project. [Users](/getting-started/glossary#users)

@@ -1,3 +1,8 @@
+---
+description: Get up and running with Directus Cloud in minutes. Learn the basics of building your data model and managing permissions.
+readTime: 12 minutes
+---
+
 # Quickstart Guide
 
 > This quickstart guide is designed to get you up and running with a Directus Cloud Project in a snap. Along the way,

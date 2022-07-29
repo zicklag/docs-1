@@ -1,3 +1,8 @@
+---
+description: A guide on how to build custom Interfaces in Directus.
+readTime: 12 minutes
+---
+
 # Custom Interfaces <small mod></small>
 
 > Custom Interfaces allow you to create new ways of viewing or interacting with field data on the Item Detail page.

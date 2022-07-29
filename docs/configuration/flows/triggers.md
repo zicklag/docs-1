@@ -1,3 +1,8 @@
+---
+description: Triggers allow you to activate Flows on just about any conceivable internal or external event, including any in-app activities, incoming webhooks, cron jobs, Operations in other Flows, or the manual click of a button in the Directus App.
+readTime: 12 minutes
+---
+
 # Triggers
 
 > Triggers allow you to activate Flows on just about any conceivable internal or external event, including any in-app

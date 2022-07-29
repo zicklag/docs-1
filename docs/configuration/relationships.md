@@ -1,3 +1,8 @@
+---
+description: Directus supports all standard relationship types, as well as a few more compound types that offer greater flexibility.
+readTime: 12 minutes
+---
+
 # Relationships
 
 > As you might have guessed, relationships are a crucial part of any relational database. Directus supports all standard

@@ -1,3 +1,8 @@
+---
+description: A glossary of key Directus terminology.
+readTime: 12 minutes
+---
+
 # Glossary
 
 > This is list of platform-specific terminology, and their meanings. Most are simply more approachable names for

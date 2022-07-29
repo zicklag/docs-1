@@ -1,3 +1,8 @@
+---
+description: Creating an Account is easy and free. Your Account gives you SuperAdmin access to your Teams and Projects on Directus Cloud, enabling you to create and manage Teams, Team Members, Projects, and Project Billing.
+readTime: 12 minutes
+---
+
 # Cloud Accounts
 
 > Creating an Account is easy and free. Your Account gives you SuperAdmin access to your Teams and Projects on Directus

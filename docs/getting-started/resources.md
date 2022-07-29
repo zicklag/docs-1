@@ -1,3 +1,8 @@
+---
+description: Additional resources to the Directus community.
+readTime: 12 minutes
+---
+
 # Resources
 
 ## Cloud

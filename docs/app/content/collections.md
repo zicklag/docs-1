@@ -1,3 +1,8 @@
+---
+description: The Collection Page displays all Items within a Collection and comes with highly configurable Layouts for browsing, visualizing, and managing these Items.
+readTime: 12 minutes
+---
+
 # Collection Page
 
 > The Collection Page displays all Items within a Collection and comes with highly configurable Layouts for browsing,

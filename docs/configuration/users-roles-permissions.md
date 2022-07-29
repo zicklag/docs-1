@@ -1,3 +1,8 @@
+---
+description: Users are the individual accounts for authenticating into the API and App. Each user belongs to a Role which defines its access Permissions.
+readTime: 12 minutes
+---
+
 # Users, Roles & Permissions
 
 > [Users](/getting-started/glossary#users) are the individual accounts for authenticating into the API and App. Each

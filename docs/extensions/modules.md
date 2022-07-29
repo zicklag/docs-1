@@ -1,3 +1,8 @@
+---
+description: A guide on how to build custom Modules in Directus.
+readTime: 12 minutes
+---
+
 # Custom Modules <small mod></small>
 
 > Custom Modules are completely open-ended components that allow you to create new experiences within the Directus

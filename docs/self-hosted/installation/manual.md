@@ -1,3 +1,8 @@
+---
+description: How to mantually install Directus.
+readTime: 12 minutes
+---
+
 # Installing Manually
 
 ::: tip Automation

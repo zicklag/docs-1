@@ -1,3 +1,8 @@
+---
+description: An introduction to the process, rules and guidelines that for all code contributions to Directus.
+readTime: 12 minutes
+---
+
 # Contributing
 
 > Our team truly appreciates every single contributor, community member, GitHub star, pull-request, bug report, and

@@ -1,4 +1,6 @@
 ---
+description: REST and GraphQL API documentation on the Activity collection in Directus.
+readTime: 12 minutes
 pageClass: page-reference
 ---
 
