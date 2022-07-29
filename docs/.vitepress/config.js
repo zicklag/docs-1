@@ -10,33 +10,6 @@ export default {
     },
   },
   head: [
-    // attempt at some meta tags
-    ["meta", { name: "og:title", content: "Directus Docs" }],
-    [
-      "meta",
-      {
-        name: "og:description",
-        content: "Directus. An Instant App & API for your SQL Database.",
-      },
-    ],
-    ["meta", { name: "twitter:title", content: "Directus Docs" }],
-    [
-      "meta",
-      {
-        name: "twitter:description",
-        content: "Directus. An Instant App & API for your SQL Database.",
-      },
-    ],
-    [
-      "meta",
-      {
-        name: "twitter:image",
-        content:
-          "https://cdn.thumbsmith.com/v1/u/directus/docs.png?title=Directus+Docs&lastUpdated=June+29%2C+2022",
-      },
-    ],
-    ["meta", { name: "twitter:image:width", content: "1200" }],
-    ["meta", { name: "twitter:image:height", content: "630" }],
     [
       "link",
       { rel: "shortcut icon", type: "image/svg+xml", href: "/favicon.svg" },
