@@ -4,19 +4,22 @@
 
 ## 🐰 Introduction
 
-This is the official documentation for the Directus data platform. These docs are also available via [a public website](https://docs.directus.io).
+This is the official documentation for the Directus data platform. These docs are also available via
+[a public website](https://docs.directus.io).
 
-**[Learn more about Directus](https://directus.io)**<br />
-**[Create your Free Project](https://directus.cloud)**
+**[Learn more about Directus](https://directus.io)**<br /> **[Create your Free Project](https://directus.cloud)**
 
 <br />
 
 ## Contributing
 
+> **Note**
+>
+> This project uses [`pnpm`](https://pnpm.io) to manage the dependencies, install it if you haven't via `npm i -g pnpm`.
 
 1. Fork and clone the repo
-2. Install the dependencies through `npm install`
-3. Run the docs website by running `npm run dev`
+2. Install the dependencies through `pnpm install`
+3. Run the docs website by running `pnpm dev`
 
 <br />
 

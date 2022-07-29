@@ -125,8 +125,8 @@ To work on the Documentation (public website version), you should clone the
 [`directus/docs`](https://github.com/directus/docs) repository and run the following command:
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 ::: tip
