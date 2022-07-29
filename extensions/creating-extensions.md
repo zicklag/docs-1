@@ -108,6 +108,10 @@ To learn more about developing extensions of a specific type, you can refer to o
 - [Hooks](/extensions/hooks/)
 - [Endpoints](/extensions/endpoints/)
 
+#### Hybrid Extensions
+
+- [Operations](/extensions/operations/)
+
 ::: tip Live Reloading
 
 When working on extensions, try setting the
