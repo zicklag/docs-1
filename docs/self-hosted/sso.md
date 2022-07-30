@@ -1,7 +1,5 @@
 ---
-description: Single Sign-On is a mechanism which allows to use external providers to login into systems. For example, you can use
-your Google or Facebook account to authenticate into systems without the need to create a new registration on those
-systems.
+description: Single Sign-On is a mechanism which allows to use external providers to login into systems.
 readTime: 12 minutes
 ---
 
