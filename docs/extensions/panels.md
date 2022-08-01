@@ -1,6 +1,6 @@
 ---
 description: A guide on how to build custom Panels in Directus.
-readTime: 12 minutes
+readTime: 3 min read
 ---
 
 # Custom Panels <small mod></small>

@@ -1,6 +1,6 @@
 ---
 description: The File Library Module aggregates all files within the Directus Project into one consolidated library.
-readTime: 12 minutes
+readTime: 7 min read
 ---
 
 # File Library

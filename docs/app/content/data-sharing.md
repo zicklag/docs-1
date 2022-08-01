@@ -1,6 +1,6 @@
 ---
 description: Data Sharing allows you to share an Item from a Collection with anyone, regardless of their permissions, even if they are not users within the project.
-readTime: 12 minutes
+readTime: 8 min read
 ---
 
 # Data Sharing

@@ -1,6 +1,6 @@
 ---
 description: The User Directory is the management system for all Users within a Project.
-readTime: 12 minutes
+readTime: 7 min read
 ---
 
 # User Directory

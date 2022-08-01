@@ -1,6 +1,6 @@
 ---
 description: The App is a no-code presentation layer for your data, content, and assets.
-readTime: 12 minutes
+readTime: 3 min read
 ---
 
 # The Application

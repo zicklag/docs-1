@@ -1,6 +1,6 @@
 ---
 description: A guide on how to build custom hooks in Directus.
-readTime: 12 minutes
+readTime: 7 min read
 ---
 
 # Custom API Hooks <small mod></small>

@@ -1,6 +1,6 @@
 ---
 description: A glossary of terms specific to Directus Cloud.
-readTime: 12 minutes
+readTime: 10 min read
 ---
 
 # Glossary

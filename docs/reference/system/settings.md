@@ -1,6 +1,6 @@
 ---
 description: REST and GraphQL API documentation on the Settings collection in Directus.
-readTime: 12 minutes
+readTime: 3 min read
 pageClass: page-reference
 ---
 

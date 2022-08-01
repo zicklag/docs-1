@@ -1,6 +1,6 @@
 ---
 description: Cloud Projects are individual instances of Directus, managed within a Team.
-readTime: 12 minutes
+readTime: 8 min read
 ---
 
 # Cloud Projects

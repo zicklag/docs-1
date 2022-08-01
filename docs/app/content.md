@@ -1,6 +1,6 @@
 ---
 description: The Content Module is the primary way for Users to interact with Items in a Collection. Regardless of what your data model contains _(be it blog posts, event bookings, IoT fleets, geo-positions, CRM, or whatever!)_ the Content Module enables Users to view and manage, sort and search, or import and export data.
-readTime: 12 minutes
+readTime: 3 min read
 ---
 
 # Content

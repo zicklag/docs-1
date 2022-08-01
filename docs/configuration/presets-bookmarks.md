@@ -1,6 +1,6 @@
 ---
 description: Presets store the state of a Collection Detail page. They can be used to set layout defaults or define bookmarks to specific datasets.
-readTime: 12 minutes
+readTime: 3 min read
 ---
 
 # Collection Presets

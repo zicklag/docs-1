@@ -1,6 +1,6 @@
 ---
 description: Insights is a Module in Directus that allows rapid, no-code build-out of analytics dashboards.
-readTime: 12 minutes
+readTime: 9 min read
 ---
 
 # Insights

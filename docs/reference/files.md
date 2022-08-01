@@ -1,6 +1,6 @@
 ---
 description: REST and GraphQL API documentation for file access and management in Directus.
-readTime: 12 minutes
+readTime: 10 min read
 pageClass: page-reference
 ---
 

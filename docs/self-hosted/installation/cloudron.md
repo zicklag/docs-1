@@ -1,6 +1,6 @@
 ---
 description: How to host Directus on Cloudron.
-readTime: 12 minutes
+readTime: 1 min read
 ---
 
 # Cloudron One-Click Install

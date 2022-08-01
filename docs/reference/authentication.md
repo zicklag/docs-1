@@ -1,6 +1,6 @@
 ---
 description: API documentation on authentication in Directus.
-readTime: 12 minutes
+readTime: 5 min read
 pageClass: page-reference
 ---
 

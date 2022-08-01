@@ -1,6 +1,6 @@
 ---
 description: An introduction to the REST and GraphQL APIs in Directus.
-readTime: 12 minutes
+readTime: 7 min read
 pageClass: page-reference
 ---
 

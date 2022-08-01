@@ -1,6 +1,6 @@
 ---
 description: What you can do to support Directus.
-readTime: 12 minutes
+readTime: 4 min read
 ---
 
 # Backing Directus

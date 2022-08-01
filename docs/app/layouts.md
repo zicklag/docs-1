@@ -1,6 +1,6 @@
 ---
 description: Layouts are customized displays for viewing and interacting with the Items in a Collection.
-readTime: 12 minutes
+readTime: 9 min read
 ---
 
 # Layouts

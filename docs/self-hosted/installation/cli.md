@@ -1,6 +1,6 @@
 ---
 description: How to install Directus via CLI.
-readTime: 12 minutes
+readTime: 2 min read
 ---
 
 # Installing from CLI

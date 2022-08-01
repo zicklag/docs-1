@@ -1,6 +1,6 @@
 ---
 description: Display Templates, a utility used throughout Directus, allow you to set Field Values and custom text in order to better represent the Items in a Collection.
-readTime: 12 minutes
+readTime: 1 min read
 ---
 
 # Display Templates

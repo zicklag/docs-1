@@ -1,6 +1,6 @@
 ---
 description: How to host Directus on Google Cloud Platform.
-readTime: 12 minutes
+readTime: 6 min read
 ---
 
 # Google Cloud Platform

@@ -1,6 +1,6 @@
 ---
 description: A guide on how to build custom Email Templates in Directus.
-readTime: 12 minutes
+readTime: 1 min read
 ---
 
 # Email Templates <small mod></small>

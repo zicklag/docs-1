@@ -1,6 +1,6 @@
 ---
 description: A guide on how to build custom Modules in Directus.
-readTime: 12 minutes
+readTime: 5 min read
 ---
 
 # Custom Modules <small mod></small>

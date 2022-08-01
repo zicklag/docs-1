@@ -1,6 +1,6 @@
 ---
 description: REST and GraphQL API documentation on the Operations collection in Directus.
-readTime: 12 minutes
+readTime: 5 min read
 pageClass: page-reference
 ---
 

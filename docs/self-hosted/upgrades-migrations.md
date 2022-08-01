@@ -1,6 +1,6 @@
 ---
 description: A Project is a complete instance of Directus, including its **Database**, config file, asset storage, and any custom extensions.
-readTime: 12 minutes
+readTime: 4 min read
 ---
 
 # Upgrades & Migrations

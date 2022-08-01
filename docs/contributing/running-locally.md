@@ -1,6 +1,6 @@
 ---
 description: This guide explains how to install the _Development_ version of Directus locally so that you can work on the platform's source code.
-readTime: 12 minutes
+readTime: 4 min read
 ---
 
 # Running Locally

@@ -1,6 +1,6 @@
 ---
 description: An introduction to custom Extensions in Directus.
-readTime: 12 minutes
+readTime: 2 min read
 ---
 
 # Extensions

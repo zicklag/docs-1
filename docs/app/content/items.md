@@ -1,6 +1,6 @@
 ---
 description: The Item Page is a tailored form for managing Items and their Field values. This page also includes options for archiving, reverting, and commenting on the Item.
-readTime: 12 minutes
+readTime: 5 min read
 ---
 
 # Item Page

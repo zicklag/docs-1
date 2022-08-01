@@ -1,6 +1,6 @@
 ---
 description: How to host Directus on Plesk.
-readTime: 12 minutes
+readTime: 4 min read
 ---
 
 # Shared Hosting with Plesk

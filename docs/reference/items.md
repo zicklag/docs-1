@@ -1,6 +1,6 @@
 ---
 description: REST and GraphQL API documentation to access and manage Items in Directus.
-readTime: 12 minutes
+readTime: 5 min read
 pageClass: page-reference
 ---
 

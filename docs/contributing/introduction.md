@@ -1,6 +1,6 @@
 ---
 description: An introduction to the process, rules and guidelines that for all code contributions to Directus.
-readTime: 12 minutes
+readTime: 6 min read
 ---
 
 # Contributing

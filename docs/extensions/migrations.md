@@ -1,6 +1,6 @@
 ---
 description: A guide on how to setup your owns custom Migrations in Directus.
-readTime: 12 minutes
+readTime: 2 min read
 ---
 
 # Custom Migrations

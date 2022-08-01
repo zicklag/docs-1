@@ -1,6 +1,6 @@
 ---
 description: If you're looking for the fastest way to get up-and-running with Directus, this guide will walk you through getting things installed, configured, and modeled.
-readTime: 12 minutes
+readTime: 5 min read
 ---
 
 # Quickstart Guide

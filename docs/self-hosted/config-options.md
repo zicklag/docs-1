@@ -1,6 +1,6 @@
 ---
 description: Environment variables are used for all configuration within a Directus project. These variables can be defined in a number of ways, which we cover below.
-readTime: 12 minutes
+readTime: 28 min read
 ---
 
 # Configuration Options

@@ -1,6 +1,6 @@
 ---
 description: A guide on how to build custom Layouts in Directus.
-readTime: 12 minutes
+readTime: 4 min read
 ---
 
 # Custom Layouts <small mod></small>

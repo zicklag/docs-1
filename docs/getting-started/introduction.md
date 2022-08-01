@@ -1,6 +1,6 @@
 ---
 description: An introduction to what Directus is, how it works, who it is for, and when to use it.
-readTime: 12 minutes
+readTime: 8 min read
 ---
 
 # Introduction

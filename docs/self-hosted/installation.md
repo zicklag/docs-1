@@ -1,6 +1,6 @@
 ---
 description: Directus can be installed in many different ways and on several different stacks. You can choose between local, self-hosted on-premises, or our managed Cloud solution.
-readTime: 12 minutes
+readTime: 2 min read
 ---
 
 # Installation

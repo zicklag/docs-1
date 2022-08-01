@@ -1,6 +1,6 @@
 ---
 description: How to host Directus on iis.
-readTime: 12 minutes
+readTime: 2 min read
 ---
 
 # IIS (Internet Information Services)

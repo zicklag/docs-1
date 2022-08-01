@@ -1,6 +1,6 @@
 ---
 description: This is where you can adjust all of the **global** settings for your project. Changes saved here are instantly reflected throughout the platform.
-readTime: 12 minutes
+readTime: 4 min read
 ---
 
 # Project Settings

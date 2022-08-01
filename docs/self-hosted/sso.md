@@ -1,6 +1,6 @@
 ---
 description: Single Sign-On is a mechanism which allows to use external providers to login into systems.
-readTime: 12 minutes
+readTime: 4 min read
 ---
 
 # Single Sign-On (SSO)

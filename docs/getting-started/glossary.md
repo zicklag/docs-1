@@ -1,6 +1,6 @@
 ---
 description: A glossary of key Directus terminology.
-readTime: 12 minutes
+readTime: 15 min read
 ---
 
 # Glossary

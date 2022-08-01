@@ -1,6 +1,6 @@
 ---
 description: How to host Directus on Docker.
-readTime: 12 minutes
+readTime: 3 min read
 ---
 
 # Installing With Docker

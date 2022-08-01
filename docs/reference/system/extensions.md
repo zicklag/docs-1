@@ -1,6 +1,6 @@
 ---
 description: REST and GraphQL API documentation on the Extensions collection in Directus.
-readTime: 12 minutes
+readTime: 1 min read
 pageClass: page-reference
 ---
 

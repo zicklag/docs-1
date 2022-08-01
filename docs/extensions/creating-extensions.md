@@ -1,6 +1,6 @@
 ---
 description: A guide on how to scaffhold your Directus Extension.
-readTime: 12 minutes
+readTime: 5 min read
 ---
 
 # Creating Extensions

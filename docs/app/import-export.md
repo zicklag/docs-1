@@ -1,6 +1,6 @@
 ---
 description: The Content, User Directory, and File Library modules allow importing and exporting of multiple Items stored as files.
-readTime: 12 minutes
+readTime: 4 min read
 ---
 
 # Import / Export

@@ -1,6 +1,6 @@
 ---
 description: REST and GraphQL API documentation to run queries in Directus.
-readTime: 12 minutes
+readTime: 9 min read
 pageClass: page-reference
 ---
 

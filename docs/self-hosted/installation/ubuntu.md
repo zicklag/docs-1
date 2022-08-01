@@ -1,6 +1,6 @@
 ---
 description: How to run Directus on Ubuntu.
-readTime: 12 minutes
+readTime: 1 min read
 ---
 
 # Ubuntu

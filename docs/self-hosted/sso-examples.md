@@ -1,6 +1,6 @@
 ---
 description: A collection of example Directus configurations for integrating with various OAuth 2.0 and OpenID platforms.
-readTime: 12 minutes
+readTime: 2 min read
 ---
 
 # SSO Examples

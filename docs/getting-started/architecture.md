@@ -1,6 +1,6 @@
 ---
 description: A breakdown of the Directus platform architecture.
-readTime: 12 minutes
+readTime: 2 min read
 ---
 
 # Architecture

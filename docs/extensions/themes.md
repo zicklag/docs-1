@@ -1,6 +1,6 @@
 ---
 description: A guide on how to build custom Themes in Directus.
-readTime: 12 minutes
+readTime: 2 min read
 ---
 
 # Themes & Styling

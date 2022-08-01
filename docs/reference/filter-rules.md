@@ -1,6 +1,6 @@
 ---
 description: REST and GraphQL API documentation for filter rules in Directus.
-readTime: 12 minutes
+readTime: 5 min read
 ---
 
 # Filter Rules

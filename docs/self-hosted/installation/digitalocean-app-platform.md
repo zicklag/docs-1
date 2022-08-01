@@ -1,6 +1,6 @@
 ---
 description: How to host Directus on Digital Ocean.
-readTime: 12 minutes
+readTime: 2 min read
 ---
 
 # DigitalOcean App Platform

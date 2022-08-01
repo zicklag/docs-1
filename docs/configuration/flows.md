@@ -1,6 +1,6 @@
 ---
 description: Flows enable custom, event-driven data processing and task automation within Directus. Each Flow is composed of one Trigger, followed by a series of Operations.
-readTime: 12 minutes
+readTime: 5 min read
 ---
 
 # Flows

@@ -1,6 +1,6 @@
 ---
 description: A Team is an organizational system that groups Accounts together as Team Members and provides consolidated billing on its nested Projects.
-readTime: 12 minutes
+readTime: 10 min read
 ---
 
 # Cloud Teams

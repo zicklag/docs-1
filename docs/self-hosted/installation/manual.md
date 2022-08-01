@@ -1,6 +1,6 @@
 ---
 description: How to mantually install Directus.
-readTime: 12 minutes
+readTime: 1 min read
 ---
 
 # Installing Manually

@@ -1,6 +1,6 @@
 ---
 description: Directus supports all standard relationship types, as well as a few more compound types that offer greater flexibility.
-readTime: 12 minutes
+readTime: 12 min read
 ---
 
 # Relationships

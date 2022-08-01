@@ -1,6 +1,6 @@
 ---
 description: This module provides a collective timeline of all actions taken within the project. These detailed records allow for auditing user activity and enforcing accountability.
-readTime: 12 minutes
+readTime: 2 min read
 ---
 
 # Activity Log

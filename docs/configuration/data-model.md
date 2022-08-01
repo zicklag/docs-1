@@ -1,6 +1,6 @@
 ---
 description: The data model describes the structure of your database's schema using Collections, database tables, and Fields.
-readTime: 12 minutes
+readTime: 15 min read
 ---
 
 # Data Model

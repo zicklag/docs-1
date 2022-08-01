@@ -1,6 +1,6 @@
 ---
 description: How to get support for your Directus project.
-readTime: 12 minutes
+readTime: 4 min read
 ---
 
 # Help & Support
