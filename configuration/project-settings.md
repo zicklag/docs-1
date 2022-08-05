@@ -49,6 +49,7 @@ it easier to identify different Directus projects.
   - None — Not recommended
   - Weak — Minimum of 8 characters
   - Strong — Uppercase, lowercase, numbers, and special characters
+  - Other — Set custom policy with a JavaScript regex
 - **Auth Login Attempts** — Sets the number of failed login attempts allowed before a user's account is locked. Once
   locked, an Admin user is required to unlock the account.
 
