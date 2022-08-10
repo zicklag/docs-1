@@ -14,12 +14,12 @@ This approach has successfully been tested with a webhosting offer from netcup.
 
 ### 1. Setup database
 
-First, make sure that you've already created a database and a user for it. We will use MySQL in this guide. If you
-plan to use SQLite you can ignore this step.
+First, make sure that you've already created a database and a user for it. We will use MySQL in this guide. If you plan
+to use SQLite you can ignore this step.
 
 ### 2. Setup a project folder
 
-Next you will need to create a project folder, we will be adding 4 files to this folder. 
+Next you will need to create a project folder, we will be adding 4 files to this folder.
 
 ### 3. Add .env file
 
@@ -100,7 +100,7 @@ In Plesk, choose your website and click "Node.js". You should then see a button 
 Now, change the "Document root" and "Application root" to the location of your project folder. "Application startup
 file" must point to the `index.js` file from the former step. The screen should now look like this:
 
-![Plesk Screenshot](../../assets/guides/installation/plesk-screenshot.png)
+![Plesk Screenshot](https://cdn.directus.io/docs/v9/self-hosted/installation/plesk/plesk-screenshot-20220810A.webp)
 
 You can now install the dependencies by clicking on the button "NPM install".
 
@@ -128,7 +128,8 @@ Afterwards try `bootstrap` again.
 
 ### 10. Clean up .env file
 
-It is good security practice not to leave emails and passwords stored in plain text, so if you had to create login details through the .env file you should now remove those details from the file.
+It is good security practice not to leave emails and passwords stored in plain text, so if you had to create login
+details through the .env file you should now remove those details from the file.
 
 ### 11. Test Directus Access
 
