@@ -3,11 +3,6 @@
 > The Shares utility enables you to share an Item with anyone, regardless of their permissions, even if they are not
 > users within the project.
 
-# Data Sharing
-
-> Data Sharing enables you to share an Item from a Collection with anyone, regardless of their permissions, even if they
-> are not users within the project.
-
 <video autoplay muted loop controls>
 <source src="https://cdn.directus.io/docs/v9/app-guide/content/data-sharing/data-sharing-20220217A/data-shares-20220217A.mp4" type="video/mp4" />
 <p>Your browser is not displaying the video for some reason. Here's a <a href="https://cdn.directus.io/docs/v9/app-guide/content/data-sharing/data-sharing-20220217A/data-shares-20220217A.mp4">link to the video</a> instead.</p>

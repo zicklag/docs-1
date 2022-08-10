@@ -116,8 +116,8 @@ provider may send it there automatically.
 
 This Operation sends a notification to an app user.
 
-- **Users** — Define a User by their primary key UUID. Use [Flow keys](/configuration/flows/#the-flow-object) to
-  set this dynamically.
+- **Users** — Define a User by their primary key UUID. Use [Flow keys](/configuration/flows/#the-flow-object) to set
+  this dynamically.
 - **Permissions** — Define the Role that this Operation will inherit permissions from.
 - **Title** — Set the notification title.
 - **Message** — Set the main body of the notification.
@@ -147,9 +147,9 @@ Operation.
 ![Transform Payload](https://cdn.directus.io/docs/v9/configuration/flows/operations/operations-20220603A/transform-payload-20220603A.webp)
 
 Transform Payload simply creates a new key on the Flow Object with nested JSON data to provide a clean space where you
-can combine data from multiple [Flow keys](/configuration/flows/#the-flow-object) into a single object. For example, if you need to use the same data multiple
-times _(e.g. send it in a web request and also use it to create an Item in a Collection)_, you can combine the data with
-Transform Payload once, then access its Operation key repeatedly.
+can combine data from multiple [Flow keys](/configuration/flows/#the-flow-object) into a single object. For example, if
+you need to use the same data multiple times _(e.g. send it in a web request and also use it to create an Item in a
+Collection)_, you can combine the data with Transform Payload once, then access its Operation key repeatedly.
 
 - **JSON** — Define JSON to insert into the Flow Object.
 

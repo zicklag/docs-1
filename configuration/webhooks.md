@@ -3,6 +3,13 @@
 > Webhooks are configured within the App (no code required) and send HTTP requests when a specific event is triggered.
 > [Learn more about Webhooks](https://en.wikipedia.org/wiki/Webhook).
 
+:::warning
+
+Webhooks are a deprecated feature and will be removed from the platform. This functionality has been fully replaced by
+[Flows](/configuration/flows.md).
+
+:::
+
 ## Creating Webhooks
 
 1. Navigate to **Settings <span mi icon dark>chevron_right</span> Webhooks**

@@ -91,15 +91,10 @@ Once logged in, you're greeted with the option to create your first
 :::tip Learn More About Collections
 
 - [The Content Module](/app/content)
-- [Create and Manage a Collection](/configuration/data-model/)
-- [Build Relationships Between Collections](/configuration/relationships/)
+- [Create and Manage a Collection](/configuration/data-model/collections.md)
+- [Build Relationships Between Collections](/configuration/data-model/relationships)
 
 :::
-
-<!--
-@TODO configuration > data-model
-Change the link to the "Create a Collection" format
--->
 
 ## 4. Create a Field
 

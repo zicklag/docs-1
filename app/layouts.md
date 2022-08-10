@@ -108,12 +108,8 @@ Layout used in the Content Module. It includes the following controls.
 
 ::: warning Manual Sorting Requires Configuration
 
-Only available if a Sort column has been configured in the Collection's Data Model Settings.
-
-<!--
-@TODO configuration > data-model
-Link
--->
+Only available if you [configure a sort field](/configuration/data-model/collections/#sort-field) in the Collection's
+Data Model Settings.
 
 :::
 
@@ -175,7 +171,7 @@ To use this Layout, the Collection will need at least one datetime Field to set 
 start and end time)_.
 
 <!--
-@TODO Config > Fields
+@TODO configuration > data-model > fields
 Link to Datetime Field
 -->
 
@@ -214,7 +210,7 @@ _There is no Subheader on the Map Layout._
 To use this Layout, the Collection must have a Map Field configured.
 
 <!--
-@TODO Config > Fields
+@TODO configuration > data-model > fields
 Link to Map Field
 -->
 
@@ -260,7 +256,7 @@ To make this Layout work, you will need to configure an appropriate status Field
 Field under **"Group By"** in the Layout Options menu.
 
 <!--
-@TODO Config > Fields
+@TODO configuration > data-model > fields
 Create and link to Kanban config tutorial.
 -->
 

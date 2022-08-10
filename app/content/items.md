@@ -7,7 +7,7 @@
 
 :::tip Programmatically Manage Items
 
-This page shows you how to manage Items within the no-code app. However, you can also[manage](/reference/items/) Items
+This page shows you how to manage Items within the no-code app. However, you can also [manage](/reference/items/) Items
 programmatically via the API.
 
 <!--
@@ -35,13 +35,8 @@ To create an Item, follow the steps below:
 
 ::: tip Singletons
 
-If the Collection is configured as a Singleton in the data model settings, then the App will skip step two above and
-automatically open the Item Page.
-
-<!--
-@TODO Config > Data Model
-Link to Singleton once written
--->
+If the collection is configured as a [Singleton](/configuration/data-model/collections/#collection-setup) in the data
+model settings, the App will skip step two above and automatically open the Item Page.
 
 :::
 
@@ -90,16 +85,10 @@ To archive an Item:
 3. Click <span mi btn warn>archive</span> located in the header and a popup will appear.
 4. Click **"Archive"** to confirm the action.
 
-[Learn More](/configuration/data-model/#archive)
-
 ::: warning Requires Configuration
 
-Archiving and Item requires an archive Field to be configured within the Collection's data model settings.
-
-<!--
-@TODO configuration > data model
-Add relevant link here
--->
+Requires an [Archive field](/configuration/data-model/collections/#archive) to be configured within the Collection's
+data model settings.
 
 :::
 

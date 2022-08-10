@@ -59,9 +59,9 @@ and more. To Learn More, see our guide on [Filters](/app/filters/).
 Drag and drop Items to custom sort them as desired. This is only possible on certain Layouts, such as the default
 [Table Layout](/app/layouts/#table-layout). To sort a Collection's Items, follow these steps.
 
-1. Be sure a sorting column has been configured under **"Settings > Data Model > Collection"**.\
-_(Shown in the video)_
-<!-- @TODO configuration > Data Model: Link -->
+1. Be sure [a sort field](/configuration/data-model/collections/#sort-field) has been configured under **"Settings >
+   Data Model > Collection"**.\
+   _(Shown in the video)_
 2. Navigate to the Content Module and select the desired Collection.
 3. In the Sidebar, be sure a [Layout](#adjust-page-layout) is chosen that supports manual sorting.
 4. Enable manual sorting:
@@ -70,10 +70,7 @@ _(Shown in the video)_
 
 ::: warning Manual Sorting Requires Configuration
 
-Only available if a Sort column has been configured under:\
-**"Settings > Data Model > Collection > Sort"**
-
-<!--@TODO configuration > Data Model: Link -->
+Only available if a [sort field](/configuration/data-model/collections/#sort-field) has been configured.
 
 :::
 
@@ -119,10 +116,7 @@ whether an archived Item is displayed, follow these steps.
 
 :::warning Archiving Requires Configuration
 
-Only available if an Archive column has been configured under:\
- **"Settings > Data Model > Collection > Archive"**.
-
-<!-- @TODO configuration > Data Model: Link to section on archiving -->
+Only available if an [Archive field](/configuration/data-model/collections/#archive) has been configured.
 
 :::
 
