@@ -356,7 +356,7 @@ Retrieve the current schema.
 
 ### Query Parameters
 
-Supports the [export](/reference/query/#export) query parameter.
+Supports the [export](/reference/query#export) query parameter.
 
 ### Returns
 
@@ -390,7 +390,7 @@ n/a
 Apply schema snapshot based on JSON request body.
 
 Alternatively, upload a JSON or CSV schema file. Relies on a `multipart/form-data` encoded request like regular file
-uploads. Check [Upload a File](/reference/files/#upload-a-file) for more information.
+uploads. Check [Upload a File](/reference/files#upload-a-file) for more information.
 
 ### Query Parameters
 
@@ -398,12 +398,12 @@ This endpoint doesn't currently support any query parameters.
 
 ### Request Body
 
-JSON object containing [collections](/reference/system/collections/#the-collection-object),
-[fields](/reference/system/fields/#the-field-object), and [relations](/reference/system/relations/#the-relation-object)
-to apply.
+JSON object containing [collections](/reference/system/collections#the-collection-object),
+[fields](/reference/system/fields#the-field-object), and [relations](/reference/system/relations#the-relation-object) to
+apply.
 
 Alternatively, send a JSON or CSV schema file in a `multipart/form-data` request. See
-[Upload a File](/reference/files/#upload-a-file) for more information.
+[Upload a File](/reference/files#upload-a-file) for more information.
 
 ### Returns
 
@@ -553,7 +553,7 @@ n/a
 Compares and retrieve the difference of the current schema vs the schema in JSON request body.
 
 Alternatively, upload a JSON or CSV schema file. Relies on a `multipart/form-data` encoded request like regular file
-uploads. Check [Upload a File](/reference/files/#upload-a-file) for more information.
+uploads. Check [Upload a File](/reference/files#upload-a-file) for more information.
 
 ### Query Parameters
 
@@ -561,12 +561,12 @@ This endpoint doesn't currently support any query parameters.
 
 ### Request Body
 
-JSON object containing [collections](/reference/system/collections/#the-collection-object),
-[fields](/reference/system/fields/#the-field-object), and [relations](/reference/system/relations/#the-relation-object)
-to apply.
+JSON object containing [collections](/reference/system/collections#the-collection-object),
+[fields](/reference/system/fields#the-field-object), and [relations](/reference/system/relations#the-relation-object) to
+apply.
 
 Alternatively, send a JSON or CSV schema file in a `multipart/form-data` request. See
-[Upload a File](/reference/files/#upload-a-file) for more information.
+[Upload a File](/reference/files#upload-a-file) for more information.
 
 ### Returns
 
