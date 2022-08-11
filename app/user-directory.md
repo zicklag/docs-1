@@ -1,3 +1,8 @@
+---
+description: The User Directory is the management system for all Users within a Project.
+readTime: 7 min read
+---
+
 # User Directory
 
 > The User Directory is the management system for all Users within a Project. [Users](/getting-started/glossary#users)
@@ -5,8 +10,6 @@
 > which defines its [Permissions](/getting-started/glossary#permissions).
 
 ![User Directory Page](https://cdn.directus.io/docs/v9/app-guide/user-directory/user-directory-20220222A/user-directory-20220222A.webp)
-
-[[toc]]
 
 <!-- @TODO getting-started > learn-directus
 
@@ -27,12 +30,12 @@ When a User is created, they must also be assigned a Role. This Role defines the
 Directus. In other words, it determines what a User can see and do inside the app.
 
 The User Directory is composed of two pages: The User Directory Page and the User Details Page. It has all the same
-features and functionality as the [Content Module](/app/collections) such as manual and automatic sorting, batch
+features and functionality as the [Content Module](/app/content/collections) such as manual and automatic sorting, batch
 edit/delete/archive, import/export from files, etc.
 
 ## User Directory Page
 
-<video title="User Directory Options" autoplay muted loop controls>
+<video title="User Directory Options" autoplay playsinline muted loop controls>
 	<source src="https://cdn.directus.io/docs/v9/app-guide/user-directory/user-directory-20220222A/user-directory-options-20220222A.mp4" />
 	<p>
 		Your browser is not displaying the video for some reason. Here's a <a href="https://cdn.directus.io/docs/v9/app-guide/user-directory/user-directory-20220222A/user-directory-options-20220222A.mp4">link to the video</a> instead.
@@ -40,7 +43,7 @@ edit/delete/archive, import/export from files, etc.
 </video>
 
 The User Directory Page lists all Users in a Project, with a navigation that allows quick access to Users by Role. This
-page has the same functionality as the [Collection Page](/app/content/collections/).
+page has the same functionality as the [Collection Page](/app/content/collections).
 
 - **Select All** — Selects all Users currently in queue.
 - **Card Size** — Toggles size of User Displays.
@@ -48,9 +51,9 @@ page has the same functionality as the [Collection Page](/app/content/collection
 - **Sort Direction** — Toggles ascending & descending sort order.
 - **Search** — Enables classic type-based searching.
 - **Filter** — Enables advanced query-based search.
-- <span mi btn sec>person_add</span> — [Invite people](/configuration/users-roles-permissions/#inviting-a-user) to
-  become Users via email.
-- <span mi btn>add</span> — [Create User](/configuration/users-roles-permissions/#creating-a-user) manually.
+- <span mi btn sec>person_add</span> — [Invite people](/configuration/users-roles-permissions#inviting-a-user) to become
+  Users via email.
+- <span mi btn>add</span> — [Create User](/configuration/users-roles-permissions#creating-a-user) manually.
 
 _The following are only visible once Users are selected._
 
@@ -62,15 +65,15 @@ _The following are only visible once Users are selected._
 ![User Directory Layout Options](https://cdn.directus.io/docs/v9/app-guide/user-directory/user-directory-20220222A/user-directory-layout-options-20220222A.webp)
 
 The **Sidebar > Layout Options** _(denoted by <span mi icon>layers</span> when Sidebar is minimized)_ allows you to
-adjust how Users are displayed on the User Directory. To learn more, see [Layouts](/app/layouts/).
+adjust how Users are displayed on the User Directory. To learn more, see [Layouts](/app/layouts).
 
 ## User Details Page
 
 ![The User Page](https://cdn.directus.io/docs/v9/app-guide/user-directory/user-directory-20220222A/user-profile-20220222A.webp)
 
 A User's profile page can be accessed from the User Directory or by clicking the User Menu at the bottom of the
-[Module Bar](/app/overview/#_1-module-bar). The profile page has the same features and functionality as the
-[Item Page](/app/content-items/). Administrators can add and customize Fields under
+[Module Bar](/app/overview#_1-module-bar). The profile page has the same features and functionality as the
+[Item Page](/app/content/items). Administrators can add and customize Fields under
 [Settings > Data Model > Directus Users](/configuration/data-model), but the following are available by default.
 
 - **First Name** — The given name.
@@ -117,7 +120,7 @@ following read-only details:
 
 ## View a User
 
-<video autoplay muted loop controls>
+<video autoplay playsinline muted loop controls>
 	<source src="https://cdn.directus.io/docs/v9/app-guide/user-directory/user-directory-20220222A/viewing-a-user-20220222A.mp4" />
 	<p>
 		Your browser is not displaying the video for some reason. Here's a <a href="https://cdn.directus.io/docs/v9/app-guide/user-directory/user-directory-20220222A/viewing-a-user-20220222A.mp4">link to the video</a> instead.
@@ -169,7 +172,7 @@ The User Detail is only editable by the current User and admins, and the followi
   - **Suspended** — A User that has been temporarily disabled; no App/API access.
   - **Archived** — A soft-deleted User; no App/API access.
 - **Role** — The User's role determines their permissions and access.
-- **Token** — A User's token is an alternate way to [authenticate into the API](/reference/authentication/) using a
+- **Token** — A User's token is an alternate way to [authenticate into the API](/reference/authentication) using a
   static string. When NULL, the token is disabled. When enabled, ensure that a secure string is used.
 
 ## Archive a User

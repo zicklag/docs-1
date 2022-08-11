@@ -4,11 +4,7 @@
 > well as a few more of its own _compound_ types, which are custom-tailored to make certain _common but complex_ tasks a
 > breeze.
 
-[[toc]]
-
 :::tip Before You Begin
-
-<!-- [Data Model](/configuration/data-model). -->
 
 Regardless of the relationship you want to configure, we recommend you read every section of this document, in order, at
 least once. This is because you must understand how M2Os work in Directus to understand O2Ms, you must understand M2Os
@@ -42,7 +38,7 @@ etc..._ this signals that the explanation includes Directus logic and functional
 
 ## Many-to-One (M2O)
 
-<!-- <video title="Configure an M2O Relationship" autoplay muted loop controls>
+<!-- <video title="Configure an M2O Relationship" autoplay playsinline muted loop controls>
 	<source src="" type="video/mp4" />
 </video> -->
 
@@ -86,7 +82,7 @@ This is where O2M fields come in to play.
 :::tip Configure an M2O
 
 The easiest way to configure an M2O field is to follow the guide on how to
-[create a field (standard)](/configruation/data-model/fields/#create-a-field-standard) and select the M2O Interface from
+[create a field (standard)](/configuration/data-model/fields/#create-a-field-standard) and select the M2O Interface from
 the template wizard.
 
 :::
@@ -96,7 +92,7 @@ the template wizard.
 Within a relational database, an O2M relationship is the exact same type of relationship as an M2O. Remember, at the end
 of the [M2O](#many-to-one-m2o) section, we learned that configuring an M2O in Directus does not let us access related
 items within an Item Page on the related collection. In Directus, configuring an O2M creates an
-[Alias](/getting-started/glossary/#alias) field, which lets us access related items. To demonstrate this, let's continue
+[Alias](/getting-started/glossary#alias) field, which lets us access related items. To demonstrate this, let's continue
 with the `cities` and `countries` example relationship used in the M2O section.
 
 ![One-to-Many Relational Diagram](https://cdn.directus.io/docs/v9/configuration/data-model/relationships/relationships-20220805/o2m-20220805A.webp)
@@ -126,7 +122,7 @@ Note the following points from the schema above. When we create an O2M in Direct
   words, the O2M alias field allows us to access any related items from `cities` within an Item Details Page in the
   `countries` collection.
 
-<!-- <video title="Configure an M2O Relationship" autoplay muted loop controls>
+<!-- <video title="Configure an M2O Relationship" autoplay playsinline muted loop controls>
 	<source src="" type="video/mp4" />
 </video> -->
 
@@ -148,7 +144,7 @@ For example, each country has one capital city, and vice versa. This is an O2O. 
 this O2O to the `cities` and `countries` example relationship used in the previous sections.
 
 The first strategy you may think of it to add a new `capital_city` field on the `countries` collection, storing the name
-of the capital city directly. But this would create [data redundancy](/configuration/data-model/#avoid-data-redundancy),
+of the capital city directly. But this would create [data redundancy](/configuration/data-model#avoid-data-redundancy),
 because the same city would exist in both `countries.capital_city` as well as `cities.name`. But remember, we want to
 _avoid data redundancy!_
 
@@ -209,7 +205,7 @@ Note the following points from the schema above. When we create an O2O in Direct
 
 :::tip Configure an O2O
 
-<!-- <video title="Configure an O2O Relationship" autoplay muted loop controls>
+<!-- <video title="Configure an O2O Relationship" autoplay playsinline muted loop controls>
 	<source src="" type="video/mp4" />
 </video> -->
 
@@ -282,7 +278,7 @@ ingredients
 
 :::tip Configure an M2M
 
-<!-- <video title="Configure an O2O Relationship" autoplay muted loop controls>
+<!-- <video title="Configure an O2O Relationship" autoplay playsinline muted loop controls>
 	<source src="" type="video/mp4" />
 </video> -->
 
@@ -296,7 +292,7 @@ the template wizard.
 
 Sometimes called a _matrix field_ or _replicator_, an M2A relationship allows you to link items from the parent
 collection to any item in any collection in the database. When you configure an M2A in Directus, an M2A
-[Alias](/getting-started/glossary/#alias) field is created as well as a junction collection, like we saw on M2M
+[Alias](/getting-started/glossary#alias) field is created as well as a junction collection, like we saw on M2M
 relationships. The difference is that the junction collection on an M2A also has a field to store the **collection key**
 _(the name of the collection)_ for related collections.
 
@@ -350,7 +346,7 @@ Note the following points from the schema above. When we create an M2A in Direct
 
 :::tip Configure an M2A
 
-<!-- <video title="Configure an M2A Relationship" autoplay muted loop controls>
+<!-- <video title="Configure an M2A Relationship" autoplay playsinline muted loop controls>
 	<source src="" type="video/mp4" />
 </video> -->
 
@@ -414,7 +410,7 @@ Note the following points from the schema above. When we create a Translations O
 
 :::tip Configure a Translations O2M
 
-<!-- <video title="Configure a Translations O2M" autoplay muted loop controls>
+<!-- <video title="Configure a Translations O2M" autoplay playsinline muted loop controls>
 	<source src="" type="video/mp4" />
 </video> -->
 

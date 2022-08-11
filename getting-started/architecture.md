@@ -1,3 +1,8 @@
+---
+description: A breakdown of the Directus platform architecture.
+readTime: 2 min read
+---
+
 # Architecture
 
 **Directus is a wrapper for both your database and file asset storage system.**

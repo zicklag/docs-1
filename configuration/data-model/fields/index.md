@@ -4,11 +4,9 @@
 > input verification rules, etc.)_ and frontend design used to display its data _(e.g., whether data will display in a
 > table or on a map)_.
 
-[[toc]]
-
 ## Overview
 
-<video title="Fields Overview" autoplay muted loop controls>
+<video title="Fields Overview" autoplay playsinline muted loop controls>
 	<source src="https://cdn.directus.io/docs/v9/configuration/data-model/data-model-20220805/fields-20220805A.mp4" type="video/mp4" />
 </video>
 
@@ -17,8 +15,8 @@ to access its **Configuration Drawer** and make advanced configurations. You als
 field.
 
 **Fields and Layout** — Create, view, and configure a collection's fields as well as adjust how they are displayed and
-ordered on the [Item Details Page](/app/content/collections/#item-page). This section also provides access to the
-**Field Context Menu** and **Field Configuration Drawer**, described below.
+ordered on the [Item Details Page](/app/content/collections#item-page). This section also provides access to the **Field
+Context Menu** and **Field Configuration Drawer**, described below.
 
 **Field Context Menu <span mi icon>more_vert</span>** — Contains the following controls:
 
@@ -36,7 +34,7 @@ ordered on the [Item Details Page](/app/content/collections/#item-page). This se
 
 ## Create a Field (Standard)
 
-<video title="Create a Field (Standard)" autoplay muted loop controls>
+<video title="Create a Field (Standard)" autoplay playsinline muted loop controls>
 	<source src="https://cdn.directus.io/docs/v9/configuration/data-model/fields/fields-20220805/create-a-field-20220805A.mp4" type="video/mp4" />
 </video>
 
@@ -55,7 +53,7 @@ fields pre-configured for common use-cases. When you create a field this way, yo
 
 ## Create a Field (Advanced)
 
-<video title="Create a Field (Advanced)" autoplay muted loop controls>
+<video title="Create a Field (Advanced)" autoplay playsinline muted loop controls>
 	<source src="https://cdn.directus.io/docs/v9/configuration/data-model/fields/fields-20220805/create-a-field-advanced-20220805A.mp4" type="video/mp4" />
 </video>
 
@@ -78,7 +76,7 @@ automatically appear within Directus. You can then enhance the experience furthe
 
 ## Configure a Field
 
-<video title="Configure a Field" autoplay muted loop controls>
+<video title="Configure a Field" autoplay playsinline muted loop controls>
 	<source src="https://cdn.directus.io/docs/v9/configuration/data-model/fields/fields-20220805/configure-a-field-20220805A.mp4" type="video/mp4" />
 </video>
 
@@ -93,7 +91,7 @@ even custom input validation and conditional display logic. To configure a field
    - **Schema** — Defines the database column schema for the field.
    - **Relationship** — Controls _and only appears when configuring relational_ field details.
    - **Translations** — Controls _and only appears when configuring translation_ field details.
-   - **Field** — Sets details for the field input, which is displayed on the [item page](/app/content/items/).
+   - **Field** — Sets details for the field input, which is displayed on the [item page](/app/content/items).
    - **Interface** — Configures how you interact with the field's values.
    - **Display** — Configures how field values are displayed in the Data Studio.
    - **Validation** — Creates a filter to determine valid user input.
@@ -109,7 +107,7 @@ create new fields within system collections.
 
 ## Duplicate a Field
 
-<video title="Duplicate a Field" autoplay muted loop controls>
+<video title="Duplicate a Field" autoplay playsinline muted loop controls>
 	<source src="https://cdn.directus.io/docs/v9/configuration/data-model/fields/fields-20220805/duplicate-a-field-20220805A.mp4" type="video/mp4" />
 </video>
 
@@ -135,7 +133,7 @@ field will not be copied.
 
 ## Toggle Field Visibility (for Admins)
 
-<video title="Toggle Field Visibility (for Admins)" autoplay muted loop controls>
+<video title="Toggle Field Visibility (for Admins)" autoplay playsinline muted loop controls>
 	<source src="https://cdn.directus.io/docs/v9/configuration/data-model/fields/fields-20220805/toggle-field-visibility-20220805A.mp4" type="video/mp4" />
 </video>
 
@@ -145,12 +143,12 @@ as well. This is handy if the field is distracting or has no need to be seen on 
 
 ## Adjust Field Width
 
-<video title="Group and Sort Field" autoplay muted loop controls>
+<video title="Group and Sort Field" autoplay playsinline muted loop controls>
 	<source src="https://cdn.directus.io/docs/v9/configuration/data-model/fields/fields-20220805/adjust-field-width-20220805A.mp4" type="video/mp4" />
 </video>
 
 Adjusting the field width in **Fields and Layout** will change field width on the
-[Item Detail Page](/app/content/#item-page). To adjust field width, follow these steps.
+[Item Detail Page](/app/content#item-page). To adjust field width, follow these steps.
 
 1. Click <span mi icon>more_vert</span> to open the field's context menu.
 1. Choose one of the following:
@@ -160,17 +158,17 @@ Adjusting the field width in **Fields and Layout** will change field width on th
 
 ## Manually Sort Fields
 
-<video title="Group and Sort Field" autoplay muted loop controls>
+<video title="Group and Sort Field" autoplay playsinline muted loop controls>
 	<source src="https://cdn.directus.io/docs/v9/configuration/data-model/fields/fields-20220805/manually-sort-fields-20220805A.mp4" type="video/mp4" />
 </video>
 
 Adjusting the field order in **Fields and Layout** will change its order on the
-[Item Page](/app/content/collections/#item-page). To manually sort fields, click <span mi icon>drag_indicator</span> to
+[Item Page](/app/content/collections#item-page). To manually sort fields, click <span mi icon>drag_indicator</span> to
 drag and drop the field as desired.
 
 ## Delete a Field
 
-<video autoplay muted loop controls title="">
+<video autoplay playsinline muted loop controls title="">
 	<source src="https://cdn.directus.io/docs/v9/configuration/data-model/fields/fields-20220805/delete-a-field-20220805A.mp4" type="video/mp4" />
 </video>
 

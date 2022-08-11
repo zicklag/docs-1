@@ -1,3 +1,8 @@
+---
+description: How to host Directus on Plesk.
+readTime: 4 min read
+---
+
 # Shared Hosting with Plesk
 
 On many shared hosts you are not allowed to directly invoke node commands but you have to use the Plesk configuration
@@ -25,7 +30,7 @@ Next you will need to create a project folder, we will be adding 4 files to this
 
 This file is used to configure Directus. Normally, the `init` script would create it for us. So now we have to do it
 manually. You can just copy it from another Directus installation or add the relevant variables using this help page:
-[Environment Variables](/self-hosted/config-options/)).
+[Environment Variables](/self-hosted/config-options)).
 
 If you have not already a user in the database make sure to add a first user by adding the following two lines so that
 you can later login to Directus.
@@ -37,7 +42,7 @@ ADMIN_PASSWORD="password"
 
 ::: tip Choosing a Port
 
-Since Plesk uses the [Phusion Passenger](https://www.phusionpassenger.com/) application server to serve Node.js apps you
+Since Plesk uses the [Phusion Passenger](https://www.phusionpassenger.com) application server to serve Node.js apps you
 do not need to worry about choosing a specific port. Just use an arbitrary number. To quote the Passenger docs:
 
 > When run in Passenger, the port number that you pass to listen() is irrelevant and has no effect. Passenger always

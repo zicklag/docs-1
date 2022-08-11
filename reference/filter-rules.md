@@ -1,9 +1,12 @@
+---
+description: REST and GraphQL API documentation for filter rules in Directus.
+readTime: 5 min read
+---
+
 # Filter Rules
 
 > Permissions, validation, and the API's `filter` parameter all rely on a specific JSON structure to define their rules.
 > This page describes the syntax for creating flat, relational, or complex filter rules.
-
-[[toc]]
 
 ## Syntax
 
@@ -182,7 +185,7 @@ In addition to static values, you can also filter against _dynamic_ values using
 
 :::tip Functions
 
-You can also use [Function Parameters](/reference/query/#functions) when building Filters.
+You can also use [Function Parameters](/reference/query#functions) when building Filters.
 
 :::
 

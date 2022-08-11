@@ -1,7 +1,14 @@
+---
+description:
+  A Project is a complete instance of Directus, including its **Database**, config file, asset storage, and any custom
+  extensions.
+readTime: 4 min read
+---
+
 # Upgrades & Migrations
 
 > A Project is a complete instance of Directus, including its **Database**, config file, asset storage, and any custom
-> extensions. [Learn more about Projects](/getting-started/glossary/#projects).
+> extensions. [Learn more about Projects](/getting-started/glossary#projects).
 
 ## Upgrading / Updating a Project
 
@@ -122,6 +129,6 @@ This would also be a good time to reconfigure your permissions, to ensure they a
 
 ## Breaking changes
 
-- [Filter operators](/reference/filter-rules/) have changed, now they are preceded with an underscore eg:
+- [Filter operators](/reference/filter-rules) have changed, now they are preceded with an underscore eg:
   `/items/users?filter[comments.thread.title][like]=Directus` is now
   `/items/users?filter[comments][thread][title][_like]=Directus`

@@ -1,7 +1,12 @@
+---
+description: A guide on how to build custom Layouts in Directus.
+readTime: 4 min read
+---
+
 # Custom Layouts <small></small>
 
 > Custom Layouts allow for building new ways to view or interact with Items via the Collection Detail pages.
-> [Learn more about Layouts](/getting-started/glossary/#layouts).
+> [Learn more about Layouts](/getting-started/glossary#layouts).
 
 ## Extension Entrypoint
 
@@ -37,7 +42,7 @@ export default {
 
 - `id` — The unique key for this layout. It is good practice to scope proprietary layouts with an author prefix.
 - `name` — The human-readable name for this layout.
-- `icon` — An icon name from the [material icon set](/getting-started/glossary/#material-icons), or the extended list of
+- `icon` — An icon name from the [material icon set](/getting-started/glossary#material-icons), or the extended list of
   Directus custom icons.
 - `component` — A reference to your layout component.
 - `slots` — Additional components to be added by your layout.

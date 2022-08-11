@@ -1,18 +1,25 @@
+---
+description:
+  This guide explains how to install the _Development_ version of Directus locally so that you can work on the
+  platform's source code.
+readTime: 4 min read
+---
+
 # Running Locally
 
 > This guide explains how to install the _Development_ version of Directus locally so that you can work on the
 > platform's source code. To install the _Production_ version locally, please follow to our
-> [standard installation guides](/self-hosted/installation/).
+> [standard installation guides](/self-hosted/installation).
 
 ::: tip Minimum Requirements
 
-You will need to have [the latest version of Node](https://nodejs.org/en/download/current/) to _build_ a Development
+You will need to have [the latest version of Node](https://nodejs.org/en/download/current) to _build_ a Development
 version of Directus.
 
-You can use the JavaScript tool manager [volta](https://volta.sh/) to automatically install the current node and npm
+You can use the JavaScript tool manager [volta](https://volta.sh) to automatically install the current node and npm
 versions.
 
-You will also need to have the package manager [pnpm](https://pnpm.io/) installed. You can install pnpm using the
+You will also need to have the package manager [pnpm](https://pnpm.io) installed. You can install pnpm using the
 following command: `npm install -g pnpm`.
 
 :::
@@ -45,7 +52,7 @@ pnpm -r build
 ## 5. Create a `.env` file
 
 Create an `.env` file under the `api` folder using vars from the online
-[config help](https://docs.directus.io/self-hosted/config-options/)
+[config help](https://docs.directus.io/self-hosted/config-options)
 
 ## 6. Initialize the database
 
@@ -151,7 +158,7 @@ Check our Wiki for a [guide](https://github.com/directus/directus/wiki/debugging
 Tests run automatically through GitHub Actions. However you may wish to run the tests locally especially when you write
 tests.
 
-Install [Docker](https://docs.docker.com/get-docker/) and ensure that the service is running.
+Install [Docker](https://docs.docker.com/get-docker) and ensure that the service is running.
 
 ```bash
 # Ensure that you are testing on the lastest codebase

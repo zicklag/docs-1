@@ -1,3 +1,9 @@
+---
+description:
+  A collection of example Directus configurations for integrating with various OAuth 2.0 and OpenID platforms.
+readTime: 2 min read
+---
+
 # SSO Examples
 
 Below is a collection of example Directus configurations for integrating with various OAuth 2.0 and OpenID platforms.

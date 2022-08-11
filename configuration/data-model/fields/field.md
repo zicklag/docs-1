@@ -14,5 +14,5 @@
   supports markdown.
 - **Field Name Translations** — (App Only) While the field key can not be changed (as of now), this option allows
   translating the field name into different languages. By default, the platform uses the
-  [Title Formatter](/getting-started/glossary/#title-formatter) to display field keys as human readable names, but you
+  [Title Formatter](/getting-started/glossary#title-formatter) to display field keys as human readable names, but you
   can also use translations to explicitly rename more technical column keys.

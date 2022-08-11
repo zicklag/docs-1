@@ -1,10 +1,14 @@
+---
+description:
+  The data model describes the structure of your database's schema using Collections, database tables, and Fields.
+readTime: 15 min read
+---
+
 # Data Model
 
 > The Directus data studio enables no-code configuration and management for any SQL database, with no arbitrary
 > restrictions on how you build your data model. You get control over table, column and relationship configuration, as
 > well as how users view and interact with data inside the data studio.
-
-[[toc]]
 
 <!--
 :::tip Before You Begin
@@ -282,8 +286,8 @@ blog
 - author_img
 ```
 
-As described in the section on [Rows](/configuration/data-model/#rows), we want each row in a data table to represent
-one unique record, event, object, entity, observation, etc. To do this, we can remove the `author_name` column from the
+As described in the section on [Rows](/configuration/data-model#rows), we want each row in a data table to represent one
+unique record, event, object, entity, observation, etc. To do this, we can remove the `author_name` column from the
 `blog` table and replace it with an `author_id` foreign key table, which stores foreign keys from the `users` table.
 
 ```
@@ -344,7 +348,7 @@ manage a data model is time consuming.
 
 ## Data Models in Directus
 
-<video title="Settings > Data Model" autoplay muted loop controls>
+<video title="Settings > Data Model" autoplay playsinline muted loop controls>
 	<source src="https://cdn.directus.io/docs/v9/configuration/data-model/data-model-20220805/data-model-overview-20220805A.mp4" type="video/mp4" />
 </video>
 
@@ -353,7 +357,7 @@ model design and configuration. The difference is that Directus handles all SQL,
 Studio which lets business users work with data in a human-friendly way.
 
 The Data Studio also offers features and functionalities to display and interact with your data intuitively. Once your
-data model is configured, the data is accessible across the other [modules](/getting-started/glossary/#modules).
+data model is configured, the data is accessible across the other [modules](/getting-started/glossary#modules).
 
 <!-- Data model configuration takes place across the following pages and menus:
 
@@ -373,7 +377,7 @@ Directus terms and map them to classic relational database concepts.
 
 ## Collections
 
-<video title="Collections" autoplay muted loop controls>
+<video title="Collections" autoplay playsinline muted loop controls>
 	<source src="https://cdn.directus.io/docs/v9/configuration/data-model/data-model-20220805/collections-20220805A.mp4" type="video/mp4" />
 </video>
 
@@ -386,7 +390,7 @@ Data Model**. From there, click a collection to open its configurations page. To
 
 ## Fields
 
-<video title="Fields" autoplay muted loop controls>
+<video title="Fields" autoplay playsinline muted loop controls>
 	<source src="https://cdn.directus.io/docs/v9/configuration/data-model/data-model-20220805/fields-20220805A.mp4" type="video/mp4" />
 </video>
 
@@ -395,12 +399,12 @@ Fields are database columns, but with a twist.
 Remember, SQL database columns store pure, raw data. From there, developers build out custom logic and UIs to determine
 how this data is displayed and interacted with. In Directus, fields encompass column configurations, as well as custom
 configuration over how to the data is displayed and interacted with in the Data Studio. Directus also has
-[alias fields](/getting-started/glossary/#alias), which are virtual and do not match directly to a column. To learn
-more, see our guide on [fields](/configuration/data-model/fields).
+[alias fields](/getting-started/glossary#alias), which are virtual and do not match directly to a column. To learn more,
+see our guide on [fields](/configuration/data-model/fields/).
 
 ## Items
 
-<video title="Collections" autoplay muted loop controls>
+<video title="Collections" autoplay playsinline muted loop controls>
 	<source src="https://cdn.directus.io/docs/v9/configuration/data-model/data-model-20220805/items-20220805A.mp4" type="video/mp4" />
 </video>
 
@@ -417,16 +421,16 @@ You access items from other app modules, such as [Content](/app/content), [User 
 ## Data Type Superset
 
 Directus abstracts type differences between SQL vendors with a
-[Data Type Superset](/getting-started/glossary/#data-type-superset).
+[Data Type Superset](/getting-started/glossary#data-type-superset).
 
 ## Keys and IDs
 
-<video title="Keys and IDs" autoplay muted loop controls>
+<video title="Keys and IDs" autoplay playsinline muted loop controls>
 	<source src="https://cdn.directus.io/docs/v9/configuration/data-model/data-model-20220805/keys-and-ids-20220805A.mp4" type="video/mp4" />
 </video>
 
 Primary keys are called IDs in Directus fairly frequently. When you
-[create a collection](/configuration/data-model/collections/#create-a-collection), you must add an `id` field. Directus
+[create a collection](/configuration/data-model/collections#create-a-collection), you must add an `id` field. Directus
 supports the following types of IDs:
 
 - **Auto-Incremented Integer** — IDs increment `1`, `2`, `3` up to `2^31-1` or `2,147,483,647`.
@@ -439,7 +443,7 @@ supports the following types of IDs:
 
 ## Relationships
 
-<video title="Relations" autoplay muted loop controls>
+<video title="Relations" autoplay playsinline muted loop controls>
 	<source src="https://cdn.directus.io/docs/v9/configuration/data-model/data-model-20220805/relationships-20220805A.mp4" type="video/mp4" />
 </video>
 

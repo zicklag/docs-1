@@ -11,18 +11,6 @@ This is the official documentation for the Directus data platform. These docs ar
 
 <br />
 
-## Contributing
-
-> **Note**
->
-> This project uses [`pnpm`](https://pnpm.io) to manage the dependencies, install it if you haven't via `npm i -g pnpm`.
-
-1. Fork and clone the repo
-2. Install the dependencies through `pnpm install`
-3. Run the docs website by running `pnpm dev`
-
-<br />
-
 ## 🤔 Community Help
 
 [The Directus Documentation](https://docs.directus.io) is a great place to start, or explore these other channels:
@@ -35,9 +23,12 @@ This is the official documentation for the Directus data platform. These docs ar
 
 <br />
 
-Directus is a premium open-source ([GPLv3](./license)) project, made possible with support from our passionate core
-team, talented contributors, and amazing [GitHub Sponsors](https://github.com/sponsors/directus). Thank you all!
+## Contributing
 
-<br />
+> **Note**
+>
+> This project uses [`pnpm`](https://pnpm.io) to manage the dependencies, install it if you haven't via `npm i -g pnpm`.
 
-© 2004-2022, Monospace Inc
+1. Fork and clone the repo
+2. Install the dependencies through `pnpm install`
+3. Run the docs website by running `pnpm dev`
