@@ -354,9 +354,6 @@ query {
 
 Retrieve the current schema.
 
-<div class="two-up">
-<div class="left">
-
 ### Query Parameters
 
 Supports the [export](/reference/query/#export) query parameter.
@@ -365,9 +362,6 @@ Supports the [export](/reference/query/#export) query parameter.
 
 Returns the JSON object containing schema details by default, or downloads it in an alternative format when `export`
 query parameter is used.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -389,9 +383,6 @@ GET /server/schema/snapshot?export=yaml
 
 n/a
 
-</div>
-</div>
-
 ---
 
 ## Apply Schema
@@ -400,9 +391,6 @@ Apply schema snapshot based on JSON request body.
 
 Alternatively, upload a JSON or CSV schema file. Relies on a `multipart/form-data` encoded request like regular file
 uploads. Check [Upload a File](/reference/files/#upload-a-file) for more information.
-
-<div class="two-up">
-<div class="left">
 
 ### Query Parameters
 
@@ -420,9 +408,6 @@ Alternatively, send a JSON or CSV schema file in a `multipart/form-data` request
 ### Returns
 
 Empty body.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -560,9 +545,6 @@ relations: []
 ### GraphQL
 
 n/a
-
-</div>
-</div>
 
 ---
 
@@ -573,9 +555,6 @@ Compares and retrieve the difference of the current schema vs the schema in JSON
 Alternatively, upload a JSON or CSV schema file. Relies on a `multipart/form-data` encoded request like regular file
 uploads. Check [Upload a File](/reference/files/#upload-a-file) for more information.
 
-<div class="two-up">
-<div class="left">
-
 ### Query Parameters
 
 This endpoint doesn't currently support any query parameters.
@@ -592,9 +571,6 @@ Alternatively, send a JSON or CSV schema file in a `multipart/form-data` request
 ### Returns
 
 Empty body.
-
-</div>
-<div class="right">
 
 ### REST API
 
@@ -732,8 +708,3 @@ relations: []
 ### GraphQL
 
 n/a
-
-</div>
-</div>
-
----
