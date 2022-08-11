@@ -1,10 +1,15 @@
+---
+description:
+  Users are the individual accounts for authenticating into the API and App. Each user belongs to a Role which defines
+  its access Permissions.
+readTime: 7 min read
+---
+
 # Users, Roles & Permissions
 
-> [Users](/getting-started/glossary/#users) are the individual accounts for authenticating into the API and App. Each
-> user belongs to a [Role](/getting-started/glossary/#roles) which defines its access
-> [Permissions](/getting-started/glossary/#permissions).
-
-[[toc]]
+> [Users](/getting-started/glossary#users) are the individual accounts for authenticating into the API and App. Each
+> user belongs to a [Role](/getting-started/glossary#roles) which defines its access
+> [Permissions](/getting-started/glossary#permissions).
 
 <!--
 
@@ -146,15 +151,15 @@ App's soft-delete and manual sorting features.
 
 ### Update (Custom Access)
 
-5. **Item Permissions** control which items can be updated, as defined by [Filter Rules](/reference/filter-rules/).
+5. **Item Permissions** control which items can be updated, as defined by [Filter Rules](/reference/filter-rules).
 6. **Field Permissions** control which fields can be updated. Fields are individually toggled.
 7. **Field Validation** define the rules for field values on update, as defined by
-   [Filter Rules](/reference/filter-rules/).
+   [Filter Rules](/reference/filter-rules).
 8. **Field Presets** control the field defaults when updating an item
 
 ### Delete (Custom Access)
 
-5. **Item Permissions** control which items can be deleted, as defined by the [Filter Rules](/reference/filter-rules/)
+5. **Item Permissions** control which items can be deleted, as defined by the [Filter Rules](/reference/filter-rules)
    entered.
 
 ---
@@ -191,7 +196,7 @@ permissions for a Collection, but can be further enhanced via email notification
 Directus supports endlessly configurable workflows, so we will only cover one simple example below.
 
 1. To create a structured workflow for **Articles**, the first step is
-   [Creating a Field](/configuration/data-model/#creating-a-field) to track the article "status" — we'll call it
+   [Creating a Field](/configuration/data-model#creating-a-field) to track the article "status" — we'll call it
    **Status**, but it can be named anything.
 2. Next, create different Roles for each stage of the workflow, such as `author` and `manager`.
 3. Finally, configure the Role permissions based on the possible values of that Status field, such as `draft`, `review`,

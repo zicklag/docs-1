@@ -1,7 +1,12 @@
+---
+description: A guide on how to build custom Modules in Directus.
+readTime: 5 min read
+---
+
 # Custom Modules <small></small>
 
 > Custom Modules are completely open-ended components that allow you to create new experiences within the Directus
-> platform. [Learn more about Modules](/getting-started/glossary/#modules).
+> platform. [Learn more about Modules](/getting-started/glossary#modules).
 
 ## Extension Entrypoint
 
@@ -31,7 +36,7 @@ export default {
 
 - `id` — The unique key for this module. It is good practice to scope proprietary modules with an author prefix.
 - `name` — The human-readable name for this module.
-- `icon` — An icon name from the [material icon set](/getting-started/glossary/#material-icons), or the extended list of
+- `icon` — An icon name from the [material icon set](/getting-started/glossary#material-icons), or the extended list of
   Directus custom icons.
 - `color` — A color associated with the module.
 - `routes` — Details the routes in your module. The routes are registered as nested routes with the module's `id`
@@ -54,7 +59,7 @@ If a route should render something, the route object should have a `component` p
 component.
 
 To learn more about the properties of route objects, you can refer to the
-[Vue Router Docs](https://next.router.vuejs.org/guide/).
+[Vue Router Docs](https://next.router.vuejs.org/guide).
 
 ## Route Component
 

@@ -1,10 +1,16 @@
+---
+description:
+  Directus has two command line interfaces (CLI) that you can use for various actions. One is used for server-side
+  actions that relate to your on-prem instance, like migrating the database or resetting a user, while the other allows
+  you to interact with a Directus instance as you would with an SDK.
+readTime: 7 min read
+---
+
 # Command Line Interface
 
 > Directus has two command line interfaces (CLI) that you can use for various actions. One is used for server-side
 > actions that relate to your on-prem instance, like migrating the database or resetting a user, while the other allows
 > you to interact with a Directus instance as you would with an SDK.
-
-[[toc]]
 
 ## Server
 
@@ -12,7 +18,7 @@ For server-side CLI, all functionality can be accessed by running `npx directus 
 
 ### Initialize a New Project
 
-```
+```bash
 npx directus init
 ```
 
@@ -20,7 +26,7 @@ Will install the required database driver, and create a `.env` file based on the
 
 ### Bootstrap a Project
 
-```
+```bash
 npx directus bootstrap
 ```
 
@@ -29,13 +35,13 @@ migrate it to the latest version (if it already exists and has missing migration
 
 This is very useful to use in environments where you're doing standalone automatic deployments, like a multi-container
 Kubernetes configuration, or a similar approach on
-[DigitalOcean App Platform](/self-hosted/installation/digitalocean-app-platform/),
+[DigitalOcean App Platform](/self-hosted/installation/digitalocean-app-platform),
 [Google Cloud Platform](/self-hosted/installation/gcp) or [AWS Elastic Beanstalk](/self-hosted/installation/aws)
 
 ::: tip First User
 
 You can use the `ADMIN_EMAIL` and `ADMIN_PASSWORD` environment variables to automatically provision the first user on
-first creation using the `bootstrap` command. See [Environment Variables](/self-hosted/config-options/#general) for more
+first creation using the `bootstrap` command. See [Environment Variables](/self-hosted/config-options#general) for more
 information.
 
 :::
@@ -49,7 +55,7 @@ custom migration or an external service, for example).
 
 ### Install the Database
 
-```
+```bash
 npx directus database install
 ```
 
@@ -62,7 +68,7 @@ You may want to use `directus bootstrap` instead.
 
 ### Upgrade the Database
 
-```
+```bash
 npx directus database migrate:latest
 npx directus database migrate:up
 npx directus database migrate:down
@@ -82,13 +88,13 @@ Directus can automatically generate a snapshot of your current data model in YAM
 collections, fields, and relations, and their configuration. This snapshot can be checked in version control and shared
 with your team. To generate the snapshot, run
 
-```
+```bash
 npx directus schema snapshot ./snapshot.yaml
 ```
 
 To run non-interactively (e.g. when running in a CI/CD workflow), run
 
-```
+```bash
 npx directus schema snapshot --yes ./snapshot.yaml
 ```
 
@@ -99,7 +105,7 @@ Note, that this will force overwrite existing snapshot files.
 To keep multiple snapshot organized by date, create a folder `snapshots` in your project root directory add the
 following custom script to your `package.json`:
 
-```
+```bash
 "create-snapshot": "npx directus schema snapshot ./snapshots/\"$(date \"+%F\")\"-snapshot-\"$(date \"+%s\")\".yaml"
 ```
 
@@ -118,19 +124,19 @@ snapshot.
 
 To apply the generated snapshot, run
 
-```
+```bash
 npx directus schema apply ./path/to/snapshot.yaml
 ```
 
 To run non-interactively (e.g. when running in a CI/CD workflow), run
 
-```
+```bash
 npx directus schema apply --yes ./path/to/snapshot.yaml
 ```
 
 To diff the schema and database and print out the planned changes, run
 
-```
+```bash
 npx directus schema apply --dry-run ./path/to/snapshot.yaml
 ```
 
@@ -138,7 +144,7 @@ npx directus schema apply --dry-run ./path/to/snapshot.yaml
 
 To create a new user with a specific role, run
 
-```
+```bash
 npx directus users create --email <user-email> --password <password> --role <role-uuid>
 ```
 
@@ -146,7 +152,7 @@ npx directus users create --email <user-email> --password <password> --role <rol
 
 To update the password of an existing user, run
 
-```
+```bash
 npx directus users passwd --email <user-email> --password <new-password>
 ```
 
@@ -154,17 +160,17 @@ npx directus users passwd --email <user-email> --password <new-password>
 
 To create a new role, run
 
-```
+```bash
 npx directus roles create --role <role-name>
 ```
 
 These roles are created with the
-[minimum permissions required](/configuration/users-roles-permissions/#configure-system-permissions) to properly access
+[minimum permissions required](/configuration/users-roles-permissions#configure-system-permissions) to properly access
 the App by default.
 
 To create a new role with admin access, set the `--admin` flag to `true`, such as
 
-```
+```bash
 npx directus roles create --role <role-name> --admin true
 ```
 
@@ -172,7 +178,7 @@ npx directus roles create --role <role-name> --admin true
 
 To count the amount of items in a given collection, run
 
-```
+```bash
 npx directus count <collection-name>
 ```
 
@@ -209,7 +215,7 @@ For example:
 
 > .directus.yml
 
-```yml
+```yaml
 instance: my-project
 ```
 
@@ -248,4 +254,4 @@ Useful when you need to parse data using tools like `jq` for example.
 <!-- ### Extending
 
 To find how you can extend the CLI and write custom commands, check how we make Directus highly extensible on our
-[extensions overview page](/concepts/extensions/). -->
+[extensions overview page](/concepts/extensions). -->

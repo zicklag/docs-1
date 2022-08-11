@@ -1,28 +1,33 @@
+---
+description:
+  The Item Page is a tailored form for managing Items and their Field values. This page also includes options for
+  archiving, reverting, and commenting on the Item.
+readTime: 5 min read
+---
+
 # Item Page
 
 > The Item Page is a tailored form for managing Items and their Field values. This page also includes options for
 > archiving, reverting, and commenting on an Item.
 
-[[toc]]
-
 :::tip Programmatically Manage Items
 
-This page shows you how to manage Items within the no-code app. However, you can also[manage](/reference/items/) Items
+This page shows you how to manage Items within the no-code app. However, you can also [manage](/reference/items) Items
 programmatically via the API.
 
 <!--
 @TODO Reference > Items
 Add links once "archive item" is created
 [archived]()
-[reverted](/reference/system/revisions/#revisions)
-[commented on](/reference/system/activity/#create-a-comment)
+[reverted](/reference/system/revisions#revisions)
+[commented on](/reference/system/activity#create-a-comment)
 -->
 
 :::
 
 ## Create an Item
 
-<video autoplay muted loop controls title="Create an Item">
+<video autoplay playsinline muted loop controls title="Create an Item">
 	<source src="https://cdn.directus.io/docs/v9/app-guide/content/content-items/content-items-20220415A/create-an-item-20220415A.mp4" type="video/mp4" />
 </video>
 
@@ -35,19 +40,14 @@ To create an Item, follow the steps below:
 
 ::: tip Singletons
 
-If the Collection is configured as a Singleton in the data model settings, then the App will skip step two above and
-automatically open the Item Page.
-
-<!--
-@TODO Config > Data Model
-Link to Singleton once written
--->
+If the collection is configured as a [Singleton](/configuration/data-model/collections#collection-setup) in the data
+model settings, the App will skip step two above and automatically open the Item Page.
 
 :::
 
 ## Edit an Item
 
-<video autoplay muted loop controls title="Edit an Item">
+<video autoplay playsinline muted loop controls title="Edit an Item">
 	<source src="https://cdn.directus.io/docs/v9/app-guide/content/content-items/content-items-20220415A/edit-an-item-20220415A.mp4" type="video/mp4" />
 </video>
 
@@ -79,7 +79,7 @@ automatically open the Item Page.
 
 ## Archive an Item
 
-<video autoplay muted loop controls title="Archive an Item">
+<video autoplay playsinline muted loop controls title="Archive an Item">
 	<source src="https://cdn.directus.io/docs/v9/app-guide/content/content-items/content-items-20220415A/archive-an-item-20220415A.mp4" type="video/mp4" />
 </video>
 
@@ -90,27 +90,21 @@ To archive an Item:
 3. Click <span mi btn warn>archive</span> located in the header and a popup will appear.
 4. Click **"Archive"** to confirm the action.
 
-[Learn More](/configuration/data-model/#archive)
-
 ::: warning Requires Configuration
 
-Archiving and Item requires an archive Field to be configured within the Collection's data model settings.
-
-<!--
-@TODO configuration > data model
-Add relevant link here
--->
+Requires an [Archive field](/configuration/data-model/collections#archive) to be configured within the Collection's data
+model settings.
 
 :::
 
 ## Revert an Item
 
-<video autoplay muted loop controls title="Revert an Item">
+<video autoplay playsinline muted loop controls title="Revert an Item">
 	<source src="https://cdn.directus.io/docs/v9/app-guide/content/content-items/content-items-20220415A/revert-an-item-20220415A.mp4" type="video/mp4" />
 </video>
 
-As you update Field Values on Items, Directus saves these [Revisions](/getting-started/glossary/#revisions), and they
-can be compared side-by-side to the current state. To revert an Item:
+As you update Field Values on Items, Directus saves these [Revisions](/getting-started/glossary#revisions), and they can
+be compared side-by-side to the current state. To revert an Item:
 
 1. Navigate to the Content Module and select the desired Collection.
 2. Select the desired Item to open the Item Page.
@@ -129,13 +123,13 @@ values for that revision.
 
 :::tip
 
-You can also revert Items [programmatically via the API](/reference/system/revisions/).
+You can also revert Items [programmatically via the API](/reference/system/revisions).
 
 :::
 
 ## Comment on an Item
 
-<video autoplay muted loop controls title="Comment on an Item">
+<video autoplay playsinline muted loop controls title="Comment on an Item">
 	<source src="https://cdn.directus.io/docs/v9/app-guide/content/content-items/content-items-20220415A/comment-on-an-item-20220415A.mp4" type="video/mp4" />
 </video>
 
@@ -165,7 +159,7 @@ Each comment displays the time it was created in its upper right-hand corner. Ho
 
 ## Delete an Item
 
-<video autoplay muted loop controls title="Comment on an Item">
+<video autoplay playsinline muted loop controls title="Comment on an Item">
 	<source src="https://cdn.directus.io/docs/v9/app-guide/content/content-items/content-items-20220415A/delete-an-item-20220415A.mp4" type="video/mp4" />
 </video>
 

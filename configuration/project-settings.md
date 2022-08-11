@@ -1,3 +1,10 @@
+---
+description:
+  This is where you can adjust all of the **global** settings for your project. Changes saved here are instantly
+  reflected throughout the platform.
+readTime: 4 min read
+---
+
 # Project Settings
 
 > This is where you can adjust all of the **global** settings for your project. Changes saved here are instantly
@@ -5,18 +12,18 @@
 
 ## General
 
-- **Project Name** — The name used at the top of the [Navigation Bar](/app/overview/#_2-navigation-bar) and on the
+- **Project Name** — The name used at the top of the [Navigation Bar](/app/overview#_2-navigation-bar) and on the
   login/public pages
 - **Project Descriptor** - The descriptor shown below the Project Name at the top of the
-  [Navigation Bar](/app/overview/#_2-navigation-bar) and on the login/public pages
-- **Project URL** — The URL when clicking the logo at the top of the [Module Bar](/app/overview/#_1-module-bar)
+  [Navigation Bar](/app/overview#_2-navigation-bar) and on the login/public pages
+- **Project URL** — The URL when clicking the logo at the top of the [Module Bar](/app/overview#_1-module-bar)
 - **Default Language** - The default language used within the app.
 
 ## Branding & Style
 
-- **Project Color** — The color used behind the logo at the top of the [Module Bar](/app/overview/#_1-module-bar), on
-  the login/public pages, and for the browser's FavIcon
-- **Project Logo** — A 40x40 pixel logo at the top of the [Module Bar](/app/overview/#_1-module-bar) and on the
+- **Project Color** — The color used behind the logo at the top of the [Module Bar](/app/overview#_1-module-bar), on the
+  login/public pages, and for the browser's FavIcon
+- **Project Logo** — A 40x40 pixel logo at the top of the [Module Bar](/app/overview#_1-module-bar) and on the
   login/public pages. The image is _inset_ within the 64x64 pixel square filled with the Project Color, so we recommend
   using a SVG or PNG logo with transparency to avoid a "boxy" look.
 - **Public Foreground** — An image centered in the public page's right-pane. Limited to a maximum width of 400px.
@@ -40,7 +47,7 @@ it easier to identify different Directus projects.
   toggling the checkbox, reorder links by dragging on the sort handle, or create new custom links with these fields:
   - **Name** — The title of the module link, also shown in a tooltip on hover
   - **Icon** — Choose an icon for the module button
-  - **URL** — Should start with a `/` for links within the [Directus App](/app/overview/)
+  - **URL** — Should start with a `/` for links within the [Directus App](/app/overview)
 
 ## Security
 
@@ -49,6 +56,7 @@ it easier to identify different Directus projects.
   - None — Not recommended
   - Weak — Minimum of 8 characters
   - Strong — Uppercase, lowercase, numbers, and special characters
+  - Other — Set custom policy with a JavaScript regex
 - **Auth Login Attempts** — Sets the number of failed login attempts allowed before a user's account is locked. Once
   locked, an Admin user is required to unlock the account.
 
@@ -77,6 +85,6 @@ following options to limit what transformations are possible.
 
 ## Mapping
 
-- **Mapbox Access Token** — Create a [Mapbox Access Token](https://docs.mapbox.com/help/glossary/access-token/) and
-  enter it here to improve the platform's mapping experience.
+- **Mapbox Access Token** — Create a [Mapbox Access Token](https://docs.mapbox.com/help/glossary/access-token) and enter
+  it here to improve the platform's mapping experience.
 - **Basemaps** — Allows overriding the Mapbox defaults with custom tiles

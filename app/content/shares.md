@@ -3,17 +3,10 @@
 > The Shares utility enables you to share an Item with anyone, regardless of their permissions, even if they are not
 > users within the project.
 
-# Data Sharing
-
-> Data Sharing enables you to share an Item from a Collection with anyone, regardless of their permissions, even if they
-> are not users within the project.
-
-<video autoplay muted loop controls>
+<video autoplay playsinline muted loop controls>
 <source src="https://cdn.directus.io/docs/v9/app-guide/content/data-sharing/data-sharing-20220217A/data-shares-20220217A.mp4" type="video/mp4" />
 <p>Your browser is not displaying the video for some reason. Here's a <a href="https://cdn.directus.io/docs/v9/app-guide/content/data-sharing/data-sharing-20220217A/data-shares-20220217A.mp4">link to the video</a> instead.</p>
 </video>
-
-[[toc]]
 
 <!--
 @TODO
@@ -33,8 +26,8 @@ link leads to a page containing the read-only content for just that shared Item.
 ::: tip Read-only
 
 At this time, Shares are read-only. However, Data Sharing is an extensible feature that could support full CRUD
-permissions. We welcome any [pull-requests](/contributing/introduction/) to address this or interest in
-[sponsoring the feature](/getting-started/support/#sponsored-work).
+permissions. We welcome any [pull-requests](/contributing/introduction) to address this or interest in
+[sponsoring the feature](/getting-started/support#sponsored-work).
 
 :::
 
@@ -47,7 +40,7 @@ to configure Shares properly.
 
 ## How It Works
 
-<video autoplay muted loop controls>
+<video autoplay playsinline muted loop controls>
 <source src="https://cdn.directus.io/docs/v9/app-guide/content/data-sharing/data-sharing-20220217A/how-shares-work-20220217A.mp4" type="video/mp4" />
 <p>If your browser is not displaying the video for some reason, here's a <a href="https://cdn.directus.io/docs/v9/app-guide/content/data-sharing/data-sharing-20220217A/how-shares-work-20220217A.mp4">link to the video</a> instead.</p>
 </video>
@@ -111,7 +104,7 @@ You can share any Item you want. However, Users with other Roles will likely hav
 Any Share will inherit the same read permissions as the Role it was associated with in the Share Options Menu.
 
 This system allows for absolutely granular configuration options on Shares... _but it also means you'll need to
-understand [Users, Roles, and Permissions](/configuration/users-roles-permissions/) thoroughly to use Shares properly_.
+understand [Users, Roles, and Permissions](/configuration/users-roles-permissions) thoroughly to use Shares properly_.
 Here are some highlights of what you can do:
 
 - Set the Collections a Role can view or share.
