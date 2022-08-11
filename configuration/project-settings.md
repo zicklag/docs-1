@@ -88,3 +88,8 @@ following options to limit what transformations are possible.
 - **Mapbox Access Token** — Create a [Mapbox Access Token](https://docs.mapbox.com/help/glossary/access-token) and enter
   it here to improve the platform's mapping experience.
 - **Basemaps** — Allows overriding the Mapbox defaults with custom tiles
+
+## Image Editor
+
+- **Custom Aspect Ratios** — Allows overriding the default aspect ratios in the
+  [image editor](/app/file-library#edit-an-image)
