@@ -57,3 +57,10 @@
 .vp-doc h6 {
 	font-weight: 700;
 }
+
+/**
+ * Hubspot color-scheme weirdness
+ * -------------------------------------------------------------------------- */
+#hubspot-messages-iframe-container {
+	color-scheme: auto;
+}
