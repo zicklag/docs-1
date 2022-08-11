@@ -10,7 +10,7 @@ readTime: 15 min read
 
 ## Admin / Administrator
 
-An "Administrators" Role (with Admin access enabled) is included when you first install the platform. All admin roles
+An "Administrator" Role (with Admin access enabled) is included when you first install the platform. All admin roles
 bypass the permissions check, providing unrestricted access to all data within the App and API. Additionally, only roles
 with the admin option enabled can manage Settings within the app.
 
@@ -68,8 +68,9 @@ group data based on department, objective, business process or anything you choo
 ## Database Abstraction
 
 Directus supports mirroring all the most widely used SQL databases, including PostgreSQL, MySQL, Microsoft SQL Server,
-SQLite, OracleDB, MariaDB, and other variants. Each vendor has subtle (and sometimes not so subtle) differences in how
-they function, so Directus includes an abstraction layer that helps it avoid writing different code for each type.
+SQLite, OracleDB, MariaDB, CockroachDB, and other variants. Each vendor has subtle (and sometimes not so subtle)
+differences in how they function, so Directus includes an abstraction layer that helps it avoid writing different code
+for each type.
 
 This means there is also the possibility of supporting other datastores in the future, such as NoSQL options like
 MongoDB, or even third-party data services like Firebase or Heroku. However these options are _fundamentally_ different
@@ -334,10 +335,9 @@ following drivers:
 ## Title Formatter
 
 Special Casing — If you are trying to update the specific casing (uppercase/lowercase) for a word (eg: `Dna` to `DNA`)
-you will want to add the edge-case to the
-[Format Title package](https://github.com/directus/directus/tree/main/packages/format-title/src). If you feel the case
-passes our [80/20 rule](https://docs.directus.io/contributing/introduction#feature-requests) you should submit a Pull
-Request to the codebase, otherwise you can update this in your instance.
+you will want to add the edge-case to the [Format Title package](https://github.com/directus/format-title). If you feel
+the case passes our [80/20 rule](https://docs.directus.io/contributing/introduction#feature-requests) you should submit
+a Pull Request to the codebase, otherwise you can update this in your instance.
 
 ## Translations
 
