@@ -168,14 +168,14 @@ guide on [relationships](/configuration/data-model/relationships).
 
 ### Database Schemas
 
-![Datatable to schema](https://cdn.directus.io/docs/v9/configuration/data-model/data-model-20220805/datatable-to-schema-20220805A.webp)
+![Data Table to schema](https://cdn.directus.io/docs/v9/configuration/data-model/data-model-20220805/datatable-to-schema-20220805A.webp)
 
 In our examples so far, we have seen and described actual [data tables](#data-tables). As you design your relational
 data model, you will need to create a schema to keep track of its complexity.
 
 A schema is a blueprint for your data model, which defines its data tables, columns in each table, details about each
-column and relationships between tables. It does not include the actual data points stored. Here is is a simple schema
-of two relationally linked tables:
+column and relationships between tables. It does not include the actual data points stored. Here is a simple schema of
+two relationally linked tables:
 
 ```
 table_one
@@ -326,8 +326,8 @@ Node.js or Flask. In your backend, you must code custom API endpoints and logic 
 delete data for your specific data model. However, when the backend accesses data, it is still raw, with no stylization.
 Raw data is easy to work with for computers, but often quite difficult to work with for humans.
 
-To those who are unfamiliar, the SQL language, raw data, and traditional relational database jargon can feel
-un-intuitive and overly-technical.
+To those who are unfamiliar, the SQL language, raw data, and traditional relational database jargon can feel unintuitive
+and overly-technical.
 
 It may not be practical to teach everyone on the team how to work with and think in terms of raw data. In some cases,
 business users may find it difficult or nearly impossible to work with raw data. People are accustomed to see

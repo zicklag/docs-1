@@ -108,7 +108,7 @@ The context object has the following properties:
 
 ### Init
 
-Init hooks execute at a defined point within the lifecycle of Directus. Use init hook objects to inject logic into
+Init hooks execute at a defined point within the life cycle of Directus. Use init hook objects to inject logic into
 internal services.
 
 The init register function receives two parameters:

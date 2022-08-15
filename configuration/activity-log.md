@@ -19,7 +19,7 @@ For proper accountability, activity items are **readonly** by design, though adm
 certain updates. The following information is stored for each event's activity item:
 
 - **User** — The platform user that performed the action
-- **Action** — The specific action taken, eg: Create, Update, Delete, Authenticate
+- **Action** — The specific action taken, e.g., Create, Update, Delete, Authenticate
 - **TimeStamp** — The timestamp of when the action was performed
 - **IP Address** — The IP address of the device from which the action was performed
 - **User Agent** — The description of the browser that was used to perform the action

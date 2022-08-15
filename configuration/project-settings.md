@@ -36,7 +36,7 @@ readTime: 4 min read
 
 ::: tip Browser FavIcon & Title
 
-The Project Color is also used to set a dynamic favicon and the Project Name is used in the browser's page title, making
+The Project Color is also used to set a dynamic FavIcon and the Project Name is used in the browser's page title, making
 it easier to identify different Directus projects.
 
 :::

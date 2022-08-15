@@ -272,7 +272,7 @@ await directus.auth.static('static_token');
 
 ### Refresh Auth Token
 
-By default, Directus will handle token refreshes. Although, you can handle this behaviour manually by setting
+By default, Directus will handle token refreshes. Although, you can handle this behavior manually by setting
 [`autoRefresh`](#options.auth.autoRefresh) to `false`.
 
 ```js

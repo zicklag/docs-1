@@ -1,5 +1,5 @@
 ---
-description: How to host Directus on iis.
+description: How to host Directus on IIS
 readTime: 2 min read
 ---
 

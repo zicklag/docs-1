@@ -152,8 +152,8 @@ notification, as well as an email directing them to your comment.
 :::tip Edit and Delete Comments
 
 Each comment displays the time it was created in its upper right-hand corner. Hover over this and the
-<span mi icon>more_horiz</span> menu will appear. Click this menu to <span mi icon>edit</span> edit or
-<span mi icon>delete</span> delete the comment.
+<span mi icon>more_horiz</span> menu will appear. Click <span mi icon>edit</span> to edit or <span mi icon>delete</span>
+to delete the comment.
 
 :::
 

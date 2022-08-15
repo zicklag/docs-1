@@ -83,7 +83,7 @@ A User's profile page can be accessed from the User Directory or by clicking the
 - **Avatar** — An image to represent the User.
 - **Location** — The city, country, office, or branch name.
 - **Title** — The professional staff title.
-- **Description** — A freeform text description.
+- **Description** — A free-form text description.
 - **Tags** — Keywords for search-ability.
 
 ### User Preferences

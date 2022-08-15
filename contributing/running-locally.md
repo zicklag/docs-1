@@ -90,14 +90,14 @@ packages to work on as described below.
 If you wish to choose what packages to work on, you should run the `dev` script for that package. You can see their
 names and list of scripts in their related `package.json`.
 
-Example of running the Api only:
+Example of running the API only:
 
 ```bash
 pnpm --filter directus dev
 ```
 
 If you want to work on multiple packages at once, you should create a new instance of your terminal for each package.
-Example of running both the Api and App at the same time:
+Example of running both the API and App at the same time:
 
 <table>
   <tr>
@@ -149,7 +149,7 @@ introduction to [Contributing](/contributing/introduction).
 
 ::: tip Debugging
 
-Check our Wiki for a [guide](https://github.com/directus/directus/wiki/debugging) on debugging the app and api.
+Check our Wiki for a [guide](https://github.com/directus/directus/wiki/debugging) on debugging the app and API.
 
 :::
 

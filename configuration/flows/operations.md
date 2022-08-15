@@ -130,7 +130,7 @@ This Operation sends a notification to an app user.
 
 ## Webhook / Request URL
 
-![Webhok / Request URL](https://cdn.directus.io/docs/v9/configuration/flows/operations/operations-20220603A/webhook-20220603A.webp)
+![Webhook / Request URL](https://cdn.directus.io/docs/v9/configuration/flows/operations/operations-20220603A/webhook-20220603A.webp)
 
 This Operation makes a request to another URL.
 

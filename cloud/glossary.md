@@ -207,7 +207,7 @@ secure and safe [tenancy architectures](#multi-tenancy).
 
 :::tip Directus Core Security Features
 
-Directus core comes with even more security features out-of-the-box, including IP address whitelabeling, 2FA enabling,
+Directus core comes with even more security features out-of-the-box, including IP address whitelabeling, MFA enabling,
 SSO options, customization for Password Rule requirements and the flexibility to use any access token paradigm desired.
 
 :::
