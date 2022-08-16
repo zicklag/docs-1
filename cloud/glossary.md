@@ -316,8 +316,8 @@ see [Cloud Policies](https://directus.io/cloud-policies)
 
 ## Rate Limiting
 
-<<<<<<< HEAD Rate limiting refers to technical limitations within Directus Cloud as well as Cloud Projects. You will
-encounter the following API request limits at each node tier.
+Rate limiting refers to technical limitations within Directus Cloud as well as Cloud Projects. You will encounter the
+following API request limits at each node tier.
 
 | Tier                       | Limit                                               |
 | -------------------------- | --------------------------------------------------- |
