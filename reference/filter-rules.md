@@ -101,9 +101,10 @@ you can set a rule for the `author.name` field using the following syntax.
 }
 ```
 
-When using M2M relationships, a junction table will be created and the filter applies to the junction table itself.
-For example, if you have a `books` collection, with a M2M relationship to authors of each book, the junction collection will probably be named `books_authors` and have 3 fields : `id`, `books_id` and `authors_id`.
-To filter specific books depending on their authors you must go through the junction table and the `authors_id` field :
+When using M2M relationships, a junction table will be created and the filter applies to the junction table itself. For
+example, if you have a `books` collection, with a M2M relationship to authors of each book, the junction collection will
+probably be named `books_authors` and have 3 fields : `id`, `books_id` and `authors_id`. To filter specific books
+depending on their authors you must go through the junction table and the `authors_id` field :
 
 ```json
 {
