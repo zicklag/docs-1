@@ -10,7 +10,14 @@ readTime: 3 min read
 > Presets store the state of a Collection Detail page. They can be used to set layout defaults or define bookmarks to
 > specific datasets. [Learn more about Presets](/getting-started/glossary#presets).
 
-## Creating a Preset
+<!--
+## Overview
+All the same features and functionality. You can view, create, update and delete items as you would in the collection page.
+
+### Defaults vs Bookmarks
+-->
+
+## Create a Preset
 
 1. Navigate to **Settings <span mi icon dark>chevron_right</span> Presets & Bookmarks**
 2. Click <span mi btn>add</span> in the header
@@ -60,7 +67,9 @@ preset priority is: User, then Role, then Global.
 
 :::
 
-## Deleting a Preset
+<!-- ## Update a Preset -->
+
+## Delete a Preset
 
 1. Navigate to **Settings <span mi icon dark>chevron_right</span> Presets & Bookmarks
    <span mi icon dark>chevron_right</span> [Preset]**
