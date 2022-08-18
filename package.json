@@ -11,7 +11,8 @@
 		"dev": "vitepress dev .",
 		"build": "vitepress build .",
 		"serve": "vitepress serve .",
-		"update-thumbnail": "thumbsmith deploy .thumbsmith/docs.thumbnail.html || exit 0"
+		"update-thumbnail": "thumbsmith deploy .thumbsmith/docs.thumbnail.html || exit 0",
+		"build:md": "node build.js"
 	},
 	"author": "Rijk van Zanten <rijkvanzanten@me.com>",
 	"contributors": [
@@ -20,6 +21,7 @@
 	"devDependencies": {
 		"@thumbsmith/url": "^0.1.2",
 		"@vueuse/head": "^0.7.8",
+		"directory-tree": "^3.3.0",
 		"lint-staged": "^13.0.3",
 		"prettier": "2.7.1",
 		"reading-time": "^1.5.0",
